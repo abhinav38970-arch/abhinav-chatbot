@@ -2,3 +2,5 @@
 pycache/
 *.pyc
 .env
+*.db
+pdfs/
