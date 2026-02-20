@@ -6,13 +6,27 @@ import time
 BASE_URL = "https://fremontunified.org/washington/"
 DOMAIN = urlparse(BASE_URL).netloc
 
+# district sections we want to allow
+DISTRICT_SECTIONS = [
+    "about",
+    "students-community",
+    "departments",
+    "services",
+    "calendar",
+    "board",
+    "policies",
+    "transportation",
+    "meals",
+    "safety",
+]
+
 
 def normalize_url(url):
     """
     Removes fragments (#section) and trailing slashes
     to avoid duplicate pages.
     """
-    url, _ = urldefrag(url)  # remove #fragment
+    url, _ = urldefrag(url)
     return url.rstrip("/")
 
 
@@ -61,11 +75,30 @@ def crawl():
                 if parsed.netloc != DOMAIN:
                     continue
 
-                # skip cloudflare & system paths
+                # skip cloudflare/system paths
                 if "/cdn-cgi/" in full_url:
                     continue
 
-                # skip files
+                # ---------- SMART SCOPE FILTER ----------
+                path_parts = parsed.path.strip("/").split("/")
+
+                if len(path_parts) > 0 and path_parts[0]:
+                    first_section = path_parts[0].lower()
+
+                    # allow Washington pages
+                    if first_section == "washington":
+                        pass
+
+                    # allow district sections
+                    elif first_section in DISTRICT_SECTIONS:
+                        pass
+
+                    # skip other school folders automatically
+                    else:
+                        continue
+                # ----------------------------------------
+
+                # skip non-text files (PDF handled later)
                 if full_url.lower().endswith(
                     (".doc", ".docx", ".jpg", ".png", ".zip")
                 ):
