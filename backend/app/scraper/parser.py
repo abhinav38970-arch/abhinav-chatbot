@@ -7,7 +7,7 @@ def parse_page(url):
     Downloads a webpage and extracts meaningful text content.
     """
 
-    print(f"Parsing: {url}")
+    print(f"📝Parsing: {url}")
 
     try:
         response = httpx.get(url, timeout=15)

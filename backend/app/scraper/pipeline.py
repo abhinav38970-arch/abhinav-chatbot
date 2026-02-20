@@ -19,7 +19,7 @@ def run_pipeline():
     crawl -> parse -> clean -> pdf extract -> save to database
     """
 
-    print("\nStarting scraping pipeline...\n")
+    print("\n🔎Starting scraping pipeline...🔍\n")
 
     # create database session
     db = SessionLocal()

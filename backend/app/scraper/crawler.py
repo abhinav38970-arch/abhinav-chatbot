@@ -51,7 +51,7 @@ def crawl():
             if url in visited:
                 continue
 
-            print(f"Crawling: {url}")
+            print(f"🕷️ Crawling: {url}")
 
             try:
                 response = client.get(url)

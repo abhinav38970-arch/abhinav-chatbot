@@ -7,7 +7,10 @@ def clean_text(raw_text):
     """
 
     if not raw_text:
+        print("🧹 Skipping empty content...")
         return ""
+
+    print("🧹 Cleaning text...")
 
     # normalize line endings
     text = raw_text.replace("\r", "\n")
@@ -33,5 +36,7 @@ def clean_text(raw_text):
             cleaned_lines.append(line)
 
     cleaned_text = "\n".join(cleaned_lines)
+
+    print("✅ Cleaning complete")
 
     return cleaned_text

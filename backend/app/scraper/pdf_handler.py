@@ -8,7 +8,7 @@ def extract_pdf_text(pdf_url):
     Downloads a PDF and extracts its text.
     """
 
-    print(f"Downloading PDF: {pdf_url}")
+    print(f"📄⬇️Downloading PDF: {pdf_url}")
 
     try:
         response = httpx.get(pdf_url, timeout=20)
