@@ -12,3 +12,12 @@ engine = create_engine(
 SessionLocal = sessionmaker(bind=engine)
 
 Base = declarative_base()
+# ✅ ensure all models are registered before table creation
+from backend.app.database import models  # DO NOT REMOVE
+
+def init_db():
+    """
+    Creates database tables if they do not exist.
+    Safe to run multiple times.
+    """
+    Base.metadata.create_all(bind=engine)

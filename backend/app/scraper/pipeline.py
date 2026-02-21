@@ -2,79 +2,78 @@ from backend.app.scraper.crawler import crawl
 from backend.app.scraper.parser import parse_page
 from backend.app.scraper.cleaner import clean_text
 from backend.app.scraper.pdf_handler import extract_pdf_text
-
 from backend.app.database.db import SessionLocal
 from backend.app.database.models import Page
+from backend.app.logs.logger import logger
+from backend.app.database.db import init_db
 
-from urllib.parse import urlparse
 import os
+import time
+import random
 
-# folder to temporarily store pdf files
 PDF_FOLDER = "backend/app/database/pdfs"
 
+def pause():
+    delay = random.uniform(0.8, 2.2)
+    time.sleep(delay)
 
 def run_pipeline():
-    """
-    Runs the full scraping pipeline:
-    crawl -> parse -> clean -> pdf extract -> save to database
-    """
+    """crawl → parse → clean → pdf → store"""
+    init_db() # ✅ ensures tables exist before scraping starts
 
-    print("\n🔎Starting scraping pipeline...🔍\n")
+    logger.info("Starting scraping pipeline")
 
-    # create database session
     db = SessionLocal()
 
-    # Step 1: Crawl the site
     urls = crawl()
 
-    print(f"\nTotal URLs discovered: {len(urls)}\n")
+    logger.info(f"Total URLs discovered: {len(urls)}")
+    logger.info("Beginning processing loop")
 
     processed_count = 0
-
-    # make sure pdf folder exists
     os.makedirs(PDF_FOLDER, exist_ok=True)
 
     for url in urls:
 
-        # Step 2: Handle PDFs separately
+        logger.info(f"Processing URL: {url}")
+
         if url.lower().endswith(".pdf"):
+            logger.info("PDF detected")
 
             pdf_data = extract_pdf_text(url)
 
             if pdf_data:
                 cleaned = clean_text(pdf_data["text"])
 
-                page = Page(
-                    url=url,
-                    content=cleaned,
-                    type="pdf"
-                )
+                page = Page(url=url, content=cleaned, type="pdf")
+                db.merge(page)
 
-                db.merge(page)   # prevents duplicates
                 processed_count += 1
+                logger.info(f"Saved PDF: {url}")
 
+            pause()
             continue
 
-        # Step 3: Parse HTML pages
         page_data = parse_page(url)
 
         if not page_data:
+            logger.warning(f"Skipping page due to parse failure: {url}")
+            pause()
             continue
 
-        # Step 4: Clean text
         cleaned = clean_text(page_data["text"])
 
-        page = Page(
-            url=url,
-            content=cleaned,
-            type="html"
-        )
+        page = Page(url=url, content=cleaned, type="html")
+        db.merge(page)
 
-        db.merge(page)   # prevents duplicates
         processed_count += 1
+        logger.info(f"Saved HTML: {url}")
 
-    # commit all changes
+        pause()
+
+    logger.info("Committing database changes")
     db.commit()
     db.close()
 
-    print(f"\nPipeline finished. Stored {processed_count} pages.\n")
+    logger.info(f"Pipeline finished. Stored {processed_count} pages.")
+    

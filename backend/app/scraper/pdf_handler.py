@@ -1,33 +1,46 @@
 import httpx
 from pdfminer.high_level import extract_text
 from io import BytesIO
+from backend.app.logs.logger import logger
 
+# ✅ Added realistic browser headers
+HEADERS = {
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
+                  "AppleWebKit/537.36 (KHTML, like Gecko) "
+                  "Chrome/120.0.0.0 Safari/537.36",
+    "Referer": "https://fremontunified.org/",
+    "Accept": "application/pdf,application/octet-stream;q=0.9,*/*;q=0.8",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Connection": "keep-alive"
+}
 
 def extract_pdf_text(pdf_url):
-    """
-    Downloads a PDF and extracts its text.
-    """
+    """Download PDF and extract text."""
 
-    print(f"📄⬇️Downloading PDF: {pdf_url}")
+    logger.info(f"Downloading PDF: {pdf_url}")
 
     try:
-        response = httpx.get(pdf_url, timeout=20)
+        # ✅ changed to client with headers + redirect support
+        with httpx.Client(headers=HEADERS, timeout=30, follow_redirects=True) as client:
+            response = client.get(pdf_url)
+
         response.raise_for_status()
+
     except Exception as e:
-        print(f"Failed to download PDF: {e}")
+        logger.error(f"PDF download failed: {e}")
         return None
 
     try:
         pdf_file = BytesIO(response.content)
         text = extract_text(pdf_file)
     except Exception as e:
-        print(f"Failed to extract text from PDF: {e}")
+        logger.error(f"PDF extraction failed: {e}")
         return None
 
     if not text.strip():
+        logger.warning("PDF contained no text")
         return None
 
-    return {
-        "url": pdf_url,
-        "text": text
-    }
+    logger.info(f"Extracted {len(text)} characters from PDF")
+
+    return {"url": pdf_url, "text": text}
