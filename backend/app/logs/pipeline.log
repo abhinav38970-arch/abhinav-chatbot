@@ -1,0 +1,1895 @@
+2026-02-21 14:40:49,428 | INFO | Starting scraping pipeline
+2026-02-21 14:40:49,444 | INFO | Crawling: https://fremontunified.org/washington
+2026-02-21 14:40:52,249 | INFO | Status: 200
+2026-02-21 14:40:52,249 | INFO | Visited count: 1
+2026-02-21 14:40:52,307 | INFO | Queued URL: https://fremontunified.org/washington/about/welcome
+2026-02-21 14:40:52,308 | INFO | Queued URL: https://fremontunified.org/washington/about/staff-directory
+2026-02-21 14:40:52,308 | INFO | Queued URL: https://fremontunified.org/washington/about/office
+2026-02-21 14:40:52,308 | INFO | Queued URL: https://fremontunified.org/washington/about/policies
+2026-02-21 14:40:52,308 | INFO | Queued URL: https://fremontunified.org/washington/students-community/student-support
+2026-02-21 14:40:52,308 | INFO | Queued URL: https://fremontunified.org/washington/students-community/departments
+2026-02-21 14:40:52,308 | INFO | Queued URL: https://fremontunified.org/washington/students-community/activities-athletics
+2026-02-21 14:40:52,308 | INFO | Queued URL: https://fremontunified.org/washington/students-community/connections
+2026-02-21 14:40:52,308 | INFO | Queued URL: https://fremontunified.org/washington/schedule-news/schedule
+2026-02-21 14:40:52,308 | INFO | Queued URL: https://fremontunified.org/washington/schedule-news/calendar
+2026-02-21 14:40:52,308 | INFO | Queued URL: https://fremontunified.org/washington/schedule-news/news
+2026-02-21 14:40:52,308 | INFO | Queued URL: https://fremontunified.org/washington/schedule-news/events
+2026-02-21 14:40:52,308 | INFO | Queued URL: https://fremontunified.org/meals
+2026-02-21 14:40:52,309 | INFO | Queued URL: https://fremontunified.org
+2026-02-21 14:40:52,309 | INFO | Queued URL: https://fremontunified.org/about/instructional-services/preschool
+2026-02-21 14:40:52,309 | INFO | Queued URL: https://fremontunified.org/about/instructional-services/federal-state-programs/dual-immersion
+2026-02-21 14:40:52,309 | INFO | Queued URL: https://fremontunified.org/about/departments/instructional-services-overview/special-education-dept/extended-school-year-summer-school-information
+2026-02-21 14:40:52,309 | INFO | Queued URL: https://fremontunified.org/about/schools
+2026-02-21 14:40:52,309 | INFO | Queued URL: https://fremontunified.org/washington/about/office/registration-overview
+2026-02-21 14:40:52,309 | INFO | Queued URL: https://fremontunified.org/students-community/connections
+2026-02-21 14:40:53,145 | INFO | Crawling: https://fremontunified.org/washington/about/welcome
+2026-02-21 14:40:55,601 | INFO | Status: 200
+2026-02-21 14:40:55,601 | INFO | Visited count: 2
+2026-02-21 14:40:55,652 | INFO | Queued URL: https://fremontunified.org/washington/about
+2026-02-21 14:40:55,652 | INFO | Queued URL: https://fremontunified.org/washington/about/welcome/principals-message
+2026-02-21 14:40:55,652 | INFO | Queued URL: https://fremontunified.org/washington/about/welcome/our-history
+2026-02-21 14:40:55,652 | INFO | Queued URL: https://fremontunified.org/washington/about/registration-overview
+2026-02-21 14:40:56,026 | INFO | Crawling: https://fremontunified.org/washington/about/staff-directory
+2026-02-21 14:40:59,113 | INFO | Status: 200
+2026-02-21 14:40:59,113 | INFO | Visited count: 3
+2026-02-21 14:41:00,183 | INFO | Crawling: https://fremontunified.org/washington/about/office
+2026-02-21 14:41:02,623 | INFO | Status: 200
+2026-02-21 14:41:02,624 | INFO | Visited count: 4
+2026-02-21 14:41:02,674 | INFO | Queued URL: https://fremontunified.org/washington/about/policies/attendance-tardy-detention-policies
+2026-02-21 14:41:02,674 | INFO | Queued URL: https://fremontunified.org/washington/students-community/student-support/counseling-overview
+2026-02-21 14:41:02,674 | INFO | Queued URL: https://fremontunified.org/washington/students-community/student-support/college-and-career-resource-center
+2026-02-21 14:41:02,674 | INFO | Queued URL: https://fremontunified.org/about/instructional-services/student-support-services/families-in-need/lgbtq-support-contacts
+2026-02-21 14:41:02,674 | INFO | Queued URL: https://fremontunified.org/washington/wp-content/uploads/sites/8/2023/09/WHS-Map.pdf
+2026-02-21 14:41:03,299 | INFO | Crawling: https://fremontunified.org/washington/about/policies
+2026-02-21 14:41:05,705 | INFO | Status: 200
+2026-02-21 14:41:05,705 | INFO | Visited count: 5
+2026-02-21 14:41:05,779 | INFO | Queued URL: https://fremontunified.org/washington/about/policies/flex-period
+2026-02-21 14:41:05,779 | INFO | Queued URL: https://fremontunified.org/washington/about/policies/maze-day
+2026-02-21 14:41:05,779 | INFO | Queued URL: https://fremontunified.org/washington/about/policies/cell-phone-usage
+2026-02-21 14:41:05,779 | INFO | Queued URL: https://fremontunified.org/washington/about/policies/inifinite-campus-parent-app
+2026-02-21 14:41:05,779 | INFO | Queued URL: https://fremontunified.org/washington/about/policies/student-debt
+2026-02-21 14:41:05,779 | INFO | Queued URL: https://fremontunified.org/washington/about/policies/parking-on-campus
+2026-02-21 14:41:05,779 | INFO | Queued URL: https://fremontunified.org/washington/about/policies/fremont-unified-lunches
+2026-02-21 14:41:05,780 | INFO | Queued URL: https://fremontunified.org/students-community/support/parent-student-handbook
+2026-02-21 14:41:05,780 | INFO | Queued URL: https://fremontunified.org/about/instructional-services/student-support-services/health-services-overview/health-topics-overview/covid-19-overview
+2026-02-21 14:41:05,780 | INFO | Queued URL: https://fremontunified.org/washington/wp-content/uploads/sites/8/2023/09/23-24-Handbook.pdf
+2026-02-21 14:41:05,780 | INFO | Queued URL: https://fremontunified.org/washington/daily-bulletin
+2026-02-21 14:41:06,665 | INFO | Crawling: https://fremontunified.org/washington/students-community/student-support
+2026-02-21 14:41:09,254 | INFO | Status: 200
+2026-02-21 14:41:09,254 | INFO | Visited count: 6
+2026-02-21 14:41:09,306 | INFO | Queued URL: https://fremontunified.org/washington/students-community
+2026-02-21 14:41:09,306 | INFO | Queued URL: https://fremontunified.org/washington/students-community/student-support/washington-school-profile
+2026-02-21 14:41:09,306 | INFO | Queued URL: https://fremontunified.org/washington/students-community/student-support/college-and-career-resource-center/announcements-whs-college-and-career-center
+2026-02-21 14:41:09,306 | INFO | Queued URL: https://fremontunified.org/washington/students-community/student-support/college-and-career-resource-center/college-applications-platforms
+2026-02-21 14:41:09,306 | INFO | Queued URL: https://fremontunified.org/washington/students-community/student-support/college-and-career-resource-center/financial-aid-for-college
+2026-02-21 14:41:09,306 | INFO | Queued URL: https://fremontunified.org/washington/students-community/student-support/college-and-career-resource-center/financial-aid-for-college/scholarships-to-apply-for
+2026-02-21 14:41:09,306 | INFO | Queued URL: https://fremontunified.org/washington/students-community/student-support/college-and-career-resource-center/financial-aid-for-college/scholarships-what-you-need-to-know
+2026-02-21 14:41:09,306 | INFO | Queued URL: https://fremontunified.org/washington/students-community/student-support/college-and-career-resource-center/career-exploration-apprenticeships-and-jobs
+2026-02-21 14:41:09,306 | INFO | Queued URL: https://fremontunified.org/washington/students-community/student-support/college-and-career-resource-center/college-admission-and-research
+2026-02-21 14:41:09,306 | INFO | Queued URL: https://fremontunified.org/washington/students-community/student-support/college-and-career-resource-center/college-athletics
+2026-02-21 14:41:09,306 | INFO | Queued URL: https://fremontunified.org/washington/students-community/student-support/college-and-career-resource-center/community-college-and-junior-transfers
+2026-02-21 14:41:09,306 | INFO | Queued URL: https://fremontunified.org/washington/students-community/student-support/college-and-career-resource-center/fairs-speakers-and-workshops
+2026-02-21 14:41:09,306 | INFO | Queued URL: https://fremontunified.org/washington/students-community/student-support/college-and-career-resource-center/mvrop-career-technical-education
+2026-02-21 14:41:09,306 | INFO | Queued URL: https://fremontunified.org/washington/students-community/student-support/college-and-career-resource-center/ohlone-college-a-ccc-and-concurrent-enrollment
+2026-02-21 14:41:09,306 | INFO | Queued URL: https://fremontunified.org/washington/students-community/student-support/college-and-career-resource-center/program-major-and-career-spotlights
+2026-02-21 14:41:09,306 | INFO | Queued URL: https://fremontunified.org/washington/students-community/student-support/college-and-career-resource-center/senior-awards-night
+2026-02-21 14:41:09,307 | INFO | Queued URL: https://fremontunified.org/washington/students-community/student-support/college-and-career-resource-center/summer-year-round-programs-internships-volunteer-work-opportunities
+2026-02-21 14:41:09,307 | INFO | Queued URL: https://fremontunified.org/washington/students-community/student-support/college-and-career-resource-center/undocumented-students-foster-youth-and-visa-holders
+2026-02-21 14:41:09,307 | INFO | Queued URL: https://fremontunified.org/washington/students-community/student-support/college-and-career-resource-center/u-s-military-and-selective-service
+2026-02-21 14:41:09,307 | INFO | Queued URL: https://fremontunified.org/washington/students-community/student-support/college-and-career-resource-center/work-permits-for-students
+2026-02-21 14:41:09,307 | INFO | Queued URL: https://fremontunified.org/washington/students-community/student-support/community-service-learning-deadlines
+2026-02-21 14:41:09,307 | INFO | Queued URL: https://fremontunified.org/washington/students-community/student-support/community-service-learning-deadlines/opportunities-for-community-service
+2026-02-21 14:41:09,307 | INFO | Queued URL: https://fremontunified.org/washington/students-community/student-support/community-service-learning-deadlines/community-service-hours-verification-form
+2026-02-21 14:41:09,307 | INFO | Queued URL: https://fremontunified.org/washington/students-community/student-support/link-crew
+2026-02-21 14:41:09,307 | INFO | Queued URL: https://fremontunified.org/washington/students-community/student-support/yearbook-promo-video
+2026-02-21 14:41:09,307 | INFO | Queued URL: https://fremontunified.org/washington/students-community/student-support/gate-honors-information-ap-courses
+2026-02-21 14:41:09,307 | INFO | Queued URL: https://fremontunified.org/washington/students-community/student-support/school-resource-officer-sro-program
+2026-02-21 14:41:09,307 | INFO | Queued URL: https://fremontunified.org/washington/students-community/student-support/peer-resource
+2026-02-21 14:41:09,307 | INFO | Queued URL: https://fremontunified.org/washington/students-community/student-support/making-up-homework
+2026-02-21 14:41:09,307 | INFO | Queued URL: https://fremontunified.org/washington/students-community/student-support/tutoring
+2026-02-21 14:41:09,307 | INFO | Queued URL: https://fremontunified.org/washington/students-community/student-support/study-skills-and-cornell-notes
+2026-02-21 14:41:09,307 | INFO | Queued URL: https://fremontunified.org/washington/students-community/student-support/test-taking-strategies
+2026-02-21 14:41:09,307 | INFO | Queued URL: https://fremontunified.org/washington/student-and-parent-links/attendance-tardy-detention-policies
+2026-02-21 14:41:09,307 | INFO | Queued URL: https://fremontunified.org/washington/departments-overview/community-service-learning-deadlines/opportunities-for-community-service
+2026-02-21 14:41:09,307 | INFO | Queued URL: https://fremontunified.org/washington/departments-overview/community-service-learning-deadlines/community-service-hours-verification-form
+2026-02-21 14:41:09,307 | INFO | Queued URL: https://fremontunified.org/washington/student-and-parent-links/gate-honors-information-ap-courses
+2026-02-21 14:41:09,307 | INFO | Queued URL: https://fremontunified.org/washington/student-and-parent-links/link-crew
+2026-02-21 14:41:09,308 | INFO | Queued URL: https://fremontunified.org/washington/student-and-parent-links/parking-on-campus
+2026-02-21 14:41:09,308 | INFO | Queued URL: https://fremontunified.org/washington/student-and-parent-links/cell-phone-usage
+2026-02-21 14:41:09,308 | INFO | Queued URL: https://fremontunified.org/washington/student-and-parent-links/fremont-unified-lunches
+2026-02-21 14:41:09,308 | INFO | Queued URL: https://fremontunified.org/washington/student-and-parent-links/yearbook-promo-video
+2026-02-21 14:41:09,308 | INFO | Queued URL: https://fremontunified.org/washington/student-and-parent-links/student-debt
+2026-02-21 14:41:09,308 | INFO | Queued URL: https://fremontunified.org/washington/departments-overview/multimedia-art-academy
+2026-02-21 14:41:09,308 | INFO | Queued URL: https://fremontunified.org/washington/students-community/activities-athletics/athletics
+2026-02-21 14:41:09,308 | INFO | Queued URL: https://fremontunified.org/washington/departments-overview/avid
+2026-02-21 14:41:09,308 | INFO | Queued URL: https://fremontunified.org/washington/student-and-parent-links/peer-resource
+2026-02-21 14:41:09,308 | INFO | Queued URL: https://fremontunified.org/washington/student-and-parent-links/committees
+2026-02-21 14:41:09,308 | INFO | Queued URL: https://fremontunified.org/washington/student-and-parent-links/school-site-council
+2026-02-21 14:41:09,308 | INFO | Queued URL: https://fremontunified.org/washington/student-and-parent-links/alumni
+2026-02-21 14:41:09,890 | INFO | Crawling: https://fremontunified.org/washington/students-community/departments
+2026-02-21 14:41:12,372 | INFO | Status: 200
+2026-02-21 14:41:12,373 | INFO | Visited count: 7
+2026-02-21 14:41:12,426 | INFO | Queued URL: https://fremontunified.org/washington/students-community/departments/student-newspaper-of-washington-high-school
+2026-02-21 14:41:12,426 | INFO | Queued URL: https://fremontunified.org/washington/students-community/departments/rop-at-washington
+2026-02-21 14:41:12,426 | INFO | Queued URL: https://fremontunified.org/washington/students-community/departments/rop-at-washington/auto-shop
+2026-02-21 14:41:12,426 | INFO | Queued URL: https://fremontunified.org/washington/students-community/departments/business
+2026-02-21 14:41:12,426 | INFO | Queued URL: https://fremontunified.org/washington/students-community/departments/english
+2026-02-21 14:41:12,426 | INFO | Queued URL: https://fremontunified.org/washington/students-community/departments/english-language-development
+2026-02-21 14:41:12,426 | INFO | Queued URL: https://fremontunified.org/washington/students-community/departments/fine-arts
+2026-02-21 14:41:12,426 | INFO | Queued URL: https://fremontunified.org/washington/students-community/departments/fine-arts/music
+2026-02-21 14:41:12,426 | INFO | Queued URL: https://fremontunified.org/washington/students-community/departments/health
+2026-02-21 14:41:12,426 | INFO | Queued URL: https://fremontunified.org/washington/students-community/departments/mathematics
+2026-02-21 14:41:12,426 | INFO | Queued URL: https://fremontunified.org/washington/students-community/departments/physical-education
+2026-02-21 14:41:12,426 | INFO | Queued URL: https://fremontunified.org/washington/students-community/departments/science
+2026-02-21 14:41:12,426 | INFO | Queued URL: https://fremontunified.org/washington/students-community/departments/social-science
+2026-02-21 14:41:12,426 | INFO | Queued URL: https://fremontunified.org/washington/students-community/departments/special-education
+2026-02-21 14:41:12,426 | INFO | Queued URL: https://fremontunified.org/washington/students-community/departments/avid
+2026-02-21 14:41:12,426 | INFO | Queued URL: https://fremontunified.org/washington/students-community/departments/multimedia-art-academy
+2026-02-21 14:41:12,426 | INFO | Queued URL: https://fremontunified.org/washington/students-community/departments/world-languages
+2026-02-21 14:41:12,426 | INFO | Queued URL: https://fremontunified.org/washington/students-community/departments/world-languages/spanish
+2026-02-21 14:41:12,426 | INFO | Queued URL: https://fremontunified.org/washington/students-community/departments/world-languages/chinese
+2026-02-21 14:41:12,426 | INFO | Queued URL: https://fremontunified.org/washington/students-community/departments/world-languages/french
+2026-02-21 14:41:13,218 | INFO | Crawling: https://fremontunified.org/washington/students-community/activities-athletics
+2026-02-21 14:41:15,680 | INFO | Status: 200
+2026-02-21 14:41:15,681 | INFO | Visited count: 8
+2026-02-21 14:41:15,737 | INFO | Queued URL: https://fremontunified.org/washington/students-community/activities-athletics/athletics/athletic-participation-forms
+2026-02-21 14:41:15,737 | INFO | Queued URL: https://fremontunified.org/washington/students-community/activities-athletics/athletics/athletic-directors-contact-info
+2026-02-21 14:41:15,737 | INFO | Queued URL: https://fremontunified.org/washington/students-community/activities-athletics/athletics/eligibility-mval-ncaa
+2026-02-21 14:41:15,737 | INFO | Queued URL: https://fremontunified.org/washington/students-community/activities-athletics/athletics/forms-coaches-volunteers-clubs
+2026-02-21 14:41:15,737 | INFO | Queued URL: https://fremontunified.org/washington/students-community/activities-athletics/athletics/open-coaching-positions
+2026-02-21 14:41:15,737 | INFO | Queued URL: https://fremontunified.org/washington/students-community/activities-athletics/athletics/transfer-info
+2026-02-21 14:41:15,737 | INFO | Queued URL: https://fremontunified.org/washington/students-community/activities-athletics/athletics/letterman-jacket-info
+2026-02-21 14:41:15,737 | INFO | Queued URL: https://fremontunified.org/washington/students-community/activities-athletics/athletics/white-sweater-award
+2026-02-21 14:41:15,737 | INFO | Queued URL: https://fremontunified.org/washington/students-community/activities-athletics/athletics/whs-boosters
+2026-02-21 14:41:15,737 | INFO | Queued URL: https://fremontunified.org/washington/students-community/activities-athletics/athletics/baseball
+2026-02-21 14:41:15,737 | INFO | Queued URL: https://fremontunified.org/washington/students-community/activities-athletics/athletics/badminton
+2026-02-21 14:41:15,737 | INFO | Queued URL: https://fremontunified.org/washington/students-community/activities-athletics/athletics/basketball-boys
+2026-02-21 14:41:15,737 | INFO | Queued URL: https://fremontunified.org/washington/students-community/activities-athletics/athletics/basketball-girls
+2026-02-21 14:41:15,737 | INFO | Queued URL: https://fremontunified.org/washington/students-community/activities-athletics/athletics/cheerleading-all-seasons
+2026-02-21 14:41:15,737 | INFO | Queued URL: https://fremontunified.org/washington/students-community/activities-athletics/athletics/cross-country
+2026-02-21 14:41:15,737 | INFO | Queued URL: https://fremontunified.org/washington/students-community/activities-athletics/athletics/football
+2026-02-21 14:41:15,737 | INFO | Queued URL: https://fremontunified.org/washington/students-community/activities-athletics/athletics/golf
+2026-02-21 14:41:15,737 | INFO | Queued URL: https://fremontunified.org/washington/students-community/activities-athletics/athletics/golf-girls
+2026-02-21 14:41:15,737 | INFO | Queued URL: https://fremontunified.org/washington/students-community/activities-athletics/athletics/lacrosse
+2026-02-21 14:41:15,737 | INFO | Queued URL: https://fremontunified.org/washington/students-community/activities-athletics/athletics/soccer-boys
+2026-02-21 14:41:15,737 | INFO | Queued URL: https://fremontunified.org/washington/students-community/activities-athletics/athletics/soccer-girls
+2026-02-21 14:41:15,738 | INFO | Queued URL: https://fremontunified.org/washington/students-community/activities-athletics/athletics/softball
+2026-02-21 14:41:15,738 | INFO | Queued URL: https://fremontunified.org/washington/students-community/activities-athletics/athletics/swimming
+2026-02-21 14:41:15,738 | INFO | Queued URL: https://fremontunified.org/washington/students-community/activities-athletics/athletics/tennis-boys
+2026-02-21 14:41:15,738 | INFO | Queued URL: https://fremontunified.org/washington/students-community/activities-athletics/athletics/tennis-girls
+2026-02-21 14:41:15,738 | INFO | Queued URL: https://fremontunified.org/washington/students-community/activities-athletics/athletics/track-field
+2026-02-21 14:41:15,738 | INFO | Queued URL: https://fremontunified.org/washington/students-community/activities-athletics/athletics/volleyball-boys
+2026-02-21 14:41:15,738 | INFO | Queued URL: https://fremontunified.org/washington/students-community/activities-athletics/athletics/volleyball-girls
+2026-02-21 14:41:15,738 | INFO | Queued URL: https://fremontunified.org/washington/students-community/activities-athletics/athletics/water-polo
+2026-02-21 14:41:15,738 | INFO | Queued URL: https://fremontunified.org/washington/students-community/activities-athletics/athletics/wrestling
+2026-02-21 14:41:15,738 | INFO | Queued URL: https://fremontunified.org/washington/students-community/activities-athletics/activities-leadership-asb/clubs-info
+2026-02-21 14:41:16,248 | INFO | Crawling: https://fremontunified.org/washington/students-community/connections
+2026-02-21 14:41:18,866 | INFO | Status: 200
+2026-02-21 14:41:18,867 | INFO | Visited count: 9
+2026-02-21 14:41:18,919 | INFO | Queued URL: https://fremontunified.org/washington/students-community/connections/title-i-program
+2026-02-21 14:41:18,919 | INFO | Queued URL: https://fremontunified.org/washington/students-community/connections/committees
+2026-02-21 14:41:18,919 | INFO | Queued URL: https://fremontunified.org/washington/students-community/connections/school-site-council
+2026-02-21 14:41:18,919 | INFO | Queued URL: https://fremontunified.org/washington/students-community/connections/english-learner-advisory-committee-elac
+2026-02-21 14:41:18,919 | INFO | Queued URL: https://fremontunified.org/washington/students-community/connections/english-learner-advisory-committee-elac/elac-meeting-notes-notas-de-la-reunion
+2026-02-21 14:41:18,919 | INFO | Queued URL: https://fremontunified.org/washington/students-community/connections/alumni
+2026-02-21 14:41:18,919 | INFO | Queued URL: https://fremontunified.org/washington/students-community/connections/donate-to-washington
+2026-02-21 14:41:20,017 | INFO | Crawling: https://fremontunified.org/washington/schedule-news/schedule
+2026-02-21 14:41:22,423 | INFO | Status: 200
+2026-02-21 14:41:22,424 | INFO | Visited count: 10
+2026-02-21 14:41:22,464 | INFO | Queued URL: https://fremontunified.org/washington/schedule-news
+2026-02-21 14:41:22,464 | INFO | Queued URL: https://fremontunified.org/washington/wp-content/uploads/sites/8/2025/10/WHS-Bell-Schedule-25.26.pdf
+2026-02-21 14:41:23,170 | INFO | Crawling: https://fremontunified.org/washington/schedule-news/calendar
+2026-02-21 14:41:25,517 | INFO | Status: 200
+2026-02-21 14:41:25,517 | INFO | Visited count: 11
+2026-02-21 14:41:26,623 | INFO | Crawling: https://fremontunified.org/washington/schedule-news/news
+2026-02-21 14:41:29,088 | INFO | Status: 200
+2026-02-21 14:41:29,088 | INFO | Visited count: 12
+2026-02-21 14:41:29,146 | INFO | Queued URL: https://fremontunified.org/washington/schedule-news/news/paged-3/2
+2026-02-21 14:41:29,146 | INFO | Queued URL: https://fremontunified.org/washington/schedule-news/news/paged-3/3
+2026-02-21 14:41:29,146 | INFO | Queued URL: https://fremontunified.org/washington/schedule-news/news/paged-3/17
+2026-02-21 14:41:30,029 | INFO | Crawling: https://fremontunified.org/washington/schedule-news/events
+2026-02-21 14:41:32,469 | INFO | Status: 200
+2026-02-21 14:41:32,469 | INFO | Visited count: 13
+2026-02-21 14:41:32,497 | INFO | Queued URL: https://fremontunified.org/washington/schedule-news/events/past-events
+2026-02-21 14:41:33,459 | INFO | Crawling: https://fremontunified.org/meals
+2026-02-21 14:41:34,936 | INFO | Status: 200
+2026-02-21 14:41:34,937 | INFO | Visited count: 14
+2026-02-21 14:41:35,283 | INFO | Crawling: https://fremontunified.org
+2026-02-21 14:41:37,139 | INFO | Status: 200
+2026-02-21 14:41:37,140 | INFO | Visited count: 15
+2026-02-21 14:41:37,197 | INFO | Queued URL: https://fremontunified.org/about/welcome
+2026-02-21 14:41:37,197 | INFO | Queued URL: https://fremontunified.org/about/board
+2026-02-21 14:41:37,197 | INFO | Queued URL: https://fremontunified.org/about/departments
+2026-02-21 14:41:37,197 | INFO | Queued URL: https://fremontunified.org/students-community/support
+2026-02-21 14:41:37,198 | INFO | Queued URL: https://fremontunified.org/students-community/connections/committees
+2026-02-21 14:41:37,198 | INFO | Queued URL: https://fremontunified.org/about/human-resources/employee-resources
+2026-02-21 14:41:37,198 | INFO | Queued URL: https://fremontunified.org/about/sped-student-support/student-support-services/mental-health-overview
+2026-02-21 14:41:37,198 | INFO | Queued URL: https://fremontunified.org/about/welcome/location-contacts
+2026-02-21 14:41:37,198 | INFO | Queued URL: https://fremontunified.org/students-community/careers
+2026-02-21 14:41:37,198 | INFO | Queued URL: https://fremontunified.org/students-community/support/infinite-campus-faqs
+2026-02-21 14:41:37,199 | INFO | Queued URL: https://fremontunified.org/about/instructional-services/student-support-services/enrollment-registration
+2026-02-21 14:41:37,746 | INFO | Crawling: https://fremontunified.org/about/instructional-services/preschool
+2026-02-21 14:41:41,025 | INFO | Status: 200
+2026-02-21 14:41:41,026 | INFO | Visited count: 16
+2026-02-21 14:41:41,086 | INFO | Queued URL: https://fremontunified.org/about
+2026-02-21 14:41:41,087 | INFO | Queued URL: https://fremontunified.org/about/instructional-services
+2026-02-21 14:41:41,087 | INFO | Queued URL: https://fremontunified.org/about/instructional-services/elementary-education
+2026-02-21 14:41:41,087 | INFO | Queued URL: https://fremontunified.org/about/instructional-services/secondary-education
+2026-02-21 14:41:41,087 | INFO | Queued URL: https://fremontunified.org/about/instructional-services/curriculum-instruction
+2026-02-21 14:41:41,087 | INFO | Queued URL: https://fremontunified.org/about/instructional-services/federal-state-programs
+2026-02-21 14:41:41,087 | INFO | Queued URL: https://fremontunified.org/about/instructional-services/assessment-accountability
+2026-02-21 14:41:41,087 | INFO | Queued URL: https://fremontunified.org/about/instructional-services/preschool/preschool-bell-schedule
+2026-02-21 14:41:41,087 | INFO | Queued URL: https://fremontunified.org/about/instructional-services/extended-school-year-summer-school-information
+2026-02-21 14:41:41,581 | INFO | Crawling: https://fremontunified.org/about/instructional-services/federal-state-programs/dual-immersion
+2026-02-21 14:41:44,462 | INFO | Status: 200
+2026-02-21 14:41:44,463 | INFO | Visited count: 17
+2026-02-21 14:41:44,512 | INFO | Queued URL: https://fremontunified.org/about/instructional-services/federal-state-programs/federal-state-programs-staff-contacts
+2026-02-21 14:41:44,512 | INFO | Queued URL: https://fremontunified.org/about/instructional-services/federal-state-programs/multilingual-learners
+2026-02-21 14:41:44,512 | INFO | Queued URL: https://fremontunified.org/about/instructional-services/federal-state-programs/elop
+2026-02-21 14:41:44,512 | INFO | Queued URL: https://fremontunified.org/about/instructional-services/federal-state-programs/dual-immersion/dual-immersion-enrollment-process
+2026-02-21 14:41:44,512 | INFO | Queued URL: https://fremontunified.org/about/instructional-services/federal-state-programs/dual-immersion/immersion-parent-resources
+2026-02-21 14:41:44,512 | INFO | Queued URL: https://fremontunified.org/about/instructional-services/federal-state-programs/parent-and-family-engagement
+2026-02-21 14:41:44,512 | INFO | Queued URL: https://fremontunified.org/about/instructional-services/federal-state-programs/migrant-education
+2026-02-21 14:41:44,513 | INFO | Queued URL: https://fremontunified.org/about/instructional-services/federal-state-programs/title1
+2026-02-21 14:41:44,513 | INFO | Queued URL: https://fremontunified.org/about/instructional-services/federal-state-programs/teacher-induction-program
+2026-02-21 14:41:44,513 | INFO | Queued URL: https://fremontunified.org/about/instructional-services/federal-state-programs/nasp-program-information
+2026-02-21 14:41:45,268 | INFO | Crawling: https://fremontunified.org/about/departments/instructional-services-overview/special-education-dept/extended-school-year-summer-school-information
+2026-02-21 14:41:48,111 | INFO | Status: 200
+2026-02-21 14:41:48,111 | INFO | Visited count: 18
+2026-02-21 14:41:48,597 | INFO | Crawling: https://fremontunified.org/about/schools
+2026-02-21 14:41:51,752 | INFO | Status: 200
+2026-02-21 14:41:51,753 | INFO | Visited count: 19
+2026-02-21 14:41:51,817 | INFO | Queued URL: https://fremontunified.org/about/schools/award-winning-schools-directory
+2026-02-21 14:41:51,817 | INFO | Queued URL: https://fremontunified.org/about/schools/mascots
+2026-02-21 14:41:51,817 | INFO | Queued URL: https://fremontunified.org/about/superintendent
+2026-02-21 14:41:51,817 | INFO | Queued URL: https://fremontunified.org/about/sped-student-support
+2026-02-21 14:41:51,817 | INFO | Queued URL: https://fremontunified.org/about/business-services
+2026-02-21 14:41:51,817 | INFO | Queued URL: https://fremontunified.org/about/operations
+2026-02-21 14:41:51,818 | INFO | Queued URL: https://fremontunified.org/about/human-resources
+2026-02-21 14:41:52,321 | INFO | Crawling: https://fremontunified.org/washington/about/office/registration-overview
+2026-02-21 14:41:55,622 | INFO | Status: 200
+2026-02-21 14:41:55,622 | INFO | Visited count: 20
+2026-02-21 14:41:55,705 | INFO | Queued URL: https://fremontunified.org/washington/about/registration-overview/registration-materials-and-information
+2026-02-21 14:41:55,705 | INFO | Queued URL: https://fremontunified.org/washington/about/registration-overview/transcript-information
+2026-02-21 14:41:55,705 | INFO | Queued URL: https://fremontunified.org/washington/about/registration-overview/education-verification-information
+2026-02-21 14:41:55,705 | INFO | Queued URL: https://fremontunified.org/washington/about/registration-overview/withdrawal-information
+2026-02-21 14:41:55,705 | INFO | Queued URL: https://fremontunified.org/washington/about/registration-overview/alumni-high-school-diploma
+2026-02-21 14:41:55,705 | INFO | Queued URL: https://fremontunified.org/about/sped-student-support/student-support-services/enrollment-registration
+2026-02-21 14:41:55,705 | INFO | Queued URL: https://fremontunified.org/about/departments/instructional-services-overview/student-support-services-dept/enrollment-registration/immunization-requirements
+2026-02-21 14:41:56,074 | INFO | Crawling: https://fremontunified.org/students-community/connections
+2026-02-21 14:41:58,861 | INFO | Status: 200
+2026-02-21 14:41:58,863 | INFO | Visited count: 21
+2026-02-21 14:41:58,912 | INFO | Queued URL: https://fremontunified.org/students-community
+2026-02-21 14:41:58,912 | INFO | Queued URL: https://fremontunified.org/students-community/connections/committees/join-committee
+2026-02-21 14:41:58,912 | INFO | Queued URL: https://fremontunified.org/students-community/connections/committees/public-participation
+2026-02-21 14:41:58,912 | INFO | Queued URL: https://fremontunified.org/students-community/connections/committees/bfaac
+2026-02-21 14:41:58,912 | INFO | Queued URL: https://fremontunified.org/students-community/connections/committees/cboc
+2026-02-21 14:41:58,912 | INFO | Queued URL: https://fremontunified.org/students-community/connections/committees/fac
+2026-02-21 14:41:58,913 | INFO | Queued URL: https://fremontunified.org/about/board/fusd-city-council-meetings
+2026-02-21 14:41:58,913 | INFO | Queued URL: https://fremontunified.org/students-community/connections/committees/lcaac
+2026-02-21 14:41:58,913 | INFO | Queued URL: https://fremontunified.org/students-community/connections/committees/wellness
+2026-02-21 14:41:58,913 | INFO | Queued URL: https://fremontunified.org/students-community/connections/committees/superintendent
+2026-02-21 14:41:58,913 | INFO | Queued URL: https://fremontunified.org/students-community/connections/committees/superintendent/aapac
+2026-02-21 14:41:58,913 | INFO | Queued URL: https://fremontunified.org/students-community/connections/committees/superintendent/ciac
+2026-02-21 14:41:58,913 | INFO | Queued URL: https://fremontunified.org/students-community/connections/committees/superintendent/equity
+2026-02-21 14:41:58,913 | INFO | Queued URL: https://fremontunified.org/about/instructional-services/special-education/special-education-district-advisory-committee-overview
+2026-02-21 14:41:58,913 | INFO | Queued URL: https://fremontunified.org/students-community/connections/committees/superintendent/smh
+2026-02-21 14:41:58,913 | INFO | Queued URL: https://fremontunified.org/students-community/connections/committees/superintendent/tic
+2026-02-21 14:41:58,913 | INFO | Queued URL: https://fremontunified.org/students-community/connections/committees/interagency
+2026-02-21 14:41:58,913 | INFO | Queued URL: https://fremontunified.org/about/instructional-services/federal-state-programs/multilingual-learners/delac-overview
+2026-02-21 14:41:58,913 | INFO | Queued URL: https://fremontunified.org/students-community/connections/committees/interagency/mip-sdi-task-force
+2026-02-21 14:41:58,913 | INFO | Queued URL: https://fremontunified.org/students-community/connections/committees/archive
+2026-02-21 14:41:58,913 | INFO | Queued URL: https://fremontunified.org/students-community/connections/committees/archive/renaming-valhalla-theater
+2026-02-21 14:41:58,913 | INFO | Queued URL: https://fremontunified.org/students-community/connections/committees/archive/measure-i-committee
+2026-02-21 14:41:58,913 | INFO | Queued URL: https://fremontunified.org/students-community/connections/committees/archive/7-11-committee-overview
+2026-02-21 14:41:58,913 | INFO | Queued URL: https://fremontunified.org/students-community/connections/committees/archive/7-11-committee-overview/community-forums
+2026-02-21 14:41:58,913 | INFO | Queued URL: https://fremontunified.org/students-community/connections/committees/archive/closed-comprehensive-health-puberty-and-sexuality-education-task-force
+2026-02-21 14:41:58,913 | INFO | Queued URL: https://fremontunified.org/students-community/connections/volunteer-opportunities
+2026-02-21 14:41:58,913 | INFO | Queued URL: https://fremontunified.org/students-community/connections/giving-to-fusd
+2026-02-21 14:41:58,913 | INFO | Queued URL: https://fremontunified.org/students-community/connections/maintaining-excellent
+2026-02-21 14:41:58,914 | INFO | Queued URL: https://fremontunified.org/about/superintendent/public-information/channels-content/flyer-distribution-peachjar
+2026-02-21 14:41:58,914 | INFO | Queued URL: https://fremontunified.org/about/business-services/accounting-services/community-services-dept-facility-use-rentals
+2026-02-21 14:41:59,587 | INFO | Crawling: https://fremontunified.org/washington/about
+2026-02-21 14:42:01,903 | INFO | Status: 200
+2026-02-21 14:42:01,903 | INFO | Visited count: 22
+2026-02-21 14:42:02,617 | INFO | Crawling: https://fremontunified.org/washington/about/welcome/principals-message
+2026-02-21 14:42:05,010 | INFO | Status: 200
+2026-02-21 14:42:05,011 | INFO | Visited count: 23
+2026-02-21 14:42:05,915 | INFO | Crawling: https://fremontunified.org/washington/about/welcome/our-history
+2026-02-21 14:42:08,361 | INFO | Status: 200
+2026-02-21 14:42:08,362 | INFO | Visited count: 24
+2026-02-21 14:42:08,932 | INFO | Crawling: https://fremontunified.org/washington/about/registration-overview
+2026-02-21 14:42:11,304 | INFO | Status: 200
+2026-02-21 14:42:11,304 | INFO | Visited count: 25
+2026-02-21 14:42:12,041 | INFO | Crawling: https://fremontunified.org/washington/about/policies/attendance-tardy-detention-policies
+2026-02-21 14:42:14,474 | INFO | Status: 200
+2026-02-21 14:42:14,474 | INFO | Visited count: 26
+2026-02-21 14:42:14,895 | INFO | Crawling: https://fremontunified.org/washington/students-community/student-support/counseling-overview
+2026-02-21 14:42:17,186 | INFO | Status: 200
+2026-02-21 14:42:17,186 | INFO | Visited count: 27
+2026-02-21 14:42:17,560 | INFO | Crawling: https://fremontunified.org/washington/students-community/student-support/college-and-career-resource-center
+2026-02-21 14:42:20,072 | INFO | Status: 200
+2026-02-21 14:42:20,072 | INFO | Visited count: 28
+2026-02-21 14:42:20,159 | INFO | Queued URL: https://fremontunified.org/washington/departments-overview/whs-college-and-career-resource-center-homepage/work-permits-for-students
+2026-02-21 14:42:20,159 | INFO | Queued URL: https://fremontunified.org/washington/departments-overview/whs-college-and-career-resource-center-homepage/mvrop-career-technical-education
+2026-02-21 14:42:20,160 | INFO | Queued URL: https://fremontunified.org/washington/departments-overview/whs-college-and-career-resource-center-homepage/financial-aid-for-college/scholarships-what-you-need-to-know
+2026-02-21 14:42:20,160 | INFO | Queued URL: https://fremontunified.org/washington/departments-overview/whs-college-and-career-resource-center-homepage/summer-year-round-programs-internships-volunteer-work-opportunities
+2026-02-21 14:42:20,160 | INFO | Queued URL: https://fremontunified.org/washington/departments-overview/whs-college-and-career-resource-center-homepage/u-s-military-and-selective-service
+2026-02-21 14:42:20,160 | INFO | Queued URL: https://fremontunified.org/washington/departments-overview/athletics-overview/eligibility-mval-ncaa
+2026-02-21 14:42:20,880 | INFO | Crawling: https://fremontunified.org/about/instructional-services/student-support-services/families-in-need/lgbtq-support-contacts
+2026-02-21 14:42:23,590 | INFO | Status: 200
+2026-02-21 14:42:23,591 | INFO | Visited count: 29
+2026-02-21 14:42:23,702 | INFO | Queued URL: https://fremontunified.org/about/sped-student-support/student-support-services
+2026-02-21 14:42:23,702 | INFO | Queued URL: https://fremontunified.org/about/sped-student-support/student-support-services/families-in-need
+2026-02-21 14:42:23,702 | INFO | Queued URL: https://fremontunified.org/about/sped-student-support/student-support-services/families-in-need/income-tax-filing-assistance-fremont-vita
+2026-02-21 14:42:23,702 | INFO | Queued URL: https://fremontunified.org/about/sped-student-support/student-support-services/families-in-need/homeless-and-foster-youth-support-mckinney-vento-act
+2026-02-21 14:42:23,702 | INFO | Queued URL: https://fremontunified.org/about/sped-student-support/student-support-services/families-in-need/lgbtq-support-contacts
+2026-02-21 14:42:23,702 | INFO | Queued URL: https://fremontunified.org/about/sped-student-support/student-support-services/families-in-need/date-safe-safe-alternatives-to-violent-environments
+2026-02-21 14:42:23,702 | INFO | Queued URL: https://fremontunified.org/about/sped-student-support/student-support-services/families-in-need/resources-to-help-prevent-bullying
+2026-02-21 14:42:23,702 | INFO | Queued URL: https://fremontunified.org/about/sped-student-support/student-support-services/families-in-need/drug-information
+2026-02-21 14:42:23,702 | INFO | Queued URL: https://fremontunified.org/about/sped-student-support/student-support-services/families-in-need/resources-to-help-prevent-human-trafficking
+2026-02-21 14:42:23,702 | INFO | Queued URL: https://fremontunified.org/about/sped-student-support/student-support-services/families-in-need/basic-needs-food-financial-shelter-medical-others
+2026-02-21 14:42:23,703 | INFO | Queued URL: https://fremontunified.org/about/instructional-services/student-support-services/families-in-need/wstallworth@fusdk12.net
+2026-02-21 14:42:23,703 | INFO | Queued URL: https://fremontunified.org/about/instructional-services/student-support-services/mental-health-overview
+2026-02-21 14:42:24,447 | INFO | Crawling: https://fremontunified.org/washington/wp-content/uploads/sites/8/2023/09/WHS-Map.pdf
+2026-02-21 14:42:24,571 | INFO | Status: 200
+2026-02-21 14:42:24,572 | INFO | Visited count: 30
+2026-02-21 14:42:25,241 | INFO | Crawling: https://fremontunified.org/washington/about/policies/flex-period
+2026-02-21 14:42:27,650 | INFO | Status: 200
+2026-02-21 14:42:27,651 | INFO | Visited count: 31
+2026-02-21 14:42:28,186 | INFO | Crawling: https://fremontunified.org/washington/about/policies/maze-day
+2026-02-21 14:42:30,500 | INFO | Status: 200
+2026-02-21 14:42:30,501 | INFO | Visited count: 32
+2026-02-21 14:42:30,552 | INFO | Queued URL: https://fremontunified.org/students-community/support/portals
+2026-02-21 14:42:31,568 | INFO | Crawling: https://fremontunified.org/washington/about/policies/cell-phone-usage
+2026-02-21 14:42:33,966 | INFO | Status: 200
+2026-02-21 14:42:33,967 | INFO | Visited count: 33
+2026-02-21 14:42:34,448 | INFO | Crawling: https://fremontunified.org/washington/about/policies/inifinite-campus-parent-app
+2026-02-21 14:42:36,922 | INFO | Status: 200
+2026-02-21 14:42:36,922 | INFO | Visited count: 34
+2026-02-21 14:42:37,512 | INFO | Crawling: https://fremontunified.org/washington/about/policies/student-debt
+2026-02-21 14:42:39,960 | INFO | Status: 200
+2026-02-21 14:42:39,961 | INFO | Visited count: 35
+2026-02-21 14:42:41,038 | INFO | Crawling: https://fremontunified.org/washington/about/policies/parking-on-campus
+2026-02-21 14:42:43,593 | INFO | Status: 200
+2026-02-21 14:42:43,593 | INFO | Visited count: 36
+2026-02-21 14:42:44,893 | INFO | Crawling: https://fremontunified.org/washington/about/policies/fremont-unified-lunches
+2026-02-21 14:42:47,336 | INFO | Status: 200
+2026-02-21 14:42:47,336 | INFO | Visited count: 37
+2026-02-21 14:42:48,010 | INFO | Crawling: https://fremontunified.org/students-community/support/parent-student-handbook
+2026-02-21 14:42:50,697 | INFO | Status: 200
+2026-02-21 14:42:50,698 | INFO | Visited count: 38
+2026-02-21 14:42:50,782 | INFO | Queued URL: https://fremontunified.org/students-community/support/parent-student-handbook/parent-guardian-student-handbook
+2026-02-21 14:42:50,782 | INFO | Queued URL: https://fremontunified.org/students-community/support/parent-student-handbook/parent-guardian-student-handbook-spanish
+2026-02-21 14:42:50,782 | INFO | Queued URL: https://fremontunified.org/students-community/support/parent-student-handbook/parent-guardian-student-handbook-chinese
+2026-02-21 14:42:50,782 | INFO | Queued URL: https://fremontunified.org/students-community/support/ac-transit-information
+2026-02-21 14:42:51,851 | INFO | Crawling: https://fremontunified.org/about/instructional-services/student-support-services/health-services-overview/health-topics-overview/covid-19-overview
+2026-02-21 14:42:54,654 | INFO | Status: 200
+2026-02-21 14:42:54,655 | INFO | Visited count: 39
+2026-02-21 14:42:54,706 | INFO | Queued URL: https://fremontunified.org/about/sped-student-support/student-support-services/health-services-overview
+2026-02-21 14:42:54,706 | INFO | Queued URL: https://fremontunified.org/about/sped-student-support/student-support-services/health-services-overview/health-topics-overview
+2026-02-21 14:42:54,706 | INFO | Queued URL: https://fremontunified.org/about/sped-student-support/student-support-services/health-services-overview/health-topics-overview/covid-19-overview
+2026-02-21 14:42:55,356 | INFO | Crawling: https://fremontunified.org/washington/wp-content/uploads/sites/8/2023/09/23-24-Handbook.pdf
+2026-02-21 14:42:55,494 | INFO | Status: 200
+2026-02-21 14:42:55,495 | INFO | Visited count: 40
+2026-02-21 14:42:56,390 | INFO | Crawling: https://fremontunified.org/washington/daily-bulletin
+2026-02-21 14:42:57,619 | INFO | Status: 404
+2026-02-21 14:42:57,619 | ERROR | Failed request: https://fremontunified.org/washington/daily-bulletin -> Client error '404 Not Found' for url 'https://fremontunified.org/washington/daily-bulletin'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+2026-02-21 14:42:57,619 | INFO | Crawling: https://fremontunified.org/washington/students-community
+2026-02-21 14:43:00,282 | INFO | Status: 200
+2026-02-21 14:43:00,282 | INFO | Visited count: 41
+2026-02-21 14:43:00,887 | INFO | Crawling: https://fremontunified.org/washington/students-community/student-support/washington-school-profile
+2026-02-21 14:43:03,311 | INFO | Status: 200
+2026-02-21 14:43:03,312 | INFO | Visited count: 42
+2026-02-21 14:43:03,361 | INFO | Queued URL: https://fremontunified.org/washington/wp-content/uploads/sites/8/2025/10/Washington-2025-2026-School-Profile.pdf
+2026-02-21 14:43:03,362 | INFO | Queued URL: https://fremontunified.org/washington/wp-content/uploads/sites/8/2025/10/Washington-2024-2025-School-Profile.pdf
+2026-02-21 14:43:03,362 | INFO | Queued URL: https://fremontunified.org/washington/wp-content/uploads/sites/8/2025/10/Washington-2023-2024-School-Profile.pdf
+2026-02-21 14:43:03,362 | INFO | Queued URL: https://fremontunified.org/washington/wp-content/uploads/sites/8/2025/10/Washington-2022-2023-School-Profile.pdf
+2026-02-21 14:43:03,894 | INFO | Crawling: https://fremontunified.org/washington/students-community/student-support/college-and-career-resource-center/announcements-whs-college-and-career-center
+2026-02-21 14:43:06,461 | INFO | Status: 200
+2026-02-21 14:43:06,462 | INFO | Visited count: 43
+2026-02-21 14:43:07,504 | INFO | Crawling: https://fremontunified.org/washington/students-community/student-support/college-and-career-resource-center/college-applications-platforms
+2026-02-21 14:43:10,129 | INFO | Status: 200
+2026-02-21 14:43:10,130 | INFO | Visited count: 44
+2026-02-21 14:43:11,156 | INFO | Crawling: https://fremontunified.org/washington/students-community/student-support/college-and-career-resource-center/financial-aid-for-college
+2026-02-21 14:43:13,622 | INFO | Status: 200
+2026-02-21 14:43:13,623 | INFO | Visited count: 45
+2026-02-21 14:43:14,519 | INFO | Crawling: https://fremontunified.org/washington/students-community/student-support/college-and-career-resource-center/financial-aid-for-college/scholarships-to-apply-for
+2026-02-21 14:43:16,997 | INFO | Status: 200
+2026-02-21 14:43:16,997 | INFO | Visited count: 46
+2026-02-21 14:43:17,969 | INFO | Crawling: https://fremontunified.org/washington/students-community/student-support/college-and-career-resource-center/financial-aid-for-college/scholarships-what-you-need-to-know
+2026-02-21 14:43:20,346 | INFO | Status: 200
+2026-02-21 14:43:20,347 | INFO | Visited count: 47
+2026-02-21 14:43:21,078 | INFO | Crawling: https://fremontunified.org/washington/students-community/student-support/college-and-career-resource-center/career-exploration-apprenticeships-and-jobs
+2026-02-21 14:43:23,470 | INFO | Status: 200
+2026-02-21 14:43:23,470 | INFO | Visited count: 48
+2026-02-21 14:43:24,168 | INFO | Crawling: https://fremontunified.org/washington/students-community/student-support/college-and-career-resource-center/college-admission-and-research
+2026-02-21 14:43:26,586 | INFO | Status: 200
+2026-02-21 14:43:26,587 | INFO | Visited count: 49
+2026-02-21 14:43:26,642 | INFO | Queued URL: https://fremontunified.org/about/instructional-services/assessment-accountability/psat-sat
+2026-02-21 14:43:27,728 | INFO | Crawling: https://fremontunified.org/washington/students-community/student-support/college-and-career-resource-center/college-athletics
+2026-02-21 14:43:30,258 | INFO | Status: 200
+2026-02-21 14:43:30,259 | INFO | Visited count: 50
+2026-02-21 14:43:30,309 | INFO | Queued URL: https://fremontunified.org/washington/departments/athletics/eligibility-mval-ncaa
+2026-02-21 14:43:30,994 | INFO | Crawling: https://fremontunified.org/washington/students-community/student-support/college-and-career-resource-center/community-college-and-junior-transfers
+2026-02-21 14:43:33,446 | INFO | Status: 200
+2026-02-21 14:43:33,446 | INFO | Visited count: 51
+2026-02-21 14:43:34,160 | INFO | Crawling: https://fremontunified.org/washington/students-community/student-support/college-and-career-resource-center/fairs-speakers-and-workshops
+2026-02-21 14:43:36,641 | INFO | Status: 200
+2026-02-21 14:43:36,643 | INFO | Visited count: 52
+2026-02-21 14:43:37,793 | INFO | Crawling: https://fremontunified.org/washington/students-community/student-support/college-and-career-resource-center/mvrop-career-technical-education
+2026-02-21 14:43:40,343 | INFO | Status: 200
+2026-02-21 14:43:40,343 | INFO | Visited count: 53
+2026-02-21 14:43:41,004 | INFO | Crawling: https://fremontunified.org/washington/students-community/student-support/college-and-career-resource-center/ohlone-college-a-ccc-and-concurrent-enrollment
+2026-02-21 14:43:43,572 | INFO | Status: 200
+2026-02-21 14:43:43,572 | INFO | Visited count: 54
+2026-02-21 14:43:43,903 | INFO | Queued URL: https://fremontunified.org/washington/students-community/student-support/college-and-career-resource-center/valdez@fusdk12.net
+2026-02-21 14:43:44,985 | INFO | Crawling: https://fremontunified.org/washington/students-community/student-support/college-and-career-resource-center/program-major-and-career-spotlights
+2026-02-21 14:43:47,471 | INFO | Status: 200
+2026-02-21 14:43:47,471 | INFO | Visited count: 55
+2026-02-21 14:43:48,465 | INFO | Crawling: https://fremontunified.org/washington/students-community/student-support/college-and-career-resource-center/senior-awards-night
+2026-02-21 14:43:50,891 | INFO | Status: 200
+2026-02-21 14:43:50,891 | INFO | Visited count: 56
+2026-02-21 14:43:51,329 | INFO | Crawling: https://fremontunified.org/washington/students-community/student-support/college-and-career-resource-center/summer-year-round-programs-internships-volunteer-work-opportunities
+2026-02-21 14:43:53,776 | INFO | Status: 200
+2026-02-21 14:43:53,776 | INFO | Visited count: 57
+2026-02-21 14:43:54,598 | INFO | Crawling: https://fremontunified.org/washington/students-community/student-support/college-and-career-resource-center/undocumented-students-foster-youth-and-visa-holders
+2026-02-21 14:43:56,964 | INFO | Status: 200
+2026-02-21 14:43:56,966 | INFO | Visited count: 58
+2026-02-21 14:43:57,380 | INFO | Crawling: https://fremontunified.org/washington/students-community/student-support/college-and-career-resource-center/u-s-military-and-selective-service
+2026-02-21 14:43:59,771 | INFO | Status: 200
+2026-02-21 14:43:59,772 | INFO | Visited count: 59
+2026-02-21 14:44:00,490 | INFO | Crawling: https://fremontunified.org/washington/students-community/student-support/college-and-career-resource-center/work-permits-for-students
+2026-02-21 14:44:02,967 | INFO | Status: 200
+2026-02-21 14:44:02,967 | INFO | Visited count: 60
+2026-02-21 14:44:04,031 | INFO | Crawling: https://fremontunified.org/washington/students-community/student-support/community-service-learning-deadlines
+2026-02-21 14:44:06,459 | INFO | Status: 200
+2026-02-21 14:44:06,460 | INFO | Visited count: 61
+2026-02-21 14:44:07,440 | INFO | Crawling: https://fremontunified.org/washington/students-community/student-support/community-service-learning-deadlines/opportunities-for-community-service
+2026-02-21 14:44:09,811 | INFO | Status: 200
+2026-02-21 14:44:09,811 | INFO | Visited count: 62
+2026-02-21 14:44:10,504 | INFO | Crawling: https://fremontunified.org/washington/students-community/student-support/community-service-learning-deadlines/community-service-hours-verification-form
+2026-02-21 14:44:12,868 | INFO | Status: 200
+2026-02-21 14:44:12,868 | INFO | Visited count: 63
+2026-02-21 14:44:13,739 | INFO | Crawling: https://fremontunified.org/washington/students-community/student-support/link-crew
+2026-02-21 14:44:16,127 | INFO | Status: 200
+2026-02-21 14:44:16,128 | INFO | Visited count: 64
+2026-02-21 14:44:17,223 | INFO | Crawling: https://fremontunified.org/washington/students-community/student-support/yearbook-promo-video
+2026-02-21 14:44:19,643 | INFO | Status: 200
+2026-02-21 14:44:19,644 | INFO | Visited count: 65
+2026-02-21 14:44:20,763 | INFO | Crawling: https://fremontunified.org/washington/students-community/student-support/gate-honors-information-ap-courses
+2026-02-21 14:44:23,271 | INFO | Status: 200
+2026-02-21 14:44:23,272 | INFO | Visited count: 66
+2026-02-21 14:44:23,322 | INFO | Queued URL: https://fremontunified.org/about/instructional-services/elementary-education/gate-overview
+2026-02-21 14:44:24,262 | INFO | Crawling: https://fremontunified.org/washington/students-community/student-support/school-resource-officer-sro-program
+2026-02-21 14:44:26,836 | INFO | Status: 200
+2026-02-21 14:44:26,836 | INFO | Visited count: 67
+2026-02-21 14:44:27,916 | INFO | Crawling: https://fremontunified.org/washington/students-community/student-support/peer-resource
+2026-02-21 14:44:30,380 | INFO | Status: 200
+2026-02-21 14:44:30,380 | INFO | Visited count: 68
+2026-02-21 14:44:31,324 | INFO | Crawling: https://fremontunified.org/washington/students-community/student-support/making-up-homework
+2026-02-21 14:44:33,904 | INFO | Status: 200
+2026-02-21 14:44:33,905 | INFO | Visited count: 69
+2026-02-21 14:44:34,817 | INFO | Crawling: https://fremontunified.org/washington/students-community/student-support/tutoring
+2026-02-21 14:44:37,251 | INFO | Status: 200
+2026-02-21 14:44:37,251 | INFO | Visited count: 70
+2026-02-21 14:44:37,776 | INFO | Crawling: https://fremontunified.org/washington/students-community/student-support/study-skills-and-cornell-notes
+2026-02-21 14:44:40,319 | INFO | Status: 200
+2026-02-21 14:44:40,319 | INFO | Visited count: 71
+2026-02-21 14:44:40,821 | INFO | Crawling: https://fremontunified.org/washington/students-community/student-support/test-taking-strategies
+2026-02-21 14:44:43,348 | INFO | Status: 200
+2026-02-21 14:44:43,350 | INFO | Visited count: 72
+2026-02-21 14:44:44,391 | INFO | Crawling: https://fremontunified.org/washington/student-and-parent-links/attendance-tardy-detention-policies
+2026-02-21 14:44:46,752 | INFO | Status: 200
+2026-02-21 14:44:46,752 | INFO | Visited count: 73
+2026-02-21 14:44:47,869 | INFO | Crawling: https://fremontunified.org/washington/departments-overview/community-service-learning-deadlines/opportunities-for-community-service
+2026-02-21 14:44:50,310 | INFO | Status: 200
+2026-02-21 14:44:50,311 | INFO | Visited count: 74
+2026-02-21 14:44:51,417 | INFO | Crawling: https://fremontunified.org/washington/departments-overview/community-service-learning-deadlines/community-service-hours-verification-form
+2026-02-21 14:44:53,995 | INFO | Status: 200
+2026-02-21 14:44:53,995 | INFO | Visited count: 75
+2026-02-21 14:44:54,572 | INFO | Crawling: https://fremontunified.org/washington/student-and-parent-links/gate-honors-information-ap-courses
+2026-02-21 14:44:57,100 | INFO | Status: 200
+2026-02-21 14:44:57,100 | INFO | Visited count: 76
+2026-02-21 14:44:57,921 | INFO | Crawling: https://fremontunified.org/washington/student-and-parent-links/link-crew
+2026-02-21 14:45:00,375 | INFO | Status: 200
+2026-02-21 14:45:00,376 | INFO | Visited count: 77
+2026-02-21 14:45:00,969 | INFO | Crawling: https://fremontunified.org/washington/student-and-parent-links/parking-on-campus
+2026-02-21 14:45:03,526 | INFO | Status: 200
+2026-02-21 14:45:03,526 | INFO | Visited count: 78
+2026-02-21 14:45:04,637 | INFO | Crawling: https://fremontunified.org/washington/student-and-parent-links/cell-phone-usage
+2026-02-21 14:45:07,216 | INFO | Status: 200
+2026-02-21 14:45:07,216 | INFO | Visited count: 79
+2026-02-21 14:45:07,659 | INFO | Crawling: https://fremontunified.org/washington/student-and-parent-links/fremont-unified-lunches
+2026-02-21 14:45:10,192 | INFO | Status: 200
+2026-02-21 14:45:10,193 | INFO | Visited count: 80
+2026-02-21 14:45:10,688 | INFO | Crawling: https://fremontunified.org/washington/student-and-parent-links/yearbook-promo-video
+2026-02-21 14:45:13,281 | INFO | Status: 200
+2026-02-21 14:45:13,281 | INFO | Visited count: 81
+2026-02-21 14:45:13,964 | INFO | Crawling: https://fremontunified.org/washington/student-and-parent-links/student-debt
+2026-02-21 14:45:16,512 | INFO | Status: 200
+2026-02-21 14:45:16,514 | INFO | Visited count: 82
+2026-02-21 14:45:16,989 | INFO | Crawling: https://fremontunified.org/washington/departments-overview/multimedia-art-academy
+2026-02-21 14:45:19,481 | INFO | Status: 200
+2026-02-21 14:45:19,482 | INFO | Visited count: 83
+2026-02-21 14:45:20,628 | INFO | Crawling: https://fremontunified.org/washington/students-community/activities-athletics/athletics
+2026-02-21 14:45:23,211 | INFO | Status: 200
+2026-02-21 14:45:23,213 | INFO | Visited count: 84
+2026-02-21 14:45:23,573 | INFO | Crawling: https://fremontunified.org/washington/departments-overview/avid
+2026-02-21 14:45:26,103 | INFO | Status: 200
+2026-02-21 14:45:26,104 | INFO | Visited count: 85
+2026-02-21 14:45:26,591 | INFO | Crawling: https://fremontunified.org/washington/student-and-parent-links/peer-resource
+2026-02-21 14:45:29,030 | INFO | Status: 200
+2026-02-21 14:45:29,031 | INFO | Visited count: 86
+2026-02-21 14:45:30,117 | INFO | Crawling: https://fremontunified.org/washington/student-and-parent-links/committees
+2026-02-21 14:45:32,552 | INFO | Status: 200
+2026-02-21 14:45:32,553 | INFO | Visited count: 87
+2026-02-21 14:45:33,083 | INFO | Crawling: https://fremontunified.org/washington/student-and-parent-links/school-site-council
+2026-02-21 14:45:35,548 | INFO | Status: 200
+2026-02-21 14:45:35,549 | INFO | Visited count: 88
+2026-02-21 14:45:35,958 | INFO | Crawling: https://fremontunified.org/washington/student-and-parent-links/alumni
+2026-02-21 14:45:38,331 | INFO | Status: 200
+2026-02-21 14:45:38,331 | INFO | Visited count: 89
+2026-02-21 14:45:38,741 | INFO | Crawling: https://fremontunified.org/washington/students-community/departments/student-newspaper-of-washington-high-school
+2026-02-21 14:45:41,229 | INFO | Status: 200
+2026-02-21 14:45:41,229 | INFO | Visited count: 90
+2026-02-21 14:45:41,699 | INFO | Crawling: https://fremontunified.org/washington/students-community/departments/rop-at-washington
+2026-02-21 14:45:44,207 | INFO | Status: 200
+2026-02-21 14:45:44,208 | INFO | Visited count: 91
+2026-02-21 14:45:44,899 | INFO | Crawling: https://fremontunified.org/washington/students-community/departments/rop-at-washington/auto-shop
+2026-02-21 14:45:47,325 | INFO | Status: 200
+2026-02-21 14:45:47,325 | INFO | Visited count: 92
+2026-02-21 14:45:48,164 | INFO | Crawling: https://fremontunified.org/washington/students-community/departments/business
+2026-02-21 14:45:50,610 | INFO | Status: 200
+2026-02-21 14:45:50,611 | INFO | Visited count: 93
+2026-02-21 14:45:51,547 | INFO | Crawling: https://fremontunified.org/washington/students-community/departments/english
+2026-02-21 14:45:54,032 | INFO | Status: 200
+2026-02-21 14:45:54,033 | INFO | Visited count: 94
+2026-02-21 14:45:55,031 | INFO | Crawling: https://fremontunified.org/washington/students-community/departments/english-language-development
+2026-02-21 14:45:57,441 | INFO | Status: 200
+2026-02-21 14:45:57,441 | INFO | Visited count: 95
+2026-02-21 14:45:58,565 | INFO | Crawling: https://fremontunified.org/washington/students-community/departments/fine-arts
+2026-02-21 14:46:00,934 | INFO | Status: 200
+2026-02-21 14:46:00,934 | INFO | Visited count: 96
+2026-02-21 14:46:01,369 | INFO | Crawling: https://fremontunified.org/washington/students-community/departments/fine-arts/music
+2026-02-21 14:46:03,750 | INFO | Status: 200
+2026-02-21 14:46:03,751 | INFO | Visited count: 97
+2026-02-21 14:46:04,837 | INFO | Crawling: https://fremontunified.org/washington/students-community/departments/health
+2026-02-21 14:46:07,423 | INFO | Status: 200
+2026-02-21 14:46:07,424 | INFO | Visited count: 98
+2026-02-21 14:46:07,943 | INFO | Crawling: https://fremontunified.org/washington/students-community/departments/mathematics
+2026-02-21 14:46:10,373 | INFO | Status: 200
+2026-02-21 14:46:10,374 | INFO | Visited count: 99
+2026-02-21 14:46:11,267 | INFO | Crawling: https://fremontunified.org/washington/students-community/departments/physical-education
+2026-02-21 14:46:13,676 | INFO | Status: 200
+2026-02-21 14:46:13,676 | INFO | Visited count: 100
+2026-02-21 14:46:14,625 | INFO | Crawling: https://fremontunified.org/washington/students-community/departments/science
+2026-02-21 14:46:17,037 | INFO | Status: 200
+2026-02-21 14:46:17,037 | INFO | Visited count: 101
+2026-02-21 14:46:17,675 | INFO | Crawling: https://fremontunified.org/washington/students-community/departments/social-science
+2026-02-21 14:46:20,146 | INFO | Status: 200
+2026-02-21 14:46:20,146 | INFO | Visited count: 102
+2026-02-21 14:46:21,266 | INFO | Crawling: https://fremontunified.org/washington/students-community/departments/special-education
+2026-02-21 14:46:23,777 | INFO | Status: 200
+2026-02-21 14:46:23,777 | INFO | Visited count: 103
+2026-02-21 14:46:24,881 | INFO | Crawling: https://fremontunified.org/washington/students-community/departments/avid
+2026-02-21 14:46:27,398 | INFO | Status: 200
+2026-02-21 14:46:27,398 | INFO | Visited count: 104
+2026-02-21 14:46:28,546 | INFO | Crawling: https://fremontunified.org/washington/students-community/departments/multimedia-art-academy
+2026-02-21 14:46:30,979 | INFO | Status: 200
+2026-02-21 14:46:30,980 | INFO | Visited count: 105
+2026-02-21 14:46:31,346 | INFO | Crawling: https://fremontunified.org/washington/students-community/departments/world-languages
+2026-02-21 14:46:33,826 | INFO | Status: 200
+2026-02-21 14:46:33,826 | INFO | Visited count: 106
+2026-02-21 14:46:34,794 | INFO | Crawling: https://fremontunified.org/washington/students-community/departments/world-languages/spanish
+2026-02-21 14:46:37,262 | INFO | Status: 200
+2026-02-21 14:46:37,262 | INFO | Visited count: 107
+2026-02-21 14:46:38,321 | INFO | Crawling: https://fremontunified.org/washington/students-community/departments/world-languages/chinese
+2026-02-21 14:46:40,807 | INFO | Status: 200
+2026-02-21 14:46:40,808 | INFO | Visited count: 108
+2026-02-21 14:46:41,924 | INFO | Crawling: https://fremontunified.org/washington/students-community/departments/world-languages/french
+2026-02-21 14:46:44,399 | INFO | Status: 200
+2026-02-21 14:46:44,399 | INFO | Visited count: 109
+2026-02-21 14:46:45,284 | INFO | Crawling: https://fremontunified.org/washington/students-community/activities-athletics/athletics/athletic-participation-forms
+2026-02-21 14:46:47,746 | INFO | Status: 200
+2026-02-21 14:46:47,746 | INFO | Visited count: 110
+2026-02-21 14:46:48,843 | INFO | Crawling: https://fremontunified.org/washington/students-community/activities-athletics/athletics/athletic-directors-contact-info
+2026-02-21 14:46:51,257 | INFO | Status: 200
+2026-02-21 14:46:51,258 | INFO | Visited count: 111
+2026-02-21 14:46:52,013 | INFO | Crawling: https://fremontunified.org/washington/students-community/activities-athletics/athletics/eligibility-mval-ncaa
+2026-02-21 14:46:54,450 | INFO | Status: 200
+2026-02-21 14:46:54,450 | INFO | Visited count: 112
+2026-02-21 14:46:55,022 | INFO | Crawling: https://fremontunified.org/washington/students-community/activities-athletics/athletics/forms-coaches-volunteers-clubs
+2026-02-21 14:46:57,605 | INFO | Status: 200
+2026-02-21 14:46:57,605 | INFO | Visited count: 113
+2026-02-21 14:46:58,750 | INFO | Crawling: https://fremontunified.org/washington/students-community/activities-athletics/athletics/open-coaching-positions
+2026-02-21 14:47:01,202 | INFO | Status: 200
+2026-02-21 14:47:01,203 | INFO | Visited count: 114
+2026-02-21 14:47:02,224 | INFO | Crawling: https://fremontunified.org/washington/students-community/activities-athletics/athletics/transfer-info
+2026-02-21 14:47:04,679 | INFO | Status: 200
+2026-02-21 14:47:04,679 | INFO | Visited count: 115
+2026-02-21 14:47:05,253 | INFO | Crawling: https://fremontunified.org/washington/students-community/activities-athletics/athletics/letterman-jacket-info
+2026-02-21 14:47:07,839 | INFO | Status: 200
+2026-02-21 14:47:07,840 | INFO | Visited count: 116
+2026-02-21 14:47:08,912 | INFO | Crawling: https://fremontunified.org/washington/students-community/activities-athletics/athletics/white-sweater-award
+2026-02-21 14:47:11,362 | INFO | Status: 200
+2026-02-21 14:47:11,363 | INFO | Visited count: 117
+2026-02-21 14:47:12,076 | INFO | Crawling: https://fremontunified.org/washington/students-community/activities-athletics/athletics/whs-boosters
+2026-02-21 14:47:14,515 | INFO | Status: 200
+2026-02-21 14:47:14,517 | INFO | Visited count: 118
+2026-02-21 14:47:14,868 | INFO | Crawling: https://fremontunified.org/washington/students-community/activities-athletics/athletics/baseball
+2026-02-21 14:47:17,293 | INFO | Status: 200
+2026-02-21 14:47:17,294 | INFO | Visited count: 119
+2026-02-21 14:47:17,991 | INFO | Crawling: https://fremontunified.org/washington/students-community/activities-athletics/athletics/badminton
+2026-02-21 14:47:20,495 | INFO | Status: 200
+2026-02-21 14:47:20,495 | INFO | Visited count: 120
+2026-02-21 14:47:21,563 | INFO | Crawling: https://fremontunified.org/washington/students-community/activities-athletics/athletics/basketball-boys
+2026-02-21 14:47:24,016 | INFO | Status: 200
+2026-02-21 14:47:24,017 | INFO | Visited count: 121
+2026-02-21 14:47:24,849 | INFO | Crawling: https://fremontunified.org/washington/students-community/activities-athletics/athletics/basketball-girls
+2026-02-21 14:47:27,304 | INFO | Status: 200
+2026-02-21 14:47:27,305 | INFO | Visited count: 122
+2026-02-21 14:47:28,299 | INFO | Crawling: https://fremontunified.org/washington/students-community/activities-athletics/athletics/cheerleading-all-seasons
+2026-02-21 14:47:30,770 | INFO | Status: 200
+2026-02-21 14:47:30,771 | INFO | Visited count: 123
+2026-02-21 14:47:31,323 | INFO | Crawling: https://fremontunified.org/washington/students-community/activities-athletics/athletics/cross-country
+2026-02-21 14:47:33,729 | INFO | Status: 200
+2026-02-21 14:47:33,729 | INFO | Visited count: 124
+2026-02-21 14:47:34,398 | INFO | Crawling: https://fremontunified.org/washington/students-community/activities-athletics/athletics/football
+2026-02-21 14:47:36,878 | INFO | Status: 200
+2026-02-21 14:47:36,878 | INFO | Visited count: 125
+2026-02-21 14:47:37,573 | INFO | Crawling: https://fremontunified.org/washington/students-community/activities-athletics/athletics/golf
+2026-02-21 14:47:40,047 | INFO | Status: 200
+2026-02-21 14:47:40,048 | INFO | Visited count: 126
+2026-02-21 14:47:40,855 | INFO | Crawling: https://fremontunified.org/washington/students-community/activities-athletics/athletics/golf-girls
+2026-02-21 14:47:43,278 | INFO | Status: 200
+2026-02-21 14:47:43,278 | INFO | Visited count: 127
+2026-02-21 14:47:43,972 | INFO | Crawling: https://fremontunified.org/washington/students-community/activities-athletics/athletics/lacrosse
+2026-02-21 14:47:46,447 | INFO | Status: 200
+2026-02-21 14:47:46,448 | INFO | Visited count: 128
+2026-02-21 14:47:46,874 | INFO | Crawling: https://fremontunified.org/washington/students-community/activities-athletics/athletics/soccer-boys
+2026-02-21 14:47:49,401 | INFO | Status: 200
+2026-02-21 14:47:49,402 | INFO | Visited count: 129
+2026-02-21 14:47:49,947 | INFO | Crawling: https://fremontunified.org/washington/students-community/activities-athletics/athletics/soccer-girls
+2026-02-21 14:47:52,512 | INFO | Status: 200
+2026-02-21 14:47:52,512 | INFO | Visited count: 130
+2026-02-21 14:47:53,432 | INFO | Crawling: https://fremontunified.org/washington/students-community/activities-athletics/athletics/softball
+2026-02-21 14:47:55,958 | INFO | Status: 200
+2026-02-21 14:47:55,959 | INFO | Visited count: 131
+2026-02-21 14:47:56,741 | INFO | Crawling: https://fremontunified.org/washington/students-community/activities-athletics/athletics/swimming
+2026-02-21 14:47:59,277 | INFO | Status: 200
+2026-02-21 14:47:59,278 | INFO | Visited count: 132
+2026-02-21 14:48:00,339 | INFO | Crawling: https://fremontunified.org/washington/students-community/activities-athletics/athletics/tennis-boys
+2026-02-21 14:48:02,823 | INFO | Status: 200
+2026-02-21 14:48:02,824 | INFO | Visited count: 133
+2026-02-21 14:48:03,987 | INFO | Crawling: https://fremontunified.org/washington/students-community/activities-athletics/athletics/tennis-girls
+2026-02-21 14:48:06,557 | INFO | Status: 200
+2026-02-21 14:48:06,557 | INFO | Visited count: 134
+2026-02-21 14:48:07,422 | INFO | Crawling: https://fremontunified.org/washington/students-community/activities-athletics/athletics/track-field
+2026-02-21 14:48:09,904 | INFO | Status: 200
+2026-02-21 14:48:09,904 | INFO | Visited count: 135
+2026-02-21 14:48:10,455 | INFO | Crawling: https://fremontunified.org/washington/students-community/activities-athletics/athletics/volleyball-boys
+2026-02-21 14:48:13,137 | INFO | Status: 200
+2026-02-21 14:48:13,138 | INFO | Visited count: 136
+2026-02-21 14:48:13,788 | INFO | Crawling: https://fremontunified.org/washington/students-community/activities-athletics/athletics/volleyball-girls
+2026-02-21 14:48:16,457 | INFO | Status: 200
+2026-02-21 14:48:16,458 | INFO | Visited count: 137
+2026-02-21 14:48:17,359 | INFO | Crawling: https://fremontunified.org/washington/students-community/activities-athletics/athletics/water-polo
+2026-02-21 14:48:19,882 | INFO | Status: 200
+2026-02-21 14:48:19,883 | INFO | Visited count: 138
+2026-02-21 14:48:20,462 | INFO | Crawling: https://fremontunified.org/washington/students-community/activities-athletics/athletics/wrestling
+2026-02-21 14:48:23,022 | INFO | Status: 200
+2026-02-21 14:48:23,023 | INFO | Visited count: 139
+2026-02-21 14:48:23,826 | INFO | Crawling: https://fremontunified.org/washington/students-community/activities-athletics/activities-leadership-asb/clubs-info
+2026-02-21 14:48:26,135 | INFO | Status: 200
+2026-02-21 14:48:26,136 | INFO | Visited count: 140
+2026-02-21 14:48:26,679 | INFO | Crawling: https://fremontunified.org/washington/students-community/connections/title-i-program
+2026-02-21 14:48:29,130 | INFO | Status: 200
+2026-02-21 14:48:29,131 | INFO | Visited count: 141
+2026-02-21 14:48:29,617 | INFO | Crawling: https://fremontunified.org/washington/students-community/connections/committees
+2026-02-21 14:48:31,989 | INFO | Status: 200
+2026-02-21 14:48:31,990 | INFO | Visited count: 142
+2026-02-21 14:48:32,842 | INFO | Crawling: https://fremontunified.org/washington/students-community/connections/school-site-council
+2026-02-21 14:48:35,270 | INFO | Status: 200
+2026-02-21 14:48:35,270 | INFO | Visited count: 143
+2026-02-21 14:48:36,373 | INFO | Crawling: https://fremontunified.org/washington/students-community/connections/english-learner-advisory-committee-elac
+2026-02-21 14:48:38,712 | INFO | Status: 200
+2026-02-21 14:48:38,713 | INFO | Visited count: 144
+2026-02-21 14:48:39,318 | INFO | Crawling: https://fremontunified.org/washington/students-community/connections/english-learner-advisory-committee-elac/elac-meeting-notes-notas-de-la-reunion
+2026-02-21 14:48:41,767 | INFO | Status: 200
+2026-02-21 14:48:41,768 | INFO | Visited count: 145
+2026-02-21 14:48:42,341 | INFO | Crawling: https://fremontunified.org/washington/students-community/connections/alumni
+2026-02-21 14:48:44,716 | INFO | Status: 200
+2026-02-21 14:48:44,717 | INFO | Visited count: 146
+2026-02-21 14:48:45,483 | INFO | Crawling: https://fremontunified.org/washington/students-community/connections/donate-to-washington
+2026-02-21 14:48:48,081 | INFO | Status: 200
+2026-02-21 14:48:48,081 | INFO | Visited count: 147
+2026-02-21 14:48:48,836 | INFO | Crawling: https://fremontunified.org/washington/schedule-news
+2026-02-21 14:48:51,164 | INFO | Status: 200
+2026-02-21 14:48:51,164 | INFO | Visited count: 148
+2026-02-21 14:48:52,234 | INFO | Crawling: https://fremontunified.org/washington/wp-content/uploads/sites/8/2025/10/WHS-Bell-Schedule-25.26.pdf
+2026-02-21 14:48:52,414 | INFO | Status: 200
+2026-02-21 14:48:52,415 | INFO | Visited count: 149
+2026-02-21 14:48:53,138 | INFO | Crawling: https://fremontunified.org/washington/schedule-news/news/paged-3/2
+2026-02-21 14:48:54,673 | INFO | Status: 200
+2026-02-21 14:48:54,673 | INFO | Visited count: 150
+2026-02-21 14:48:54,772 | INFO | Queued URL: https://fremontunified.org/about/superintendent/immigrant-families
+2026-02-21 14:48:54,772 | INFO | Queued URL: https://fremontunified.org/washington/schedule-news/news/paged-3/4
+2026-02-21 14:48:55,883 | INFO | Crawling: https://fremontunified.org/washington/schedule-news/news/paged-3/3
+2026-02-21 14:48:57,460 | INFO | Status: 200
+2026-02-21 14:48:57,461 | INFO | Visited count: 151
+2026-02-21 14:48:57,516 | INFO | Queued URL: https://fremontunified.org/washington/news/avid-day
+2026-02-21 14:48:57,516 | INFO | Queued URL: https://fremontunified.org/washington/news/sat-psat-registration
+2026-02-21 14:48:57,517 | INFO | Queued URL: https://fremontunified.org/washington/news/8-15-25-1030-am-intermittent-phone-service-at-multiple-sites
+2026-02-21 14:48:57,517 | INFO | Queued URL: https://fremontunified.org/washington/schedule-news/news/paged-3/5
+2026-02-21 14:48:58,190 | INFO | Crawling: https://fremontunified.org/washington/schedule-news/news/paged-3/17
+2026-02-21 14:48:59,697 | INFO | Status: 200
+2026-02-21 14:48:59,698 | INFO | Visited count: 152
+2026-02-21 14:48:59,753 | INFO | Queued URL: https://fremontunified.org/washington/uncategorized/students-in-grades-9-11-2023-24-surfboarde-applications-close-april-3
+2026-02-21 14:48:59,753 | INFO | Queued URL: https://fremontunified.org/washington/uncategorized/public-review-feedback-welcome-chemistry-in-the-earth-system-ci-initiatives
+2026-02-21 14:48:59,753 | INFO | Queued URL: https://fremontunified.org/washington/uncategorized/video-college-information-night-noche-de-informacion-universitaria-%e5%a4%a7%e5%ad%b8%e8%b3%87%e8%a8%8a%e5%a4%9c
+2026-02-21 14:48:59,753 | INFO | Queued URL: https://fremontunified.org/washington/uncategorized/student-meals-in-2022-23
+2026-02-21 14:48:59,753 | INFO | Queued URL: https://fremontunified.org/washington/uncategorized/football-team-fundraiser-at-mod-pizza
+2026-02-21 14:48:59,753 | INFO | Queued URL: https://fremontunified.org/washington/uncategorized/hs-summer-school-information-schedule-attendance-policy-and-email-contact
+2026-02-21 14:48:59,753 | INFO | Queued URL: https://fremontunified.org/washington/uncategorized/class-of-2022-and-2023-seal-of-civic-engagement-sello-estatal-de-compromiso-civico-%e5%8a%a0%e5%b7%9e%e5%85%ac%e6%b0%91%e5%8f%83%e8%88%87%e5%8d%b0%e7%ab%a0
+2026-02-21 14:48:59,753 | INFO | Queued URL: https://fremontunified.org/washington/schedule-news/news/paged-3/16
+2026-02-21 14:48:59,753 | INFO | Queued URL: https://fremontunified.org/washington/schedule-news/news/paged-3/15
+2026-02-21 14:49:00,813 | INFO | Crawling: https://fremontunified.org/washington/schedule-news/events/past-events
+2026-02-21 14:49:03,234 | INFO | Status: 200
+2026-02-21 14:49:03,235 | INFO | Visited count: 153
+2026-02-21 14:49:03,291 | INFO | Queued URL: https://fremontunified.org/washington/schedule-news/events/past-events/paged-3/2
+2026-02-21 14:49:03,291 | INFO | Queued URL: https://fremontunified.org/washington/schedule-news/events/past-events/paged-3/3
+2026-02-21 14:49:03,291 | INFO | Queued URL: https://fremontunified.org/washington/schedule-news/events/past-events/paged-3/6
+2026-02-21 14:49:03,774 | INFO | Crawling: https://fremontunified.org/about/welcome
+2026-02-21 14:49:06,722 | INFO | Status: 200
+2026-02-21 14:49:06,723 | INFO | Visited count: 154
+2026-02-21 14:49:06,774 | INFO | Queued URL: https://fremontunified.org/about/welcome/employees-in-our-district
+2026-02-21 14:49:06,775 | INFO | Queued URL: https://fremontunified.org/about/instructional-services/student-support-services
+2026-02-21 14:49:06,775 | INFO | Queued URL: https://fremontunified.org/about/welcome/paged-4/2
+2026-02-21 14:49:06,775 | INFO | Queued URL: https://fremontunified.org/about/welcome/paged-4/3
+2026-02-21 14:49:06,775 | INFO | Queued URL: https://fremontunified.org/about/welcome/paged-4/5
+2026-02-21 14:49:07,857 | INFO | Crawling: https://fremontunified.org/about/board
+2026-02-21 14:49:10,825 | INFO | Status: 200
+2026-02-21 14:49:10,825 | INFO | Visited count: 155
+2026-02-21 14:49:10,880 | INFO | Queued URL: https://fremontunified.org/about/board/board-of-education-members
+2026-02-21 14:49:10,880 | INFO | Queued URL: https://fremontunified.org/about/board/board-of-education-members/trustee-areas-used-for-governing-board-elections
+2026-02-21 14:49:10,880 | INFO | Queued URL: https://fremontunified.org/about/board/board-of-education-members/trustee-areas-used-for-governing-board-elections/frequently-asked-questions-by-trustee-area-faqs
+2026-02-21 14:49:10,880 | INFO | Queued URL: https://fremontunified.org/about/board/board-meeting-live-stream-video
+2026-02-21 14:49:10,880 | INFO | Queued URL: https://fremontunified.org/about/board/board-meeting-live-stream-video/board-showcase
+2026-02-21 14:49:10,880 | INFO | Queued URL: https://fremontunified.org/about/board/board-meeting-live-stream-video/presentation-template-for-board-meetings
+2026-02-21 14:49:10,880 | INFO | Queued URL: https://fremontunified.org/about/board/surfboarde-overview
+2026-02-21 14:49:10,880 | INFO | Queued URL: https://fremontunified.org/about/board/paged-4/2
+2026-02-21 14:49:10,881 | INFO | Queued URL: https://fremontunified.org/about/board/paged-4/3
+2026-02-21 14:49:10,881 | INFO | Queued URL: https://fremontunified.org/about/board/paged-4/20
+2026-02-21 14:49:11,928 | INFO | Crawling: https://fremontunified.org/about/departments
+2026-02-21 14:49:17,065 | INFO | Status: 200
+2026-02-21 14:49:17,067 | INFO | Visited count: 156
+2026-02-21 14:49:17,110 | INFO | Queued URL: https://fremontunified.org/about/departments/org-chart
+2026-02-21 14:49:17,111 | INFO | Queued URL: https://fremontunified.org/about/departments/site-map
+2026-02-21 14:49:17,111 | INFO | Queued URL: https://fremontunified.org/about/business-services/accounting-services
+2026-02-21 14:49:17,111 | INFO | Queued URL: https://fremontunified.org/about/business-services/accounting-services/accounts-payable
+2026-02-21 14:49:17,111 | INFO | Queued URL: https://fremontunified.org/about/business-services/budget
+2026-02-21 14:49:17,111 | INFO | Queued URL: https://fremontunified.org/about/human-resources/employee-resources/certificated-staff-management-employment-overview
+2026-02-21 14:49:17,111 | INFO | Queued URL: https://fremontunified.org/about/departments/human-resources/employee-resources/classified-staff-management-employment-overview
+2026-02-21 14:49:17,111 | INFO | Queued URL: https://fremontunified.org/about/business-services/facilities-construction
+2026-02-21 14:49:17,111 | INFO | Queued URL: https://fremontunified.org/about/instructional-services/student-support-services/health-services-overview
+2026-02-21 14:49:17,111 | INFO | Queued URL: https://fremontunified.org/about/business-services/maintenance-operations-grounds
+2026-02-21 14:49:17,111 | INFO | Queued URL: https://fremontunified.org/about/business-services/facilities-construction/measure-e-bond-overview
+2026-02-21 14:49:17,111 | INFO | Queued URL: https://fremontunified.org/about/business-services/accounting-services/payroll
+2026-02-21 14:49:17,111 | INFO | Queued URL: https://fremontunified.org/about/superintendent/public-information
+2026-02-21 14:49:17,111 | INFO | Queued URL: https://fremontunified.org/about/business-services/purchasing
+2026-02-21 14:49:17,111 | INFO | Queued URL: https://fremontunified.org/about/human-resources/risk-management
+2026-02-21 14:49:17,111 | INFO | Queued URL: https://fremontunified.org/about/instructional-services/special-education
+2026-02-21 14:49:17,111 | INFO | Queued URL: https://fremontunified.org/about/business-services/technology
+2026-02-21 14:49:17,111 | INFO | Queued URL: https://fremontunified.org/about/business-services/transportation
+2026-02-21 14:49:17,111 | INFO | Queued URL: https://fremontunified.org/about/sped-student-support/special-education
+2026-02-21 14:49:17,112 | INFO | Queued URL: https://fremontunified.org/about/operations/maintenance-operations-grounds
+2026-02-21 14:49:17,112 | INFO | Queued URL: https://fremontunified.org/?page_id=65439
+2026-02-21 14:49:17,112 | INFO | Queued URL: https://fremontunified.org/about/operations/transportation
+2026-02-21 14:49:17,112 | INFO | Queued URL: https://fremontunified.org/about/operations/technology
+2026-02-21 14:49:17,966 | INFO | Crawling: https://fremontunified.org/students-community/support
+2026-02-21 14:49:20,827 | INFO | Status: 200
+2026-02-21 14:49:20,827 | INFO | Visited count: 157
+2026-02-21 14:49:20,933 | INFO | Queued URL: https://fremontunified.org/students-community/support/portals/password-change
+2026-02-21 14:49:20,933 | INFO | Queued URL: https://fremontunified.org/students-community/support/portals/cyber-safety-tips-resources
+2026-02-21 14:49:20,933 | INFO | Queued URL: https://fremontunified.org/students-community/support/portals/tech-links-help-with-destiny
+2026-02-21 14:49:20,933 | INFO | Queued URL: https://fremontunified.org/about/instructional-services/student-support-services/families-in-need/basic-needs-food-financial-shelter-medical-others
+2026-02-21 14:49:21,697 | INFO | Crawling: https://fremontunified.org/students-community/connections/committees
+2026-02-21 14:49:24,541 | INFO | Status: 200
+2026-02-21 14:49:24,541 | INFO | Visited count: 158
+2026-02-21 14:49:24,594 | INFO | Queued URL: https://fremontunified.org/students-community/connections/committees/equity
+2026-02-21 14:49:24,594 | INFO | Queued URL: https://fremontunified.org/about/sped-student-support/special-education/special-education-district-advisory-committee-overview
+2026-02-21 14:49:25,679 | INFO | Crawling: https://fremontunified.org/about/human-resources/employee-resources
+2026-02-21 14:49:28,521 | INFO | Status: 200
+2026-02-21 14:49:28,521 | INFO | Visited count: 159
+2026-02-21 14:49:28,574 | INFO | Queued URL: https://fremontunified.org/about/human-resources/human-resources-staff-contacts
+2026-02-21 14:49:28,574 | INFO | Queued URL: https://fremontunified.org/about/human-resources/employee-resources/union-contact-information-contracts-and-salary-schedules
+2026-02-21 14:49:28,575 | INFO | Queued URL: https://fremontunified.org/about/human-resources/employee-resources/certificated-staff-management-employment-overview/credential-information
+2026-02-21 14:49:28,575 | INFO | Queued URL: https://fremontunified.org/about/human-resources/employee-resources/certificated-staff-management-employment-overview/credential-renewal-information
+2026-02-21 14:49:28,575 | INFO | Queued URL: https://fremontunified.org/about/human-resources/employee-resources/certificated-staff-management-employment-overview/certificated-application-process
+2026-02-21 14:49:28,575 | INFO | Queued URL: https://fremontunified.org/about/human-resources/employee-resources/classified-staff-management-employment-overview
+2026-02-21 14:49:28,575 | INFO | Queued URL: https://fremontunified.org/about/human-resources/employee-resources/classified-staff-management-employment-overview/personnel-commission
+2026-02-21 14:49:28,575 | INFO | Queued URL: https://fremontunified.org/about/human-resources/employee-resources/classified-staff-management-employment-overview/classified-job-descriptions
+2026-02-21 14:49:28,575 | INFO | Queued URL: https://fremontunified.org/about/human-resources/employee-resources/coaching-information-openings
+2026-02-21 14:49:28,575 | INFO | Queued URL: https://fremontunified.org/about/human-resources/employee-resources/substitute-teaching-information
+2026-02-21 14:49:28,575 | INFO | Queued URL: https://fremontunified.org/about/human-resources/employee-resources/benefits-overview
+2026-02-21 14:49:28,575 | INFO | Queued URL: https://fremontunified.org/about/human-resources/employee-resources/benefits-overview/find-your-current-benefits
+2026-02-21 14:49:28,575 | INFO | Queued URL: https://fremontunified.org/about/human-resources/employee-resources/benefits-overview/new-hire-rehire-employment-forms
+2026-02-21 14:49:28,575 | INFO | Queued URL: https://fremontunified.org/about/human-resources/employee-resources/benefits-overview/calstrs-retirement-information
+2026-02-21 14:49:28,575 | INFO | Queued URL: https://fremontunified.org/about/human-resources/employee-resources/benefits-overview/frequently-asked-questions-benefits
+2026-02-21 14:49:28,575 | INFO | Queued URL: https://fremontunified.org/about/human-resources/employee-resources/benefits-overview/commuter-benefits
+2026-02-21 14:49:28,575 | INFO | Queued URL: https://fremontunified.org/about/human-resources/employee-resources/benefits-overview/calpers-retirement-information
+2026-02-21 14:49:28,575 | INFO | Queued URL: https://fremontunified.org/about/human-resources/employee-resources/absence-management-substitute-system-instructions-aesop
+2026-02-21 14:49:28,575 | INFO | Queued URL: https://fremontunified.org/about/departments/human-resources/employee-resources/certificated-staff-management-employment-overview
+2026-02-21 14:49:28,576 | INFO | Queued URL: https://fremontunified.org/about/departments/human-resources/employee-resources/substitute-teaching-information
+2026-02-21 14:49:28,576 | INFO | Queued URL: https://fremontunified.org/about/departments/human-resources/employee-resources/coaching-information-openings
+2026-02-21 14:49:28,576 | INFO | Queued URL: https://fremontunified.org/about/departments/human-resources/employee-resources/union-contact-information-contracts-and-salary-schedules
+2026-02-21 14:49:28,576 | INFO | Queued URL: https://fremontunified.org/about/departments/human-resources/employee-resources/benefits-overview
+2026-02-21 14:49:28,576 | INFO | Queued URL: https://fremontunified.org/about/departments/human-resources/human-resources-staff-contacts
+2026-02-21 14:49:29,343 | INFO | Crawling: https://fremontunified.org/about/sped-student-support/student-support-services/mental-health-overview
+2026-02-21 14:49:32,230 | INFO | Status: 200
+2026-02-21 14:49:32,232 | INFO | Visited count: 160
+2026-02-21 14:49:32,283 | INFO | Queued URL: https://fremontunified.org/about/sped-student-support/student-support-services/student-support-services-staff-contacts
+2026-02-21 14:49:32,283 | INFO | Queued URL: https://fremontunified.org/about/sped-student-support/student-support-services/change-of-residency
+2026-02-21 14:49:32,283 | INFO | Queued URL: https://fremontunified.org/about/sped-student-support/student-support-services/community-liaisons
+2026-02-21 14:49:32,283 | INFO | Queued URL: https://fremontunified.org/about/sped-student-support/student-support-services/school-counselors-overview
+2026-02-21 14:49:32,284 | INFO | Queued URL: https://fremontunified.org/about/sped-student-support/student-support-services/parenteducation
+2026-02-21 14:49:32,284 | INFO | Queued URL: https://fremontunified.org/about/sped-student-support/student-support-services/workshop
+2026-02-21 14:49:32,284 | INFO | Queued URL: https://fremontunified.org/about/sped-student-support/student-support-services/mental-health-overview/connect-with-mental-health-care-resources
+2026-02-21 14:49:32,284 | INFO | Queued URL: https://fremontunified.org/about/sped-student-support/student-support-services/mental-health-overview/coping-with-stress-and-anxiety
+2026-02-21 14:49:32,284 | INFO | Queued URL: https://fremontunified.org/about/sped-student-support/student-support-services/attendance-and-truancy
+2026-02-21 14:49:32,284 | INFO | Queued URL: https://fremontunified.org/about/sped-student-support/student-support-services/section-504-plan
+2026-02-21 14:49:32,284 | INFO | Queued URL: https://fremontunified.org/about/instructional-services/student-support-services/mental-health-overview/connect-with-mental-health-care-resources
+2026-02-21 14:49:32,284 | INFO | Queued URL: https://fremontunified.org/about/instructional-services/student-support-services/community-liaisons
+2026-02-21 14:49:32,284 | INFO | Queued URL: https://fremontunified.org/about/instructional-services/student-support-services/school-counselors-overview
+2026-02-21 14:49:32,284 | INFO | Queued URL: https://fremontunified.org/about/instructional-services/student-support-services/families-in-need
+2026-02-21 14:49:32,988 | INFO | Crawling: https://fremontunified.org/about/welcome/location-contacts
+2026-02-21 14:49:35,829 | INFO | Status: 200
+2026-02-21 14:49:35,829 | INFO | Visited count: 161
+2026-02-21 14:49:35,882 | INFO | Queued URL: https://fremontunified.org/about/departments/instructional-services-overview/student-support-services-dept/families-in-need/lgbtq-support-contacts
+2026-02-21 14:49:36,700 | INFO | Crawling: https://fremontunified.org/students-community/careers
+2026-02-21 14:49:37,945 | INFO | Status: 200
+2026-02-21 14:49:37,946 | INFO | Visited count: 162
+2026-02-21 14:49:38,321 | INFO | Crawling: https://fremontunified.org/students-community/support/infinite-campus-faqs
+2026-02-21 14:49:39,941 | INFO | Status: 404
+2026-02-21 14:49:39,943 | ERROR | Failed request: https://fremontunified.org/students-community/support/infinite-campus-faqs -> Client error '404 Not Found' for url 'https://fremontunified.org/students-community/support/infinite-campus-faqs'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+2026-02-21 14:49:39,943 | INFO | Crawling: https://fremontunified.org/about/instructional-services/student-support-services/enrollment-registration
+2026-02-21 14:49:42,832 | INFO | Status: 200
+2026-02-21 14:49:42,833 | INFO | Visited count: 163
+2026-02-21 14:49:42,887 | INFO | Queued URL: https://fremontunified.org/students-community/support/infinite-campus-faqs
+2026-02-21 14:49:42,888 | INFO | Queued URL: https://fremontunified.org/about/sped-student-support/student-support-services/enrollment-registration/immunization-requirements
+2026-02-21 14:49:42,888 | INFO | Queued URL: https://fremontunified.org/about/sped-student-support/student-support-services/enrollment-registration/supplemental-documents
+2026-02-21 14:49:42,888 | INFO | Queued URL: https://fremontunified.org/about/sped-student-support/student-support-services/enrollment-registration/caregiver-affidavit-and-declaration-of-residency
+2026-02-21 14:49:42,888 | INFO | Queued URL: https://fremontunified.org/about/sped-student-support/student-support-services/enrollment-registration/intra-district-transfers
+2026-02-21 14:49:42,888 | INFO | Queued URL: https://fremontunified.org/about/sped-student-support/student-support-services/enrollment-registration/inter-district-transfers
+2026-02-21 14:49:42,888 | INFO | Queued URL: https://fremontunified.org/about/sped-student-support/student-support-services/enrollment-registration/open-enrollment
+2026-02-21 14:49:42,888 | INFO | Queued URL: https://fremontunified.org/about/sped-student-support/student-support-services/enrollment-registration/school-wait-lists-overloads
+2026-02-21 14:49:42,888 | INFO | Queued URL: https://fremontunified.org/about/sped-student-support/student-support-services/enrollment-registration/new-developments-designation-unassigned
+2026-02-21 14:49:42,889 | INFO | Queued URL: https://fremontunified.org/about/departments/instructional-services-overview/student-support-services-dept/enrollment-registration/school-wait-lists-overloads
+2026-02-21 14:49:42,889 | INFO | Queued URL: https://fremontunified.org/about/departments/instructional-services-overview/elementary-education-dept/transitional-kindergarten
+2026-02-21 14:49:42,889 | INFO | Queued URL: https://fremontunified.org/about/instructional-services/federal-state-programs/state-preschool
+2026-02-21 14:49:42,889 | INFO | Queued URL: https://fremontunified.org/about/departments/instructional-services-overview/student-support-services-dept/enrollment-registration/intra-district-transfers
+2026-02-21 14:49:42,889 | INFO | Queued URL: https://fremontunified.org/about/departments/instructional-services-overview/student-support-services-dept/enrollment-registration/inter-district-transfers
+2026-02-21 14:49:42,889 | INFO | Queued URL: https://fremontunified.org/about/instructional-services/student-support-services/enrollment-registration/open-enrollment
+2026-02-21 14:49:42,889 | INFO | Queued URL: https://fremontunified.org/about/departments/instructional-services-overview/student-support-services-dept/student-support-services-staff-contacts
+2026-02-21 14:49:43,955 | INFO | Crawling: https://fremontunified.org/about
+2026-02-21 14:49:45,411 | INFO | Status: 200
+2026-02-21 14:49:45,412 | INFO | Visited count: 164
+2026-02-21 14:49:45,973 | INFO | Crawling: https://fremontunified.org/about/instructional-services
+2026-02-21 14:49:49,019 | INFO | Status: 200
+2026-02-21 14:49:49,020 | INFO | Visited count: 165
+2026-02-21 14:49:49,133 | INFO | Queued URL: https://fremontunified.org/about/instructional-services/elementary-education/transitional-kindergarten
+2026-02-21 14:49:49,134 | INFO | Queued URL: https://fremontunified.org/about/instructional-services/elementary-education/science-engineering-fair
+2026-02-21 14:49:49,134 | INFO | Queued URL: https://fremontunified.org/about/instructional-services/elementary-education/spelling-bee
+2026-02-21 14:49:49,134 | INFO | Queued URL: https://fremontunified.org/about/instructional-services/elementary-education/art-gala
+2026-02-21 14:49:49,134 | INFO | Queued URL: https://fremontunified.org/about/instructional-services/elementary-education/young-authors-contest
+2026-02-21 14:49:49,134 | INFO | Queued URL: https://fremontunified.org/about/instructional-services/secondary-education/transcripts-work-permits
+2026-02-21 14:49:49,134 | INFO | Queued URL: https://fremontunified.org/about/instructional-services/secondary-education/college-connection-program-ohlone
+2026-02-21 14:49:49,134 | INFO | Queued URL: https://fremontunified.org/about/instructional-services/secondary-education/career-and-technical-education-cte
+2026-02-21 14:49:49,134 | INFO | Queued URL: https://fremontunified.org/about/instructional-services/secondary-education/career-and-technical-education-cte/perkins
+2026-02-21 14:49:49,134 | INFO | Queued URL: https://fremontunified.org/about/instructional-services/secondary-education/career-and-technical-education-cte/mvrop
+2026-02-21 14:49:49,134 | INFO | Queued URL: https://fremontunified.org/about/instructional-services/secondary-education/guy-emanuele-sports-fund
+2026-02-21 14:49:49,134 | INFO | Queued URL: https://fremontunified.org/about/instructional-services/secondary-education/high-school-graduation
+2026-02-21 14:49:49,134 | INFO | Queued URL: https://fremontunified.org/about/instructional-services/secondary-education/middle-school-overview
+2026-02-21 14:49:49,134 | INFO | Queued URL: https://fremontunified.org/about/instructional-services/secondary-education/middle-school-overview/middle-school-frequently-asked-questions-faq
+2026-02-21 14:49:49,134 | INFO | Queued URL: https://fremontunified.org/about/instructional-services/curriculum-instruction/curriculum-instruction-staff-contacts
+2026-02-21 14:49:49,134 | INFO | Queued URL: https://fremontunified.org/about/instructional-services/curriculum-instruction/ci-initiatives-dashboard
+2026-02-21 14:49:49,134 | INFO | Queued URL: https://fremontunified.org/about/instructional-services/curriculum-instruction/fair-education-act
+2026-02-21 14:49:49,134 | INFO | Queued URL: https://fremontunified.org/about/instructional-services/curriculum-instruction/curriculum-based-assessments
+2026-02-21 14:49:49,134 | INFO | Queued URL: https://fremontunified.org/about/instructional-services/curriculum-instruction/library-at-district-overview/literature-search
+2026-02-21 14:49:49,134 | INFO | Queued URL: https://fremontunified.org/about/instructional-services/curriculum-instruction/library-at-district-overview/pay-for-lost-damaged-textbooks-and-or-library-books
+2026-02-21 14:49:49,134 | INFO | Queued URL: https://fremontunified.org/about/instructional-services/curriculum-instruction/textbook-and-literature-lists
+2026-02-21 14:49:49,134 | INFO | Queued URL: https://fremontunified.org/about/instructional-services/curriculum-instruction/textbook-and-literature-lists/core-literature-adoption-progress
+2026-02-21 14:49:49,135 | INFO | Queued URL: https://fremontunified.org/about/instructional-services/curriculum-instruction/math-information
+2026-02-21 14:49:49,135 | INFO | Queued URL: https://fremontunified.org/about/instructional-services/curriculum-instruction/science-information-ngss
+2026-02-21 14:49:49,135 | INFO | Queued URL: https://fremontunified.org/about/instructional-services/curriculum-instruction/curriculum-instruction-health-resources
+2026-02-21 14:49:49,135 | INFO | Queued URL: https://fremontunified.org/about/instructional-services/curriculum-instruction/driver-ed
+2026-02-21 14:49:49,135 | INFO | Queued URL: https://fremontunified.org/about/instructional-services/federal-state-programs/multilingual-learners/language-assessment-center
+2026-02-21 14:49:49,135 | INFO | Queued URL: https://fremontunified.org/about/instructional-services/federal-state-programs/multilingual-learners/english-learner-english-language-development
+2026-02-21 14:49:49,135 | INFO | Queued URL: https://fremontunified.org/about/instructional-services/federal-state-programs/multilingual-learners/english-language-proficiency-assessments-for-ca-overview
+2026-02-21 14:49:49,135 | INFO | Queued URL: https://fremontunified.org/about/instructional-services/federal-state-programs/multilingual-learners/english-language-proficiency-assessments-for-ca-overview/elpac-frequently-asked-questions
+2026-02-21 14:49:49,135 | INFO | Queued URL: https://fremontunified.org/about/instructional-services/federal-state-programs/multilingual-learners/english-language-proficiency-assessments-for-ca-overview/elpac-additional-resources
+2026-02-21 14:49:49,135 | INFO | Queued URL: https://fremontunified.org/about/instructional-services/federal-state-programs/multilingual-learners/english-learner-advisory-committee-elac
+2026-02-21 14:49:49,135 | INFO | Queued URL: https://fremontunified.org/about/instructional-services/federal-state-programs/multilingual-learners/delac-overview/delac-meeting-archives
+2026-02-21 14:49:49,135 | INFO | Queued URL: https://fremontunified.org/about/instructional-services/federal-state-programs/multilingual-learners/schools-15-and-above-translation-required
+2026-02-21 14:49:49,135 | INFO | Queued URL: https://fremontunified.org/about/instructional-services/federal-state-programs/elop/elop-summer
+2026-02-21 14:49:49,135 | INFO | Queued URL: https://fremontunified.org/about/instructional-services/federal-state-programs/nasp-program-information/nasp-meeting-archive
+2026-02-21 14:49:49,135 | INFO | Queued URL: https://fremontunified.org/about/instructional-services/assessment-accountability/california-school-dashboard
+2026-02-21 14:49:49,135 | INFO | Queued URL: https://fremontunified.org/about/instructional-services/assessment-accountability/state-seals
+2026-02-21 14:49:49,135 | INFO | Queued URL: https://fremontunified.org/about/instructional-services/assessment-accountability/state-seals/golden-state-seal
+2026-02-21 14:49:49,135 | INFO | Queued URL: https://fremontunified.org/about/instructional-services/assessment-accountability/state-seals/seal-of-biliteracy
+2026-02-21 14:49:49,135 | INFO | Queued URL: https://fremontunified.org/about/instructional-services/assessment-accountability/state-seals/seal-of-civic-engagement
+2026-02-21 14:49:49,135 | INFO | Queued URL: https://fremontunified.org/about/instructional-services/assessment-accountability/state-assessments
+2026-02-21 14:49:49,135 | INFO | Queued URL: https://fremontunified.org/about/instructional-services/assessment-accountability/state-assessments/caaspp
+2026-02-21 14:49:49,135 | INFO | Queued URL: https://fremontunified.org/about/instructional-services/assessment-accountability/state-assessments/caaspp/caaspp-ssr
+2026-02-21 14:49:49,135 | INFO | Queued URL: https://fremontunified.org/about/instructional-services/assessment-accountability/state-assessments/caaspp/sbac
+2026-02-21 14:49:49,135 | INFO | Queued URL: https://fremontunified.org/about/instructional-services/assessment-accountability/state-assessments/caaspp/cast
+2026-02-21 14:49:49,135 | INFO | Queued URL: https://fremontunified.org/about/instructional-services/assessment-accountability/state-assessments/caaspp/caa
+2026-02-21 14:49:49,135 | INFO | Queued URL: https://fremontunified.org/about/instructional-services/assessment-accountability/state-assessments/caaspp/csa
+2026-02-21 14:49:49,135 | INFO | Queued URL: https://fremontunified.org/about/instructional-services/assessment-accountability/state-assessments/ca-math-placement-exam
+2026-02-21 14:49:49,135 | INFO | Queued URL: https://fremontunified.org/about/instructional-services/assessment-accountability/state-assessments/pft
+2026-02-21 14:49:49,135 | INFO | Queued URL: https://fremontunified.org/about/instructional-services/assessment-accountability/district-assessments-testing-calendars
+2026-02-21 14:49:49,136 | INFO | Queued URL: https://fremontunified.org/about/instructional-services/assessment-accountability/district-assessments-testing-calendars/i-ready
+2026-02-21 14:49:49,136 | INFO | Queued URL: https://fremontunified.org/about/instructional-services/assessment-accountability/advanced-placement
+2026-02-21 14:49:49,136 | INFO | Queued URL: https://fremontunified.org/about/instructional-services/assessment-accountability/report-cards
+2026-02-21 14:49:49,136 | INFO | Queued URL: https://fremontunified.org/about/instructional-services/assessment-accountability/report-cards/elementary-report-cards
+2026-02-21 14:49:49,136 | INFO | Queued URL: https://fremontunified.org/about/instructional-services/assessment-accountability/chks
+2026-02-21 14:49:49,136 | INFO | Queued URL: https://fremontunified.org/about/instructional-services/paged-4/2
+2026-02-21 14:49:49,136 | INFO | Queued URL: https://fremontunified.org/about/instructional-services/paged-4/3
+2026-02-21 14:49:49,136 | INFO | Queued URL: https://fremontunified.org/about/instructional-services/paged-4/4
+2026-02-21 14:49:50,241 | INFO | Crawling: https://fremontunified.org/about/instructional-services/elementary-education
+2026-02-21 14:49:53,114 | INFO | Status: 200
+2026-02-21 14:49:53,114 | INFO | Visited count: 166
+2026-02-21 14:49:53,551 | INFO | Crawling: https://fremontunified.org/about/instructional-services/secondary-education
+2026-02-21 14:49:56,503 | INFO | Status: 200
+2026-02-21 14:49:56,504 | INFO | Visited count: 167
+2026-02-21 14:49:57,583 | INFO | Crawling: https://fremontunified.org/about/instructional-services/curriculum-instruction
+2026-02-21 14:50:00,388 | INFO | Status: 200
+2026-02-21 14:50:00,389 | INFO | Visited count: 168
+2026-02-21 14:50:00,443 | INFO | Queued URL: https://fremontunified.org/students-community/connections/committees/ciac
+2026-02-21 14:50:00,444 | INFO | Queued URL: https://fremontunified.org/about/departments/instructional-services/curriculum-instruction/curriculum-instruction-staff-contacts
+2026-02-21 14:50:01,542 | INFO | Crawling: https://fremontunified.org/about/instructional-services/federal-state-programs
+2026-02-21 14:50:04,396 | INFO | Status: 200
+2026-02-21 14:50:04,397 | INFO | Visited count: 169
+2026-02-21 14:50:05,535 | INFO | Crawling: https://fremontunified.org/about/instructional-services/assessment-accountability
+2026-02-21 14:50:08,417 | INFO | Status: 200
+2026-02-21 14:50:08,417 | INFO | Visited count: 170
+2026-02-21 14:50:08,825 | INFO | Crawling: https://fremontunified.org/about/instructional-services/preschool/preschool-bell-schedule
+2026-02-21 14:50:11,540 | INFO | Status: 200
+2026-02-21 14:50:11,540 | INFO | Visited count: 171
+2026-02-21 14:50:12,552 | INFO | Crawling: https://fremontunified.org/about/instructional-services/extended-school-year-summer-school-information
+2026-02-21 14:50:15,457 | INFO | Status: 200
+2026-02-21 14:50:15,459 | INFO | Visited count: 172
+2026-02-21 14:50:16,236 | INFO | Crawling: https://fremontunified.org/about/instructional-services/federal-state-programs/federal-state-programs-staff-contacts
+2026-02-21 14:50:19,031 | INFO | Status: 200
+2026-02-21 14:50:19,031 | INFO | Visited count: 173
+2026-02-21 14:50:19,144 | INFO | Queued URL: https://fremontunified.org/about/instructional-services/federal-state-programs/ekelley@fusdk12.net
+2026-02-21 14:50:19,144 | INFO | Queued URL: https://fremontunified.org/about/instructional-services/federal-state-programs/jmasis@fusdk12.net
+2026-02-21 14:50:19,767 | INFO | Crawling: https://fremontunified.org/about/instructional-services/federal-state-programs/multilingual-learners
+2026-02-21 14:50:22,508 | INFO | Status: 200
+2026-02-21 14:50:22,509 | INFO | Visited count: 174
+2026-02-21 14:50:23,364 | INFO | Crawling: https://fremontunified.org/about/instructional-services/federal-state-programs/elop
+2026-02-21 14:50:26,137 | INFO | Status: 200
+2026-02-21 14:50:26,138 | INFO | Visited count: 175
+2026-02-21 14:50:27,263 | INFO | Crawling: https://fremontunified.org/about/instructional-services/federal-state-programs/dual-immersion/dual-immersion-enrollment-process
+2026-02-21 14:50:29,959 | INFO | Status: 200
+2026-02-21 14:50:29,960 | INFO | Visited count: 176
+2026-02-21 14:50:31,095 | INFO | Crawling: https://fremontunified.org/about/instructional-services/federal-state-programs/dual-immersion/immersion-parent-resources
+2026-02-21 14:50:33,816 | INFO | Status: 200
+2026-02-21 14:50:33,817 | INFO | Visited count: 177
+2026-02-21 14:50:34,671 | INFO | Crawling: https://fremontunified.org/about/instructional-services/federal-state-programs/parent-and-family-engagement
+2026-02-21 14:50:37,492 | INFO | Status: 200
+2026-02-21 14:50:37,494 | INFO | Visited count: 178
+2026-02-21 14:50:38,184 | INFO | Crawling: https://fremontunified.org/about/instructional-services/federal-state-programs/migrant-education
+2026-02-21 14:50:40,916 | INFO | Status: 200
+2026-02-21 14:50:40,917 | INFO | Visited count: 179
+2026-02-21 14:50:41,994 | INFO | Crawling: https://fremontunified.org/about/instructional-services/federal-state-programs/title1
+2026-02-21 14:50:44,775 | INFO | Status: 200
+2026-02-21 14:50:44,776 | INFO | Visited count: 180
+2026-02-21 14:50:45,773 | INFO | Crawling: https://fremontunified.org/about/instructional-services/federal-state-programs/teacher-induction-program
+2026-02-21 14:50:48,536 | INFO | Status: 200
+2026-02-21 14:50:48,536 | INFO | Visited count: 181
+2026-02-21 14:50:48,960 | INFO | Crawling: https://fremontunified.org/about/instructional-services/federal-state-programs/nasp-program-information
+2026-02-21 14:50:51,760 | INFO | Status: 200
+2026-02-21 14:50:51,762 | INFO | Visited count: 182
+2026-02-21 14:50:52,449 | INFO | Crawling: https://fremontunified.org/about/schools/award-winning-schools-directory
+2026-02-21 14:50:56,273 | INFO | Status: 200
+2026-02-21 14:50:56,274 | INFO | Visited count: 183
+2026-02-21 14:50:57,056 | INFO | Crawling: https://fremontunified.org/about/schools/mascots
+2026-02-21 14:50:59,803 | INFO | Status: 200
+2026-02-21 14:50:59,803 | INFO | Visited count: 184
+2026-02-21 14:51:00,835 | INFO | Crawling: https://fremontunified.org/about/superintendent
+2026-02-21 14:51:03,593 | INFO | Status: 200
+2026-02-21 14:51:03,594 | INFO | Visited count: 185
+2026-02-21 14:51:03,645 | INFO | Queued URL: https://fremontunified.org/about/superintendent/first-day-2025
+2026-02-21 14:51:03,645 | INFO | Queued URL: https://fremontunified.org/about/superintendent/balanced-budget
+2026-02-21 14:51:03,645 | INFO | Queued URL: https://fremontunified.org/about/superintendent/balanced-budget/balanced-budget-faq
+2026-02-21 14:51:03,645 | INFO | Queued URL: https://fremontunified.org/about/superintendent/notice-of-public-hearings
+2026-02-21 14:51:03,645 | INFO | Queued URL: https://fremontunified.org/about/superintendent/public-information/public-records-requests
+2026-02-21 14:51:03,645 | INFO | Queued URL: https://fremontunified.org/about/superintendent/public-information/channels-content
+2026-02-21 14:51:03,646 | INFO | Queued URL: https://fremontunified.org/about/superintendent/public-information/channels-content/website-info
+2026-02-21 14:51:03,646 | INFO | Queued URL: https://fremontunified.org/about/superintendent/public-information/channels-content/parentsquare
+2026-02-21 14:51:03,646 | INFO | Queued URL: https://fremontunified.org/about/superintendent/public-information/previous-superintendent
+2026-02-21 14:51:03,646 | INFO | Queued URL: https://fremontunified.org/about/superintendent/senior-exemption-waiver-measure-i
+2026-02-21 14:51:03,646 | INFO | Queued URL: https://fremontunified.org/about/departments/instructional-services-overview
+2026-02-21 14:51:03,646 | INFO | Queued URL: https://fremontunified.org/about/departments/business-services-overview
+2026-02-21 14:51:03,646 | INFO | Queued URL: https://fremontunified.org/about/departments/human-resources-overview
+2026-02-21 14:51:03,646 | INFO | Queued URL: https://fremontunified.org/about/superintendent/paged-4/2
+2026-02-21 14:51:03,646 | INFO | Queued URL: https://fremontunified.org/about/superintendent/paged-4/3
+2026-02-21 14:51:03,646 | INFO | Queued URL: https://fremontunified.org/about/superintendent/paged-4/4
+2026-02-21 14:51:04,664 | INFO | Crawling: https://fremontunified.org/about/sped-student-support
+2026-02-21 14:51:07,676 | INFO | Status: 200
+2026-02-21 14:51:07,676 | INFO | Visited count: 186
+2026-02-21 14:51:07,730 | INFO | Queued URL: https://fremontunified.org/about/sped-student-support/special-education/special-education-staff-contacts
+2026-02-21 14:51:07,730 | INFO | Queued URL: https://fremontunified.org/about/sped-student-support/special-education/special-education-process-referrals
+2026-02-21 14:51:07,730 | INFO | Queued URL: https://fremontunified.org/about/sped-student-support/special-education/frequently-asked-questions-faqs
+2026-02-21 14:51:07,730 | INFO | Queued URL: https://fremontunified.org/about/sped-student-support/special-education/special-education-events
+2026-02-21 14:51:07,730 | INFO | Queued URL: https://fremontunified.org/about/sped-student-support/student-support-services/community-liaisons/community-resource-links
+2026-02-21 14:51:07,730 | INFO | Queued URL: https://fremontunified.org/about/sped-student-support/student-support-services/community-liaisons/community-events
+2026-02-21 14:51:07,731 | INFO | Queued URL: https://fremontunified.org/about/sped-student-support/student-support-services/community-liaisons/community-flyers_slides
+2026-02-21 14:51:07,731 | INFO | Queued URL: https://fremontunified.org/about/sped-student-support/student-support-services/health-services-overview/health-forms-medication
+2026-02-21 14:51:07,731 | INFO | Queued URL: https://fremontunified.org/about/sped-student-support/student-support-services/health-services-overview/cybhi
+2026-02-21 14:51:07,731 | INFO | Queued URL: https://fremontunified.org/about/sped-student-support/student-support-services/health-services-overview/nurse-contacts-by-site
+2026-02-21 14:51:07,731 | INFO | Queued URL: https://fremontunified.org/about/sped-student-support/student-support-services/health-services-overview/general-health-faq
+2026-02-21 14:51:07,731 | INFO | Queued URL: https://fremontunified.org/about/sped-student-support/student-support-services/health-services-overview/vision-and-hearing-screenings
+2026-02-21 14:51:07,731 | INFO | Queued URL: https://fremontunified.org/about/sped-student-support/student-support-services/health-services-overview/health-community-resources
+2026-02-21 14:51:07,731 | INFO | Queued URL: https://fremontunified.org/about/sped-student-support/student-support-services/health-services-overview/food-allergy-awareness
+2026-02-21 14:51:08,382 | INFO | Crawling: https://fremontunified.org/about/business-services
+2026-02-21 14:51:11,229 | INFO | Status: 200
+2026-02-21 14:51:11,231 | INFO | Visited count: 187
+2026-02-21 14:51:11,283 | INFO | Queued URL: https://fremontunified.org/about/business-services/accounting-services/accounting-statements
+2026-02-21 14:51:11,283 | INFO | Queued URL: https://fremontunified.org/about/business-services/accounting-services/general-ledger
+2026-02-21 14:51:11,283 | INFO | Queued URL: https://fremontunified.org/about/business-services/accounting-services/developer-fees-faq
+2026-02-21 14:51:11,283 | INFO | Queued URL: https://fremontunified.org/about/business-services/budget/all-budget-files-and-previous-years
+2026-02-21 14:51:11,284 | INFO | Queued URL: https://fremontunified.org/about/business-services/budget/budget-resources
+2026-02-21 14:51:11,284 | INFO | Queued URL: https://fremontunified.org/about/business-services/purchasing/fusd-current-bid-opportunities
+2026-02-21 14:51:11,284 | INFO | Queued URL: https://fremontunified.org/about/business-services/facilities-construction/long-range-facilities-plan-overview
+2026-02-21 14:51:11,284 | INFO | Queued URL: https://fremontunified.org/students-community/connections/jointheconversation/faq
+2026-02-21 14:51:11,284 | INFO | Queued URL: https://fremontunified.org/about/business-services/paged-4/2
+2026-02-21 14:51:11,788 | INFO | Crawling: https://fremontunified.org/about/operations
+2026-02-21 14:51:14,695 | INFO | Status: 200
+2026-02-21 14:51:14,696 | INFO | Visited count: 188
+2026-02-21 14:51:14,768 | INFO | Queued URL: https://fremontunified.org/about/operations/maintenance-operations-grounds/lead-testing-of-drinking-water-info
+2026-02-21 14:51:14,768 | INFO | Queued URL: https://fremontunified.org/about/operations/facilities-construction
+2026-02-21 14:51:14,768 | INFO | Queued URL: https://fremontunified.org/about/operations/facilities-construction/fusds-bonds
+2026-02-21 14:51:14,768 | INFO | Queued URL: https://fremontunified.org/about/operations/facilities-construction/fusds-bonds/measure-m
+2026-02-21 14:51:14,768 | INFO | Queued URL: https://fremontunified.org/about/operations/facilities-construction/fusds-bonds/measure-e
+2026-02-21 14:51:14,768 | INFO | Queued URL: https://fremontunified.org/about/operations/facilities-construction/fusds-bonds/measure-e/summer-2025-construction-before-after
+2026-02-21 14:51:14,768 | INFO | Queued URL: https://fremontunified.org/about/operations/facilities-construction/fusds-bonds/faq
+2026-02-21 14:51:14,768 | INFO | Queued URL: https://fremontunified.org/about/operations/facilities-construction/long-range-facilities-plan-overview
+2026-02-21 14:51:14,768 | INFO | Queued URL: https://fremontunified.org/about/operations/facilities-construction/working-with-fusd
+2026-02-21 14:51:14,768 | INFO | Queued URL: https://fremontunified.org/about/operations/transportation/transportation-staff-contacts
+2026-02-21 14:51:14,768 | INFO | Queued URL: https://fremontunified.org/about/operations/transportation/job-opportunities-with-the-transportation-dept
+2026-02-21 14:51:14,768 | INFO | Queued URL: https://fremontunified.org/about/operations/transportation/bus-riding-conduct-rules-for-students-parents
+2026-02-21 14:51:14,768 | INFO | Queued URL: https://fremontunified.org/about/operations/transportation/v2g
+2026-02-21 14:51:14,768 | INFO | Queued URL: https://fremontunified.org/about/operations/transportation/transportation-lost-found
+2026-02-21 14:51:14,768 | INFO | Queued URL: https://fremontunified.org/about/operations/transportation/special-education-transportation
+2026-02-21 14:51:14,768 | INFO | Queued URL: https://fremontunified.org/about/operations/transportation/special-education-transportation/transportation-extended-school-year-summer-school-information
+2026-02-21 14:51:14,768 | INFO | Queued URL: https://fremontunified.org/about/operations/transportation/elimination-of-home-to-school-transportation-services
+2026-02-21 14:51:14,768 | INFO | Queued URL: https://fremontunified.org/about/operations/technology/technology-staff-contacts
+2026-02-21 14:51:14,769 | INFO | Queued URL: https://fremontunified.org/about/operations/facilities-construction/measure-e-bond-overview
+2026-02-21 14:51:14,769 | INFO | Queued URL: https://fremontunified.org/about/operations/facilities-construction/faq
+2026-02-21 14:51:15,768 | INFO | Crawling: https://fremontunified.org/about/human-resources
+2026-02-21 14:51:18,680 | INFO | Status: 200
+2026-02-21 14:51:18,681 | INFO | Visited count: 189
+2026-02-21 14:51:18,739 | INFO | Queued URL: https://fremontunified.org/about/human-resources/risk-management/on-line-training-for-contractors-and-volunteers
+2026-02-21 14:51:18,739 | INFO | Queued URL: https://fremontunified.org/about/human-resources/risk-management/insurance-information-student-accident
+2026-02-21 14:51:18,739 | INFO | Queued URL: https://fremontunified.org/about/human-resources/risk-management/how-to-file-a-claim-and-form-liability
+2026-02-21 14:51:18,739 | INFO | Queued URL: https://fremontunified.org/about/human-resources/paged-4/2
+2026-02-21 14:51:18,739 | INFO | Queued URL: https://fremontunified.org/about/human-resources/paged-4/3
+2026-02-21 14:51:19,386 | INFO | Crawling: https://fremontunified.org/washington/about/registration-overview/registration-materials-and-information
+2026-02-21 14:51:21,777 | INFO | Status: 200
+2026-02-21 14:51:21,778 | INFO | Visited count: 190
+2026-02-21 14:51:22,187 | INFO | Crawling: https://fremontunified.org/washington/about/registration-overview/transcript-information
+2026-02-21 14:51:24,699 | INFO | Status: 200
+2026-02-21 14:51:24,700 | INFO | Visited count: 191
+2026-02-21 14:51:25,751 | INFO | Crawling: https://fremontunified.org/washington/about/registration-overview/education-verification-information
+2026-02-21 14:51:28,246 | INFO | Status: 200
+2026-02-21 14:51:28,247 | INFO | Visited count: 192
+2026-02-21 14:51:28,965 | INFO | Crawling: https://fremontunified.org/washington/about/registration-overview/withdrawal-information
+2026-02-21 14:51:31,346 | INFO | Status: 200
+2026-02-21 14:51:31,346 | INFO | Visited count: 193
+2026-02-21 14:51:31,785 | INFO | Crawling: https://fremontunified.org/washington/about/registration-overview/alumni-high-school-diploma
+2026-02-21 14:51:34,207 | INFO | Status: 200
+2026-02-21 14:51:34,208 | INFO | Visited count: 194
+2026-02-21 14:51:34,815 | INFO | Crawling: https://fremontunified.org/about/sped-student-support/student-support-services/enrollment-registration
+2026-02-21 14:51:37,573 | INFO | Status: 200
+2026-02-21 14:51:37,574 | INFO | Visited count: 195
+2026-02-21 14:51:37,996 | INFO | Crawling: https://fremontunified.org/about/departments/instructional-services-overview/student-support-services-dept/enrollment-registration/immunization-requirements
+2026-02-21 14:51:40,853 | INFO | Status: 200
+2026-02-21 14:51:40,853 | INFO | Visited count: 196
+2026-02-21 14:51:41,832 | INFO | Crawling: https://fremontunified.org/students-community
+2026-02-21 14:51:44,730 | INFO | Status: 200
+2026-02-21 14:51:44,731 | INFO | Visited count: 197
+2026-02-21 14:51:45,560 | INFO | Crawling: https://fremontunified.org/students-community/connections/committees/join-committee
+2026-02-21 14:51:48,330 | INFO | Status: 200
+2026-02-21 14:51:48,330 | INFO | Visited count: 198
+2026-02-21 14:51:49,020 | INFO | Crawling: https://fremontunified.org/students-community/connections/committees/public-participation
+2026-02-21 14:51:51,723 | INFO | Status: 200
+2026-02-21 14:51:51,724 | INFO | Visited count: 199
+2026-02-21 14:51:52,739 | INFO | Crawling: https://fremontunified.org/students-community/connections/committees/bfaac
+2026-02-21 14:51:56,234 | INFO | Status: 200
+2026-02-21 14:51:56,235 | INFO | Visited count: 200
+2026-02-21 14:51:57,266 | INFO | Crawling: https://fremontunified.org/students-community/connections/committees/cboc
+2026-02-21 14:52:02,586 | INFO | Status: 200
+2026-02-21 14:52:02,586 | INFO | Visited count: 201
+2026-02-21 14:52:03,632 | INFO | Crawling: https://fremontunified.org/students-community/connections/committees/fac
+2026-02-21 14:52:07,493 | INFO | Status: 200
+2026-02-21 14:52:07,493 | INFO | Visited count: 202
+2026-02-21 14:52:08,408 | INFO | Crawling: https://fremontunified.org/about/board/fusd-city-council-meetings
+2026-02-21 14:52:11,204 | INFO | Status: 200
+2026-02-21 14:52:11,204 | INFO | Visited count: 203
+2026-02-21 14:52:11,802 | INFO | Crawling: https://fremontunified.org/students-community/connections/committees/lcaac
+2026-02-21 14:52:16,644 | INFO | Status: 200
+2026-02-21 14:52:16,645 | INFO | Visited count: 204
+2026-02-21 14:52:17,445 | INFO | Crawling: https://fremontunified.org/students-community/connections/committees/wellness
+2026-02-21 14:52:22,254 | INFO | Status: 200
+2026-02-21 14:52:22,254 | INFO | Visited count: 205
+2026-02-21 14:52:23,385 | INFO | Crawling: https://fremontunified.org/students-community/connections/committees/superintendent
+2026-02-21 14:52:26,226 | INFO | Status: 200
+2026-02-21 14:52:26,227 | INFO | Visited count: 206
+2026-02-21 14:52:26,282 | INFO | Queued URL: https://fremontunified.org/students-community/connections/committees/aapac
+2026-02-21 14:52:26,282 | INFO | Queued URL: https://fremontunified.org/students-community/connections/committees/smh
+2026-02-21 14:52:26,282 | INFO | Queued URL: https://fremontunified.org/students-community/connections/committees/tic
+2026-02-21 14:52:27,262 | INFO | Crawling: https://fremontunified.org/students-community/connections/committees/superintendent/aapac
+2026-02-21 14:52:30,748 | INFO | Status: 200
+2026-02-21 14:52:30,748 | INFO | Visited count: 207
+2026-02-21 14:52:31,384 | INFO | Crawling: https://fremontunified.org/students-community/connections/committees/superintendent/ciac
+2026-02-21 14:52:34,916 | INFO | Status: 200
+2026-02-21 14:52:34,916 | INFO | Visited count: 208
+2026-02-21 14:52:35,813 | INFO | Crawling: https://fremontunified.org/students-community/connections/committees/superintendent/equity
+2026-02-21 14:52:41,830 | INFO | Status: 200
+2026-02-21 14:52:41,830 | INFO | Visited count: 209
+2026-02-21 14:52:42,854 | INFO | Crawling: https://fremontunified.org/about/instructional-services/special-education/special-education-district-advisory-committee-overview
+2026-02-21 14:52:45,645 | INFO | Status: 200
+2026-02-21 14:52:45,646 | INFO | Visited count: 210
+2026-02-21 14:52:46,805 | INFO | Crawling: https://fremontunified.org/students-community/connections/committees/superintendent/smh
+2026-02-21 14:52:51,336 | INFO | Status: 200
+2026-02-21 14:52:51,337 | INFO | Visited count: 211
+2026-02-21 14:52:52,063 | INFO | Crawling: https://fremontunified.org/students-community/connections/committees/superintendent/tic
+2026-02-21 14:52:55,654 | INFO | Status: 200
+2026-02-21 14:52:55,654 | INFO | Visited count: 212
+2026-02-21 14:52:56,417 | INFO | Crawling: https://fremontunified.org/students-community/connections/committees/interagency
+2026-02-21 14:52:59,237 | INFO | Status: 200
+2026-02-21 14:52:59,237 | INFO | Visited count: 213
+2026-02-21 14:52:59,289 | INFO | Queued URL: https://fremontunified.org/about/instructional-services/special-education/special-education-mission-valley-local-plan-area-selpa/selpa-community-advisory-committee-overview
+2026-02-21 14:52:59,290 | INFO | Queued URL: https://fremontunified.org/students-community/connections/committees/other-previous-committees/7-11-committee-overview
+2026-02-21 14:52:59,290 | INFO | Queued URL: https://fremontunified.org/students-community/connections/committees/other-previous-committees/mip-sdi-task-force
+2026-02-21 14:52:59,290 | INFO | Queued URL: https://fremontunified.org/students-community/connections/committees/other-previous-committees/renaming-valhalla-theater
+2026-02-21 14:53:00,266 | INFO | Crawling: https://fremontunified.org/about/instructional-services/federal-state-programs/multilingual-learners/delac-overview
+2026-02-21 14:53:03,029 | INFO | Status: 200
+2026-02-21 14:53:03,030 | INFO | Visited count: 214
+2026-02-21 14:53:04,037 | INFO | Crawling: https://fremontunified.org/students-community/connections/committees/interagency/mip-sdi-task-force
+2026-02-21 14:53:06,727 | INFO | Status: 200
+2026-02-21 14:53:06,728 | INFO | Visited count: 215
+2026-02-21 14:53:07,463 | INFO | Crawling: https://fremontunified.org/students-community/connections/committees/archive
+2026-02-21 14:53:10,283 | INFO | Status: 200
+2026-02-21 14:53:10,284 | INFO | Visited count: 216
+2026-02-21 14:53:10,692 | INFO | Crawling: https://fremontunified.org/students-community/connections/committees/archive/renaming-valhalla-theater
+2026-02-21 14:53:13,436 | INFO | Status: 200
+2026-02-21 14:53:13,436 | INFO | Visited count: 217
+2026-02-21 14:53:13,964 | INFO | Crawling: https://fremontunified.org/students-community/connections/committees/archive/measure-i-committee
+2026-02-21 14:53:18,434 | INFO | Status: 200
+2026-02-21 14:53:18,435 | INFO | Visited count: 218
+2026-02-21 14:53:19,612 | INFO | Crawling: https://fremontunified.org/students-community/connections/committees/archive/7-11-committee-overview
+2026-02-21 14:53:22,414 | INFO | Status: 200
+2026-02-21 14:53:22,414 | INFO | Visited count: 219
+2026-02-21 14:53:22,986 | INFO | Crawling: https://fremontunified.org/students-community/connections/committees/archive/7-11-committee-overview/community-forums
+2026-02-21 14:53:25,677 | INFO | Status: 200
+2026-02-21 14:53:25,677 | INFO | Visited count: 220
+2026-02-21 14:53:26,258 | INFO | Crawling: https://fremontunified.org/students-community/connections/committees/archive/closed-comprehensive-health-puberty-and-sexuality-education-task-force
+2026-02-21 14:53:28,979 | INFO | Status: 200
+2026-02-21 14:53:28,979 | INFO | Visited count: 221
+2026-02-21 14:53:29,618 | INFO | Crawling: https://fremontunified.org/students-community/connections/volunteer-opportunities
+2026-02-21 14:53:32,326 | INFO | Status: 200
+2026-02-21 14:53:32,327 | INFO | Visited count: 222
+2026-02-21 14:53:32,370 | INFO | Queued URL: https://fremontunified.org/about/board/surfboarde-overview/fusd-committees
+2026-02-21 14:53:32,717 | INFO | Crawling: https://fremontunified.org/students-community/connections/giving-to-fusd
+2026-02-21 14:53:36,377 | INFO | Status: 200
+2026-02-21 14:53:36,377 | INFO | Visited count: 223
+2026-02-21 14:53:37,343 | INFO | Crawling: https://fremontunified.org/students-community/connections/maintaining-excellent
+2026-02-21 14:53:40,080 | INFO | Status: 200
+2026-02-21 14:53:40,081 | INFO | Visited count: 224
+2026-02-21 14:53:40,138 | INFO | Queued URL: https://fremontunified.org/students-community/connections/fusdweb@fusdk12.net
+2026-02-21 14:53:40,462 | INFO | Crawling: https://fremontunified.org/about/superintendent/public-information/channels-content/flyer-distribution-peachjar
+2026-02-21 14:53:43,173 | INFO | Status: 200
+2026-02-21 14:53:43,174 | INFO | Visited count: 225
+2026-02-21 14:53:44,045 | INFO | Crawling: https://fremontunified.org/about/business-services/accounting-services/community-services-dept-facility-use-rentals
+2026-02-21 14:53:46,885 | INFO | Status: 200
+2026-02-21 14:53:46,885 | INFO | Visited count: 226
+2026-02-21 14:53:47,893 | INFO | Crawling: https://fremontunified.org/washington/departments-overview/whs-college-and-career-resource-center-homepage/work-permits-for-students
+2026-02-21 14:53:50,422 | INFO | Status: 200
+2026-02-21 14:53:50,422 | INFO | Visited count: 227
+2026-02-21 14:53:51,387 | INFO | Crawling: https://fremontunified.org/washington/departments-overview/whs-college-and-career-resource-center-homepage/mvrop-career-technical-education
+2026-02-21 14:53:53,779 | INFO | Status: 200
+2026-02-21 14:53:53,780 | INFO | Visited count: 228
+2026-02-21 14:53:54,122 | INFO | Crawling: https://fremontunified.org/washington/departments-overview/whs-college-and-career-resource-center-homepage/financial-aid-for-college/scholarships-what-you-need-to-know
+2026-02-21 14:53:56,572 | INFO | Status: 200
+2026-02-21 14:53:56,572 | INFO | Visited count: 229
+2026-02-21 14:53:57,078 | INFO | Crawling: https://fremontunified.org/washington/departments-overview/whs-college-and-career-resource-center-homepage/summer-year-round-programs-internships-volunteer-work-opportunities
+2026-02-21 14:53:59,446 | INFO | Status: 200
+2026-02-21 14:53:59,446 | INFO | Visited count: 230
+2026-02-21 14:54:00,497 | INFO | Crawling: https://fremontunified.org/washington/departments-overview/whs-college-and-career-resource-center-homepage/u-s-military-and-selective-service
+2026-02-21 14:54:02,916 | INFO | Status: 200
+2026-02-21 14:54:02,916 | INFO | Visited count: 231
+2026-02-21 14:54:03,539 | INFO | Crawling: https://fremontunified.org/washington/departments-overview/athletics-overview/eligibility-mval-ncaa
+2026-02-21 14:54:05,983 | INFO | Status: 200
+2026-02-21 14:54:05,984 | INFO | Visited count: 232
+2026-02-21 14:54:06,772 | INFO | Crawling: https://fremontunified.org/about/sped-student-support/student-support-services
+2026-02-21 14:54:09,698 | INFO | Status: 200
+2026-02-21 14:54:09,699 | INFO | Visited count: 233
+2026-02-21 14:54:09,755 | INFO | Queued URL: https://fremontunified.org/about/instructional-services/student-support-services/student-support-services-staff-contacts
+2026-02-21 14:54:10,668 | INFO | Crawling: https://fremontunified.org/about/sped-student-support/student-support-services/families-in-need
+2026-02-21 14:54:13,469 | INFO | Status: 200
+2026-02-21 14:54:13,469 | INFO | Visited count: 234
+2026-02-21 14:54:13,497 | INFO | Queued URL: https://fremontunified.org/about/instructional-services/student-support-services/families-in-need/homeless-and-foster-youth-support-mckinney-vento-act
+2026-02-21 14:54:14,312 | INFO | Crawling: https://fremontunified.org/about/sped-student-support/student-support-services/families-in-need/income-tax-filing-assistance-fremont-vita
+2026-02-21 14:54:17,050 | INFO | Status: 200
+2026-02-21 14:54:17,050 | INFO | Visited count: 235
+2026-02-21 14:54:18,006 | INFO | Crawling: https://fremontunified.org/about/sped-student-support/student-support-services/families-in-need/homeless-and-foster-youth-support-mckinney-vento-act
+2026-02-21 14:54:20,719 | INFO | Status: 200
+2026-02-21 14:54:20,721 | INFO | Visited count: 236
+2026-02-21 14:54:21,398 | INFO | Crawling: https://fremontunified.org/about/sped-student-support/student-support-services/families-in-need/lgbtq-support-contacts
+2026-02-21 14:54:24,211 | INFO | Status: 200
+2026-02-21 14:54:24,211 | INFO | Visited count: 237
+2026-02-21 14:54:24,244 | INFO | Queued URL: https://fremontunified.org/about/sped-student-support/student-support-services/families-in-need/wstallworth@fusdk12.net
+2026-02-21 14:54:25,099 | INFO | Crawling: https://fremontunified.org/about/sped-student-support/student-support-services/families-in-need/date-safe-safe-alternatives-to-violent-environments
+2026-02-21 14:54:27,899 | INFO | Status: 200
+2026-02-21 14:54:27,899 | INFO | Visited count: 238
+2026-02-21 14:54:28,890 | INFO | Crawling: https://fremontunified.org/about/sped-student-support/student-support-services/families-in-need/resources-to-help-prevent-bullying
+2026-02-21 14:54:31,640 | INFO | Status: 200
+2026-02-21 14:54:31,641 | INFO | Visited count: 239
+2026-02-21 14:54:32,652 | INFO | Crawling: https://fremontunified.org/about/sped-student-support/student-support-services/families-in-need/drug-information
+2026-02-21 14:54:35,459 | INFO | Status: 200
+2026-02-21 14:54:35,460 | INFO | Visited count: 240
+2026-02-21 14:54:36,204 | INFO | Crawling: https://fremontunified.org/about/sped-student-support/student-support-services/families-in-need/resources-to-help-prevent-human-trafficking
+2026-02-21 14:54:38,940 | INFO | Status: 200
+2026-02-21 14:54:38,940 | INFO | Visited count: 241
+2026-02-21 14:54:39,875 | INFO | Crawling: https://fremontunified.org/about/sped-student-support/student-support-services/families-in-need/basic-needs-food-financial-shelter-medical-others
+2026-02-21 14:54:42,605 | INFO | Status: 200
+2026-02-21 14:54:42,605 | INFO | Visited count: 242
+2026-02-21 14:54:43,332 | INFO | Crawling: https://fremontunified.org/about/instructional-services/student-support-services/families-in-need/wstallworth@fusdk12.net
+2026-02-21 14:54:44,886 | INFO | Status: 404
+2026-02-21 14:54:44,888 | ERROR | Failed request: https://fremontunified.org/about/instructional-services/student-support-services/families-in-need/wstallworth@fusdk12.net -> Client error '404 Not Found' for url 'https://fremontunified.org/about/instructional-services/student-support-services/families-in-need/wstallworth@fusdk12.net'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+2026-02-21 14:54:44,888 | INFO | Crawling: https://fremontunified.org/about/instructional-services/student-support-services/mental-health-overview
+2026-02-21 14:54:47,751 | INFO | Status: 200
+2026-02-21 14:54:47,751 | INFO | Visited count: 243
+2026-02-21 14:54:48,258 | INFO | Crawling: https://fremontunified.org/students-community/support/portals
+2026-02-21 14:54:51,255 | INFO | Status: 200
+2026-02-21 14:54:51,255 | INFO | Visited count: 244
+2026-02-21 14:54:51,293 | INFO | Queued URL: https://fremontunified.org/about/departments/instructional-services-overview/curriculum-instruction-dept/library-at-district-overview/pay-for-lost-damaged-textbooks-and-or-library-books
+2026-02-21 14:54:51,827 | INFO | Crawling: https://fremontunified.org/students-community/support/parent-student-handbook/parent-guardian-student-handbook
+2026-02-21 14:54:54,688 | INFO | Status: 200
+2026-02-21 14:54:54,689 | INFO | Visited count: 245
+2026-02-21 14:54:55,174 | INFO | Crawling: https://fremontunified.org/students-community/support/parent-student-handbook/parent-guardian-student-handbook-spanish
+2026-02-21 14:54:58,007 | INFO | Status: 200
+2026-02-21 14:54:58,007 | INFO | Visited count: 246
+2026-02-21 14:54:58,445 | INFO | Crawling: https://fremontunified.org/students-community/support/parent-student-handbook/parent-guardian-student-handbook-chinese
+2026-02-21 14:55:01,240 | INFO | Status: 200
+2026-02-21 14:55:01,240 | INFO | Visited count: 247
+2026-02-21 14:55:01,970 | INFO | Crawling: https://fremontunified.org/students-community/support/ac-transit-information
+2026-02-21 14:55:04,750 | INFO | Status: 200
+2026-02-21 14:55:04,750 | INFO | Visited count: 248
+2026-02-21 14:55:05,574 | INFO | Crawling: https://fremontunified.org/about/sped-student-support/student-support-services/health-services-overview
+2026-02-21 14:55:08,403 | INFO | Status: 200
+2026-02-21 14:55:08,404 | INFO | Visited count: 249
+2026-02-21 14:55:08,510 | INFO | Queued URL: https://fremontunified.org/about/instructional-services/student-support-services/enrollment-registration/immunization-requirements
+2026-02-21 14:55:09,374 | INFO | Crawling: https://fremontunified.org/about/sped-student-support/student-support-services/health-services-overview/health-topics-overview
+2026-02-21 14:55:12,142 | INFO | Status: 200
+2026-02-21 14:55:12,143 | INFO | Visited count: 250
+2026-02-21 14:55:13,279 | INFO | Crawling: https://fremontunified.org/about/sped-student-support/student-support-services/health-services-overview/health-topics-overview/covid-19-overview
+2026-02-21 14:55:16,136 | INFO | Status: 200
+2026-02-21 14:55:16,136 | INFO | Visited count: 251
+2026-02-21 14:55:17,114 | INFO | Crawling: https://fremontunified.org/washington/wp-content/uploads/sites/8/2025/10/Washington-2025-2026-School-Profile.pdf
+2026-02-21 14:55:17,387 | INFO | Status: 200
+2026-02-21 14:55:17,387 | INFO | Visited count: 252
+2026-02-21 14:55:18,241 | INFO | Crawling: https://fremontunified.org/washington/wp-content/uploads/sites/8/2025/10/Washington-2024-2025-School-Profile.pdf
+2026-02-21 14:55:18,442 | INFO | Status: 200
+2026-02-21 14:55:18,442 | INFO | Visited count: 253
+2026-02-21 14:55:19,519 | INFO | Crawling: https://fremontunified.org/washington/wp-content/uploads/sites/8/2025/10/Washington-2023-2024-School-Profile.pdf
+2026-02-21 14:55:19,712 | INFO | Status: 200
+2026-02-21 14:55:19,713 | INFO | Visited count: 254
+2026-02-21 14:55:20,285 | INFO | Crawling: https://fremontunified.org/washington/wp-content/uploads/sites/8/2025/10/Washington-2022-2023-School-Profile.pdf
+2026-02-21 14:55:20,585 | INFO | Status: 200
+2026-02-21 14:55:20,586 | INFO | Visited count: 255
+2026-02-21 14:55:20,924 | INFO | Crawling: https://fremontunified.org/about/instructional-services/assessment-accountability/psat-sat
+2026-02-21 14:55:23,646 | INFO | Status: 200
+2026-02-21 14:55:23,647 | INFO | Visited count: 256
+2026-02-21 14:55:24,501 | INFO | Crawling: https://fremontunified.org/washington/departments/athletics/eligibility-mval-ncaa
+2026-02-21 14:55:26,952 | INFO | Status: 200
+2026-02-21 14:55:26,952 | INFO | Visited count: 257
+2026-02-21 14:55:27,357 | INFO | Crawling: https://fremontunified.org/washington/students-community/student-support/college-and-career-resource-center/valdez@fusdk12.net
+2026-02-21 14:55:28,639 | INFO | Status: 404
+2026-02-21 14:55:28,640 | ERROR | Failed request: https://fremontunified.org/washington/students-community/student-support/college-and-career-resource-center/valdez@fusdk12.net -> Client error '404 Not Found' for url 'https://fremontunified.org/washington/students-community/student-support/college-and-career-resource-center/valdez@fusdk12.net'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+2026-02-21 14:55:28,640 | INFO | Crawling: https://fremontunified.org/about/instructional-services/elementary-education/gate-overview
+2026-02-21 14:55:31,338 | INFO | Status: 200
+2026-02-21 14:55:31,339 | INFO | Visited count: 258
+2026-02-21 14:55:31,776 | INFO | Crawling: https://fremontunified.org/about/superintendent/immigrant-families
+2026-02-21 14:55:34,580 | INFO | Status: 200
+2026-02-21 14:55:34,580 | INFO | Visited count: 259
+2026-02-21 14:55:35,096 | INFO | Crawling: https://fremontunified.org/washington/schedule-news/news/paged-3/4
+2026-02-21 14:55:36,588 | INFO | Status: 200
+2026-02-21 14:55:36,589 | INFO | Visited count: 260
+2026-02-21 14:55:36,680 | INFO | Queued URL: https://fremontunified.org/washington/news/fall-athletic-information
+2026-02-21 14:55:36,680 | INFO | Queued URL: https://fremontunified.org/washington/news/2025-2026-maze-days
+2026-02-21 14:55:36,680 | INFO | Queued URL: https://fremontunified.org/washington/news/25-26-maze-day-schedule
+2026-02-21 14:55:36,680 | INFO | Queued URL: https://fremontunified.org/washington/schedule-news/news/paged-3/6
+2026-02-21 14:55:37,577 | INFO | Crawling: https://fremontunified.org/washington/news/avid-day
+2026-02-21 14:55:39,930 | INFO | Status: 200
+2026-02-21 14:55:39,931 | INFO | Visited count: 261
+2026-02-21 14:55:39,968 | INFO | Queued URL: https://fremontunified.org/washington/category/news
+2026-02-21 14:55:40,795 | INFO | Crawling: https://fremontunified.org/washington/news/sat-psat-registration
+2026-02-21 14:55:43,194 | INFO | Status: 200
+2026-02-21 14:55:43,194 | INFO | Visited count: 262
+2026-02-21 14:55:44,234 | INFO | Crawling: https://fremontunified.org/washington/news/8-15-25-1030-am-intermittent-phone-service-at-multiple-sites
+2026-02-21 14:55:46,459 | INFO | Status: 200
+2026-02-21 14:55:46,459 | INFO | Visited count: 263
+2026-02-21 14:55:47,560 | INFO | Crawling: https://fremontunified.org/washington/schedule-news/news/paged-3/5
+2026-02-21 14:55:49,015 | INFO | Status: 200
+2026-02-21 14:55:49,016 | INFO | Visited count: 264
+2026-02-21 14:55:49,056 | INFO | Queued URL: https://fremontunified.org/washington/news/whs-irvington-and-msjhs-success-deca-international-conference-2025
+2026-02-21 14:55:49,057 | INFO | Queued URL: https://fremontunified.org/washington/schedule-news/news/paged-3/7
+2026-02-21 14:55:50,132 | INFO | Crawling: https://fremontunified.org/washington/uncategorized/students-in-grades-9-11-2023-24-surfboarde-applications-close-april-3
+2026-02-21 14:55:52,475 | INFO | Status: 200
+2026-02-21 14:55:52,475 | INFO | Visited count: 265
+2026-02-21 14:55:52,507 | INFO | Queued URL: https://fremontunified.org/washington/category/uncategorized
+2026-02-21 14:55:53,189 | INFO | Crawling: https://fremontunified.org/washington/uncategorized/public-review-feedback-welcome-chemistry-in-the-earth-system-ci-initiatives
+2026-02-21 14:55:55,575 | INFO | Status: 200
+2026-02-21 14:55:55,576 | INFO | Visited count: 266
+2026-02-21 14:55:56,441 | INFO | Crawling: https://fremontunified.org/washington/uncategorized/video-college-information-night-noche-de-informacion-universitaria-%e5%a4%a7%e5%ad%b8%e8%b3%87%e8%a8%8a%e5%a4%9c
+2026-02-21 14:55:58,802 | INFO | Status: 200
+2026-02-21 14:55:58,802 | INFO | Visited count: 267
+2026-02-21 14:55:59,722 | INFO | Crawling: https://fremontunified.org/washington/uncategorized/student-meals-in-2022-23
+2026-02-21 14:56:01,991 | INFO | Status: 200
+2026-02-21 14:56:01,991 | INFO | Visited count: 268
+2026-02-21 14:56:02,853 | INFO | Crawling: https://fremontunified.org/washington/uncategorized/football-team-fundraiser-at-mod-pizza
+2026-02-21 14:56:05,287 | INFO | Status: 200
+2026-02-21 14:56:05,287 | INFO | Visited count: 269
+2026-02-21 14:56:05,778 | INFO | Crawling: https://fremontunified.org/washington/uncategorized/hs-summer-school-information-schedule-attendance-policy-and-email-contact
+2026-02-21 14:56:08,204 | INFO | Status: 200
+2026-02-21 14:56:08,205 | INFO | Visited count: 270
+2026-02-21 14:56:08,833 | INFO | Crawling: https://fremontunified.org/washington/uncategorized/class-of-2022-and-2023-seal-of-civic-engagement-sello-estatal-de-compromiso-civico-%e5%8a%a0%e5%b7%9e%e5%85%ac%e6%b0%91%e5%8f%83%e8%88%87%e5%8d%b0%e7%ab%a0
+2026-02-21 14:56:11,169 | INFO | Status: 200
+2026-02-21 14:56:11,169 | INFO | Visited count: 271
+2026-02-21 14:56:12,291 | INFO | Crawling: https://fremontunified.org/washington/schedule-news/news/paged-3/16
+2026-02-21 14:56:13,804 | INFO | Status: 200
+2026-02-21 14:56:13,804 | INFO | Visited count: 272
+2026-02-21 14:56:13,839 | INFO | Queued URL: https://fremontunified.org/washington/news/back-to-school-night-9-7-23
+2026-02-21 14:56:13,839 | INFO | Queued URL: https://fremontunified.org/?p=190519
+2026-02-21 14:56:13,839 | INFO | Queued URL: https://fremontunified.org/washington/news/washington-high-school-maze-day-2023
+2026-02-21 14:56:13,839 | INFO | Queued URL: https://fremontunified.org/washington/news/whs-maze-days-2023-24
+2026-02-21 14:56:13,839 | INFO | Queued URL: https://fremontunified.org/washington/news/2023-graduation-ceremony
+2026-02-21 14:56:13,839 | INFO | Queued URL: https://fremontunified.org/washington/schedule-news/news/paged-3/14
+2026-02-21 14:56:14,637 | INFO | Crawling: https://fremontunified.org/washington/schedule-news/news/paged-3/15
+2026-02-21 14:56:16,142 | INFO | Status: 200
+2026-02-21 14:56:16,142 | INFO | Visited count: 273
+2026-02-21 14:56:16,180 | INFO | Queued URL: https://fremontunified.org/washington/news/parent-teacher-conferences-october-25th-26th
+2026-02-21 14:56:16,180 | INFO | Queued URL: https://fremontunified.org/about/instructional-services/secondary-education/college-info-night
+2026-02-21 14:56:16,180 | INFO | Queued URL: https://fremontunified.org/washington/news/no-school-tomorrow-friday-october-13-2023
+2026-02-21 14:56:16,180 | INFO | Queued URL: https://fremontunified.org/washington/news/homecoming-dance-information
+2026-02-21 14:56:16,180 | INFO | Queued URL: https://fremontunified.org/washington/schedule-news/news/paged-3/13
+2026-02-21 14:56:16,596 | INFO | Crawling: https://fremontunified.org/washington/schedule-news/events/past-events/paged-3/2
+2026-02-21 14:56:18,092 | INFO | Status: 200
+2026-02-21 14:56:18,092 | INFO | Visited count: 274
+2026-02-21 14:56:18,142 | INFO | Queued URL: https://fremontunified.org/?p=65343
+2026-02-21 14:56:18,142 | INFO | Queued URL: https://fremontunified.org/washington/events-archive/fentanyl-presentation-mar-20-2025-at-7pm
+2026-02-21 14:56:18,142 | INFO | Queued URL: https://fremontunified.org/washington/schedule-news/events/past-events/paged-3/4
+2026-02-21 14:56:19,039 | INFO | Crawling: https://fremontunified.org/washington/schedule-news/events/past-events/paged-3/3
+2026-02-21 14:56:20,605 | INFO | Status: 200
+2026-02-21 14:56:20,605 | INFO | Visited count: 275
+2026-02-21 14:56:20,693 | INFO | Queued URL: https://fremontunified.org/washington/schedule-news/events/past-events/paged-3/5
+2026-02-21 14:56:21,229 | INFO | Crawling: https://fremontunified.org/washington/schedule-news/events/past-events/paged-3/6
+2026-02-21 14:56:22,627 | INFO | Status: 200
+2026-02-21 14:56:22,627 | INFO | Visited count: 276
+2026-02-21 14:56:23,046 | INFO | Crawling: https://fremontunified.org/about/welcome/employees-in-our-district
+2026-02-21 14:56:25,837 | INFO | Status: 200
+2026-02-21 14:56:25,837 | INFO | Visited count: 277
+2026-02-21 14:56:26,631 | INFO | Crawling: https://fremontunified.org/about/instructional-services/student-support-services
+2026-02-21 14:56:29,480 | INFO | Status: 200
+2026-02-21 14:56:29,481 | INFO | Visited count: 278
+2026-02-21 14:56:30,244 | INFO | Crawling: https://fremontunified.org/about/welcome/paged-4/2
+2026-02-21 14:56:31,917 | INFO | Status: 200
+2026-02-21 14:56:31,918 | INFO | Visited count: 279
+2026-02-21 14:56:31,956 | INFO | Queued URL: https://fremontunified.org/about/welcome/paged-4/4
+2026-02-21 14:56:32,757 | INFO | Crawling: https://fremontunified.org/about/welcome/paged-4/3
+2026-02-21 14:56:34,513 | INFO | Status: 200
+2026-02-21 14:56:34,514 | INFO | Visited count: 280
+2026-02-21 14:56:35,330 | INFO | Crawling: https://fremontunified.org/about/welcome/paged-4/5
+2026-02-21 14:56:37,178 | INFO | Status: 200
+2026-02-21 14:56:37,178 | INFO | Visited count: 281
+2026-02-21 14:56:37,534 | INFO | Crawling: https://fremontunified.org/about/board/board-of-education-members
+2026-02-21 14:56:40,238 | INFO | Status: 200
+2026-02-21 14:56:40,238 | INFO | Visited count: 282
+2026-02-21 14:56:41,009 | INFO | Crawling: https://fremontunified.org/about/board/board-of-education-members/trustee-areas-used-for-governing-board-elections
+2026-02-21 14:56:43,722 | INFO | Status: 200
+2026-02-21 14:56:43,722 | INFO | Visited count: 283
+2026-02-21 14:56:44,112 | INFO | Crawling: https://fremontunified.org/about/board/board-of-education-members/trustee-areas-used-for-governing-board-elections/frequently-asked-questions-by-trustee-area-faqs
+2026-02-21 14:56:46,889 | INFO | Status: 200
+2026-02-21 14:56:46,890 | INFO | Visited count: 284
+2026-02-21 14:56:47,704 | INFO | Crawling: https://fremontunified.org/about/board/board-meeting-live-stream-video
+2026-02-21 14:56:50,511 | INFO | Status: 200
+2026-02-21 14:56:50,511 | INFO | Visited count: 285
+2026-02-21 14:56:51,428 | INFO | Crawling: https://fremontunified.org/about/board/board-meeting-live-stream-video/board-showcase
+2026-02-21 14:56:54,329 | INFO | Status: 200
+2026-02-21 14:56:54,330 | INFO | Visited count: 286
+2026-02-21 14:56:55,294 | INFO | Crawling: https://fremontunified.org/about/board/board-meeting-live-stream-video/presentation-template-for-board-meetings
+2026-02-21 14:56:58,001 | INFO | Status: 200
+2026-02-21 14:56:58,001 | INFO | Visited count: 287
+2026-02-21 14:56:59,044 | INFO | Crawling: https://fremontunified.org/about/board/surfboarde-overview
+2026-02-21 14:57:01,764 | INFO | Status: 200
+2026-02-21 14:57:01,764 | INFO | Visited count: 288
+2026-02-21 14:57:02,772 | INFO | Crawling: https://fremontunified.org/about/board/paged-4/2
+2026-02-21 14:57:04,567 | INFO | Status: 200
+2026-02-21 14:57:04,567 | INFO | Visited count: 289
+2026-02-21 14:57:04,616 | INFO | Queued URL: https://fremontunified.org/about/board/paged-4/4
+2026-02-21 14:57:05,641 | INFO | Crawling: https://fremontunified.org/about/board/paged-4/3
+2026-02-21 14:57:07,536 | INFO | Status: 200
+2026-02-21 14:57:07,536 | INFO | Visited count: 290
+2026-02-21 14:57:07,576 | INFO | Queued URL: https://fremontunified.org/about/board/paged-4/5
+2026-02-21 14:57:07,987 | INFO | Crawling: https://fremontunified.org/about/board/paged-4/20
+2026-02-21 14:57:09,751 | INFO | Status: 200
+2026-02-21 14:57:09,751 | INFO | Visited count: 291
+2026-02-21 14:57:09,853 | INFO | Queued URL: https://fremontunified.org/about/board/paged-4/19
+2026-02-21 14:57:09,853 | INFO | Queued URL: https://fremontunified.org/about/board/paged-4/18
+2026-02-21 14:57:10,454 | INFO | Crawling: https://fremontunified.org/about/departments/org-chart
+2026-02-21 14:57:13,251 | INFO | Status: 200
+2026-02-21 14:57:13,251 | INFO | Visited count: 292
+2026-02-21 14:57:13,796 | INFO | Crawling: https://fremontunified.org/about/departments/site-map
+2026-02-21 14:57:16,719 | INFO | Status: 200
+2026-02-21 14:57:16,720 | INFO | Visited count: 293
+2026-02-21 14:57:16,764 | INFO | Queued URL: https://fremontunified.org/about/instructional-services/assessment-accountability/klasjdfkl342
+2026-02-21 14:57:17,329 | INFO | Crawling: https://fremontunified.org/about/business-services/accounting-services
+2026-02-21 14:57:20,133 | INFO | Status: 200
+2026-02-21 14:57:20,135 | INFO | Visited count: 294
+2026-02-21 14:57:20,906 | INFO | Crawling: https://fremontunified.org/about/business-services/accounting-services/accounts-payable
+2026-02-21 14:57:23,726 | INFO | Status: 200
+2026-02-21 14:57:23,727 | INFO | Visited count: 295
+2026-02-21 14:57:24,760 | INFO | Crawling: https://fremontunified.org/about/business-services/budget
+2026-02-21 14:57:27,483 | INFO | Status: 200
+2026-02-21 14:57:27,483 | INFO | Visited count: 296
+2026-02-21 14:57:27,532 | INFO | Queued URL: https://fremontunified.org/about/business-services/accounting-services/accounting-statements/all-budget-files-and-previous-years
+2026-02-21 14:57:28,097 | INFO | Crawling: https://fremontunified.org/about/human-resources/employee-resources/certificated-staff-management-employment-overview
+2026-02-21 14:57:30,776 | INFO | Status: 200
+2026-02-21 14:57:30,776 | INFO | Visited count: 297
+2026-02-21 14:57:31,503 | INFO | Crawling: https://fremontunified.org/about/departments/human-resources/employee-resources/classified-staff-management-employment-overview
+2026-02-21 14:57:34,241 | INFO | Status: 200
+2026-02-21 14:57:34,242 | INFO | Visited count: 298
+2026-02-21 14:57:35,307 | INFO | Crawling: https://fremontunified.org/about/business-services/facilities-construction
+2026-02-21 14:57:38,097 | INFO | Status: 200
+2026-02-21 14:57:38,098 | INFO | Visited count: 299
+2026-02-21 14:57:38,192 | INFO | Queued URL: https://fremontunified.org/about/operations/facilities-construction/bond-programs/fusds-bonds
+2026-02-21 14:57:38,192 | INFO | Queued URL: https://fremontunified.org/about/operations/facilities-construction/new/working-with-fusd
+2026-02-21 14:57:39,026 | INFO | Crawling: https://fremontunified.org/about/instructional-services/student-support-services/health-services-overview
+2026-02-21 14:57:41,858 | INFO | Status: 200
+2026-02-21 14:57:41,858 | INFO | Visited count: 300
+2026-02-21 14:57:42,263 | INFO | Crawling: https://fremontunified.org/about/business-services/maintenance-operations-grounds
+2026-02-21 14:57:45,011 | INFO | Status: 200
+2026-02-21 14:57:45,011 | INFO | Visited count: 301
+2026-02-21 14:57:46,029 | INFO | Crawling: https://fremontunified.org/about/business-services/facilities-construction/measure-e-bond-overview
+2026-02-21 14:57:47,580 | INFO | Status: 404
+2026-02-21 14:57:47,580 | ERROR | Failed request: https://fremontunified.org/about/business-services/facilities-construction/measure-e-bond-overview -> Client error '404 Not Found' for url 'https://fremontunified.org/about/business-services/facilities-construction/measure-e-bond-overview'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+2026-02-21 14:57:47,580 | INFO | Crawling: https://fremontunified.org/about/business-services/accounting-services/payroll
+2026-02-21 14:57:50,282 | INFO | Status: 200
+2026-02-21 14:57:50,282 | INFO | Visited count: 302
+2026-02-21 14:57:50,678 | INFO | Crawling: https://fremontunified.org/about/superintendent/public-information
+2026-02-21 14:57:53,355 | INFO | Status: 200
+2026-02-21 14:57:53,355 | INFO | Visited count: 303
+2026-02-21 14:57:53,387 | INFO | Queued URL: https://fremontunified.org/about/departments/office-of-the-superintendent-overview/public-information-dept/channels-content
+2026-02-21 14:57:53,937 | INFO | Crawling: https://fremontunified.org/about/business-services/purchasing
+2026-02-21 14:57:56,691 | INFO | Status: 200
+2026-02-21 14:57:56,692 | INFO | Visited count: 304
+2026-02-21 14:57:57,584 | INFO | Crawling: https://fremontunified.org/about/human-resources/risk-management
+2026-02-21 14:58:00,281 | INFO | Status: 200
+2026-02-21 14:58:00,281 | INFO | Visited count: 305
+2026-02-21 14:58:00,319 | INFO | Queued URL: https://fremontunified.org/about/human-resources/risk-management/on-line-training-for- contractors-and-volunteers
+2026-02-21 14:58:00,319 | INFO | Queued URL: https://fremontunified.org/about/human-resources/risk-management/insurance- information-student-accident
+2026-02-21 14:58:00,319 | INFO | Queued URL: https://fremontunified.org/about/human-resources/risk-management/how-to-file- a-claim-and-form-liability
+2026-02-21 14:58:00,646 | INFO | Crawling: https://fremontunified.org/about/instructional-services/special-education
+2026-02-21 14:58:03,417 | INFO | Status: 200
+2026-02-21 14:58:03,418 | INFO | Visited count: 306
+2026-02-21 14:58:03,455 | INFO | Queued URL: https://fremontunified.org/about/instructional-services/special-education/frequently-asked-questions-faqs
+2026-02-21 14:58:03,457 | INFO | Queued URL: https://fremontunified.org/about/instructional-services/spedrecordsrequest@fusdk12.net
+2026-02-21 14:58:03,457 | INFO | Queued URL: https://fremontunified.org/about/instructional-services/special-education/special-education-staff-contacts
+2026-02-21 14:58:04,120 | INFO | Crawling: https://fremontunified.org/about/business-services/technology
+2026-02-21 14:58:06,830 | INFO | Status: 200
+2026-02-21 14:58:06,830 | INFO | Visited count: 307
+2026-02-21 14:58:06,916 | INFO | Queued URL: https://fremontunified.org/about/business-services/technology/technology-staff-contacts
+2026-02-21 14:58:07,312 | INFO | Crawling: https://fremontunified.org/about/business-services/transportation
+2026-02-21 14:58:10,086 | INFO | Status: 200
+2026-02-21 14:58:10,086 | INFO | Visited count: 308
+2026-02-21 14:58:10,119 | INFO | Queued URL: https://fremontunified.org/about/business-services/transportation/transportation-staff-contacts
+2026-02-21 14:58:10,120 | INFO | Queued URL: https://fremontunified.org/about/business-services/transportation/elimination-of-home-to-school-transportation-services
+2026-02-21 14:58:10,798 | INFO | Crawling: https://fremontunified.org/about/sped-student-support/special-education
+2026-02-21 14:58:13,480 | INFO | Status: 200
+2026-02-21 14:58:13,480 | INFO | Visited count: 309
+2026-02-21 14:58:13,514 | INFO | Queued URL: https://fremontunified.org/about/sped-student-support/spedrecordsrequest@fusdk12.net
+2026-02-21 14:58:14,510 | INFO | Crawling: https://fremontunified.org/about/operations/maintenance-operations-grounds
+2026-02-21 14:58:17,248 | INFO | Status: 200
+2026-02-21 14:58:17,248 | INFO | Visited count: 310
+2026-02-21 14:58:18,379 | INFO | Crawling: https://fremontunified.org/?page_id=65439
+2026-02-21 14:58:19,943 | INFO | Status: 404
+2026-02-21 14:58:19,943 | ERROR | Failed request: https://fremontunified.org/?page_id=65439 -> Client error '404 Not Found' for url 'https://fremontunified.org/?page_id=65439'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+2026-02-21 14:58:19,943 | INFO | Crawling: https://fremontunified.org/about/operations/transportation
+2026-02-21 14:58:22,717 | INFO | Status: 200
+2026-02-21 14:58:22,717 | INFO | Visited count: 311
+2026-02-21 14:58:23,133 | INFO | Crawling: https://fremontunified.org/about/operations/technology
+2026-02-21 14:58:25,843 | INFO | Status: 200
+2026-02-21 14:58:25,843 | INFO | Visited count: 312
+2026-02-21 14:58:26,699 | INFO | Crawling: https://fremontunified.org/students-community/support/portals/password-change
+2026-02-21 14:58:29,434 | INFO | Status: 200
+2026-02-21 14:58:29,434 | INFO | Visited count: 313
+2026-02-21 14:58:30,071 | INFO | Crawling: https://fremontunified.org/students-community/support/portals/cyber-safety-tips-resources
+2026-02-21 14:58:32,900 | INFO | Status: 200
+2026-02-21 14:58:32,901 | INFO | Visited count: 314
+2026-02-21 14:58:33,504 | INFO | Crawling: https://fremontunified.org/students-community/support/portals/tech-links-help-with-destiny
+2026-02-21 14:58:36,535 | INFO | Status: 200
+2026-02-21 14:58:36,536 | INFO | Visited count: 315
+2026-02-21 14:58:37,701 | INFO | Crawling: https://fremontunified.org/about/instructional-services/student-support-services/families-in-need/basic-needs-food-financial-shelter-medical-others
+2026-02-21 14:58:40,379 | INFO | Status: 200
+2026-02-21 14:58:40,379 | INFO | Visited count: 316
+2026-02-21 14:58:41,424 | INFO | Crawling: https://fremontunified.org/students-community/connections/committees/equity
+2026-02-21 14:58:53,767 | INFO | Status: 200
+2026-02-21 14:58:53,767 | INFO | Visited count: 317
+2026-02-21 14:58:54,296 | INFO | Crawling: https://fremontunified.org/about/sped-student-support/special-education/special-education-district-advisory-committee-overview
+2026-02-21 14:58:57,120 | INFO | Status: 200
+2026-02-21 14:58:57,121 | INFO | Visited count: 318
+2026-02-21 14:58:57,637 | INFO | Crawling: https://fremontunified.org/about/human-resources/human-resources-staff-contacts
+2026-02-21 14:59:00,462 | INFO | Status: 200
+2026-02-21 14:59:00,463 | INFO | Visited count: 319
+2026-02-21 14:59:00,517 | INFO | Queued URL: https://fremontunified.org/about/human-resources/jshah1@fusdk12.net
+2026-02-21 14:59:01,311 | INFO | Crawling: https://fremontunified.org/about/human-resources/employee-resources/union-contact-information-contracts-and-salary-schedules
+2026-02-21 14:59:02,576 | INFO | Status: 200
+2026-02-21 14:59:02,577 | INFO | Visited count: 320
+2026-02-21 14:59:02,923 | INFO | Crawling: https://fremontunified.org/about/human-resources/employee-resources/certificated-staff-management-employment-overview/credential-information
+2026-02-21 14:59:05,643 | INFO | Status: 200
+2026-02-21 14:59:05,643 | INFO | Visited count: 321
+2026-02-21 14:59:06,560 | INFO | Crawling: https://fremontunified.org/about/human-resources/employee-resources/certificated-staff-management-employment-overview/credential-renewal-information
+2026-02-21 14:59:09,269 | INFO | Status: 200
+2026-02-21 14:59:09,269 | INFO | Visited count: 322
+2026-02-21 14:59:09,767 | INFO | Crawling: https://fremontunified.org/about/human-resources/employee-resources/certificated-staff-management-employment-overview/certificated-application-process
+2026-02-21 14:59:12,439 | INFO | Status: 200
+2026-02-21 14:59:12,439 | INFO | Visited count: 323
+2026-02-21 14:59:13,357 | INFO | Crawling: https://fremontunified.org/about/human-resources/employee-resources/classified-staff-management-employment-overview
+2026-02-21 14:59:16,139 | INFO | Status: 200
+2026-02-21 14:59:16,139 | INFO | Visited count: 324
+2026-02-21 14:59:16,945 | INFO | Crawling: https://fremontunified.org/about/human-resources/employee-resources/classified-staff-management-employment-overview/personnel-commission
+2026-02-21 14:59:19,828 | INFO | Status: 200
+2026-02-21 14:59:19,828 | INFO | Visited count: 325
+2026-02-21 14:59:20,782 | INFO | Crawling: https://fremontunified.org/about/human-resources/employee-resources/classified-staff-management-employment-overview/classified-job-descriptions
+2026-02-21 14:59:23,552 | INFO | Status: 200
+2026-02-21 14:59:23,552 | INFO | Visited count: 326
+2026-02-21 14:59:24,497 | INFO | Crawling: https://fremontunified.org/about/human-resources/employee-resources/coaching-information-openings
+2026-02-21 14:59:27,439 | INFO | Status: 200
+2026-02-21 14:59:27,440 | INFO | Visited count: 327
+2026-02-21 14:59:28,445 | INFO | Crawling: https://fremontunified.org/about/human-resources/employee-resources/substitute-teaching-information
+2026-02-21 14:59:31,217 | INFO | Status: 200
+2026-02-21 14:59:31,218 | INFO | Visited count: 328
+2026-02-21 14:59:32,328 | INFO | Crawling: https://fremontunified.org/about/human-resources/employee-resources/benefits-overview
+2026-02-21 14:59:35,035 | INFO | Status: 200
+2026-02-21 14:59:35,035 | INFO | Visited count: 329
+2026-02-21 14:59:35,411 | INFO | Crawling: https://fremontunified.org/about/human-resources/employee-resources/benefits-overview/find-your-current-benefits
+2026-02-21 14:59:38,123 | INFO | Status: 200
+2026-02-21 14:59:38,123 | INFO | Visited count: 330
+2026-02-21 14:59:38,782 | INFO | Crawling: https://fremontunified.org/about/human-resources/employee-resources/benefits-overview/new-hire-rehire-employment-forms
+2026-02-21 14:59:41,646 | INFO | Status: 200
+2026-02-21 14:59:41,646 | INFO | Visited count: 331
+2026-02-21 14:59:42,539 | INFO | Crawling: https://fremontunified.org/about/human-resources/employee-resources/benefits-overview/calstrs-retirement-information
+2026-02-21 14:59:45,270 | INFO | Status: 200
+2026-02-21 14:59:45,270 | INFO | Visited count: 332
+2026-02-21 14:59:45,707 | INFO | Crawling: https://fremontunified.org/about/human-resources/employee-resources/benefits-overview/frequently-asked-questions-benefits
+2026-02-21 14:59:48,441 | INFO | Status: 200
+2026-02-21 14:59:48,442 | INFO | Visited count: 333
+2026-02-21 14:59:49,547 | INFO | Crawling: https://fremontunified.org/about/human-resources/employee-resources/benefits-overview/commuter-benefits
+2026-02-21 14:59:52,203 | INFO | Status: 200
+2026-02-21 14:59:52,203 | INFO | Visited count: 334
+2026-02-21 14:59:52,809 | INFO | Crawling: https://fremontunified.org/about/human-resources/employee-resources/benefits-overview/calpers-retirement-information
+2026-02-21 14:59:55,540 | INFO | Status: 200
+2026-02-21 14:59:55,541 | INFO | Visited count: 335
+2026-02-21 14:59:56,328 | INFO | Crawling: https://fremontunified.org/about/human-resources/employee-resources/absence-management-substitute-system-instructions-aesop
+2026-02-21 14:59:59,071 | INFO | Status: 200
+2026-02-21 14:59:59,071 | INFO | Visited count: 336
+2026-02-21 15:00:00,029 | INFO | Crawling: https://fremontunified.org/about/departments/human-resources/employee-resources/certificated-staff-management-employment-overview
+2026-02-21 15:00:02,828 | INFO | Status: 200
+2026-02-21 15:00:02,829 | INFO | Visited count: 337
+2026-02-21 15:00:03,671 | INFO | Crawling: https://fremontunified.org/about/departments/human-resources/employee-resources/substitute-teaching-information
+2026-02-21 15:00:06,585 | INFO | Status: 200
+2026-02-21 15:00:06,585 | INFO | Visited count: 338
+2026-02-21 15:00:07,627 | INFO | Crawling: https://fremontunified.org/about/departments/human-resources/employee-resources/coaching-information-openings
+2026-02-21 15:00:10,326 | INFO | Status: 200
+2026-02-21 15:00:10,327 | INFO | Visited count: 339
+2026-02-21 15:00:11,493 | INFO | Crawling: https://fremontunified.org/about/departments/human-resources/employee-resources/union-contact-information-contracts-and-salary-schedules
+2026-02-21 15:00:14,246 | INFO | Status: 200
+2026-02-21 15:00:14,247 | INFO | Visited count: 340
+2026-02-21 15:00:15,272 | INFO | Crawling: https://fremontunified.org/about/departments/human-resources/employee-resources/benefits-overview
+2026-02-21 15:00:18,088 | INFO | Status: 200
+2026-02-21 15:00:18,088 | INFO | Visited count: 341
+2026-02-21 15:00:18,921 | INFO | Crawling: https://fremontunified.org/about/departments/human-resources/human-resources-staff-contacts
+2026-02-21 15:00:21,739 | INFO | Status: 200
+2026-02-21 15:00:21,739 | INFO | Visited count: 342
+2026-02-21 15:00:21,803 | INFO | Queued URL: https://fremontunified.org/about/departments/human-resources/jshah1@fusdk12.net
+2026-02-21 15:00:22,783 | INFO | Crawling: https://fremontunified.org/about/sped-student-support/student-support-services/student-support-services-staff-contacts
+2026-02-21 15:00:25,595 | INFO | Status: 200
+2026-02-21 15:00:25,596 | INFO | Visited count: 343
+2026-02-21 15:00:25,634 | INFO | Queued URL: https://fremontunified.org/about/instructional-services/student-support-services/enrollment-registration/intra-district-transfers
+2026-02-21 15:00:26,389 | INFO | Crawling: https://fremontunified.org/about/sped-student-support/student-support-services/change-of-residency
+2026-02-21 15:00:29,198 | INFO | Status: 200
+2026-02-21 15:00:29,198 | INFO | Visited count: 344
+2026-02-21 15:00:29,803 | INFO | Crawling: https://fremontunified.org/about/sped-student-support/student-support-services/community-liaisons
+2026-02-21 15:00:32,582 | INFO | Status: 200
+2026-02-21 15:00:32,583 | INFO | Visited count: 345
+2026-02-21 15:00:32,619 | INFO | Queued URL: https://fremontunified.org/about/instructional-services/student-support-services/community-liaisons/community-resource-links
+2026-02-21 15:00:32,619 | INFO | Queued URL: https://fremontunified.org/about/instructional-services/student-support-services/community-liaisons/community-events
+2026-02-21 15:00:32,619 | INFO | Queued URL: https://fremontunified.org/about/instructional-services/student-support-services/community-liaisons/community-flyers_slides
+2026-02-21 15:00:33,518 | INFO | Crawling: https://fremontunified.org/about/sped-student-support/student-support-services/school-counselors-overview
+2026-02-21 15:00:36,277 | INFO | Status: 200
+2026-02-21 15:00:36,277 | INFO | Visited count: 346
+2026-02-21 15:00:36,976 | INFO | Crawling: https://fremontunified.org/about/sped-student-support/student-support-services/parenteducation
+2026-02-21 15:00:39,662 | INFO | Status: 200
+2026-02-21 15:00:39,662 | INFO | Visited count: 347
+2026-02-21 15:00:40,017 | INFO | Crawling: https://fremontunified.org/about/sped-student-support/student-support-services/workshop
+2026-02-21 15:00:43,169 | INFO | Status: 200
+2026-02-21 15:00:43,170 | INFO | Visited count: 348
+2026-02-21 15:00:44,242 | INFO | Crawling: https://fremontunified.org/about/sped-student-support/student-support-services/mental-health-overview/connect-with-mental-health-care-resources
+2026-02-21 15:00:47,031 | INFO | Status: 200
+2026-02-21 15:00:47,031 | INFO | Visited count: 349
+2026-02-21 15:00:48,041 | INFO | Crawling: https://fremontunified.org/about/sped-student-support/student-support-services/mental-health-overview/coping-with-stress-and-anxiety
+2026-02-21 15:00:50,796 | INFO | Status: 200
+2026-02-21 15:00:50,796 | INFO | Visited count: 350
+2026-02-21 15:00:51,584 | INFO | Crawling: https://fremontunified.org/about/sped-student-support/student-support-services/attendance-and-truancy
+2026-02-21 15:00:54,430 | INFO | Status: 200
+2026-02-21 15:00:54,431 | INFO | Visited count: 351
+2026-02-21 15:00:55,431 | INFO | Crawling: https://fremontunified.org/about/sped-student-support/student-support-services/section-504-plan
+2026-02-21 15:00:58,258 | INFO | Status: 200
+2026-02-21 15:00:58,259 | INFO | Visited count: 352
+2026-02-21 15:00:58,844 | INFO | Crawling: https://fremontunified.org/about/instructional-services/student-support-services/mental-health-overview/connect-with-mental-health-care-resources
+2026-02-21 15:01:01,565 | INFO | Status: 200
+2026-02-21 15:01:01,566 | INFO | Visited count: 353
+2026-02-21 15:01:02,140 | INFO | Crawling: https://fremontunified.org/about/instructional-services/student-support-services/community-liaisons
+2026-02-21 15:01:04,988 | INFO | Status: 200
+2026-02-21 15:01:04,988 | INFO | Visited count: 354
+2026-02-21 15:01:05,952 | INFO | Crawling: https://fremontunified.org/about/instructional-services/student-support-services/school-counselors-overview
+2026-02-21 15:01:08,722 | INFO | Status: 200
+2026-02-21 15:01:08,722 | INFO | Visited count: 355
+2026-02-21 15:01:09,243 | INFO | Crawling: https://fremontunified.org/about/instructional-services/student-support-services/families-in-need
+2026-02-21 15:01:12,000 | INFO | Status: 200
+2026-02-21 15:01:12,000 | INFO | Visited count: 356
+2026-02-21 15:01:12,578 | INFO | Crawling: https://fremontunified.org/about/departments/instructional-services-overview/student-support-services-dept/families-in-need/lgbtq-support-contacts
+2026-02-21 15:01:15,327 | INFO | Status: 200
+2026-02-21 15:01:15,328 | INFO | Visited count: 357
+2026-02-21 15:01:15,364 | INFO | Queued URL: https://fremontunified.org/about/departments/instructional-services-overview/student-support-services-dept/families-in-need/wstallworth@fusdk12.net
+2026-02-21 15:01:16,240 | INFO | Crawling: https://fremontunified.org/students-community/support/infinite-campus-faqs
+2026-02-21 15:01:17,789 | INFO | Status: 404
+2026-02-21 15:01:17,789 | ERROR | Failed request: https://fremontunified.org/students-community/support/infinite-campus-faqs -> Client error '404 Not Found' for url 'https://fremontunified.org/students-community/support/infinite-campus-faqs'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+2026-02-21 15:01:17,789 | INFO | Crawling: https://fremontunified.org/about/sped-student-support/student-support-services/enrollment-registration/immunization-requirements
+2026-02-21 15:01:20,492 | INFO | Status: 200
+2026-02-21 15:01:20,493 | INFO | Visited count: 358
+2026-02-21 15:01:20,533 | INFO | Queued URL: https://fremontunified.org/students-community/support/infinite-campus-faqs
+2026-02-21 15:01:21,201 | INFO | Crawling: https://fremontunified.org/about/sped-student-support/student-support-services/enrollment-registration/supplemental-documents
+2026-02-21 15:01:23,957 | INFO | Status: 200
+2026-02-21 15:01:23,957 | INFO | Visited count: 359
+2026-02-21 15:01:24,400 | INFO | Crawling: https://fremontunified.org/about/sped-student-support/student-support-services/enrollment-registration/caregiver-affidavit-and-declaration-of-residency
+2026-02-21 15:01:27,227 | INFO | Status: 200
+2026-02-21 15:01:27,228 | INFO | Visited count: 360
+2026-02-21 15:01:27,266 | INFO | Queued URL: https://fremontunified.org/about/instructional-services/student-support-services/enrollment-registration/supplemental-documents
+2026-02-21 15:01:27,977 | INFO | Crawling: https://fremontunified.org/about/sped-student-support/student-support-services/enrollment-registration/intra-district-transfers
+2026-02-21 15:01:30,792 | INFO | Status: 200
+2026-02-21 15:01:30,792 | INFO | Visited count: 361
+2026-02-21 15:01:30,824 | INFO | Queued URL: https://fremontunified.org/about/instructional-services/student-support-services/change-of-residency
+2026-02-21 15:01:30,824 | INFO | Queued URL: https://fremontunified.org/about/instructional-services/student-support-services/enrollment-registration/inter-district-transfers
+2026-02-21 15:01:31,167 | INFO | Crawling: https://fremontunified.org/about/sped-student-support/student-support-services/enrollment-registration/inter-district-transfers
+2026-02-21 15:01:33,992 | INFO | Status: 200
+2026-02-21 15:01:33,993 | INFO | Visited count: 362
+2026-02-21 15:01:34,027 | INFO | Queued URL: https://fremontunified.org/about/departments/instructional-services-overview/student-support-services-dept/enrollment-registration
+2026-02-21 15:01:35,069 | INFO | Crawling: https://fremontunified.org/about/sped-student-support/student-support-services/enrollment-registration/open-enrollment
+2026-02-21 15:01:37,914 | INFO | Status: 200
+2026-02-21 15:01:37,915 | INFO | Visited count: 363
+2026-02-21 15:01:38,294 | INFO | Crawling: https://fremontunified.org/about/sped-student-support/student-support-services/enrollment-registration/school-wait-lists-overloads
+2026-02-21 15:01:41,073 | INFO | Status: 200
+2026-02-21 15:01:41,073 | INFO | Visited count: 364
+2026-02-21 15:01:41,731 | INFO | Crawling: https://fremontunified.org/about/sped-student-support/student-support-services/enrollment-registration/new-developments-designation-unassigned
+2026-02-21 15:01:44,519 | INFO | Status: 200
+2026-02-21 15:01:44,519 | INFO | Visited count: 365
+2026-02-21 15:01:44,945 | INFO | Crawling: https://fremontunified.org/about/departments/instructional-services-overview/student-support-services-dept/enrollment-registration/school-wait-lists-overloads
+2026-02-21 15:01:46,168 | INFO | Status: 200
+2026-02-21 15:01:46,169 | INFO | Visited count: 366
+2026-02-21 15:01:46,715 | INFO | Crawling: https://fremontunified.org/about/departments/instructional-services-overview/elementary-education-dept/transitional-kindergarten
+2026-02-21 15:01:49,446 | INFO | Status: 200
+2026-02-21 15:01:49,447 | INFO | Visited count: 367
+2026-02-21 15:01:50,157 | INFO | Crawling: https://fremontunified.org/about/instructional-services/federal-state-programs/state-preschool
+2026-02-21 15:01:53,614 | INFO | Status: 200
+2026-02-21 15:01:53,616 | INFO | Visited count: 368
+2026-02-21 15:01:54,304 | INFO | Crawling: https://fremontunified.org/about/departments/instructional-services-overview/student-support-services-dept/enrollment-registration/intra-district-transfers
+2026-02-21 15:01:57,036 | INFO | Status: 200
+2026-02-21 15:01:57,036 | INFO | Visited count: 369
+2026-02-21 15:01:58,027 | INFO | Crawling: https://fremontunified.org/about/departments/instructional-services-overview/student-support-services-dept/enrollment-registration/inter-district-transfers
+2026-02-21 15:02:00,785 | INFO | Status: 200
+2026-02-21 15:02:00,786 | INFO | Visited count: 370
+2026-02-21 15:02:01,524 | INFO | Crawling: https://fremontunified.org/about/instructional-services/student-support-services/enrollment-registration/open-enrollment
+2026-02-21 15:02:04,271 | INFO | Status: 200
+2026-02-21 15:02:04,272 | INFO | Visited count: 371
+2026-02-21 15:02:05,178 | INFO | Crawling: https://fremontunified.org/about/departments/instructional-services-overview/student-support-services-dept/student-support-services-staff-contacts
+2026-02-21 15:02:08,003 | INFO | Status: 200
+2026-02-21 15:02:08,003 | INFO | Visited count: 372
+2026-02-21 15:02:08,971 | INFO | Crawling: https://fremontunified.org/about/instructional-services/elementary-education/transitional-kindergarten
+2026-02-21 15:02:11,756 | INFO | Status: 200
+2026-02-21 15:02:11,757 | INFO | Visited count: 373
+2026-02-21 15:02:12,311 | INFO | Crawling: https://fremontunified.org/about/instructional-services/elementary-education/science-engineering-fair
+2026-02-21 15:02:15,227 | INFO | Status: 200
+2026-02-21 15:02:15,228 | INFO | Visited count: 374
+2026-02-21 15:02:15,628 | INFO | Crawling: https://fremontunified.org/about/instructional-services/elementary-education/spelling-bee
+2026-02-21 15:02:18,405 | INFO | Status: 200
+2026-02-21 15:02:18,405 | INFO | Visited count: 375
+2026-02-21 15:02:18,843 | INFO | Crawling: https://fremontunified.org/about/instructional-services/elementary-education/art-gala
+2026-02-21 15:02:21,642 | INFO | Status: 200
+2026-02-21 15:02:21,642 | INFO | Visited count: 376
+2026-02-21 15:02:22,328 | INFO | Crawling: https://fremontunified.org/about/instructional-services/elementary-education/young-authors-contest
+2026-02-21 15:02:25,113 | INFO | Status: 200
+2026-02-21 15:02:25,113 | INFO | Visited count: 377
+2026-02-21 15:02:25,817 | INFO | Crawling: https://fremontunified.org/about/instructional-services/secondary-education/transcripts-work-permits
+2026-02-21 15:02:28,687 | INFO | Status: 200
+2026-02-21 15:02:28,687 | INFO | Visited count: 378
+2026-02-21 15:02:29,445 | INFO | Crawling: https://fremontunified.org/about/instructional-services/secondary-education/college-connection-program-ohlone
+2026-02-21 15:02:32,180 | INFO | Status: 200
+2026-02-21 15:02:32,180 | INFO | Visited count: 379
+2026-02-21 15:02:32,924 | INFO | Crawling: https://fremontunified.org/about/instructional-services/secondary-education/career-and-technical-education-cte
+2026-02-21 15:02:35,737 | INFO | Status: 200
+2026-02-21 15:02:35,737 | INFO | Visited count: 380
+2026-02-21 15:02:36,391 | INFO | Crawling: https://fremontunified.org/about/instructional-services/secondary-education/career-and-technical-education-cte/perkins
+2026-02-21 15:02:39,217 | INFO | Status: 200
+2026-02-21 15:02:39,217 | INFO | Visited count: 381
+2026-02-21 15:02:39,635 | INFO | Crawling: https://fremontunified.org/about/instructional-services/secondary-education/career-and-technical-education-cte/mvrop
+2026-02-21 15:02:42,365 | INFO | Status: 200
+2026-02-21 15:02:42,366 | INFO | Visited count: 382
+2026-02-21 15:02:42,965 | INFO | Crawling: https://fremontunified.org/about/instructional-services/secondary-education/guy-emanuele-sports-fund
+2026-02-21 15:02:45,695 | INFO | Status: 200
+2026-02-21 15:02:45,695 | INFO | Visited count: 383
+2026-02-21 15:02:46,685 | INFO | Crawling: https://fremontunified.org/about/instructional-services/secondary-education/high-school-graduation
+2026-02-21 15:02:49,490 | INFO | Status: 200
+2026-02-21 15:02:49,491 | INFO | Visited count: 384
+2026-02-21 15:02:50,157 | INFO | Crawling: https://fremontunified.org/about/instructional-services/secondary-education/middle-school-overview
+2026-02-21 15:02:53,030 | INFO | Status: 200
+2026-02-21 15:02:53,031 | INFO | Visited count: 385
+2026-02-21 15:02:53,901 | INFO | Crawling: https://fremontunified.org/about/instructional-services/secondary-education/middle-school-overview/middle-school-frequently-asked-questions-faq
+2026-02-21 15:02:56,865 | INFO | Status: 200
+2026-02-21 15:02:56,865 | INFO | Visited count: 386
+2026-02-21 15:02:57,589 | INFO | Crawling: https://fremontunified.org/about/instructional-services/curriculum-instruction/curriculum-instruction-staff-contacts
+2026-02-21 15:03:00,348 | INFO | Status: 200
+2026-02-21 15:03:00,348 | INFO | Visited count: 387
+2026-02-21 15:03:01,311 | INFO | Crawling: https://fremontunified.org/about/instructional-services/curriculum-instruction/ci-initiatives-dashboard
+2026-02-21 15:03:04,342 | INFO | Status: 200
+2026-02-21 15:03:04,343 | INFO | Visited count: 388
+2026-02-21 15:03:05,277 | INFO | Crawling: https://fremontunified.org/about/instructional-services/curriculum-instruction/fair-education-act
+2026-02-21 15:03:08,049 | INFO | Status: 200
+2026-02-21 15:03:08,050 | INFO | Visited count: 389
+2026-02-21 15:03:09,094 | INFO | Crawling: https://fremontunified.org/about/instructional-services/curriculum-instruction/curriculum-based-assessments
+2026-02-21 15:03:11,914 | INFO | Status: 200
+2026-02-21 15:03:11,914 | INFO | Visited count: 390
+2026-02-21 15:03:12,856 | INFO | Crawling: https://fremontunified.org/about/instructional-services/curriculum-instruction/library-at-district-overview/literature-search
+2026-02-21 15:03:15,615 | INFO | Status: 200
+2026-02-21 15:03:15,616 | INFO | Visited count: 391
+2026-02-21 15:03:16,392 | INFO | Crawling: https://fremontunified.org/about/instructional-services/curriculum-instruction/library-at-district-overview/pay-for-lost-damaged-textbooks-and-or-library-books
+2026-02-21 15:03:19,170 | INFO | Status: 200
+2026-02-21 15:03:19,170 | INFO | Visited count: 392
+2026-02-21 15:03:19,895 | INFO | Crawling: https://fremontunified.org/about/instructional-services/curriculum-instruction/textbook-and-literature-lists
+2026-02-21 15:03:22,622 | INFO | Status: 200
+2026-02-21 15:03:22,623 | INFO | Visited count: 393
+2026-02-21 15:03:23,223 | INFO | Crawling: https://fremontunified.org/about/instructional-services/curriculum-instruction/textbook-and-literature-lists/core-literature-adoption-progress
+2026-02-21 15:03:25,958 | INFO | Status: 200
+2026-02-21 15:03:25,959 | INFO | Visited count: 394
+2026-02-21 15:03:26,572 | INFO | Crawling: https://fremontunified.org/about/instructional-services/curriculum-instruction/math-information
+2026-02-21 15:03:29,504 | INFO | Status: 200
+2026-02-21 15:03:29,505 | INFO | Visited count: 395
+2026-02-21 15:03:29,991 | INFO | Crawling: https://fremontunified.org/about/instructional-services/curriculum-instruction/science-information-ngss
+2026-02-21 15:03:32,799 | INFO | Status: 200
+2026-02-21 15:03:32,800 | INFO | Visited count: 396
+2026-02-21 15:03:33,204 | INFO | Crawling: https://fremontunified.org/about/instructional-services/curriculum-instruction/curriculum-instruction-health-resources
+2026-02-21 15:03:36,018 | INFO | Status: 200
+2026-02-21 15:03:36,019 | INFO | Visited count: 397
+2026-02-21 15:03:36,718 | INFO | Crawling: https://fremontunified.org/about/instructional-services/curriculum-instruction/driver-ed
+2026-02-21 15:03:39,485 | INFO | Status: 200
+2026-02-21 15:03:39,485 | INFO | Visited count: 398
+2026-02-21 15:03:40,050 | INFO | Crawling: https://fremontunified.org/about/instructional-services/federal-state-programs/multilingual-learners/language-assessment-center
+2026-02-21 15:03:42,873 | INFO | Status: 200
+2026-02-21 15:03:42,873 | INFO | Visited count: 399
+2026-02-21 15:03:43,539 | INFO | Crawling: https://fremontunified.org/about/instructional-services/federal-state-programs/multilingual-learners/english-learner-english-language-development
+2026-02-21 15:03:46,368 | INFO | Status: 200
+2026-02-21 15:03:46,369 | INFO | Visited count: 400
+2026-02-21 15:03:47,411 | INFO | Crawling: https://fremontunified.org/about/instructional-services/federal-state-programs/multilingual-learners/english-language-proficiency-assessments-for-ca-overview
+2026-02-21 15:03:50,147 | INFO | Status: 200
+2026-02-21 15:03:50,147 | INFO | Visited count: 401
+2026-02-21 15:03:51,154 | INFO | Crawling: https://fremontunified.org/about/instructional-services/federal-state-programs/multilingual-learners/english-language-proficiency-assessments-for-ca-overview/elpac-frequently-asked-questions
+2026-02-21 15:03:53,922 | INFO | Status: 200
+2026-02-21 15:03:53,922 | INFO | Visited count: 402
+2026-02-21 15:03:54,276 | INFO | Crawling: https://fremontunified.org/about/instructional-services/federal-state-programs/multilingual-learners/english-language-proficiency-assessments-for-ca-overview/elpac-additional-resources
+2026-02-21 15:03:57,022 | INFO | Status: 200
+2026-02-21 15:03:57,023 | INFO | Visited count: 403
+2026-02-21 15:03:58,009 | INFO | Crawling: https://fremontunified.org/about/instructional-services/federal-state-programs/multilingual-learners/english-learner-advisory-committee-elac
+2026-02-21 15:04:00,896 | INFO | Status: 200
+2026-02-21 15:04:00,896 | INFO | Visited count: 404
+2026-02-21 15:04:01,689 | INFO | Crawling: https://fremontunified.org/about/instructional-services/federal-state-programs/multilingual-learners/delac-overview/delac-meeting-archives
+2026-02-21 15:04:04,505 | INFO | Status: 200
+2026-02-21 15:04:04,505 | INFO | Visited count: 405
+2026-02-21 15:04:05,588 | INFO | Crawling: https://fremontunified.org/about/instructional-services/federal-state-programs/multilingual-learners/schools-15-and-above-translation-required
+2026-02-21 15:04:08,359 | INFO | Status: 200
+2026-02-21 15:04:08,360 | INFO | Visited count: 406
+2026-02-21 15:04:08,901 | INFO | Crawling: https://fremontunified.org/about/instructional-services/federal-state-programs/elop/elop-summer
+2026-02-21 15:04:11,821 | INFO | Status: 200
+2026-02-21 15:04:11,822 | INFO | Visited count: 407
+2026-02-21 15:04:12,536 | INFO | Crawling: https://fremontunified.org/about/instructional-services/federal-state-programs/nasp-program-information/nasp-meeting-archive
+2026-02-21 15:04:15,343 | INFO | Status: 200
+2026-02-21 15:04:15,343 | INFO | Visited count: 408
+2026-02-21 15:04:15,854 | INFO | Crawling: https://fremontunified.org/about/instructional-services/assessment-accountability/california-school-dashboard
+2026-02-21 15:04:18,608 | INFO | Status: 200
+2026-02-21 15:04:18,609 | INFO | Visited count: 409
+2026-02-21 15:04:19,705 | INFO | Crawling: https://fremontunified.org/about/instructional-services/assessment-accountability/state-seals
+2026-02-21 15:04:22,529 | INFO | Status: 200
+2026-02-21 15:04:22,529 | INFO | Visited count: 410
+2026-02-21 15:04:23,282 | INFO | Crawling: https://fremontunified.org/about/instructional-services/assessment-accountability/state-seals/golden-state-seal
+2026-02-21 15:04:26,033 | INFO | Status: 200
+2026-02-21 15:04:26,033 | INFO | Visited count: 411
+2026-02-21 15:04:26,560 | INFO | Crawling: https://fremontunified.org/about/instructional-services/assessment-accountability/state-seals/seal-of-biliteracy
+2026-02-21 15:04:29,325 | INFO | Status: 200
+2026-02-21 15:04:29,325 | INFO | Visited count: 412
+2026-02-21 15:04:30,394 | INFO | Crawling: https://fremontunified.org/about/instructional-services/assessment-accountability/state-seals/seal-of-civic-engagement
+2026-02-21 15:04:33,226 | INFO | Status: 200
+2026-02-21 15:04:33,226 | INFO | Visited count: 413
+2026-02-21 15:04:34,135 | INFO | Crawling: https://fremontunified.org/about/instructional-services/assessment-accountability/state-assessments
+2026-02-21 15:04:36,946 | INFO | Status: 200
+2026-02-21 15:04:36,947 | INFO | Visited count: 414
+2026-02-21 15:04:37,544 | INFO | Crawling: https://fremontunified.org/about/instructional-services/assessment-accountability/state-assessments/caaspp
+2026-02-21 15:04:40,244 | INFO | Status: 200
+2026-02-21 15:04:40,245 | INFO | Visited count: 415
+2026-02-21 15:04:40,279 | INFO | Queued URL: https://fremontunified.org/about/instructional-services/assessment-accountability/state-assessments/caaspp-ssr
+2026-02-21 15:04:41,369 | INFO | Crawling: https://fremontunified.org/about/instructional-services/assessment-accountability/state-assessments/caaspp/caaspp-ssr
+2026-02-21 15:04:44,150 | INFO | Status: 200
+2026-02-21 15:04:44,151 | INFO | Visited count: 416
+2026-02-21 15:04:44,907 | INFO | Crawling: https://fremontunified.org/about/instructional-services/assessment-accountability/state-assessments/caaspp/sbac
+2026-02-21 15:04:47,676 | INFO | Status: 200
+2026-02-21 15:04:47,677 | INFO | Visited count: 417
+2026-02-21 15:04:48,052 | INFO | Crawling: https://fremontunified.org/about/instructional-services/assessment-accountability/state-assessments/caaspp/cast
+2026-02-21 15:04:50,746 | INFO | Status: 200
+2026-02-21 15:04:50,747 | INFO | Visited count: 418
+2026-02-21 15:04:51,537 | INFO | Crawling: https://fremontunified.org/about/instructional-services/assessment-accountability/state-assessments/caaspp/caa
+2026-02-21 15:04:54,240 | INFO | Status: 200
+2026-02-21 15:04:54,240 | INFO | Visited count: 419
+2026-02-21 15:04:54,924 | INFO | Crawling: https://fremontunified.org/about/instructional-services/assessment-accountability/state-assessments/caaspp/csa
+2026-02-21 15:04:57,645 | INFO | Status: 200
+2026-02-21 15:04:57,645 | INFO | Visited count: 420
+2026-02-21 15:04:58,447 | INFO | Crawling: https://fremontunified.org/about/instructional-services/assessment-accountability/state-assessments/ca-math-placement-exam
+2026-02-21 15:05:01,229 | INFO | Status: 200
+2026-02-21 15:05:01,230 | INFO | Visited count: 421
+2026-02-21 15:05:01,873 | INFO | Crawling: https://fremontunified.org/about/instructional-services/assessment-accountability/state-assessments/pft
+2026-02-21 15:05:04,672 | INFO | Status: 200
+2026-02-21 15:05:04,672 | INFO | Visited count: 422
+2026-02-21 15:05:05,793 | INFO | Crawling: https://fremontunified.org/about/instructional-services/assessment-accountability/district-assessments-testing-calendars
+2026-02-21 15:05:08,589 | INFO | Status: 200
+2026-02-21 15:05:08,589 | INFO | Visited count: 423
+2026-02-21 15:05:09,717 | INFO | Crawling: https://fremontunified.org/about/instructional-services/assessment-accountability/district-assessments-testing-calendars/i-ready
+2026-02-21 15:05:12,480 | INFO | Status: 200
+2026-02-21 15:05:12,480 | INFO | Visited count: 424
+2026-02-21 15:05:13,031 | INFO | Crawling: https://fremontunified.org/about/instructional-services/assessment-accountability/advanced-placement
+2026-02-21 15:05:15,789 | INFO | Status: 200
+2026-02-21 15:05:15,789 | INFO | Visited count: 425
+2026-02-21 15:05:16,896 | INFO | Crawling: https://fremontunified.org/about/instructional-services/assessment-accountability/report-cards
+2026-02-21 15:05:19,687 | INFO | Status: 200
+2026-02-21 15:05:19,688 | INFO | Visited count: 426
+2026-02-21 15:05:20,633 | INFO | Crawling: https://fremontunified.org/about/instructional-services/assessment-accountability/report-cards/elementary-report-cards
+2026-02-21 15:05:23,362 | INFO | Status: 200
+2026-02-21 15:05:23,362 | INFO | Visited count: 427
+2026-02-21 15:05:23,959 | INFO | Crawling: https://fremontunified.org/about/instructional-services/assessment-accountability/chks
+2026-02-21 15:05:26,779 | INFO | Status: 200
+2026-02-21 15:05:26,780 | INFO | Visited count: 428
+2026-02-21 15:05:27,660 | INFO | Crawling: https://fremontunified.org/about/instructional-services/paged-4/2
+2026-02-21 15:05:29,542 | INFO | Status: 200
+2026-02-21 15:05:29,542 | INFO | Visited count: 429
+2026-02-21 15:05:30,738 | INFO | Crawling: https://fremontunified.org/about/instructional-services/paged-4/3
+2026-02-21 15:05:32,647 | INFO | Status: 200
+2026-02-21 15:05:32,647 | INFO | Visited count: 430
+2026-02-21 15:05:33,663 | INFO | Crawling: https://fremontunified.org/about/instructional-services/paged-4/4
