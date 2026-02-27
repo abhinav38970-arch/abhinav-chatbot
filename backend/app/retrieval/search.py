@@ -3,33 +3,41 @@
 from backend.app.retrieval.embedder import embed_text
 from backend.app.retrieval.vector_store import VectorStore
 from backend.app.retrieval.cache import SearchCache
+import numpy as np
+
+
+# Initialize once (not per request)
+_sample_vector = embed_text("dimension_check")
+_DIMENSION = len(_sample_vector)
+
+_store = VectorStore(_DIMENSION)
+_store.load()
+
+_cache = SearchCache()
 
 
 def search(query: str, k: int = 5):
-    cache = SearchCache()
+    """
+    Performs semantic search with caching.
+    """
 
-    # ✅ check cache first
-    cached = cache.get(query)
+    # 1️⃣ Check cache first
+    cached = _cache.get(query)
     if cached:
         print("⚡ cache hit")
         return cached
 
-    # convert query → vector
+    # 2️⃣ Embed query
     query_vector = embed_text(query)
 
-    # determine vector size
-    sample_vector = embed_text("test")
-    dimension = len(sample_vector)
+    # 3️⃣ Normalize vector (important for cosine-style similarity)
+    query_vector = query_vector / np.linalg.norm(query_vector)
 
-    # load FAISS index
-    store = VectorStore(dimension)
-    store.load()
+    # 4️⃣ Perform FAISS search
+    results = _store.search(query_vector, k)
 
-    # perform semantic search
-    results = store.search(query_vector, k)
-
-    # ✅ store in cache
-    cache.set(query, results)
+    # 5️⃣ Store in cache
+    _cache.set(query, results)
 
     return results
 

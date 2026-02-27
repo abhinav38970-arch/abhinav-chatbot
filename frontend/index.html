@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- ✅ makes layout scale correctly on phones -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Husky AI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- Logo Section -->
+        <div class="header">
+            <div class="logo">
+                <div class="logo-dot"></div>
+            </div>
+            <h1>Husky AI</h1>
+        </div>
+
+        <!-- Chat Area -->
+        <div id="chat" class="chat">
+            <div class="message assistant">
+                <div class="avatar assistant-avatar">H</div>
+                <div class="text">
+                    Hello! How can I help you with Washington High School today?
+                </div>
+            </div>
+        </div>
+
+        <!-- Input Area -->
+        <div class="input-area">
+            <input
+                id="userInput"
+                type="text"
+                placeholder="Ask something..."
+                autocomplete="off"
+                onkeypress="if(event.key === 'Enter') sendMessage()"
+            >
+            <button onclick="sendMessage()">Send</button>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
