@@ -2,49 +2,307 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-
-    <!-- ✅ makes layout scale correctly on phones -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Husky AI</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <div class="container">
-
-        <!-- Logo Section -->
-        <div class="header">
-            <div class="logo">
-                <div class="logo-dot"></div>
-            </div>
-            <h1>Husky AI</h1>
-        </div>
-
-        <!-- Chat Area -->
-        <div id="chat" class="chat">
-            <div class="message assistant">
-                <div class="avatar assistant-avatar">H</div>
-                <div class="text">
-                    Hello! How can I help you with Washington High School today?
+    <div class="app">
+ 
+        <!-- ===== SIDEBAR ===== -->
+        <div class="sidebar">
+ 
+            <!-- Brand -->
+            <div class="sb-brand">
+                <!--
+                    HUSKY IMAGE INSTRUCTIONS:
+                    1. Save your paw/husky image into the same folder as this file
+                    2. Name it: husky-logo.png
+                    3. The <img> tag below will automatically show it
+                    If you don't have the image yet, the orange paw emoji shows as fallback
+                -->
+                <div class="sb-logo">
+                    <img
+                        src="husky-logo.png"
+                        alt="Husky paw"
+                        class="sb-logo-img"
+                        onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+                    >
+                    <!-- Fallback shown if image file is missing -->
+                    <div class="sb-logo-fallback" style="display:none;">🐾</div>
+                </div>
+                <div>
+                    <div class="sb-title">Husky AI</div>
+                    <div class="sb-sub">Washington High School</div>
                 </div>
             </div>
+ 
+            <!-- Today's alert strip -->
+            <div class="alert-strip">
+                <div class="alert-strip-title" id="todayLabel">Today</div>
+                <div class="alert-strip-text">Regular schedule · Dismissal 3:05 PM</div>
+            </div>
+ 
+            <!-- Navigation -->
+            <nav class="sb-nav">
+ 
+                <div class="nav-label">General</div>
+                <div class="nav-item active" onclick="setActive(this)">
+                    <span class="nav-ic">💬</span> AI Chat
+                </div>
+ 
+                <div class="nav-label">Admissions &amp; Counseling</div>
+                <div class="nav-item" onclick="setActive(this)">
+                    <span class="nav-ic">🎓</span> College Predictor
+                    <span class="badge">New</span>
+                </div>
+                <div class="nav-item" onclick="setActive(this)">
+                    <span class="nav-ic">📅</span> Schedule Counselor
+                </div>
+ 
+                <div class="nav-label">Student Life</div>
+                <div class="nav-item" onclick="setActive(this)">
+                    <span class="nav-ic">🏫</span> Clubs &amp; Associations
+                    <span class="badge">3</span>
+                </div>
+                <div class="nav-item" onclick="setActive(this)">
+                    <span class="nav-ic">📋</span> Bell Schedule
+                </div>
+                <div class="nav-item" onclick="setActive(this)">
+                    <span class="nav-ic">📞</span> Contact Staff
+                </div>
+                <div class="nav-item" onclick="setActive(this)">
+                    <span class="nav-ic">📝</span> Enrollment Info
+                </div>
+ 
+            </nav>
+ 
+            <!-- Footer school badge -->
+            <div class="sb-footer">
+                <div class="school-pill">
+                    <div class="school-dot"></div>
+                    <div>
+                        <div class="school-name">Washington High School</div>
+                        <div class="school-district">Fremont Unified School District</div>
+                    </div>
+                </div>
+            </div>
+ 
         </div>
-
-        <!-- Input Area -->
-        <div class="input-area">
-            <input
-                id="userInput"
-                type="text"
-                placeholder="Ask something..."
-                autocomplete="off"
-                onkeypress="if(event.key === 'Enter') sendMessage()"
-            >
-            <button onclick="sendMessage()">Send</button>
+        <!-- ===== END SIDEBAR ===== -->
+ 
+ 
+        <!-- ===== MAIN CONTENT ===== -->
+        <div class="main">
+ 
+            <!-- Top bar -->
+            <div class="topbar">
+                <div class="breadcrumb">Portal / <span>AI Assistant</span></div>
+                <div class="tb-right">
+                    <div class="online-indicator">
+                        <div class="online-dot"></div>
+                        <span class="online-text">Online</span>
+                    </div>
+                    <!-- Husky brand pill top right -->
+                    <div class="tb-brand-pill">
+                        <img
+                            src="husky-logo.png"
+                            alt="Husky"
+                            class="tb-logo-img"
+                            onerror="this.style.display='none'; this.nextElementSibling.style.display='inline';"
+                        >
+                        <span class="tb-logo-fallback" style="display:none;">🐾</span>
+                        <span class="tb-label">Husky AI</span>
+                    </div>
+                </div>
+            </div>
+ 
+            <!-- Day info strip -->
+            <div class="day-strip">
+                <div class="day-item">
+                    <div class="day-dot orange"></div>
+                    <span>Today: <strong id="todayDate">—</strong></span>
+                </div>
+                <div class="day-item">
+                    <div class="day-dot blue"></div>
+                    <span>Period 1: <strong>7:45 AM</strong></span>
+                </div>
+                <div class="day-item">
+                    <div class="day-dot green"></div>
+                    <span>Dismissal: <strong>3:05 PM</strong></span>
+                </div>
+            </div>
+ 
+            <!-- Chat messages area -->
+            <div id="chat" class="chat-area">
+ 
+                <!-- Welcome card -->
+                <div class="welcome-card">
+                    <div class="welcome-head">
+                        <img
+                            src="husky-logo.png"
+                            alt="Husky"
+                            class="welcome-logo-img"
+                            onerror="this.style.display='none'; this.nextElementSibling.style.display='inline';"
+                        >
+                        <span class="welcome-logo-fallback" style="display:none;">🐾</span>
+                        <span class="welcome-title">Hey, welcome to Husky AI!</span>
+                    </div>
+                    <p class="welcome-text">
+                        Ask me anything about Washington High — bell schedules, clubs,
+                        counseling, enrollment, and more. I'll find the answer fast.
+                    </p>
+                    <div class="chips" id="quickChips">
+                        <div class="chip" onclick="sendChip(this)">Bell schedule</div>
+                        <div class="chip" onclick="sendChip(this)">Minimum days</div>
+                        <div class="chip" onclick="sendChip(this)">Enrollment</div>
+                        <div class="chip" onclick="sendChip(this)">Club list</div>
+                        <div class="chip" onclick="sendChip(this)">Contact counselor</div>
+                        <div class="chip" onclick="sendChip(this)">Graduation requirements</div>
+                    </div>
+                </div>
+ 
+                <!-- First AI message -->
+                <div class="msg-row ai-row">
+                    <div class="av ai-av">
+                        <img
+                            src="husky-logo.png"
+                            alt="H"
+                            class="av-img"
+                            onerror="this.style.display='none'; this.nextElementSibling.style.display='inline';"
+                        >
+                        <span class="av-fallback" style="display:none;">🐾</span>
+                    </div>
+                    <div class="msg-col">
+                        <div class="bubble ai-bubble">
+                            Hi! I'm Husky AI — your guide to everything at Washington High.
+                            What can I help you find today?
+                        </div>
+                        <div class="msg-ts" id="initTs"></div>
+                    </div>
+                </div>
+ 
+            </div>
+            <!-- End chat area -->
+ 
+            <!-- Input bar -->
+            <div class="input-bar">
+                <div class="input-wrap">
+                    <input
+                        id="userInput"
+                        type="text"
+                        placeholder="Ask anything about Washington High..."
+                        autocomplete="off"
+                        onkeypress="if(event.key === 'Enter') sendMessage()"
+                    >
+                    <button class="send-btn" onclick="sendMessage()">
+                        <svg viewBox="0 0 24 24"><path d="M2 21l21-9L2 3v7l15 2-15 2z"/></svg>
+                    </button>
+                </div>
+            </div>
+ 
         </div>
-
+        <!-- ===== END MAIN ===== -->
+ 
     </div>
-
+ 
     <script src="script.js"></script>
+    <script>
+        /* ---------- TODAY'S DATE ---------- */
+        const now = new Date();
+        const days = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+        const months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+        const dateStr = `${days[now.getDay()]}, ${months[now.getMonth()]} ${now.getDate()}`;
+        document.getElementById('todayDate').textContent = dateStr;
+        document.getElementById('todayLabel').textContent = `Today — ${days[now.getDay()]}`;
+ 
+        /* ---------- INITIAL TIMESTAMP ---------- */
+        function getTime() {
+            return now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+        }
+        document.getElementById('initTs').textContent = getTime();
+ 
+        /* ---------- ACTIVE NAV ITEM ---------- */
+        function setActive(el) {
+            document.querySelectorAll('.nav-item').forEach(i => i.classList.remove('active'));
+            el.classList.add('active');
+        }
+ 
+        /* ---------- QUICK CHIP CLICK ---------- */
+        function sendChip(el) {
+            document.getElementById('userInput').value = el.textContent;
+            sendMessage();
+        }
+ 
+        /* ---------- ADD MESSAGE TO CHAT ---------- */
+        function addMessage(text, role) {
+            const chat = document.getElementById('chat');
+            const t = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+            const isUser = role === 'user';
+ 
+            const row = document.createElement('div');
+            row.className = `msg-row ${isUser ? 'user-row' : 'ai-row'}`;
+ 
+            if (isUser) {
+                row.innerHTML = `
+                    <div class="msg-col user-col">
+                        <div class="bubble user-bubble">${text}</div>
+                        <div class="msg-ts">${t}</div>
+                    </div>
+                    <div class="av user-av">You</div>
+                `;
+            } else {
+                row.innerHTML = `
+                    <div class="av ai-av">
+                        <img src="husky-logo.png" alt="H" class="av-img"
+                             onerror="this.style.display='none';this.nextElementSibling.style.display='inline';">
+                        <span class="av-fallback" style="display:none;">🐾</span>
+                    </div>
+                    <div class="msg-col">
+                        <div class="bubble ai-bubble">${text}</div>
+                        <div class="src-tag">
+                            <div class="src-dot"></div>
+                            Source: Washington High / FUSD · Indexed today
+                        </div>
+                        <div class="follow-ups">
+                            <div class="fup" onclick="sendChip(this)">Tell me more</div>
+                            <div class="fup" onclick="sendChip(this)">Related info</div>
+                            <div class="fup" onclick="sendChip(this)">Contact staff</div>
+                        </div>
+                        <div class="msg-ts">${t}</div>
+                    </div>
+                `;
+            }
+            chat.appendChild(row);
+            chat.scrollTop = chat.scrollHeight;
+        }
+ 
+        /* ---------- TYPING INDICATOR ---------- */
+        function showTyping() {
+            const chat = document.getElementById('chat');
+            const el = document.createElement('div');
+            el.className = 'msg-row ai-row';
+            el.id = 'typingIndicator';
+            el.innerHTML = `
+                <div class="av ai-av">
+                    <img src="husky-logo.png" alt="H" class="av-img"
+                         onerror="this.style.display='none';this.nextElementSibling.style.display='inline';">
+                    <span class="av-fallback" style="display:none;">🐾</span>
+                </div>
+                <div class="typing-bubble">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+            `;
+            chat.appendChild(el);
+            chat.scrollTop = chat.scrollHeight;
+        }
+ 
+        function hideTyping() {
+            const el = document.getElementById('typingIndicator');
+            if (el) el.remove();
+        }
+    </script>
 </body>
 </html>
