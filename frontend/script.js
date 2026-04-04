@@ -1,3 +1,77 @@
+/* ============================================================
+   HUSKY AI — script.js
+   Washington High School
+   Only the HTML structure changed from the original.
+   The fetch() call, API URL, and response handling are
+   completely untouched from your teammate's original code.
+   ============================================================ */
+
+/* ------ PAW SVG HELPER ------ */
+/* Used inside dynamically created message rows */
+function pawSVG() {
+    return `
+        <svg viewBox="0 0 64 64" fill="white" style="width:18px;height:18px;">
+            <ellipse cx="16" cy="12" rx="6" ry="8"/>
+            <ellipse cx="32" cy="8"  rx="6" ry="8"/>
+            <ellipse cx="48" cy="12" rx="6" ry="8"/>
+            <ellipse cx="56" cy="28" rx="5" ry="7"/>
+            <path d="M10 36 Q6 22 18 20 Q26 20 32 28 Q38 20 46 20 Q58 22 54 36 Q50 54 32 58 Q14 54 10 36Z"/>
+        </svg>
+    `;
+}
+
+/* ------ AI AVATAR HTML ------ */
+/* Shows real image if husky-logo.png exists, SVG paw as fallback */
+function aiAvatar() {
+    return `
+        <div class="av ai-av">
+            <img
+                src="husky-logo.png"
+                alt="H"
+                class="av-img"
+                onerror="this.style.display='none';this.nextElementSibling.style.display='block';"
+            >
+            <svg style="display:none;" viewBox="0 0 64 64" fill="white">
+                <ellipse cx="16" cy="12" rx="6" ry="8"/>
+                <ellipse cx="32" cy="8"  rx="6" ry="8"/>
+                <ellipse cx="48" cy="12" rx="6" ry="8"/>
+                <ellipse cx="56" cy="28" rx="5" ry="7"/>
+                <path d="M10 36 Q6 22 18 20 Q26 20 32 28 Q38 20 46 20 Q58 22 54 36 Q50 54 32 58 Q14 54 10 36Z"/>
+            </svg>
+        </div>
+    `;
+}
+
+/* ------ TYPING INDICATOR ------ */
+function showTyping() {
+    const chat = document.getElementById("chat");
+    const el   = document.createElement("div");
+    el.className = "msg-row";
+    el.id        = "typingIndicator";
+    el.innerHTML = `
+        ${aiAvatar()}
+        <div class="typing-bubble">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+    `;
+    chat.appendChild(el);
+    chat.scrollTop = chat.scrollHeight;
+}
+
+function removeTyping() {
+    const el = document.getElementById("typingIndicator");
+    if (el) el.remove();
+}
+
+/* ------ FOLLOW-UP BUTTON CLICK ------ */
+function quickAsk(el) {
+    document.getElementById("userInput").value = el.textContent;
+    sendMessage();
+}
+
+/* ------ MAIN SEND FUNCTION ------ */
 async function sendMessage() {
     const input = document.getElementById("userInput");
     const chat  = document.getElementById("chat");
@@ -18,32 +92,9 @@ async function sendMessage() {
     chat.scrollTop = chat.scrollHeight;
 
     // ── TYPING INDICATOR ─────────────────────────────────────
-    const typingRow = document.createElement("div");
-    typingRow.className = "msg-row";
-    typingRow.id = "typingIndicator";
-    typingRow.innerHTML = `
-        <div class="av ai-av">
-            <img src="husky-logo.png" alt="H" class="av-img"
-                 onerror="this.style.display='none';this.nextElementSibling.style.display='block';">
-            <svg style="display:none;" viewBox="0 0 100 100" fill="white">
-                <ellipse cx="24" cy="20" rx="11" ry="14"/>
-                <ellipse cx="50" cy="14" rx="11" ry="14"/>
-                <ellipse cx="76" cy="20" rx="11" ry="14"/>
-                <ellipse cx="89" cy="46" rx="9"  ry="12"/>
-                <path d="M14 58 Q8 36 26 34 Q42 34 50 46 Q58 34 74 34 Q92 36 86 58 Q80 84 50 90 Q20 84 14 58Z"/>
-            </svg>
-        </div>
-        <div class="typing-bubble">
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-        </div>
-    `;
-    chat.appendChild(typingRow);
-    chat.scrollTop = chat.scrollHeight;
+    showTyping();
 
-    // ── FETCH FROM API ────────────────────────────────────────
-    // This section is unchanged — same API call as before
+    // ── API CALL — original fetch logic, completely unchanged ─
     try {
         const response = await fetch(
             `http://127.0.0.1:8000/ask?query=${encodeURIComponent(text)}`
@@ -51,23 +102,13 @@ async function sendMessage() {
         const data = await response.json();
         const answerText = data.answer || "No response found.";
 
-        document.getElementById("typingIndicator")?.remove();
+        removeTyping();
 
-        // ── AI RESPONSE BUBBLE ────────────────────────────────
+        // ── AI BUBBLE ─────────────────────────────────────────
         const aiRow = document.createElement("div");
         aiRow.className = "msg-row";
         aiRow.innerHTML = `
-            <div class="av ai-av">
-                <img src="husky-logo.png" alt="H" class="av-img"
-                     onerror="this.style.display='none';this.nextElementSibling.style.display='block';">
-                <svg style="display:none;" viewBox="0 0 100 100" fill="white">
-                    <ellipse cx="24" cy="20" rx="11" ry="14"/>
-                    <ellipse cx="50" cy="14" rx="11" ry="14"/>
-                    <ellipse cx="76" cy="20" rx="11" ry="14"/>
-                    <ellipse cx="89" cy="46" rx="9"  ry="12"/>
-                    <path d="M14 58 Q8 36 26 34 Q42 34 50 46 Q58 34 74 34 Q92 36 86 58 Q80 84 50 90 Q20 84 14 58Z"/>
-                </svg>
-            </div>
+            ${aiAvatar()}
             <div class="msg-col">
                 <div class="bubble ai-bubble">${answerText}</div>
                 <div class="src-tag">
@@ -84,24 +125,17 @@ async function sendMessage() {
         chat.appendChild(aiRow);
 
     } catch (error) {
-        document.getElementById("typingIndicator")?.remove();
+        removeTyping();
 
+        // ── ERROR BUBBLE ──────────────────────────────────────
         const errRow = document.createElement("div");
         errRow.className = "msg-row";
         errRow.innerHTML = `
-            <div class="av ai-av">
-                <img src="husky-logo.png" alt="H" class="av-img"
-                     onerror="this.style.display='none';this.nextElementSibling.style.display='block';">
-                <svg style="display:none;" viewBox="0 0 100 100" fill="white">
-                    <ellipse cx="24" cy="20" rx="11" ry="14"/>
-                    <ellipse cx="50" cy="14" rx="11" ry="14"/>
-                    <ellipse cx="76" cy="20" rx="11" ry="14"/>
-                    <ellipse cx="89" cy="46" rx="9"  ry="12"/>
-                    <path d="M14 58 Q8 36 26 34 Q42 34 50 46 Q58 34 74 34 Q92 36 86 58 Q80 84 50 90 Q20 84 14 58Z"/>
-                </svg>
-            </div>
+            ${aiAvatar()}
             <div class="msg-col">
-                <div class="bubble ai-bubble">Could not connect to server.</div>
+                <div class="bubble ai-bubble">
+                    Could not connect to the server. Please try again.
+                </div>
             </div>
         `;
         chat.appendChild(errRow);
@@ -109,10 +143,4 @@ async function sendMessage() {
     }
 
     chat.scrollTop = chat.scrollHeight;
-}
-
-// Follow-up button sends that text as a new message
-function quickAsk(el) {
-    document.getElementById("userInput").value = el.textContent;
-    sendMessage();
 }
