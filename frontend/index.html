@@ -9,18 +9,27 @@
 <body>
 <div class="app">
 
+    <!-- ===== SIDEBAR ===== -->
     <div class="sidebar">
 
         <div class="sb-brand">
             <div class="sb-paw">
-                <img src="husky-logo.png" alt="Husky paw" class="sb-logo-img"
-                     onerror="this.style.display='none';this.nextElementSibling.style.display='block';">
-                <svg style="display:none;" viewBox="0 0 100 100" fill="white">
-                    <ellipse cx="24" cy="20" rx="11" ry="14"/>
-                    <ellipse cx="50" cy="14" rx="11" ry="14"/>
-                    <ellipse cx="76" cy="20" rx="11" ry="14"/>
-                    <ellipse cx="89" cy="46" rx="9" ry="12"/>
-                    <path d="M14 58 Q8 36 26 34 Q42 34 50 46 Q58 34 74 34 Q92 36 86 58 Q80 84 50 90 Q20 84 14 58Z"/>
+                <!--
+                    Save your paw image as husky-logo.png in the same folder.
+                    If missing, the SVG paw shows automatically as fallback.
+                -->
+                <img
+                    src="husky-logo.png"
+                    alt="Husky"
+                    class="sb-logo-img"
+                    onerror="this.style.display='none';this.nextElementSibling.style.display='block';"
+                >
+                <svg style="display:none;" viewBox="0 0 64 64" fill="white">
+                    <ellipse cx="16" cy="12" rx="6" ry="8"/>
+                    <ellipse cx="32" cy="8"  rx="6" ry="8"/>
+                    <ellipse cx="48" cy="12" rx="6" ry="8"/>
+                    <ellipse cx="56" cy="28" rx="5" ry="7"/>
+                    <path d="M10 36 Q6 22 18 20 Q26 20 32 28 Q38 20 46 20 Q58 22 54 36 Q50 54 32 58 Q14 54 10 36Z"/>
                 </svg>
             </div>
             <div>
@@ -35,6 +44,7 @@
         </div>
 
         <nav class="sb-nav">
+
             <div class="nav-lbl">General</div>
             <div class="nav-item active" onclick="setActive(this)">
                 <span class="nav-ic">💬</span>AI Chat
@@ -62,12 +72,7 @@
             <div class="nav-item" onclick="setActive(this)">
                 <span class="nav-ic">📚</span>Course Catalog
             </div>
-            <div class="nav-item" onclick="setActive(this)">
-                <span class="nav-ic">📞</span>Contact Staff
-            </div>
-            <div class="nav-item" onclick="setActive(this)">
-                <span class="nav-ic">📝</span>Enrollment Info
-            </div>
+
         </nav>
 
         <div class="sb-footer">
@@ -87,7 +92,10 @@
         </div>
 
     </div>
+    <!-- ===== END SIDEBAR ===== -->
 
+
+    <!-- ===== MAIN ===== -->
     <div class="main">
 
         <div class="topbar">
@@ -97,17 +105,22 @@
                     <div class="online-dot"></div>
                     <span class="online-txt">Online</span>
                 </div>
+                <!-- Top right pill — paw logo + Husky AI only, no date -->
                 <div class="tb-pill">
-                    <img src="husky-logo.png" alt="Husky" class="tb-logo-img"
-                         onerror="this.style.display='none';this.nextElementSibling.style.display='block';">
-                    <svg style="display:none;width:18px;height:18px;" viewBox="0 0 100 100" fill="#ff6600">
-                        <ellipse cx="24" cy="20" rx="11" ry="14"/>
-                        <ellipse cx="50" cy="14" rx="11" ry="14"/>
-                        <ellipse cx="76" cy="20" rx="11" ry="14"/>
-                        <ellipse cx="89" cy="46" rx="9" ry="12"/>
-                        <path d="M14 58 Q8 36 26 34 Q42 34 50 46 Q58 34 74 34 Q92 36 86 58 Q80 84 50 90 Q20 84 14 58Z"/>
+                    <img
+                        src="husky-logo.png"
+                        alt="Husky"
+                        class="tb-logo-img"
+                        onerror="this.style.display='none';this.nextElementSibling.style.display='block';"
+                    >
+                    <svg style="display:none;" viewBox="0 0 64 64" fill="#ff6600" width="18" height="18">
+                        <ellipse cx="16" cy="12" rx="6" ry="8"/>
+                        <ellipse cx="32" cy="8"  rx="6" ry="8"/>
+                        <ellipse cx="48" cy="12" rx="6" ry="8"/>
+                        <ellipse cx="56" cy="28" rx="5" ry="7"/>
+                        <path d="M10 36 Q6 22 18 20 Q26 20 32 28 Q38 20 46 20 Q58 22 54 36 Q50 54 32 58 Q14 54 10 36Z"/>
                     </svg>
-                    <span class="tb-pill-lbl" id="todayPill">Today</span>
+                    <span class="tb-pill-lbl">Husky AI</span>
                 </div>
             </div>
         </div>
@@ -123,49 +136,32 @@
                     Dismissal: <strong>3:26 PM</strong>
                 </div>
             </div>
-            <div class="live-clock" id="liveClock">--:--:--</div>
+            <div class="live-clock" id="liveClock">—</div>
         </div>
 
+        <!-- Chat area — starts with only the first AI message -->
         <div class="chat-area" id="chat">
-
-            <div class="welcome-card">
-                <div class="w-head">
-                    <img src="husky-logo.png" alt="Husky" class="w-logo-img"
-                         onerror="this.style.display='none';this.nextElementSibling.style.display='block';">
-                    <svg style="display:none;width:20px;height:20px;" viewBox="0 0 100 100" fill="#ff6600">
-                        <ellipse cx="24" cy="20" rx="11" ry="14"/>
-                        <ellipse cx="50" cy="14" rx="11" ry="14"/>
-                        <ellipse cx="76" cy="20" rx="11" ry="14"/>
-                        <ellipse cx="89" cy="46" rx="9" ry="12"/>
-                        <path d="M14 58 Q8 36 26 34 Q42 34 50 46 Q58 34 74 34 Q92 36 86 58 Q80 84 50 90 Q20 84 14 58Z"/>
-                    </svg>
-                    <span class="w-title">Hey, welcome to Husky AI!</span>
-                </div>
-                <p class="w-text">Ask me anything about Washington High — bell schedules, clubs, counseling, enrollment, and more.</p>
-                <div class="chips">
-                    <div class="chip" onclick="sendChip(this)">Bell schedule</div>
-                    <div class="chip" onclick="sendChip(this)">Minimum days</div>
-                    <div class="chip" onclick="sendChip(this)">Enrollment</div>
-                    <div class="chip" onclick="sendChip(this)">Club list</div>
-                    <div class="chip" onclick="sendChip(this)">Contact counselor</div>
-                    <div class="chip" onclick="sendChip(this)">Graduation requirements</div>
-                </div>
-            </div>
 
             <div class="msg-row">
                 <div class="av ai-av">
-                    <img src="husky-logo.png" alt="H" class="av-img"
-                         onerror="this.style.display='none';this.nextElementSibling.style.display='block';">
-                    <svg style="display:none;" viewBox="0 0 100 100" fill="white">
-                        <ellipse cx="24" cy="20" rx="11" ry="14"/>
-                        <ellipse cx="50" cy="14" rx="11" ry="14"/>
-                        <ellipse cx="76" cy="20" rx="11" ry="14"/>
-                        <ellipse cx="89" cy="46" rx="9" ry="12"/>
-                        <path d="M14 58 Q8 36 26 34 Q42 34 50 46 Q58 34 74 34 Q92 36 86 58 Q80 84 50 90 Q20 84 14 58Z"/>
+                    <img
+                        src="husky-logo.png"
+                        alt="H"
+                        class="av-img"
+                        onerror="this.style.display='none';this.nextElementSibling.style.display='block';"
+                    >
+                    <svg style="display:none;" viewBox="0 0 64 64" fill="white">
+                        <ellipse cx="16" cy="12" rx="6" ry="8"/>
+                        <ellipse cx="32" cy="8"  rx="6" ry="8"/>
+                        <ellipse cx="48" cy="12" rx="6" ry="8"/>
+                        <ellipse cx="56" cy="28" rx="5" ry="7"/>
+                        <path d="M10 36 Q6 22 18 20 Q26 20 32 28 Q38 20 46 20 Q58 22 54 36 Q50 54 32 58 Q14 54 10 36Z"/>
                     </svg>
                 </div>
                 <div class="msg-col">
-                    <div class="bubble ai-bubble">Hi! I'm Husky AI — your guide to everything at Washington High. What can I help you find today?</div>
+                    <div class="bubble ai-bubble">
+                        Hi, I'm Husky AI — your guide at Washington High. What can I help you with today?
+                    </div>
                 </div>
             </div>
 
@@ -173,10 +169,13 @@
 
         <div class="input-bar">
             <div class="input-wrap">
-                <input id="userInput" type="text"
+                <input
+                    id="userInput"
+                    type="text"
                     placeholder="Ask anything about Washington High..."
                     autocomplete="off"
-                    onkeypress="if(event.key==='Enter') sendMessage()">
+                    onkeypress="if(event.key==='Enter') sendMessage()"
+                >
                 <button class="send-btn" onclick="sendMessage()">
                     <svg viewBox="0 0 24 24"><path d="M2 21l21-9L2 3v7l15 2-15 2z"/></svg>
                 </button>
@@ -184,28 +183,28 @@
         </div>
 
     </div>
+    <!-- ===== END MAIN ===== -->
+
 </div>
 
 <script src="script.js"></script>
 <script>
-    const DAYS   = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
-    const MONTHS = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
-    const now    = new Date();
-    document.getElementById('todayLbl').textContent  = 'Today — ' + DAYS[now.getDay()];
-    document.getElementById('todayPill').textContent = 'Today · ' + MONTHS[now.getMonth()] + ' ' + now.getDate();
+    /* ------ TODAY LABEL ------ */
+    const DAYS = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+    document.getElementById('todayLbl').textContent = 'Today — ' + DAYS[new Date().getDay()];
+
+    /* ------ LIVE CLOCK ------ */
     function updateClock() {
         document.getElementById('liveClock').textContent =
-            new Date().toLocaleTimeString([], { hour:'2-digit', minute:'2-digit', second:'2-digit' });
+            new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' });
     }
     updateClock();
     setInterval(updateClock, 1000);
+
+    /* ------ NAV ACTIVE STATE ------ */
     function setActive(el) {
         document.querySelectorAll('.nav-item').forEach(i => i.classList.remove('active'));
         el.classList.add('active');
-    }
-    function sendChip(el) {
-        document.getElementById('userInput').value = el.textContent;
-        sendMessage();
     }
 </script>
 </body>
