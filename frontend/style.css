@@ -3,6 +3,7 @@
    Washington High School
    ============================================================ */
 
+/* ---------- DESIGN TOKENS ---------- */
 :root {
     --bg-main:       #080d1a;
     --bg-sidebar:    #0b1120;
@@ -12,30 +13,37 @@
     --orange-light:  #ff8533;
     --orange-tint:   rgba(255, 102, 0, 0.13);
     --orange-border: rgba(255, 102, 0, 0.28);
-    --text-primary:  #c8d4e8;
+    --text-main:     #c8d4e8;
     --text-muted:    #7a869a;
-    --text-dim:      #3f4f68;
+    --text-dim:      #3a4560;
     --border:        rgba(255, 255, 255, 0.06);
     --font:          'Inter', Arial, sans-serif;
 }
 
-* { margin: 0; padding: 0; box-sizing: border-box; }
+/* ---------- RESET ---------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body {
     font-family: var(--font);
     background: var(--bg-main);
-    color: var(--text-primary);
+    color: var(--text-main);
     height: 100vh;
     overflow: hidden;
 }
 
+/* ---------- APP SHELL ---------- */
 .app {
     display: flex;
     height: 100vh;
-    overflow: hidden;
 }
 
-/* ── SIDEBAR ─────────────────────────────── */
+/* ============================================================
+   SIDEBAR
+   ============================================================ */
 .sidebar {
     width: 240px;
     background: var(--bg-sidebar);
@@ -45,6 +53,7 @@ body {
     flex-shrink: 0;
 }
 
+/* --- Brand --- */
 .sb-brand {
     padding: 18px 15px 16px;
     border-bottom: 1px solid var(--border);
@@ -57,17 +66,23 @@ body {
     width: 38px;
     height: 38px;
     background: var(--orange);
-    border-radius: 9px;
+    border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
 }
 
+/* Real image inside paw background */
 .sb-logo-img {
     width: 26px;
     height: 26px;
     object-fit: contain;
+}
+
+.sb-paw svg {
+    width: 24px;
+    height: 24px;
 }
 
 .sb-title {
@@ -77,7 +92,7 @@ body {
     letter-spacing: -0.3px;
 }
 
-/* Washington High School label — bright orange */
+/* Washington High School — bright orange */
 .sb-sub {
     font-size: 11px;
     color: var(--orange);
@@ -85,7 +100,7 @@ body {
     margin-top: 2px;
 }
 
-/* Alert strip */
+/* --- Alert strip --- */
 .alert-strip {
     margin: 11px 11px 0;
     background: rgba(255, 102, 0, 0.1);
@@ -107,7 +122,7 @@ body {
     line-height: 1.5;
 }
 
-/* Nav */
+/* --- Nav --- */
 .sb-nav {
     padding: 13px 9px;
     flex: 1;
@@ -124,7 +139,9 @@ body {
     margin: 13px 0 4px;
 }
 
-.nav-lbl:first-child { margin-top: 0; }
+.nav-lbl:first-child {
+    margin-top: 0;
+}
 
 .nav-item {
     display: flex;
@@ -135,13 +152,13 @@ body {
     cursor: pointer;
     color: var(--text-muted);
     font-size: 13px;
-    margin-bottom: 2px;
+    margin-bottom: 1px;
     transition: background 0.15s, color 0.15s;
 }
 
 .nav-item:hover {
     background: rgba(255, 255, 255, 0.04);
-    color: var(--text-primary);
+    color: var(--text-main);
 }
 
 .nav-item.active {
@@ -157,7 +174,9 @@ body {
     color: #566380;
 }
 
-.nav-item.subtab:hover { color: var(--text-primary); }
+.nav-item.subtab:hover {
+    color: var(--text-main);
+}
 
 .nav-ic {
     font-size: 13px;
@@ -165,6 +184,7 @@ body {
     text-align: center;
 }
 
+/* Notification badge */
 .badge {
     margin-left: auto;
     background: var(--orange);
@@ -176,7 +196,7 @@ body {
     line-height: 1.5;
 }
 
-/* Footer */
+/* --- Footer --- */
 .sb-footer {
     padding: 12px 12px 16px;
     border-top: 1px solid var(--border);
@@ -185,14 +205,15 @@ body {
     gap: 10px;
 }
 
-/* Sources note — always visible above school pill */
+/* Sources note — always visible */
 .sources-note {
-    font-size: 10px;
-    line-height: 1.7;
-    padding: 8px 10px;
     background: rgba(255, 255, 255, 0.02);
     border: 1px solid rgba(255, 255, 255, 0.05);
     border-radius: 7px;
+    padding: 8px 10px;
+    font-size: 10px;
+    color: var(--text-dim);
+    line-height: 1.7;
 }
 
 .sources-label {
@@ -207,11 +228,13 @@ body {
     color: var(--orange);
     text-decoration: none;
     word-break: break-all;
-    font-size: 11px;
 }
 
-.sources-note a:hover { text-decoration: underline; }
+.sources-note a:hover {
+    text-decoration: underline;
+}
 
+/* School pill */
 .school-pill {
     background: rgba(255, 102, 0, 0.08);
     border: 1px solid rgba(255, 102, 0, 0.18);
@@ -242,16 +265,17 @@ body {
     margin-top: 2px;
 }
 
-/* ── MAIN PANEL ───────────────────────────── */
+/* ============================================================
+   MAIN PANEL
+   ============================================================ */
 .main {
     flex: 1;
     display: flex;
     flex-direction: column;
     min-width: 0;
-    background: var(--bg-main);
 }
 
-/* Topbar */
+/* --- Top bar --- */
 .topbar {
     padding: 13px 22px;
     border-bottom: 1px solid var(--border);
@@ -259,12 +283,13 @@ body {
     align-items: center;
     justify-content: space-between;
     flex-shrink: 0;
+    background: var(--bg-main);
 }
 
 .tb-title {
     font-size: 14px;
     font-weight: 700;
-    color: var(--text-primary);
+    color: var(--text-main);
 }
 
 .tb-right {
@@ -291,6 +316,7 @@ body {
     color: var(--text-dim);
 }
 
+/* Top right pill — paw + Husky AI, no date */
 .tb-pill {
     display: flex;
     align-items: center;
@@ -298,7 +324,7 @@ body {
     background: rgba(255, 102, 0, 0.1);
     border: 1px solid rgba(255, 102, 0, 0.2);
     border-radius: 8px;
-    padding: 5px 12px;
+    padding: 6px 12px;
 }
 
 .tb-logo-img {
@@ -313,7 +339,7 @@ body {
     color: var(--orange-light);
 }
 
-/* Day strip */
+/* --- Day info strip --- */
 .day-strip {
     background: var(--bg-surface);
     border-bottom: 1px solid rgba(255, 255, 255, 0.04);
@@ -327,7 +353,7 @@ body {
 .day-left {
     display: flex;
     align-items: center;
-    gap: 18px;
+    gap: 20px;
 }
 
 .day-item {
@@ -360,10 +386,12 @@ body {
     background: rgba(255, 102, 0, 0.1);
     border: 1px solid rgba(255, 102, 0, 0.2);
     border-radius: 6px;
-    padding: 3px 10px;
+    padding: 3px 9px;
 }
 
-/* ── CHAT AREA ──────────────────────────── */
+/* ============================================================
+   CHAT AREA
+   ============================================================ */
 .chat-area {
     flex: 1;
     overflow-y: auto;
@@ -379,76 +407,16 @@ body {
     border-radius: 3px;
 }
 
-/* Welcome card — iMessage style orange bubble */
-.welcome-card {
-    background: var(--orange-tint);
-    border: 1px solid var(--orange-border);
-    border-radius: 18px;
-    border-bottom-left-radius: 4px;
-    padding: 16px 18px;
-    max-width: 78%;
-    align-self: flex-start;
-}
-
-.w-head {
-    display: flex;
-    align-items: center;
-    gap: 9px;
-    margin-bottom: 7px;
-}
-
-.w-logo-img {
-    width: 20px;
-    height: 20px;
-    object-fit: contain;
-}
-
-.w-title {
-    font-size: 14px;
-    font-weight: 700;
-    color: var(--orange-light);
-}
-
-.w-text {
-    font-size: 13px;
-    color: #ffb077;
-    line-height: 1.65;
-}
-
-/* Quick chips */
-.chips {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 7px;
-    margin-top: 12px;
-}
-
-.chip {
-    background: rgba(255, 255, 255, 0.07);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 20px;
-    padding: 5px 13px;
-    font-size: 12px;
-    color: #ffb077;
-    cursor: pointer;
-    white-space: nowrap;
-    transition: all 0.15s;
-}
-
-.chip:hover {
-    background: rgba(255, 102, 0, 0.2);
-    border-color: rgba(255, 102, 0, 0.4);
-    color: var(--orange-light);
-}
-
-/* Message rows */
+/* --- Message rows --- */
 .msg-row {
     display: flex;
     align-items: flex-end;
     gap: 8px;
 }
 
-.user-row { flex-direction: row-reverse; }
+.user-row {
+    flex-direction: row-reverse;
+}
 
 /* Avatars */
 .av {
@@ -462,12 +430,19 @@ body {
     overflow: hidden;
 }
 
-.ai-av { background: var(--orange); }
+.ai-av {
+    background: var(--orange);
+}
 
 .av-img {
-    width: 20px;
-    height: 20px;
+    width: 19px;
+    height: 19px;
     object-fit: contain;
+}
+
+.ai-av svg {
+    width: 18px;
+    height: 18px;
 }
 
 .user-av {
@@ -478,6 +453,7 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
+/* Message columns */
 .msg-col {
     display: flex;
     flex-direction: column;
@@ -485,15 +461,18 @@ body {
     max-width: 76%;
 }
 
-.user-col { align-items: flex-end; }
+.user-col {
+    align-items: flex-end;
+}
 
-/* iMessage style bubbles */
+/* Bubbles — iMessage style */
 .bubble {
     padding: 11px 15px;
     font-size: 14px;
     line-height: 1.65;
 }
 
+/* AI bubble — orange tinted */
 .ai-bubble {
     background: var(--orange-tint);
     border: 1px solid var(--orange-border);
@@ -502,6 +481,7 @@ body {
     border-bottom-left-radius: 4px;
 }
 
+/* User bubble — solid orange */
 .user-bubble {
     background: var(--orange);
     color: #ffffff;
@@ -513,11 +493,11 @@ body {
 .src-tag {
     display: inline-flex;
     align-items: center;
-    gap: 6px;
+    gap: 5px;
     background: rgba(255, 255, 255, 0.03);
     border: 1px solid rgba(255, 255, 255, 0.07);
     border-radius: 6px;
-    padding: 4px 10px;
+    padding: 4px 9px;
     font-size: 11px;
     color: var(--text-dim);
     width: fit-content;
@@ -528,9 +508,10 @@ body {
     height: 5px;
     background: #22c55e;
     border-radius: 50%;
+    flex-shrink: 0;
 }
 
-/* Follow-up buttons */
+/* Follow-up suggestion buttons */
 .follow-ups {
     display: flex;
     flex-wrap: wrap;
@@ -541,16 +522,18 @@ body {
     background: rgba(255, 102, 0, 0.08);
     border: 1px solid rgba(255, 102, 0, 0.2);
     border-radius: 20px;
-    padding: 5px 12px;
+    padding: 4px 11px;
     font-size: 12px;
     color: var(--orange-light);
     cursor: pointer;
-    transition: all 0.15s;
+    transition: background 0.15s;
 }
 
-.fup:hover { background: rgba(255, 102, 0, 0.18); }
+.fup:hover {
+    background: rgba(255, 102, 0, 0.18);
+}
 
-/* Typing indicator */
+/* --- Typing indicator --- */
 .typing-bubble {
     background: var(--orange-tint);
     border: 1px solid var(--orange-border);
@@ -563,8 +546,8 @@ body {
 }
 
 .dot {
-    width: 7px;
-    height: 7px;
+    width: 6px;
+    height: 6px;
     background: var(--orange-light);
     border-radius: 50%;
     animation: bounce 1.2s infinite;
@@ -575,12 +558,14 @@ body {
 
 @keyframes bounce {
     0%, 60%, 100% { transform: translateY(0); }
-    30%            { transform: translateY(-6px); }
+    30%            { transform: translateY(-5px); }
 }
 
-/* ── INPUT BAR ──────────────────────────── */
+/* ============================================================
+   INPUT BAR
+   ============================================================ */
 .input-bar {
-    padding: 13px 20px;
+    padding: 12px 20px;
     border-top: 1px solid var(--border);
     background: rgba(8, 13, 26, 0.95);
     flex-shrink: 0;
@@ -592,7 +577,7 @@ body {
     background: var(--bg-input);
     border: 1px solid rgba(255, 255, 255, 0.09);
     border-radius: 12px;
-    padding: 0 13px;
+    padding: 0 14px;
     gap: 10px;
     transition: border-color 0.2s;
 }
@@ -607,12 +592,14 @@ body {
     border: none;
     outline: none;
     font-size: 14px;
-    color: var(--text-primary);
+    color: var(--text-main);
     padding: 13px 0;
     font-family: var(--font);
 }
 
-.input-wrap input::placeholder { color: var(--text-dim); }
+.input-wrap input::placeholder {
+    color: var(--text-dim);
+}
 
 .send-btn {
     width: 36px;
@@ -628,7 +615,9 @@ body {
     transition: transform 0.15s;
 }
 
-.send-btn:hover { transform: translateY(-1px); }
+.send-btn:hover {
+    transform: translateY(-1px);
+}
 
 .send-btn svg {
     width: 16px;
