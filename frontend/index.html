@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Husky AI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+
+    <div class="sidebar">
+
+        <div class="sb-brand">
+            <div class="sb-paw">
+                <img src="https://img.icons8.com/ios-filled/50/ffffff/husky.png" alt="Husky" width="26" height="26">
+            </div>
+            <div>
+                <div class="sb-title">Husky AI</div>
+                <div class="sb-sub">Washington High School</div>
+            </div>
+        </div>
+
+        <div class="alert-strip">
+            <div class="alert-title" id="todayLbl">Today</div>
+            <div class="alert-text">Regular schedule · Dismissal 3:26 PM</div>
+        </div>
+
+        <nav class="sb-nav">
+            <div class="nav-lbl">General</div>
+            <div class="nav-item active" onclick="setActive(this)">
+                <span class="nav-ic">💬</span>AI Chat
+            </div>
+            <div class="nav-lbl">Admissions &amp; Counseling</div>
+            <div class="nav-item" onclick="setActive(this)">
+                <span class="nav-ic">🎓</span>Graduation Requirements
+            </div>
+            <div class="nav-item subtab" onclick="setActive(this)">
+                <span class="nav-ic">📊</span>GPA Calculator
+            </div>
+            <div class="nav-item" onclick="setActive(this)">
+                <span class="nav-ic">📅</span>Schedule Counselor
+            </div>
+            <div class="nav-lbl">Student Life</div>
+            <div class="nav-item" onclick="setActive(this)">
+                <span class="nav-ic">🏫</span>Clubs &amp; Associations
+            </div>
+            <div class="nav-item" onclick="setActive(this)">
+                <span class="nav-ic">📚</span>Course Catalog
+            </div>
+        </nav>
+
+        <div class="sb-footer">
+            <div class="sources-note">
+                <span class="sources-label">All information sourced from:</span>
+                <a href="https://fremontunified.org/washington/" target="_blank">
+                    fremontunified.org/washington/
+                </a>
+            </div>
+            <div class="school-pill">
+                <div class="s-dot"></div>
+                <div>
+                    <div class="s-name">Washington High School</div>
+                    <div class="s-district">Fremont Unified School District</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="topbar">
+            <div class="tb-title">AI Assistant</div>
+            <div class="tb-right">
+                <div class="online">
+                    <div class="online-dot"></div>
+                    <span class="online-txt">Online</span>
+                </div>
+                <div class="tb-pill">
+                    <img src="https://img.icons8.com/ios-filled/50/ff6600/husky.png" alt="Husky" width="16" height="16">
+                    <span class="tb-pill-lbl">Husky AI</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="day-strip">
+            <div class="day-left">
+                <div class="day-item">
+                    <div class="d-dot blue"></div>
+                    Period 1 starts: <strong>8:30 AM</strong>
+                </div>
+                <div class="day-item">
+                    <div class="d-dot green"></div>
+                    Dismissal: <strong>3:26 PM</strong>
+                </div>
+            </div>
+            <div class="live-clock" id="liveClock">—</div>
+        </div>
+
+        <div class="chat-area" id="chat">
+            <div class="msg-row">
+                <div class="av ai-av">
+                    <img src="https://img.icons8.com/ios-filled/50/ffffff/husky.png" alt="Husky" width="20" height="20">
+                </div>
+                <div class="msg-col">
+                    <div class="bubble ai-bubble">
+                        Hi, I'm Husky AI — your guide at Washington High. What can I help you with today?
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="input-bar">
+            <div class="input-wrap">
+                <input
+                    id="userInput"
+                    type="text"
+                    placeholder="Ask anything about Washington High..."
+                    autocomplete="off"
+                    onkeypress="if(event.key==='Enter') sendMessage()"
+                >
+                <button class="send-btn" onclick="sendMessage()">
+                    <svg viewBox="0 0 24 24"><path d="M2 21l21-9L2 3v7l15 2-15 2z"/></svg>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+<script>
+    const DAYS = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+    document.getElementById('todayLbl').textContent = 'Today — ' + DAYS[new Date().getDay()];
+
+    function updateClock() {
+        document.getElementById('liveClock').textContent =
+            new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' });
+    }
+    updateClock();
+    setInterval(updateClock, 1000);
+
+    function setActive(el) {
+        document.querySelectorAll('.nav-item').forEach(i => i.classList.remove('active'));
+        el.classList.add('active');
+    }
+</script>
+</body>
+</html>
