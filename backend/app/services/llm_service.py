@@ -2,56 +2,72 @@ import os
 from groq import Groq
 from dotenv import load_dotenv
 
-# Load environment variables from .env file
+# Load environment variables
 load_dotenv()
 
 # Initialize Groq Client
-# FIXED: Removed the hardcoded 'gsk_...' key. 
-# It now looks only in your .env file for GROQ_API_KEY.
 client = Groq(
     api_key=os.getenv("GROQ_API_KEY")
 )
 
 MODEL = "llama-3.1-8b-instant" 
 
-def generate_answer(query: str, context: str, history: list = None):
+# 🛠️ THE FIX: We kept 'model_type=None' to ensure compatibility with search_service.
+def generate_answer(query: str, context: str, history: list = None, model_type=None):
     """
     Sends query + retrieved context + conversation history to LLM.
-    'history' allows the AI to remember previous turns like '0 period'.
+    'history' allows the AI to remember previous turns.
     """
     if history is None:
         history = []
 
     if not context.strip():
-        return "I couldn't find any relevant information in the school database."
+        return "Information regarding this query is currently unavailable in the Washington High School database."
 
-    # 1. Start with the System Prompt (The AI's "Personality")
+    # 1. THE REFINED SYSTEM PROMPT: Professional, Dignified, and Filtered.
+    system_msg = (
+        "You are 'Husky AI', the official professional assistant for Washington High School (WHS).\n\n"
+        "STRICT FILTRATION & STYLE RULES:\n"
+        "1. WASHINGTON ONLY: You must filter the district-wide data to find information pertaining ONLY to Washington High School. Do not mention individuals or policies from other schools (e.g., Kennedy, Irvington).\n"
+        "2. PROFESSIONAL TONE: Maintain a dignified, polite, and formal tone. Avoid being overly friendly or casual.\n"
+        "3. NO BOLDING: Do not use any bold text (no double asterisks). Provide responses in plain, clean text.\n"
+        "4. CONCISE SUMMARIES: Provide a direct answer. The response should be 1 to 3 sentences usually, and must NEVER exceed 5 sentences.\n"
+        "5. CLEAN FORMATTING: Do not use symbols like '*' or '+'. Use plain text or standard numbered lists (1. 2. 3.) only when necessary.\n"
+        "6. SOURCE OF TRUTH: Use only the provided context. If the specific data for Washington High is not found, state that the information is not available in current records."
+    )
+    
     messages = [
-        {"role": "system", "content": "You are a helpful school AI assistant for Washington High. Answer using ONLY the provided context. If the user corrects you, check the context again to see if they are right."}
+        {"role": "system", "content": system_msg}
     ]
 
-    # 2. Add the Conversation History (The AI's "Memory")
+    # 2. Add History
     for msg in history:
         messages.append(msg)
 
-    # 3. Add the current Question and the Context found in FAISS
+    # 3. Final Prompt
     prompt = f"""
-Answer the user's question using ONLY the context provided below.
-
-Context:
+SCHOOL DISTRICT DATA:
 {context}
 
-Question:
-{query}
+USER QUESTION: {query}
+
+TASK:
+1. Identify and extract information exclusively for Washington High School.
+2. Provide a professional and polite summary.
+3. Maximum length: 4-5 sentences.
+4. Do not use bold text or special bullet symbols.
+
+ANSWER:
 """
     messages.append({"role": "user", "content": prompt})
 
     try:
+        # Temperature 0.1 ensures the model remains literal and professional.
         response = client.chat.completions.create(
             model=MODEL,
             messages=messages,
-            temperature=0.3,
+            temperature=0.1,
         )
         return response.choices[0].message.content
     except Exception as e:
-        return f"LLM Error: {str(e)}"
+        return f"A technical error has occurred: {str(e)}"

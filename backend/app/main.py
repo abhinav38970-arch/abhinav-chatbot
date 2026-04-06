@@ -21,14 +21,12 @@ app.include_router(search_router)
 def root():
     return {
         "status": "Husky AI Online", 
-        "engine": "FAISS Vector Store",
+        "engine": "Hybrid (FAISS + BM25)", 
+        "reranker": "FlashRank Neural Judge",
         "database": "SQLite (Surgical Scrape)"
     }
 
 if __name__ == "__main__":
     import uvicorn
-    # Render provides a specific port via environment variables
     port = int(os.environ.get("PORT", 8000))
-    # We pass 'app' directly here to fix the port binding issue
-    # We keep the host as 0.0.0.0 for Render accessibility
     uvicorn.run(app, host="0.0.0.0", port=port)

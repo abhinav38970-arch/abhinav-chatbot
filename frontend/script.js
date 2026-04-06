@@ -1,9 +1,15 @@
 let chatHistory = []; 
 
 function aiAvatar() {
+    // Updated to the new SVG logo to match index.html
     return `
         <div class="av ai-av">
-            <img src="https://img.icons8.com/ios-filled/50/ffffff/husky.png" alt="Husky" width="20" height="20">
+            <svg width="22" height="22" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M50 10L10 30L15 80L50 90L85 80L90 30L50 10Z" fill="white" stroke="white" stroke-width="2"/>
+                <path d="M50 20C40 20 30 25 30 40L40 70H60L70 40C70 25 60 20 50 20ZM50 70H40L35 45L45 30H55L65 45L60 70H50Z" fill="#ff6600"/>
+                <circle cx="42" cy="40" r="3" fill="#ff6600"/>
+                <circle cx="58" cy="40" r="3" fill="#ff6600"/>
+            </svg>
         </div>
     `;
 }
@@ -50,7 +56,6 @@ async function sendMessage() {
     showTyping();
 
     try {
-        // ✅ LOCALHOST URL: Points to the backend running in your terminal
         const response = await fetch(`http://127.0.0.1:8000/ask`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
@@ -63,9 +68,25 @@ async function sendMessage() {
         const data = await response.json();
         const answerText = data.answer || "I couldn't find that information.";
         
+        // ✅ Get sources from backend or use fallback
+        const sources = (data.sources && data.sources.length > 0) 
+                        ? data.sources 
+                        : ["https://fremontunified.org/washington/"];
+
         chatHistory.push({"role": "assistant", "content": answerText});
 
         removeTyping();
+
+        // ✅ Build dynamic source HTML
+        const sourceHtml = sources.map(url => {
+            let pageName = url.replace(/\/$/, "").split('/').pop() || "Home";
+            pageName = pageName.charAt(0).toUpperCase() + pageName.slice(1);
+            return `
+                <a href="${url}" target="_blank" class="src-tag" style="text-decoration: none;">
+                    <div class="src-dot"></div>Source: ${pageName}
+                </a>
+            `;
+        }).join("");
 
         const aiRow = document.createElement("div");
         aiRow.className = "msg-row";
@@ -73,7 +94,9 @@ async function sendMessage() {
             ${aiAvatar()}
             <div class="msg-col">
                 <div class="bubble ai-bubble">${answerText}</div>
-                <div class="src-tag"><div class="src-dot"></div>Source: fremontunified.org/washington/</div>
+                <div class="sources-list" style="display:flex; flex-wrap:wrap; gap:6px; margin-top:4px;">
+                    ${sourceHtml}
+                </div>
                 <div class="follow-ups">
                     <div class="fup" onclick="quickAsk(this)">Tell me more</div>
                     <div class="fup" onclick="quickAsk(this)">Related info</div>
@@ -86,7 +109,6 @@ async function sendMessage() {
     } catch (error) {
         removeTyping();
         console.error("Connection Error:", error);
-        // Alert if the backend isn't running
         const errorRow = document.createElement("div");
         errorRow.className = "msg-row";
         errorRow.innerHTML = `<div class="bubble ai-bubble" style="background: #ffcccc; color: #cc0000;">Error: Is the backend terminal running?</div>`;
