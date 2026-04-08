@@ -1,7 +1,6 @@
 let chatHistory = []; 
 
 function aiAvatar() {
-    // Updated to the new SVG logo to match index.html
     return `
         <div class="av ai-av">
             <svg width="22" height="22" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -56,7 +55,8 @@ async function sendMessage() {
     showTyping();
 
     try {
-        const response = await fetch(`http://127.0.0.1:8000/ask`, {
+        // ✅ Updated URL for web deployment
+        const response = await fetch(`/ask`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
@@ -66,9 +66,8 @@ async function sendMessage() {
         });
 
         const data = await response.json();
-        const answerText = data.answer || "I couldn't find that information.";
+        const answerText = data.answer || "Information regarding this query is currently unavailable.";
         
-        // ✅ Get sources from backend or use fallback
         const sources = (data.sources && data.sources.length > 0) 
                         ? data.sources 
                         : ["https://fremontunified.org/washington/"];
@@ -77,7 +76,6 @@ async function sendMessage() {
 
         removeTyping();
 
-        // ✅ Build dynamic source HTML
         const sourceHtml = sources.map(url => {
             let pageName = url.replace(/\/$/, "").split('/').pop() || "Home";
             pageName = pageName.charAt(0).toUpperCase() + pageName.slice(1);
@@ -111,7 +109,7 @@ async function sendMessage() {
         console.error("Connection Error:", error);
         const errorRow = document.createElement("div");
         errorRow.className = "msg-row";
-        errorRow.innerHTML = `<div class="bubble ai-bubble" style="background: #ffcccc; color: #cc0000;">Error: Is the backend terminal running?</div>`;
+        errorRow.innerHTML = `<div class="bubble ai-bubble" style="background: #ffcccc; color: #cc0000;">Connection Error: Please try again in a moment.</div>`;
         chat.appendChild(errorRow);
     }
     chat.scrollTop = chat.scrollHeight;
