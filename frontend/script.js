@@ -52,11 +52,16 @@ async function sendMessage() {
     showTyping();
 
     try {
-        const response = await fetch(`http://127.0.0.1:5000/ask`, {
+        // Pointing to the new /api/ask route
+        const backendUrl = window.location.origin + "/api/ask";
+        
+        const response = await fetch(backendUrl, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ query: text, history: chatHistory })
         });
+
+        if (!response.ok) throw new Error('Server unreachable');
 
         const data = await response.json();
         const answerText = data.answer || "Information regarding this query is currently unavailable.";
@@ -89,9 +94,10 @@ async function sendMessage() {
 
     } catch (error) {
         removeTyping();
+        console.error("Fetch Error:", error);
         const errorRow = document.createElement("div");
         errorRow.className = "msg-row";
-        errorRow.innerHTML = `<div class="bubble ai-bubble" style="background: #ffcccc; color: #cc0000;">Connection Error.</div>`;
+        errorRow.innerHTML = `<div class="bubble ai-bubble" style="background: #ffcccc; color: #cc0000;">Connection Error: Check if backend is running.</div>`;
         chat.appendChild(errorRow);
     }
     chat.scrollTop = chat.scrollHeight;

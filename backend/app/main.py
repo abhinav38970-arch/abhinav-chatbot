@@ -15,8 +15,8 @@ app.add_middleware(
     allow_headers=["*"],  
 )
 
-# 1. Attach API Routes first
-app.include_router(search_router)
+# 1. Attach API Routes with a prefix to avoid conflict with Static Files
+app.include_router(search_router, prefix="/api")
 
 @app.get("/status")
 def status():
@@ -27,15 +27,12 @@ def status():
     }
 
 # 2. Serve Frontend Files
-# Path logic: starting from backend/app/main.py, go up 2 levels to reach root, then into frontend/
 current_dir = os.path.dirname(os.path.abspath(__file__))
+# Adjusted to find your frontend folder relative to main.py
 frontend_path = os.path.normpath(os.path.join(current_dir, "..", "..", "frontend"))
 
 if os.path.exists(frontend_path):
-    # 'html=True' looks for index.html automatically at the root URL "/"
+    # html=True serves index.html at the root "/"
     app.mount("/", StaticFiles(directory=frontend_path, html=True), name="frontend")
 else:
     print(f"Warning: Frontend path not found at {frontend_path}")
-
-# Note: We removed the if __name__ == "__main__" block because 
-# your Render command uses 'uvicorn backend.app.main:app' directly.

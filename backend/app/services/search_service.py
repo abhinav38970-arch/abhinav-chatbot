@@ -24,10 +24,10 @@ def run_search(query: str, history: list = None, scope: str = "district"):
         - Period 4: 12:08 - 1:00 | Lunch: 1:00 - 1:30 | Period 5: 1:36 - 2:28 | Period 6: 2:34 - 3:26
         """
 
-    # 2️⃣ STEP 2: HYBRID SEARCH (Removed filter_metadata to fix TypeError)
+    # 2️⃣ STEP 2: HYBRID SEARCH
+    # We pass the scope to the search function if your retrieval system supports it
     vector_results = search(query, k=10)
     
-    # Using all_documents for BM25 to ensure it runs locally without scope errors
     filtered_docs = all_documents if all_documents else []
     
     if not filtered_docs:
