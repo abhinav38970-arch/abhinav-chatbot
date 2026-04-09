@@ -7,70 +7,35 @@ from flashrank import Ranker, RerankRequest
 # Initialize the Re-ranker once
 ranker = Ranker()
 
-def run_search(query: str, history: list = None):
+def run_search(query: str, history: list = None, scope: str = "district"):
     if history is None:
         history = []
 
     user_query = query.lower()
     schedule_context = ""
 
-    # 🕒 1. HARDCODED MASTER SCHEDULE (2025-2026)
+    # 🕒 1. HARDCODED MASTER SCHEDULE
     if any(word in user_query for word in ["schedule", "times", "period", "dismissal", "lunch", "break"]):
         schedule_context = """
         WASHINGTON HIGH SCHOOL MASTER BELL SCHEDULE (2025-2026):
-
         REGULAR SCHEDULE (Mon, Thu, Fri):
-        - 0 Period: 7:30 - 8:20
-        - Period 1: 8:30 - 9:22
-        - Period 2: 9:28 - 10:20
-        - Break: 10:20 - 10:26
-        - Husky/Flex: 10:32 - 11:04
-        - Period 3: 11:10 - 12:02
-        - Period 4: 12:08 - 1:00
-        - Lunch: 1:00 - 1:30
-        - Period 5: 1:36 - 2:28
-        - Period 6: 2:34 - 3:26
-
-        BLOCK SCHEDULE (Tue, Wed):
-        - 0 Period: 7:30 - 8:20
-        - Period 1/2: 8:30 - 10:03
-        - Break: 10:03 - 10:15
-        - Husky/Flex: 11:04 - 12:37
-        - Period 3/4: 12:37 - 1:07
-        - Lunch: 1:07 - 1:37
-        - Period 5/6: 1:37 - 2:50
-
-        MINIMUM DAY (Regular Schedule):
-        - 0 Period: 7:30 - 8:20
-        - Period 1: 8:30 - 9:09
-        - Period 2: 9:15 - 9:54
-        - Period 3: 10:00 - 10:39
-        - Break: 10:39 - 10:48
-        - Period 4: 10:54 - 11:33
-        - Period 5: 11:39 - 12:18
-        - Period 6: 12:24 - 1:03
-        - Lunch: 1:03 - 1:33
-
-        ULTRA MINIMUM DAY:
-        - Periods are shorter (approx 30 mins). Dismissal is typically around 12:10 PM.
-
-        FINALS SCHEDULE:
-        - 0 Period: 7:30 - 8:20
-        - First Final (1/3/5): 8:30 - 10:34
-        - Break: 10:34 - 10:50
-        - Second Final (2/4/6): 10:50 - 12:54
-        - Lunch: 12:54 - 1:24
-
-        NOTE: Special schedules (Assembly, Testing, or Parent Teacher Conferences) vary by date. 
-        Always check the school's digital calendar for today's specific alerts.
+        - 0 Period: 7:30 - 8:20 | Period 1: 8:30 - 9:22 | Period 2: 9:28 - 10:20
+        - Break: 10:20 - 10:26 | Husky/Flex: 10:32 - 11:04 | Period 3: 11:10 - 12:02
+        - Period 4: 12:08 - 1:00 | Lunch: 1:00 - 1:30 | Period 5: 1:36 - 2:28 | Period 6: 2:34 - 3:26
         """
 
-    # 2️⃣ STEP 2: HYBRID SEARCH (Vector + Keyword)
+    # 2️⃣ STEP 2: HYBRID SEARCH (Removed filter_metadata to fix TypeError)
     vector_results = search(query, k=10)
     
-    tokenized_corpus = [doc["content"].split() for doc in all_documents]
-    bm25 = BM25Okapi(tokenized_corpus)
-    keyword_results_raw = bm25.get_top_n(query.split(), all_documents, n=5)
+    # Using all_documents for BM25 to ensure it runs locally without scope errors
+    filtered_docs = all_documents if all_documents else []
+    
+    if not filtered_docs:
+        keyword_results_raw = []
+    else:
+        tokenized_corpus = [doc["content"].split() for doc in filtered_docs]
+        bm25 = BM25Okapi(tokenized_corpus)
+        keyword_results_raw = bm25.get_top_n(query.split(), filtered_docs, n=5)
 
     # 3️⃣ STEP 3: BLEND & RE-RANK
     combined_dict = {res["content"]: res for res in (vector_results + keyword_results_raw)}

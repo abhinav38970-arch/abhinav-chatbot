@@ -45,45 +45,30 @@ async function sendMessage() {
     chat.appendChild(userRow);
     
     chatHistory.push({"role": "user", "content": text});
-    
-    if (chatHistory.length > 10) {
-        chatHistory = chatHistory.slice(-10);
-    }
+    if (chatHistory.length > 10) chatHistory = chatHistory.slice(-10);
     
     input.value = "";
     chat.scrollTop = chat.scrollHeight;
     showTyping();
 
     try {
-        // ✅ Updated URL for web deployment
-        const response = await fetch(`/ask`, {
+        const response = await fetch(`http://127.0.0.1:5000/ask`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({
-                query: text,
-                history: chatHistory
-            })
+            body: JSON.stringify({ query: text, history: chatHistory })
         });
 
         const data = await response.json();
         const answerText = data.answer || "Information regarding this query is currently unavailable.";
-        
-        const sources = (data.sources && data.sources.length > 0) 
-                        ? data.sources 
-                        : ["https://fremontunified.org/washington/"];
+        const sources = (data.sources && data.sources.length > 0) ? data.sources : ["https://fremontunified.org/washington/"];
 
         chatHistory.push({"role": "assistant", "content": answerText});
-
         removeTyping();
 
         const sourceHtml = sources.map(url => {
             let pageName = url.replace(/\/$/, "").split('/').pop() || "Home";
             pageName = pageName.charAt(0).toUpperCase() + pageName.slice(1);
-            return `
-                <a href="${url}" target="_blank" class="src-tag" style="text-decoration: none;">
-                    <div class="src-dot"></div>Source: ${pageName}
-                </a>
-            `;
+            return `<a href="${url}" target="_blank" class="src-tag"><div class="src-dot"></div>Source: ${pageName}</a>`;
         }).join("");
 
         const aiRow = document.createElement("div");
@@ -92,9 +77,7 @@ async function sendMessage() {
             ${aiAvatar()}
             <div class="msg-col">
                 <div class="bubble ai-bubble">${answerText}</div>
-                <div class="sources-list" style="display:flex; flex-wrap:wrap; gap:6px; margin-top:4px;">
-                    ${sourceHtml}
-                </div>
+                <div class="sources-list">${sourceHtml}</div>
                 <div class="follow-ups">
                     <div class="fup" onclick="quickAsk(this)">Tell me more</div>
                     <div class="fup" onclick="quickAsk(this)">Related info</div>
@@ -106,10 +89,9 @@ async function sendMessage() {
 
     } catch (error) {
         removeTyping();
-        console.error("Connection Error:", error);
         const errorRow = document.createElement("div");
         errorRow.className = "msg-row";
-        errorRow.innerHTML = `<div class="bubble ai-bubble" style="background: #ffcccc; color: #cc0000;">Connection Error: Please try again in a moment.</div>`;
+        errorRow.innerHTML = `<div class="bubble ai-bubble" style="background: #ffcccc; color: #cc0000;">Connection Error.</div>`;
         chat.appendChild(errorRow);
     }
     chat.scrollTop = chat.scrollHeight;
