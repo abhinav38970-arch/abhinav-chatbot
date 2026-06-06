@@ -6,7 +6,7 @@ from backend.app.retrieval.cache import SearchCache
 import numpy as np
 
 
-# Initialize once (not per request)
+
 _sample_vector = embed_text("dimension_check")
 _DIMENSION = len(_sample_vector)
 
@@ -21,22 +21,22 @@ def search(query: str, k: int = 5):
     Performs semantic search with caching.
     """
 
-    # 1️⃣ Check cache first
+    
     cached = _cache.get(query)
     if cached:
         print("⚡ cache hit")
         return cached
 
-    # 2️⃣ Embed query
+    
     query_vector = embed_text(query)
 
-    # 3️⃣ Normalize vector (important for cosine-style similarity)
+    
     query_vector = query_vector / np.linalg.norm(query_vector)
 
-    # 4️⃣ Perform FAISS search
+    
     results = _store.search(query_vector, k)
 
-    # 5️⃣ Store in cache
+    
     _cache.set(query, results)
 
     return results
