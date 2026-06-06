@@ -3,7 +3,7 @@ from pdfminer.high_level import extract_text
 from io import BytesIO
 from backend.app.logs.logger import logger
 
-# ✅ Added realistic browser headers
+
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
                   "AppleWebKit/537.36 (KHTML, like Gecko) "
@@ -20,7 +20,7 @@ def extract_pdf_text(pdf_url):
     logger.info(f"Downloading PDF: {pdf_url}")
 
     try:
-        # ✅ changed to client with headers + redirect support
+        
         with httpx.Client(headers=HEADERS, timeout=30, follow_redirects=True) as client:
             response = client.get(pdf_url)
 
