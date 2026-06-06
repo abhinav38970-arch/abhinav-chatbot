@@ -12,8 +12,8 @@ engine = create_engine(
 SessionLocal = sessionmaker(bind=engine)
 
 Base = declarative_base()
-# ✅ ensure all models are registered before table creation
-from backend.app.database import models  # DO NOT REMOVE
+
+from backend.app.database import models  
 
 def init_db():
     """
