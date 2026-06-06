@@ -19,7 +19,7 @@ def pause():
 
 def run_pipeline():
     """crawl → parse → clean → pdf → store"""
-    init_db()  # ✅ ensures tables exist before scraping starts
+    init_db()  
 
     logger.info("Starting scraping pipeline")
 
@@ -37,13 +37,13 @@ def run_pipeline():
 
         logger.info(f"Processing URL: {url}")
 
-        # ✅ SKIP if already stored (prevents reprocessing)
+        
         existing = db.query(Page).filter(Page.url == url).first()
         if existing:
             logger.info("Skipping already stored page")
             continue
 
-        # ---------- PDF HANDLING ----------
+        
         if url.lower().endswith(".pdf"):
             logger.info("PDF detected")
 
@@ -61,7 +61,7 @@ def run_pipeline():
             pause()
             continue
 
-        # ---------- HTML HANDLING ----------
+        
         page_data = parse_page(url)
 
         if not page_data:
