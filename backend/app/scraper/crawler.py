@@ -8,7 +8,7 @@ from backend.app.logs.logger import logger
 BASE_URL = "https://fremontunified.org/washington/"
 DOMAIN = urlparse(BASE_URL).netloc
 
-# district sections we want to allow
+
 DISTRICT_SECTIONS = [
     "about",
     "students-community",
@@ -94,7 +94,7 @@ def crawl():
                     to_visit.append(full_url)
                     logger.info(f"Queued URL: {full_url}")
 
-            # 🔥 HUMAN-LIKE RANDOM DELAY (FASTER + STEALTHIER)
+            
             time.sleep(random.uniform(0.3, 1.1))
 
     logger.info(f"Crawling complete. Total visited: {len(visited)}")
