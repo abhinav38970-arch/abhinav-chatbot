@@ -9,5 +9,5 @@ class Page(Base):
     id = Column(Integer, primary_key=True, index=True)
     url = Column(String, unique=True, nullable=False)
     content = Column(Text, nullable=False)
-    type = Column(String)  # html or pdf
+    type = Column(String)  
     created_at = Column(DateTime, default=datetime.utcnow)
