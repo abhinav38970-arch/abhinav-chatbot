@@ -3,7 +3,6 @@
 from sentence_transformers import SentenceTransformer
 import numpy as np
 
-# fast + accurate model
 model = SentenceTransformer("all-MiniLM-L6-v2")
 
 
@@ -13,7 +12,7 @@ def embed_text(text: str) -> np.ndarray:
     """
     embedding = model.encode(
         text,
-        normalize_embeddings=True  # improves similarity accuracy
+        normalize_embeddings=True  
     )
 
     return np.array(embedding).astype("float32")
