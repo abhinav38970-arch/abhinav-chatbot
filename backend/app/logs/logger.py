@@ -9,11 +9,10 @@ os.makedirs(LOG_DIR, exist_ok=True)
 logger = logging.getLogger("scraper_logger")
 logger.setLevel(logging.INFO)
 
-# file handler
+
 file_handler = logging.FileHandler(LOG_FILE)
 file_handler.setLevel(logging.INFO)
 
-# console handler
 console_handler = logging.StreamHandler()
 console_handler.setLevel(logging.INFO)
 
