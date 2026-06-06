@@ -13,7 +13,7 @@ class VectorStore:
     def __init__(self, dimension: int):
         self.dimension = dimension
 
-        # cosine similarity (better than L2 for semantic search)
+       
         self.index = faiss.IndexFlatIP(dimension)
 
         self.metadata = []
