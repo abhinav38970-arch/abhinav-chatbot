@@ -1,13 +1,9 @@
 /* ============================================================
    HUSKY AI — script.js
    Washington High School
-   Only the HTML structure changed from the original.
-   The fetch() call, API URL, and response handling are
-   completely untouched from your teammate's original code.
    ============================================================ */
 
 /* ------ PAW SVG HELPER ------ */
-/* Used inside dynamically created message rows */
 function pawSVG() {
     return `
         <svg viewBox="0 0 64 64" fill="white" style="width:18px;height:18px;">
@@ -21,7 +17,6 @@ function pawSVG() {
 }
 
 /* ------ AI AVATAR HTML ------ */
-/* Shows real image if husky-logo.png exists, SVG paw as fallback */
 function aiAvatar() {
     return `
         <div class="av ai-av">
@@ -78,7 +73,7 @@ async function sendMessage() {
     const text  = input.value.trim();
     if (!text) return;
 
-    // ── USER BUBBLE ───────────────────────────────────────────
+    // ------ USER BUBBLE -----------
     const userRow = document.createElement("div");
     userRow.className = "msg-row user-row";
     userRow.innerHTML = `
@@ -91,10 +86,10 @@ async function sendMessage() {
     input.value = "";
     chat.scrollTop = chat.scrollHeight;
 
-    // ── TYPING INDICATOR ─────────────────────────────────────
+    // ------TYPING INDICATOR --------
     showTyping();
 
-    // ── API CALL — original fetch logic, completely unchanged ─
+    // --API Call ---------
     try {
         const response = await fetch(
             `http://127.0.0.1:8000/ask?query=${encodeURIComponent(text)}`
@@ -104,7 +99,7 @@ async function sendMessage() {
 
         removeTyping();
 
-        // ── AI BUBBLE ─────────────────────────────────────────
+        // ---- AI BUBBLE ------
         const aiRow = document.createElement("div");
         aiRow.className = "msg-row";
         aiRow.innerHTML = `
@@ -127,7 +122,7 @@ async function sendMessage() {
     } catch (error) {
         removeTyping();
 
-        // ── ERROR BUBBLE ──────────────────────────────────────
+        // ---- ERROR BUBBLE -----------
         const errRow = document.createElement("div");
         errRow.className = "msg-row";
         errRow.innerHTML = `
