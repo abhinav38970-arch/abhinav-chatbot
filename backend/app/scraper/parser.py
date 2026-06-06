@@ -4,7 +4,7 @@ import time
 from bs4 import BeautifulSoup
 from backend.app.logs.logger import logger
 
-# create ONE persistent client (like crawler)
+
 client = httpx.Client(
     headers={
         "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
