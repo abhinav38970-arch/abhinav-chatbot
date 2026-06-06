@@ -8,7 +8,7 @@ client = Groq(
     api_key=os.getenv("GROQ_API_KEY")
 )
 
-MODEL = "llama-3.1-8b-instant"  # free + strong
+MODEL = "llama-3.1-8b-instant"  
 
 
 def generate_answer(query: str, context: str):
