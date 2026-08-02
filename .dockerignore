@@ -1,0 +1,75 @@
+# .dockerignore file to exclude unnecessary files from Docker build context
+
+# Python virtual environment
+venv/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Environment files
+.env
+.env*
+
+# IDE-specific files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Git files
+target/
+!.git
+
+# Logs
+*.log
+logs/
+
+# Database files
+*.db
+*.sqlite
+
+# Large binary files
+*.bin
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Temporary files
+*.tmp
+*.temp
+
+# OS-specific files
+.DS_Store
+.DS_Store?
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Node modules (if any)
+node_modules/
+
+# Build artifacts
+build/
+dist/
+
+# Coverage reports
+.coverage
+htmlcov/
+
+# Test files
+*.spec.js
+*.test.js
+
+# Docker-specific
+Dockerfile
+.dockerignore
+
+# Large data files that should be copied separately
+backend/app/retrieval/faiss.index
+backend/app/retrieval/meta.pkl
+backend/app/database/school_data.db
