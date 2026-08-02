@@ -36,7 +36,7 @@ onnxruntime
 packaging==26.0
 pandas==3.0.0
 pdfminer.six==20251230
-pdfplumber==11.9
+pdfplumber==0.11.9
 pillow==12.1.1
 protobuf==7.34.1
 pycparser==3.0
