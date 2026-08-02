@@ -33,21 +33,6 @@ RUN pip install --no-cache-dir --upgrade pip && \
 # Copy the entire application
 COPY . .
 
-# Ensure backend directory exists and has proper permissions
-RUN mkdir -p /app/backend/app/retrieval && \
-    mkdir -p /app/backend/app/database && \
-    chmod -R 755 /app/backend
-
-# Create necessary directories for runtime files
-RUN mkdir -p /app/backend/app/retrieval && \
-    mkdir -p /app/backend/app/database && \
-    mkdir -p /app/backend/app/logs
-
-# Copy the pre-built FAISS index and metadata if they exist
-COPY backend/app/retrieval/faiss.index /app/backend/app/retrieval/ || true
-COPY backend/app/retrieval/meta.pkl /app/backend/app/retrieval/ || true
-COPY backend/app/database/school_data.db /app/backend/app/database/ || true
-
 # Set environment variables for production
 ENV PORT=8000
 ENV ENVIRONMENT=production
