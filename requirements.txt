@@ -65,7 +65,7 @@ SQLAlchemy==2.0.46
 starlette==0.52.1
 sympy==1.14.0
 threadpoolctl==3.6.0
-tokenizers==2.2.2
+tokenizers==0.22.2
 torch==2.10.0
 tqdm==4.67.3
 transformers==5.2.0
