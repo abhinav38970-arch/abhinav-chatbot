@@ -12,6 +12,25 @@ def run_search(query: str, history: list = None):
         history = []
 
     user_query = query.lower()
+    
+    # 👋 TASK 1: GREETING & INTENT ROUTER
+    # Detect casual greetings and bypass vector database
+    greeting_keywords = ["hi", "hello", "hey", "how are you", "good morning", "good afternoon", "greetings"]
+    if any(greeting in user_query for greeting in greeting_keywords):
+        return {
+            "answer": """
+            🐾 Welcome to Husky AI! I'm your Washington High School Assistant, ready to help with schedules, events, resources, and school information. 
+            
+            How can I assist you today? You can ask about:
+            - 🕒 Bell schedules and class times
+            - 📅 Upcoming events and activities
+            - 📚 Academic resources and programs
+            - 🏫 School policies and procedures
+            - 👥 Staff and department contacts
+            """,
+            "sources": []
+        }
+    
     schedule_context = ""
 
     # 🕒 1. HARDCODED MASTER SCHEDULE (2025-2026)

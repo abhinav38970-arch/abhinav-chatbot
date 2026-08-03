@@ -37,7 +37,7 @@ packaging==24.2
 pandas==2.2.3
 pdfminer.six==20251230
 pdfplumber==0.11.9
-pillow==10.4.0
+pillow
 protobuf==4.25.5
 pycparser==3.0
 pydantic==2.12.5
@@ -77,3 +77,7 @@ urllib3==2.6.3
 uvicorn==0.40.0
 langchain-text-splitters
 streamlit==1.37.0
+
+pdfplumber>=0.10.0
+beautifulsoup4>=4.12.0
+lxml>=4.9.0

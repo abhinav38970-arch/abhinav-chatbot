@@ -3284,3 +3284,1432 @@ For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/St
 2026-04-06 11:58:22,702 | INFO | Cleaning text
 2026-04-06 11:58:22,702 | INFO | Cleaning complete
 2026-04-06 11:58:22,703 | INFO | Saved html: https://fremontunified.org/about/instructional-services/secondary-education/middle-school-overview/middle-school-frequently-asked-questions-faq
+2026-08-03 11:11:20,603 | INFO | Starting pipeline
+2026-08-03 11:11:20,611 | INFO | Crawling: https://fremontunified.org/washington
+2026-08-03 11:11:22,615 | INFO | Crawling: https://fremontunified.org/washington/about/welcome
+2026-08-03 11:11:24,448 | INFO | Crawling: https://fremontunified.org/washington/about/staff-directory
+2026-08-03 11:11:26,449 | INFO | Crawling: https://fremontunified.org/washington/about/office
+2026-08-03 11:11:27,686 | INFO | Crawling: https://fremontunified.org/washington/about/policies
+2026-08-03 11:11:29,256 | INFO | Crawling: https://fremontunified.org/washington/students-community/student-support
+2026-08-03 11:11:31,010 | INFO | Crawling: https://fremontunified.org/washington/students-community/departments
+2026-08-03 11:11:32,576 | INFO | Crawling: https://fremontunified.org/washington/students-community/activities-athletics
+2026-08-03 11:11:34,284 | INFO | Crawling: https://fremontunified.org/washington/students-community/connections
+2026-08-03 11:11:35,532 | INFO | Crawling: https://fremontunified.org/washington/schedule-news/schedule
+2026-08-03 11:11:36,994 | INFO | Crawling: https://fremontunified.org/washington/schedule-news/calendar
+2026-08-03 11:11:38,349 | INFO | Crawling: https://fremontunified.org/washington/schedule-news/news
+2026-08-03 11:11:39,859 | INFO | Crawling: https://fremontunified.org/washington/schedule-news/events
+2026-08-03 11:11:41,665 | INFO | Crawling: https://fremontunified.org/meals
+2026-08-03 11:11:44,032 | INFO | Crawling: https://fremontunified.org
+2026-08-03 11:11:44,883 | INFO | Crawling: https://fremontunified.org/about/instructional-services/preschool
+2026-08-03 11:11:46,728 | INFO | Crawling: https://fremontunified.org/about/instructional-services/federal-state-programs/dual-immersion
+2026-08-03 11:11:48,838 | INFO | Crawling: https://fremontunified.org/about/departments/instructional-services-overview/special-education-dept/extended-school-year-summer-school-information
+2026-08-03 11:11:50,630 | INFO | Crawling: https://fremontunified.org/about/schools
+2026-08-03 11:11:52,135 | INFO | Crawling: https://fremontunified.org/washington/about/office/registration-overview
+2026-08-03 11:11:53,941 | INFO | Crawling: https://fremontunified.org/washington/news/whs-maze-day-packet-2026-2027
+2026-08-03 11:11:55,916 | INFO | Crawling: https://fremontunified.org/washington/news/mission-san-jose-wins-national-science-bowl-championship
+2026-08-03 11:11:57,687 | INFO | Crawling: https://fremontunified.org/washington/news/prom-last-day-to-buy-tickets-is-april-24
+2026-08-03 11:11:59,311 | INFO | Crawling: https://fremontunified.org/students-community/connections
+2026-08-03 11:12:01,029 | INFO | Crawling: https://fremontunified.org/washington/about
+2026-08-03 11:12:03,000 | INFO | Crawling: https://fremontunified.org/washington/about/welcome/principals-message
+2026-08-03 11:12:04,839 | INFO | Crawling: https://fremontunified.org/washington/about/welcome/our-history
+2026-08-03 11:12:06,082 | INFO | Crawling: https://fremontunified.org/washington/about/registration-overview
+2026-08-03 11:12:07,352 | INFO | Crawling: https://fremontunified.org/washington/about/policies/attendance-tardy-detention-policies
+2026-08-03 11:12:09,136 | INFO | Crawling: https://fremontunified.org/washington/students-community/student-support/counseling-overview
+2026-08-03 11:12:11,833 | INFO | Crawling: https://fremontunified.org/washington/students-community/student-support/college-and-career-resource-center
+2026-08-03 11:12:13,482 | INFO | Crawling: https://fremontunified.org/about/instructional-services/student-support-services/families-in-need/lgbtq-support-contacts
+2026-08-03 11:12:15,424 | INFO | Crawling: https://fremontunified.org/washington/wp-content/uploads/sites/8/2023/09/WHS-Map.pdf
+2026-08-03 11:12:16,743 | INFO | Crawling: https://fremontunified.org/washington/about/policies/flex-period
+2026-08-03 11:12:18,534 | INFO | Crawling: https://fremontunified.org/washington/about/policies/maze-day
+2026-08-03 11:12:19,704 | INFO | Crawling: https://fremontunified.org/washington/about/policies/cell-phone-usage
+2026-08-03 11:12:21,094 | INFO | Crawling: https://fremontunified.org/washington/about/policies/inifinite-campus-parent-app
+2026-08-03 11:12:22,229 | INFO | Crawling: https://fremontunified.org/washington/about/policies/student-debt
+2026-08-03 11:12:23,836 | INFO | Crawling: https://fremontunified.org/washington/about/policies/parking-on-campus
+2026-08-03 11:12:25,585 | INFO | Crawling: https://fremontunified.org/washington/about/policies/fremont-unified-lunches
+2026-08-03 11:12:26,814 | INFO | Crawling: https://fremontunified.org/students-community/support/parent-student-handbook
+2026-08-03 11:12:28,771 | INFO | Crawling: https://fremontunified.org/about/instructional-services/student-support-services/health-services-overview/health-topics-overview/covid-19-overview
+2026-08-03 11:12:30,571 | INFO | Crawling: https://fremontunified.org/washington/wp-content/uploads/sites/8/2023/09/23-24-Handbook.pdf
+2026-08-03 11:12:31,659 | INFO | Crawling: https://fremontunified.org/washington/daily-bulletin
+2026-08-03 11:12:32,732 | ERROR | Failed request: https://fremontunified.org/washington/daily-bulletin -> Client error '404 Not Found' for url 'https://fremontunified.org/washington/daily-bulletin'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+2026-08-03 11:12:32,733 | INFO | Crawling: https://fremontunified.org/washington/students-community
+2026-08-03 11:12:34,643 | INFO | Crawling: https://fremontunified.org/washington/students-community/student-support/washington-school-profile
+2026-08-03 11:12:36,296 | INFO | Crawling: https://fremontunified.org/washington/students-community/student-support/college-and-career-resource-center/announcements-whs-college-and-career-center
+2026-08-03 11:12:37,912 | INFO | Crawling: https://fremontunified.org/washington/students-community/student-support/college-and-career-resource-center/college-applications-platforms
+2026-08-03 11:12:40,303 | INFO | Crawling: https://fremontunified.org/washington/students-community/student-support/college-and-career-resource-center/financial-aid-for-college
+2026-08-03 11:12:43,227 | INFO | Crawling: https://fremontunified.org/washington/students-community/student-support/college-and-career-resource-center/financial-aid-for-college/scholarships-to-apply-for
+2026-08-03 11:12:44,991 | INFO | Crawling: https://fremontunified.org/washington/students-community/student-support/college-and-career-resource-center/financial-aid-for-college/scholarships-what-you-need-to-know
+2026-08-03 11:12:46,668 | INFO | Crawling: https://fremontunified.org/washington/students-community/student-support/college-and-career-resource-center/career-exploration-apprenticeships-and-jobs
+2026-08-03 11:12:49,837 | INFO | Crawling: https://fremontunified.org/washington/students-community/student-support/college-and-career-resource-center/college-admission-and-research
+2026-08-03 11:12:51,437 | INFO | Crawling: https://fremontunified.org/washington/students-community/student-support/college-and-career-resource-center/college-athletics
+2026-08-03 11:12:54,270 | INFO | Crawling: https://fremontunified.org/washington/students-community/student-support/college-and-career-resource-center/community-college-and-junior-transfers
+2026-08-03 11:12:56,037 | INFO | Crawling: https://fremontunified.org/washington/students-community/student-support/college-and-career-resource-center/fairs-speakers-and-workshops
+2026-08-03 11:12:58,530 | INFO | Crawling: https://fremontunified.org/washington/students-community/student-support/college-and-career-resource-center/mvrop-career-technical-education
+2026-08-03 11:12:59,692 | INFO | Crawling: https://fremontunified.org/washington/students-community/student-support/college-and-career-resource-center/ohlone-college-a-ccc-and-concurrent-enrollment
+2026-08-03 11:13:01,619 | INFO | Crawling: https://fremontunified.org/washington/students-community/student-support/college-and-career-resource-center/program-major-and-career-spotlights
+2026-08-03 11:13:03,461 | INFO | Crawling: https://fremontunified.org/washington/students-community/student-support/college-and-career-resource-center/senior-awards-night
+2026-08-03 11:13:06,090 | INFO | Crawling: https://fremontunified.org/washington/students-community/student-support/college-and-career-resource-center/summer-year-round-programs-internships-volunteer-work-opportunities
+2026-08-03 11:13:07,935 | INFO | Crawling: https://fremontunified.org/washington/students-community/student-support/college-and-career-resource-center/undocumented-students-foster-youth-and-visa-holders
+2026-08-03 11:13:10,879 | INFO | Crawling: https://fremontunified.org/washington/students-community/student-support/college-and-career-resource-center/u-s-military-and-selective-service
+2026-08-03 11:13:12,073 | INFO | Crawling: https://fremontunified.org/washington/students-community/student-support/college-and-career-resource-center/work-permits-for-students
+2026-08-03 11:13:13,639 | INFO | Crawling: https://fremontunified.org/washington/students-community/student-support/community-service-learning-deadlines
+2026-08-03 11:13:15,362 | INFO | Crawling: https://fremontunified.org/washington/students-community/student-support/community-service-learning-deadlines/opportunities-for-community-service
+2026-08-03 11:13:17,353 | INFO | Crawling: https://fremontunified.org/washington/students-community/student-support/community-service-learning-deadlines/community-service-hours-verification-form
+2026-08-03 11:13:18,880 | INFO | Crawling: https://fremontunified.org/washington/students-community/student-support/link-crew
+2026-08-03 11:13:20,323 | INFO | Crawling: https://fremontunified.org/washington/students-community/student-support/yearbook-promo-video
+2026-08-03 11:13:21,673 | INFO | Crawling: https://fremontunified.org/washington/students-community/student-support/gate-honors-information-ap-courses
+2026-08-03 11:13:23,489 | INFO | Crawling: https://fremontunified.org/washington/students-community/student-support/school-resource-officer-sro-program
+2026-08-03 11:13:24,879 | INFO | Crawling: https://fremontunified.org/washington/students-community/student-support/peer-resource
+2026-08-03 11:13:27,283 | INFO | Crawling: https://fremontunified.org/washington/students-community/student-support/making-up-homework
+2026-08-03 11:13:28,595 | INFO | Crawling: https://fremontunified.org/washington/students-community/student-support/tutoring
+2026-08-03 11:13:29,912 | INFO | Crawling: https://fremontunified.org/washington/students-community/student-support/study-skills-and-cornell-notes
+2026-08-03 11:13:31,150 | INFO | Crawling: https://fremontunified.org/washington/students-community/student-support/test-taking-strategies
+2026-08-03 11:13:32,967 | INFO | Crawling: https://fremontunified.org/washington/student-and-parent-links/attendance-tardy-detention-policies
+2026-08-03 11:13:34,591 | INFO | Crawling: https://fremontunified.org/washington/departments-overview/community-service-learning-deadlines/opportunities-for-community-service
+2026-08-03 11:13:36,565 | INFO | Crawling: https://fremontunified.org/washington/departments-overview/community-service-learning-deadlines/community-service-hours-verification-form
+2026-08-03 11:13:38,431 | INFO | Crawling: https://fremontunified.org/washington/student-and-parent-links/gate-honors-information-ap-courses
+2026-08-03 11:13:39,990 | INFO | Crawling: https://fremontunified.org/washington/student-and-parent-links/link-crew
+2026-08-03 11:13:41,693 | INFO | Crawling: https://fremontunified.org/washington/student-and-parent-links/parking-on-campus
+2026-08-03 11:13:43,088 | INFO | Crawling: https://fremontunified.org/washington/student-and-parent-links/cell-phone-usage
+2026-08-03 11:13:44,587 | INFO | Crawling: https://fremontunified.org/washington/student-and-parent-links/fremont-unified-lunches
+2026-08-03 11:13:45,833 | INFO | Crawling: https://fremontunified.org/washington/student-and-parent-links/yearbook-promo-video
+2026-08-03 11:13:47,145 | INFO | Crawling: https://fremontunified.org/washington/student-and-parent-links/student-debt
+2026-08-03 11:13:48,974 | INFO | Crawling: https://fremontunified.org/washington/departments-overview/multimedia-art-academy
+2026-08-03 11:13:50,665 | INFO | Crawling: https://fremontunified.org/washington/students-community/activities-athletics/athletics
+2026-08-03 11:13:52,375 | INFO | Crawling: https://fremontunified.org/washington/departments-overview/avid
+2026-08-03 11:13:54,184 | INFO | Crawling: https://fremontunified.org/washington/student-and-parent-links/peer-resource
+2026-08-03 11:13:55,738 | INFO | Crawling: https://fremontunified.org/washington/student-and-parent-links/committees
+2026-08-03 11:13:58,001 | INFO | Crawling: https://fremontunified.org/washington/student-and-parent-links/school-site-council
+2026-08-03 11:14:00,802 | INFO | Crawling: https://fremontunified.org/washington/student-and-parent-links/alumni
+2026-08-03 11:14:02,722 | INFO | Crawling: https://fremontunified.org/washington/students-community/departments/student-newspaper-of-washington-high-school
+2026-08-03 11:14:03,970 | INFO | Crawling: https://fremontunified.org/washington/students-community/departments/rop-at-washington
+2026-08-03 11:14:05,754 | INFO | Crawling: https://fremontunified.org/washington/students-community/departments/rop-at-washington/auto-shop
+2026-08-03 11:14:08,402 | INFO | Crawling: https://fremontunified.org/washington/students-community/departments/business
+2026-08-03 11:14:09,860 | INFO | Crawling: https://fremontunified.org/washington/students-community/departments/english
+2026-08-03 11:14:11,318 | INFO | Crawling: https://fremontunified.org/washington/students-community/departments/english-language-development
+2026-08-03 11:14:14,243 | INFO | Crawling: https://fremontunified.org/washington/students-community/departments/fine-arts
+2026-08-03 11:14:15,745 | INFO | Crawling: https://fremontunified.org/washington/students-community/departments/fine-arts/music
+2026-08-03 11:14:16,894 | INFO | Crawling: https://fremontunified.org/washington/students-community/departments/health
+2026-08-03 11:14:18,150 | INFO | Crawling: https://fremontunified.org/washington/students-community/departments/mathematics
+2026-08-03 11:14:19,756 | INFO | Crawling: https://fremontunified.org/washington/students-community/departments/physical-education
+2026-08-03 11:14:22,715 | INFO | Crawling: https://fremontunified.org/washington/students-community/departments/science
+2026-08-03 11:14:24,058 | INFO | Crawling: https://fremontunified.org/washington/students-community/departments/social-science
+2026-08-03 11:14:25,505 | INFO | Crawling: https://fremontunified.org/washington/students-community/departments/special-education
+2026-08-03 11:14:28,477 | INFO | Crawling: https://fremontunified.org/washington/students-community/departments/avid
+2026-08-03 11:14:30,111 | INFO | Crawling: https://fremontunified.org/washington/students-community/departments/multimedia-art-academy
+2026-08-03 11:14:31,957 | INFO | Crawling: https://fremontunified.org/washington/students-community/departments/world-languages
+2026-08-03 11:14:33,636 | INFO | Crawling: https://fremontunified.org/washington/students-community/departments/world-languages/spanish
+2026-08-03 11:14:35,476 | INFO | Crawling: https://fremontunified.org/washington/students-community/departments/world-languages/chinese
+2026-08-03 11:14:36,789 | INFO | Crawling: https://fremontunified.org/washington/students-community/departments/world-languages/french
+2026-08-03 11:14:37,991 | INFO | Crawling: https://fremontunified.org/washington/students-community/activities-athletics/athletics/athletic-participation-forms
+2026-08-03 11:14:39,194 | INFO | Crawling: https://fremontunified.org/washington/students-community/activities-athletics/athletics/athletic-directors-contact-info
+2026-08-03 11:14:40,946 | INFO | Crawling: https://fremontunified.org/washington/students-community/activities-athletics/athletics/eligibility-mval-ncaa
+2026-08-03 11:14:42,484 | INFO | Crawling: https://fremontunified.org/washington/students-community/activities-athletics/athletics/forms-coaches-volunteers-clubs
+2026-08-03 11:14:43,712 | INFO | Crawling: https://fremontunified.org/washington/students-community/activities-athletics/athletics/open-coaching-positions
+2026-08-03 11:14:45,445 | INFO | Crawling: https://fremontunified.org/washington/students-community/activities-athletics/athletics/transfer-info
+2026-08-03 11:14:46,903 | INFO | Crawling: https://fremontunified.org/washington/students-community/activities-athletics/athletics/letterman-jacket-info
+2026-08-03 11:14:48,347 | INFO | Crawling: https://fremontunified.org/washington/students-community/activities-athletics/athletics/white-sweater-award
+2026-08-03 11:14:50,182 | INFO | Crawling: https://fremontunified.org/washington/students-community/activities-athletics/athletics/whs-boosters
+2026-08-03 11:14:51,453 | INFO | Crawling: https://fremontunified.org/washington/students-community/activities-athletics/athletics/baseball
+2026-08-03 11:14:53,158 | INFO | Crawling: https://fremontunified.org/washington/students-community/activities-athletics/athletics/badminton
+2026-08-03 11:14:54,983 | INFO | Crawling: https://fremontunified.org/washington/students-community/activities-athletics/athletics/basketball-boys
+2026-08-03 11:14:56,696 | INFO | Crawling: https://fremontunified.org/washington/students-community/activities-athletics/athletics/basketball-girls
+2026-08-03 11:14:58,250 | INFO | Crawling: https://fremontunified.org/washington/students-community/activities-athletics/athletics/cheerleading-all-seasons
+2026-08-03 11:15:00,986 | INFO | Crawling: https://fremontunified.org/washington/students-community/activities-athletics/athletics/cross-country
+2026-08-03 11:15:02,487 | INFO | Crawling: https://fremontunified.org/washington/students-community/activities-athletics/athletics/football
+2026-08-03 11:15:03,697 | INFO | Crawling: https://fremontunified.org/washington/students-community/activities-athletics/athletics/golf
+2026-08-03 11:15:05,398 | INFO | Crawling: https://fremontunified.org/washington/students-community/activities-athletics/athletics/golf-girls
+2026-08-03 11:15:07,833 | INFO | Crawling: https://fremontunified.org/washington/students-community/activities-athletics/athletics/lacrosse
+2026-08-03 11:15:10,800 | INFO | Crawling: https://fremontunified.org/washington/students-community/activities-athletics/athletics/soccer-boys
+2026-08-03 11:15:12,435 | INFO | Crawling: https://fremontunified.org/washington/students-community/activities-athletics/athletics/soccer-girls
+2026-08-03 11:15:14,389 | INFO | Crawling: https://fremontunified.org/washington/students-community/activities-athletics/athletics/softball
+2026-08-03 11:15:15,937 | INFO | Crawling: https://fremontunified.org/washington/students-community/activities-athletics/athletics/swimming
+2026-08-03 11:15:17,613 | INFO | Crawling: https://fremontunified.org/washington/students-community/activities-athletics/athletics/tennis-boys
+2026-08-03 11:15:20,658 | INFO | Crawling: https://fremontunified.org/washington/students-community/activities-athletics/athletics/tennis-girls
+2026-08-03 11:15:22,188 | INFO | Crawling: https://fremontunified.org/washington/students-community/activities-athletics/athletics/track-field
+2026-08-03 11:15:23,636 | INFO | Crawling: https://fremontunified.org/washington/students-community/activities-athletics/athletics/volleyball-boys
+2026-08-03 11:15:25,309 | INFO | Crawling: https://fremontunified.org/washington/students-community/activities-athletics/athletics/volleyball-girls
+2026-08-03 11:15:26,672 | INFO | Crawling: https://fremontunified.org/washington/students-community/activities-athletics/athletics/water-polo
+2026-08-03 11:15:28,062 | INFO | Crawling: https://fremontunified.org/washington/students-community/activities-athletics/athletics/wrestling
+2026-08-03 11:15:31,206 | INFO | Crawling: https://fremontunified.org/washington/students-community/activities-athletics/activities-leadership-asb/clubs-info
+2026-08-03 11:15:32,719 | INFO | Crawling: https://fremontunified.org/washington/students-community/connections/title-i-program
+2026-08-03 11:15:35,154 | INFO | Crawling: https://fremontunified.org/washington/students-community/connections/committees
+2026-08-03 11:15:36,308 | INFO | Crawling: https://fremontunified.org/washington/students-community/connections/school-site-council
+2026-08-03 11:15:38,816 | INFO | Crawling: https://fremontunified.org/washington/students-community/connections/english-learner-advisory-committee-elac
+2026-08-03 11:15:40,650 | INFO | Crawling: https://fremontunified.org/washington/students-community/connections/english-learner-advisory-committee-elac/elac-meeting-notes-notas-de-la-reunion
+2026-08-03 11:15:43,766 | INFO | Crawling: https://fremontunified.org/washington/students-community/connections/alumni
+2026-08-03 11:15:45,499 | INFO | Crawling: https://fremontunified.org/washington/students-community/connections/donate-to-washington
+2026-08-03 11:15:48,157 | INFO | Crawling: https://fremontunified.org/washington/schedule-news
+2026-08-03 11:15:49,752 | INFO | Crawling: https://fremontunified.org/washington/schedule-news/news/paged-3/2
+2026-08-03 11:15:51,462 | INFO | Crawling: https://fremontunified.org/washington/schedule-news/news/paged-3/3
+2026-08-03 11:15:53,765 | INFO | Crawling: https://fremontunified.org/washington/schedule-news/news/paged-3/18
+2026-08-03 11:15:55,475 | INFO | Crawling: https://fremontunified.org/washington/schedule-news/events/past-events
+2026-08-03 11:15:58,274 | INFO | Crawling: https://fremontunified.org/about/welcome
+2026-08-03 11:16:00,601 | INFO | Crawling: https://fremontunified.org/about/board
+2026-08-03 11:16:02,304 | INFO | Crawling: https://fremontunified.org/about/departments
+2026-08-03 11:16:03,872 | INFO | Crawling: https://fremontunified.org/students-community/support
+2026-08-03 11:16:05,819 | INFO | Crawling: https://fremontunified.org/students-community/connections/committees
+2026-08-03 11:16:07,511 | INFO | Crawling: https://fremontunified.org/about/human-resources/employee-resources
+2026-08-03 11:16:08,933 | INFO | Crawling: https://fremontunified.org/about/sped-student-support/student-support-services/mental-health-overview
+2026-08-03 11:16:10,456 | INFO | Crawling: https://fremontunified.org/about/welcome/location-contacts
+2026-08-03 11:16:12,108 | INFO | Crawling: https://fremontunified.org/students-community/careers
+2026-08-03 11:16:13,553 | INFO | Crawling: https://fremontunified.org/students-community/support/infinite-campus-faqs
+2026-08-03 11:16:14,964 | ERROR | Failed request: https://fremontunified.org/students-community/support/infinite-campus-faqs -> Client error '404 Not Found' for url 'https://fremontunified.org/students-community/support/infinite-campus-faqs'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+2026-08-03 11:16:14,964 | INFO | Crawling: https://fremontunified.org/about/instructional-services/student-support-services/enrollment-registration
+2026-08-03 11:16:16,513 | INFO | Crawling: https://fremontunified.org/students-community/support/portals
+2026-08-03 11:16:18,246 | INFO | Crawling: https://fremontunified.org/about/superintendent/immigrant-families
+2026-08-03 11:16:19,619 | INFO | Crawling: https://fremontunified.org/about
+2026-08-03 11:16:21,512 | INFO | Crawling: https://fremontunified.org/about/instructional-services
+2026-08-03 11:16:23,122 | INFO | Crawling: https://fremontunified.org/about/instructional-services/elementary-education
+2026-08-03 11:16:25,000 | INFO | Crawling: https://fremontunified.org/about/instructional-services/secondary-education
+2026-08-03 11:16:27,190 | INFO | Crawling: https://fremontunified.org/about/instructional-services/curriculum-instruction
+2026-08-03 11:16:28,738 | INFO | Crawling: https://fremontunified.org/about/instructional-services/federal-state-programs
+2026-08-03 11:16:30,525 | INFO | Crawling: https://fremontunified.org/about/instructional-services/assessment-accountability
+2026-08-03 11:16:32,146 | INFO | Crawling: https://fremontunified.org/about/instructional-services/preschool/preschool-bell-schedule
+2026-08-03 11:16:33,971 | INFO | Crawling: https://fremontunified.org/about/instructional-services/extended-school-year-summer-school-information
+2026-08-03 11:16:35,563 | INFO | Crawling: https://fremontunified.org/about/instructional-services/federal-state-programs/federal-state-programs-staff-contacts
+2026-08-03 11:16:37,320 | INFO | Crawling: https://fremontunified.org/about/instructional-services/federal-state-programs/multilingual-learners
+2026-08-03 11:16:39,196 | INFO | Crawling: https://fremontunified.org/about/instructional-services/federal-state-programs/elop
+2026-08-03 11:16:41,208 | INFO | Crawling: https://fremontunified.org/about/instructional-services/federal-state-programs/dual-immersion/dual-immersion-enrollment-process
+2026-08-03 11:16:42,647 | INFO | Crawling: https://fremontunified.org/about/instructional-services/federal-state-programs/dual-immersion/immersion-parent-resources
+2026-08-03 11:16:44,211 | INFO | Crawling: https://fremontunified.org/about/instructional-services/federal-state-programs/parent-and-family-engagement
+2026-08-03 11:16:45,574 | INFO | Crawling: https://fremontunified.org/about/instructional-services/federal-state-programs/migrant-education
+2026-08-03 11:16:47,630 | INFO | Crawling: https://fremontunified.org/about/instructional-services/federal-state-programs/title1
+2026-08-03 11:16:49,462 | INFO | Crawling: https://fremontunified.org/about/instructional-services/federal-state-programs/teacher-induction-program
+2026-08-03 11:16:51,275 | INFO | Crawling: https://fremontunified.org/about/instructional-services/federal-state-programs/nasp-program-information
+2026-08-03 11:16:53,117 | INFO | Crawling: https://fremontunified.org/about/schools/mascots
+2026-08-03 11:16:55,057 | INFO | Crawling: https://fremontunified.org/about/superintendent
+2026-08-03 11:16:56,549 | INFO | Crawling: https://fremontunified.org/about/sped-student-support
+2026-08-03 11:16:58,301 | INFO | Crawling: https://fremontunified.org/about/business-services
+2026-08-03 11:16:59,717 | INFO | Crawling: https://fremontunified.org/about/operations
+2026-08-03 11:17:01,339 | INFO | Crawling: https://fremontunified.org/about/human-resources
+2026-08-03 11:17:02,966 | INFO | Crawling: https://fremontunified.org/washington/about/registration-overview/registration-materials-and-information
+2026-08-03 11:17:04,533 | INFO | Crawling: https://fremontunified.org/washington/about/registration-overview/transcript-information
+2026-08-03 11:17:05,878 | INFO | Crawling: https://fremontunified.org/washington/about/registration-overview/education-verification-information
+2026-08-03 11:17:07,197 | INFO | Crawling: https://fremontunified.org/washington/about/registration-overview/withdrawal-information
+2026-08-03 11:17:09,073 | INFO | Crawling: https://fremontunified.org/washington/about/registration-overview/alumni-high-school-diploma
+2026-08-03 11:17:10,535 | INFO | Crawling: https://fremontunified.org/about/sped-student-support/student-support-services/enrollment-registration
+2026-08-03 11:17:12,045 | INFO | Crawling: https://fremontunified.org/about/departments/instructional-services-overview/student-support-services-dept/enrollment-registration/immunization-requirements
+2026-08-03 11:17:14,129 | INFO | Crawling: https://fremontunified.org/washington/category/news
+2026-08-03 11:17:15,700 | INFO | Crawling: https://fremontunified.org/washington/category/in-the-news
+2026-08-03 11:17:17,618 | INFO | Crawling: https://fremontunified.org/students-community
+2026-08-03 11:17:19,718 | INFO | Crawling: https://fremontunified.org/students-community/connections/committees/join-committee
+2026-08-03 11:17:21,919 | INFO | Crawling: https://fremontunified.org/students-community/connections/committees/public-participation
+2026-08-03 11:17:23,329 | INFO | Crawling: https://fremontunified.org/students-community/connections/committees/bfaac
+2026-08-03 11:17:24,775 | INFO | Crawling: https://fremontunified.org/students-community/connections/committees/cboc
+2026-08-03 11:17:26,416 | INFO | Crawling: https://fremontunified.org/students-community/connections/committees/fac
+2026-08-03 11:17:28,455 | INFO | Crawling: https://fremontunified.org/about/board/fusd-city-council-meetings
+2026-08-03 11:17:30,415 | INFO | Crawling: https://fremontunified.org/students-community/connections/committees/lcaac
+2026-08-03 11:17:31,902 | INFO | Crawling: https://fremontunified.org/students-community/connections/committees/wellness
+2026-08-03 11:17:34,110 | INFO | Crawling: https://fremontunified.org/students-community/connections/committees/superintendent
+2026-08-03 11:17:35,938 | INFO | Crawling: https://fremontunified.org/students-community/connections/committees/superintendent/aapac
+2026-08-03 11:17:37,779 | INFO | Crawling: https://fremontunified.org/students-community/connections/committees/superintendent/ciac
+2026-08-03 11:17:39,552 | INFO | Crawling: https://fremontunified.org/students-community/connections/committees/superintendent/equity
+2026-08-03 11:17:41,787 | INFO | Crawling: https://fremontunified.org/about/instructional-services/special-education/special-education-district-advisory-committee-overview
+2026-08-03 11:17:43,759 | INFO | Crawling: https://fremontunified.org/students-community/connections/committees/superintendent/smh
+2026-08-03 11:17:45,601 | INFO | Crawling: https://fremontunified.org/students-community/connections/committees/superintendent/tic
+2026-08-03 11:17:47,468 | INFO | Crawling: https://fremontunified.org/students-community/connections/committees/interagency
+2026-08-03 11:17:49,286 | INFO | Crawling: https://fremontunified.org/about/instructional-services/federal-state-programs/multilingual-learners/delac-overview
+2026-08-03 11:17:51,441 | INFO | Crawling: https://fremontunified.org/students-community/connections/committees/interagency/mip-sdi-task-force
+2026-08-03 11:17:53,417 | INFO | Crawling: https://fremontunified.org/students-community/connections/committees/archive
+2026-08-03 11:17:55,106 | INFO | Crawling: https://fremontunified.org/students-community/connections/committees/archive/renaming-valhalla-theater
+2026-08-03 11:17:56,710 | INFO | Crawling: https://fremontunified.org/students-community/connections/committees/archive/measure-i-committee
+2026-08-03 11:17:58,741 | INFO | Crawling: https://fremontunified.org/students-community/connections/committees/archive/7-11-committee-overview
+2026-08-03 11:18:00,317 | INFO | Crawling: https://fremontunified.org/students-community/connections/committees/archive/7-11-committee-overview/community-forums
+2026-08-03 11:18:01,859 | INFO | Crawling: https://fremontunified.org/students-community/connections/committees/archive/closed-comprehensive-health-puberty-and-sexuality-education-task-force
+2026-08-03 11:18:03,521 | INFO | Crawling: https://fremontunified.org/students-community/connections/volunteer-opportunities
+2026-08-03 11:18:05,390 | INFO | Crawling: https://fremontunified.org/students-community/connections/giving-to-fusd
+2026-08-03 11:18:06,904 | INFO | Crawling: https://fremontunified.org/students-community/connections/maintaining-excellent
+2026-08-03 11:18:08,714 | INFO | Crawling: https://fremontunified.org/about/superintendent/public-information/channels-content/flyer-distribution-peachjar
+2026-08-03 11:18:10,489 | INFO | Crawling: https://fremontunified.org/about/business-services/accounting-services/community-services-dept-facility-use-rentals
+2026-08-03 11:18:12,298 | INFO | Crawling: https://fremontunified.org/washington/departments-overview/whs-college-and-career-resource-center-homepage/work-permits-for-students
+2026-08-03 11:18:13,872 | INFO | Crawling: https://fremontunified.org/washington/departments-overview/whs-college-and-career-resource-center-homepage/mvrop-career-technical-education
+2026-08-03 11:18:15,679 | INFO | Crawling: https://fremontunified.org/washington/departments-overview/whs-college-and-career-resource-center-homepage/financial-aid-for-college/scholarships-what-you-need-to-know
+2026-08-03 11:18:16,916 | INFO | Crawling: https://fremontunified.org/washington/departments-overview/whs-college-and-career-resource-center-homepage/summer-year-round-programs-internships-volunteer-work-opportunities
+2026-08-03 11:18:18,511 | INFO | Crawling: https://fremontunified.org/washington/departments-overview/whs-college-and-career-resource-center-homepage/u-s-military-and-selective-service
+2026-08-03 11:18:20,004 | INFO | Crawling: https://fremontunified.org/washington/departments-overview/athletics-overview/eligibility-mval-ncaa
+2026-08-03 11:18:21,828 | INFO | Crawling: https://fremontunified.org/about/sped-student-support/student-support-services
+2026-08-03 11:18:23,640 | INFO | Crawling: https://fremontunified.org/about/sped-student-support/student-support-services/families-in-need
+2026-08-03 11:18:24,983 | INFO | Crawling: https://fremontunified.org/about/sped-student-support/student-support-services/families-in-need/income-tax-filing-assistance-fremont-vita
+2026-08-03 11:18:26,985 | INFO | Crawling: https://fremontunified.org/about/sped-student-support/student-support-services/families-in-need/homeless-and-foster-youth-support-mckinney-vento-act
+2026-08-03 11:18:28,975 | INFO | Crawling: https://fremontunified.org/about/sped-student-support/student-support-services/families-in-need/lgbtq-support-contacts
+2026-08-03 11:18:30,560 | INFO | Crawling: https://fremontunified.org/about/sped-student-support/student-support-services/families-in-need/date-safe-safe-alternatives-to-violent-environments
+2026-08-03 11:18:32,249 | INFO | Crawling: https://fremontunified.org/about/sped-student-support/student-support-services/families-in-need/resources-to-help-prevent-bullying
+2026-08-03 11:18:33,706 | INFO | Crawling: https://fremontunified.org/about/sped-student-support/student-support-services/families-in-need/drug-information
+2026-08-03 11:18:35,851 | INFO | Crawling: https://fremontunified.org/about/sped-student-support/student-support-services/families-in-need/resources-to-help-prevent-human-trafficking
+2026-08-03 11:18:37,752 | INFO | Crawling: https://fremontunified.org/about/sped-student-support/student-support-services/families-in-need/basic-needs-food-financial-shelter-medical-others
+2026-08-03 11:18:39,668 | INFO | Crawling: https://fremontunified.org/about/instructional-services/student-support-services/families-in-need/wstallworth@fusdk12.net
+2026-08-03 11:18:41,061 | ERROR | Failed request: https://fremontunified.org/about/instructional-services/student-support-services/families-in-need/wstallworth@fusdk12.net -> Client error '404 Not Found' for url 'https://fremontunified.org/about/instructional-services/student-support-services/families-in-need/wstallworth@fusdk12.net'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+2026-08-03 11:18:41,061 | INFO | Crawling: https://fremontunified.org/about/instructional-services/student-support-services/mental-health-overview
+2026-08-03 11:18:43,249 | INFO | Crawling: https://fremontunified.org/students-community/support/parent-student-handbook/parent-guardian-student-handbook-chinese
+2026-08-03 11:18:46,033 | INFO | Crawling: https://fremontunified.org/students-community/support/ac-transit-information
+2026-08-03 11:18:48,150 | INFO | Crawling: https://fremontunified.org/students-community/support/parent-student-handbook/parent-guardian-student-handbook-spanish
+2026-08-03 11:18:49,560 | ERROR | Failed request: https://fremontunified.org/students-community/support/parent-student-handbook/parent-guardian-student-handbook-spanish -> Client error '404 Not Found' for url 'https://fremontunified.org/students-community/support/parent-student-handbook/parent-guardian-student-handbook-spanish'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+2026-08-03 11:18:49,560 | INFO | Crawling: https://fremontunified.org/about/sped-student-support/student-support-services/health-services-overview
+2026-08-03 11:18:51,482 | INFO | Crawling: https://fremontunified.org/about/sped-student-support/student-support-services/health-services-overview/health-topics-overview
+2026-08-03 11:18:53,194 | INFO | Crawling: https://fremontunified.org/about/sped-student-support/student-support-services/health-services-overview/health-topics-overview/covid-19-overview
+2026-08-03 11:18:55,086 | INFO | Crawling: https://fremontunified.org/washington/wp-content/uploads/sites/8/2025/10/Washington-2025-2026-School-Profile.pdf
+2026-08-03 11:18:55,711 | INFO | Crawling: https://fremontunified.org/washington/wp-content/uploads/sites/8/2025/10/Washington-2024-2025-School-Profile.pdf
+2026-08-03 11:18:56,703 | INFO | Crawling: https://fremontunified.org/washington/wp-content/uploads/sites/8/2025/10/Washington-2023-2024-School-Profile.pdf
+2026-08-03 11:18:57,862 | INFO | Crawling: https://fremontunified.org/washington/wp-content/uploads/sites/8/2025/10/Washington-2022-2023-School-Profile.pdf
+2026-08-03 11:18:58,762 | INFO | Crawling: https://fremontunified.org/about/instructional-services/assessment-accountability/psat-sat
+2026-08-03 11:19:00,750 | INFO | Crawling: https://fremontunified.org/washington/departments/athletics/eligibility-mval-ncaa
+2026-08-03 11:19:02,241 | INFO | Crawling: https://fremontunified.org/washington/students-community/student-support/college-and-career-resource-center/valdez@fusdk12.net
+2026-08-03 11:19:03,316 | ERROR | Failed request: https://fremontunified.org/washington/students-community/student-support/college-and-career-resource-center/valdez@fusdk12.net -> Client error '404 Not Found' for url 'https://fremontunified.org/washington/students-community/student-support/college-and-career-resource-center/valdez@fusdk12.net'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+2026-08-03 11:19:03,316 | INFO | Crawling: https://fremontunified.org/about/instructional-services/secondary-education/transcripts-work-permits
+2026-08-03 11:19:05,179 | INFO | Crawling: https://fremontunified.org/about/instructional-services/elementary-education/gate-overview
+2026-08-03 11:19:07,020 | INFO | Crawling: https://fremontunified.org/washington/schedule-news/news/paged-3/4
+2026-08-03 11:19:09,294 | INFO | Crawling: https://fremontunified.org/washington/schedule-news/news/paged-3/5
+2026-08-03 11:19:11,236 | INFO | Crawling: https://fremontunified.org/washington/uncategorized/public-review-feedback-welcome-chemistry-in-the-earth-system-ci-initiatives
+2026-08-03 11:19:12,660 | INFO | Crawling: https://fremontunified.org/washington/uncategorized/video-college-information-night-noche-de-informacion-universitaria-%e5%a4%a7%e5%ad%b8%e8%b3%87%e8%a8%8a%e5%a4%9c
+2026-08-03 11:19:14,993 | INFO | Crawling: https://fremontunified.org/washington/uncategorized/student-meals-in-2022-23
+2026-08-03 11:19:16,588 | INFO | Crawling: https://fremontunified.org/washington/uncategorized/football-team-fundraiser-at-mod-pizza
+2026-08-03 11:19:17,943 | INFO | Crawling: https://fremontunified.org/washington/uncategorized/hs-summer-school-information-schedule-attendance-policy-and-email-contact
+2026-08-03 11:19:19,596 | INFO | Crawling: https://fremontunified.org/washington/uncategorized/class-of-2022-and-2023-seal-of-civic-engagement-sello-estatal-de-compromiso-civico-%e5%8a%a0%e5%b7%9e%e5%85%ac%e6%b0%91%e5%8f%83%e8%88%87%e5%8d%b0%e7%ab%a0
+2026-08-03 11:19:21,289 | INFO | Crawling: https://fremontunified.org/washington/schedule-news/news/paged-3/17
+2026-08-03 11:19:22,933 | INFO | Crawling: https://fremontunified.org/washington/schedule-news/news/paged-3/16
+2026-08-03 11:19:24,972 | INFO | Crawling: https://fremontunified.org/washington/schedule-news/events/past-events/paged-3/2
+2026-08-03 11:19:27,097 | INFO | Crawling: https://fremontunified.org/washington/schedule-news/events/past-events/paged-3/3
+2026-08-03 11:19:29,312 | INFO | Crawling: https://fremontunified.org/washington/schedule-news/events/past-events/paged-3/5
+2026-08-03 11:19:31,184 | INFO | Crawling: https://fremontunified.org/about/welcome/award-winning-schools-directory
+2026-08-03 11:19:33,265 | INFO | Crawling: https://fremontunified.org/about/welcome/employees-in-our-district
+2026-08-03 11:19:34,865 | INFO | Crawling: https://fremontunified.org/about/instructional-services/student-support-services
+2026-08-03 11:19:36,892 | INFO | Crawling: https://fremontunified.org/about/welcome/paged-4/2
+2026-08-03 11:19:39,553 | INFO | Crawling: https://fremontunified.org/about/welcome/paged-4/3
+2026-08-03 11:19:41,724 | INFO | Crawling: https://fremontunified.org/about/welcome/paged-4/5
+2026-08-03 11:19:44,197 | INFO | Crawling: https://fremontunified.org/about/board/board-of-education-members
+2026-08-03 11:19:45,994 | INFO | Crawling: https://fremontunified.org/about/board/board-of-education-members/trustee-areas-used-for-governing-board-elections
+2026-08-03 11:19:47,958 | INFO | Crawling: https://fremontunified.org/about/board/board-of-education-members/trustee-areas-used-for-governing-board-elections/frequently-asked-questions-by-trustee-area-faqs
+2026-08-03 11:19:49,898 | INFO | Crawling: https://fremontunified.org/about/board/board-meeting-live-stream-video
+2026-08-03 11:19:51,370 | INFO | Crawling: https://fremontunified.org/about/board/board-meeting-live-stream-video/board-showcase
+2026-08-03 11:19:53,012 | INFO | Crawling: https://fremontunified.org/about/board/board-meeting-live-stream-video/presentation-template-for-board-meetings
+2026-08-03 11:19:55,064 | INFO | Crawling: https://fremontunified.org/about/board/surfboarde-overview
+2026-08-03 11:19:56,674 | INFO | Crawling: https://fremontunified.org/about/board/paged-4/2
+2026-08-03 11:19:59,113 | INFO | Crawling: https://fremontunified.org/about/board/paged-4/3
+2026-08-03 11:20:01,489 | INFO | Crawling: https://fremontunified.org/about/board/paged-4/20
+2026-08-03 11:20:03,899 | INFO | Crawling: https://fremontunified.org/about/departments/org-chart
+2026-08-03 11:20:05,255 | INFO | Crawling: https://fremontunified.org/about/departments/site-map
+2026-08-03 11:20:07,247 | INFO | Crawling: https://fremontunified.org/about/business-services/accounting-services
+2026-08-03 11:20:08,650 | INFO | Crawling: https://fremontunified.org/about/business-services/accounting-services/accounts-payable
+2026-08-03 11:20:10,213 | INFO | Crawling: https://fremontunified.org/about/business-services/budget
+2026-08-03 11:20:12,064 | INFO | Crawling: https://fremontunified.org/about/human-resources/employee-resources/certificated-staff-management-employment-overview
+2026-08-03 11:20:13,757 | INFO | Crawling: https://fremontunified.org/about/departments/human-resources/employee-resources/classified-staff-management-employment-overview
+2026-08-03 11:20:15,508 | INFO | Crawling: https://fremontunified.org/about/business-services/facilities-construction
+2026-08-03 11:20:17,316 | INFO | Crawling: https://fremontunified.org/about/instructional-services/student-support-services/health-services-overview
+2026-08-03 11:20:18,732 | INFO | Crawling: https://fremontunified.org/about/business-services/maintenance-operations-grounds
+2026-08-03 11:20:20,558 | INFO | Crawling: https://fremontunified.org/about/business-services/facilities-construction/measure-e-bond-overview
+2026-08-03 11:20:21,939 | ERROR | Failed request: https://fremontunified.org/about/business-services/facilities-construction/measure-e-bond-overview -> Client error '404 Not Found' for url 'https://fremontunified.org/about/business-services/facilities-construction/measure-e-bond-overview'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+2026-08-03 11:20:21,939 | INFO | Crawling: https://fremontunified.org/about/business-services/accounting-services/payroll
+2026-08-03 11:20:23,550 | INFO | Crawling: https://fremontunified.org/about/superintendent/public-information
+2026-08-03 11:20:25,045 | INFO | Crawling: https://fremontunified.org/about/business-services/purchasing
+2026-08-03 11:20:26,484 | INFO | Crawling: https://fremontunified.org/about/human-resources/risk-management
+2026-08-03 11:20:28,170 | INFO | Crawling: https://fremontunified.org/about/instructional-services/special-education
+2026-08-03 11:20:29,808 | INFO | Crawling: https://fremontunified.org/about/business-services/technology
+2026-08-03 11:20:31,654 | INFO | Crawling: https://fremontunified.org/about/business-services/transportation
+2026-08-03 11:20:33,059 | INFO | Crawling: https://fremontunified.org/about/sped-student-support/special-education
+2026-08-03 11:20:34,986 | INFO | Crawling: https://fremontunified.org/about/operations/maintenance-operations-grounds
+2026-08-03 11:20:36,450 | INFO | Crawling: https://fremontunified.org/?page_id=65439
+2026-08-03 11:20:38,150 | ERROR | Failed request: https://fremontunified.org/?page_id=65439 -> Client error '404 Not Found' for url 'https://fremontunified.org/?page_id=65439'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+2026-08-03 11:20:38,150 | INFO | Crawling: https://fremontunified.org/about/operations/transportation
+2026-08-03 11:20:40,268 | INFO | Crawling: https://fremontunified.org/about/operations/technology
+2026-08-03 11:20:42,417 | INFO | Crawling: https://fremontunified.org/students-community/support/portals/password-change
+2026-08-03 11:20:43,848 | INFO | Crawling: https://fremontunified.org/students-community/support/portals/cyber-safety-tips-resources
+2026-08-03 11:20:45,422 | INFO | Crawling: https://fremontunified.org/students-community/support/portals/tech-links-help-with-destiny
+2026-08-03 11:20:47,127 | INFO | Crawling: https://fremontunified.org/about/instructional-services/student-support-services/families-in-need/basic-needs-food-financial-shelter-medical-others
+2026-08-03 11:20:49,387 | INFO | Crawling: https://fremontunified.org/students-community/connections/committees/equity
+2026-08-03 11:20:51,155 | INFO | Crawling: https://fremontunified.org/about/sped-student-support/special-education/special-education-district-advisory-committee-overview
+2026-08-03 11:20:53,958 | INFO | Crawling: https://fremontunified.org/about/human-resources/human-resources-staff-contacts
+2026-08-03 11:20:55,983 | INFO | Crawling: https://fremontunified.org/about/human-resources/employee-resources/union-contact-information-contracts-and-salary-schedules
+2026-08-03 11:20:58,085 | INFO | Crawling: https://fremontunified.org/about/human-resources/employee-resources/certificated-staff-management-employment-overview/credential-information
+2026-08-03 11:20:59,917 | INFO | Crawling: https://fremontunified.org/about/human-resources/employee-resources/certificated-staff-management-employment-overview/credential-renewal-information
+2026-08-03 11:21:02,561 | INFO | Crawling: https://fremontunified.org/about/human-resources/employee-resources/certificated-staff-management-employment-overview/certificated-application-process
+2026-08-03 11:21:04,359 | INFO | Crawling: https://fremontunified.org/about/human-resources/employee-resources/classified-staff-management-employment-overview
+2026-08-03 11:21:06,279 | INFO | Crawling: https://fremontunified.org/about/human-resources/employee-resources/classified-staff-management-employment-overview/personnel-commission
+2026-08-03 11:21:07,949 | INFO | Crawling: https://fremontunified.org/about/human-resources/employee-resources/classified-staff-management-employment-overview/classified-job-descriptions
+2026-08-03 11:21:09,472 | INFO | Crawling: https://fremontunified.org/about/human-resources/employee-resources/coaching-information-openings
+2026-08-03 11:21:11,161 | INFO | Crawling: https://fremontunified.org/about/human-resources/employee-resources/substitute-teaching-information
+2026-08-03 11:21:12,975 | INFO | Crawling: https://fremontunified.org/about/human-resources/employee-resources/benefits-overview
+2026-08-03 11:21:14,555 | INFO | Crawling: https://fremontunified.org/about/human-resources/employee-resources/benefits-overview/find-your-current-benefits
+2026-08-03 11:21:16,805 | INFO | Crawling: https://fremontunified.org/about/human-resources/employee-resources/benefits-overview/new-hire-rehire-employment-forms
+2026-08-03 11:21:19,583 | INFO | Crawling: https://fremontunified.org/about/human-resources/employee-resources/benefits-overview/calstrs-retirement-information
+2026-08-03 11:21:21,584 | INFO | Crawling: https://fremontunified.org/about/human-resources/employee-resources/benefits-overview/frequently-asked-questions-benefits
+2026-08-03 11:21:23,269 | INFO | Crawling: https://fremontunified.org/about/human-resources/employee-resources/benefits-overview/commuter-benefits
+2026-08-03 11:21:25,232 | INFO | Crawling: https://fremontunified.org/about/human-resources/employee-resources/benefits-overview/calpers-retirement-information
+2026-08-03 11:21:27,336 | INFO | Crawling: https://fremontunified.org/about/human-resources/employee-resources/absence-management-substitute-system-instructions-aesop
+2026-08-03 11:21:29,485 | INFO | Crawling: https://fremontunified.org/about/departments/human-resources/employee-resources/certificated-staff-management-employment-overview
+2026-08-03 11:21:30,923 | INFO | Crawling: https://fremontunified.org/about/departments/human-resources/employee-resources/substitute-teaching-information
+2026-08-03 11:21:33,420 | INFO | Crawling: https://fremontunified.org/about/departments/human-resources/employee-resources/coaching-information-openings
+2026-08-03 11:21:35,605 | INFO | Crawling: https://fremontunified.org/about/departments/human-resources/employee-resources/union-contact-information-contracts-and-salary-schedules
+2026-08-03 11:21:37,484 | INFO | Crawling: https://fremontunified.org/about/departments/human-resources/employee-resources/benefits-overview
+2026-08-03 11:21:38,911 | INFO | Crawling: https://fremontunified.org/about/departments/human-resources/human-resources-staff-contacts
+2026-08-03 11:21:40,938 | INFO | Crawling: https://fremontunified.org/about/sped-student-support/student-support-services/student-support-services-staff-contacts
+2026-08-03 11:21:42,855 | INFO | Crawling: https://fremontunified.org/about/sped-student-support/student-support-services/change-of-residency
+2026-08-03 11:21:44,533 | INFO | Crawling: https://fremontunified.org/about/sped-student-support/student-support-services/community-liaisons
+2026-08-03 11:21:46,313 | INFO | Crawling: https://fremontunified.org/about/sped-student-support/student-support-services/school-counselors-overview
+2026-08-03 11:21:48,285 | INFO | Crawling: https://fremontunified.org/about/sped-student-support/student-support-services/parenteducation
+2026-08-03 11:21:49,851 | INFO | Crawling: https://fremontunified.org/about/sped-student-support/student-support-services/workshop
+2026-08-03 11:21:51,573 | INFO | Crawling: https://fremontunified.org/about/sped-student-support/student-support-services/mental-health-overview/connect-with-mental-health-care-resources
+2026-08-03 11:21:53,763 | INFO | Crawling: https://fremontunified.org/about/sped-student-support/student-support-services/mental-health-overview/coping-with-stress-and-anxiety
+2026-08-03 11:21:55,506 | INFO | Crawling: https://fremontunified.org/about/sped-student-support/student-support-services/attendance-and-truancy
+2026-08-03 11:21:58,290 | INFO | Crawling: https://fremontunified.org/about/sped-student-support/student-support-services/section-504-plan
+2026-08-03 11:21:59,832 | INFO | Crawling: https://fremontunified.org/about/instructional-services/student-support-services/mental-health-overview/connect-with-mental-health-care-resources
+2026-08-03 11:22:01,287 | INFO | Crawling: https://fremontunified.org/about/instructional-services/student-support-services/community-liaisons
+2026-08-03 11:22:03,546 | INFO | Crawling: https://fremontunified.org/about/instructional-services/student-support-services/school-counselors-overview
+2026-08-03 11:22:06,160 | INFO | Crawling: https://fremontunified.org/about/instructional-services/student-support-services/families-in-need
+2026-08-03 11:22:07,874 | INFO | Crawling: https://fremontunified.org/about/departments/instructional-services-overview/student-support-services-dept/families-in-need/lgbtq-support-contacts
+2026-08-03 11:22:09,863 | INFO | Crawling: https://fremontunified.org/students-community/support/infinite-campus-faqs
+2026-08-03 11:22:11,776 | ERROR | Failed request: https://fremontunified.org/students-community/support/infinite-campus-faqs -> Client error '404 Not Found' for url 'https://fremontunified.org/students-community/support/infinite-campus-faqs'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+2026-08-03 11:22:11,776 | INFO | Crawling: https://fremontunified.org/about/sped-student-support/student-support-services/enrollment-registration/immunization-requirements
+2026-08-03 11:22:13,049 | INFO | Crawling: https://fremontunified.org/about/sped-student-support/student-support-services/enrollment-registration/supplemental-documents
+2026-08-03 11:22:14,357 | INFO | Crawling: https://fremontunified.org/about/sped-student-support/student-support-services/enrollment-registration/caregiver-affidavit-and-declaration-of-residency
+2026-08-03 11:22:16,228 | INFO | Crawling: https://fremontunified.org/about/sped-student-support/student-support-services/enrollment-registration/intra-district-transfers
+2026-08-03 11:22:19,709 | INFO | Crawling: https://fremontunified.org/about/sped-student-support/student-support-services/enrollment-registration/inter-district-transfers
+2026-08-03 11:22:21,132 | INFO | Crawling: https://fremontunified.org/about/sped-student-support/student-support-services/enrollment-registration/open-enrollment
+2026-08-03 11:22:23,487 | INFO | Crawling: https://fremontunified.org/about/sped-student-support/student-support-services/enrollment-registration/school-wait-lists-overloads
+2026-08-03 11:22:25,127 | INFO | Crawling: https://fremontunified.org/about/sped-student-support/student-support-services/enrollment-registration/new-developments-designation-unassigned
+2026-08-03 11:22:26,940 | INFO | Crawling: https://fremontunified.org/about/departments/instructional-services-overview/student-support-services-dept/enrollment-registration/school-wait-lists-overloads
+2026-08-03 11:22:28,350 | INFO | Crawling: https://fremontunified.org/about/departments/instructional-services-overview/elementary-education-dept/transitional-kindergarten
+2026-08-03 11:22:30,853 | INFO | Crawling: https://fremontunified.org/about/instructional-services/federal-state-programs/state-preschool
+2026-08-03 11:22:32,722 | INFO | Crawling: https://fremontunified.org/about/departments/instructional-services-overview/student-support-services-dept/enrollment-registration/intra-district-transfers
+2026-08-03 11:22:34,381 | INFO | Crawling: https://fremontunified.org/about/departments/instructional-services-overview/student-support-services-dept/enrollment-registration/inter-district-transfers
+2026-08-03 11:22:35,776 | INFO | Crawling: https://fremontunified.org/about/instructional-services/student-support-services/enrollment-registration/open-enrollment
+2026-08-03 11:22:37,517 | INFO | Crawling: https://fremontunified.org/about/departments/instructional-services-overview/student-support-services-dept/student-support-services-staff-contacts
+2026-08-03 11:22:39,037 | INFO | Crawling: https://fremontunified.org/about/departments/instructional-services-overview/curriculum-instruction-dept/library-at-district-overview/pay-for-lost-damaged-textbooks-and-or-library-books
+2026-08-03 11:22:41,231 | INFO | Crawling: https://fremontunified.org/safety/uscis-resources
+2026-08-03 11:22:42,935 | INFO | Crawling: https://fremontunified.org/safety/immigrant-families
+2026-08-03 11:22:44,726 | INFO | Crawling: https://fremontunified.org/about/sped-student-support/student-support-services/community-resources/immigration
+2026-08-03 11:22:46,032 | INFO | Crawling: https://fremontunified.org/about/instructional-services/elementary-education/transitional-kindergarten
+2026-08-03 11:22:48,145 | INFO | Crawling: https://fremontunified.org/about/instructional-services/elementary-education/spelling-bee
+2026-08-03 11:22:50,180 | INFO | Crawling: https://fremontunified.org/about/instructional-services/elementary-education/art-gala
+2026-08-03 11:22:52,106 | INFO | Crawling: https://fremontunified.org/about/instructional-services/elementary-education/young-authors-contest
+2026-08-03 11:22:54,133 | INFO | Crawling: https://fremontunified.org/about/instructional-services/secondary-education/college-connection-program-ohlone
+2026-08-03 11:22:56,004 | INFO | Crawling: https://fremontunified.org/about/instructional-services/secondary-education/career-and-technical-education-cte
+2026-08-03 11:22:57,265 | INFO | Crawling: https://fremontunified.org/about/instructional-services/secondary-education/career-and-technical-education-cte/perkins
+2026-08-03 11:22:59,075 | INFO | Crawling: https://fremontunified.org/about/instructional-services/secondary-education/career-and-technical-education-cte/mvrop
+2026-08-03 11:23:01,042 | INFO | Crawling: https://fremontunified.org/about/instructional-services/secondary-education/guy-emanuele-sports-fund
+2026-08-03 11:23:02,645 | INFO | Crawling: https://fremontunified.org/about/instructional-services/secondary-education/high-school-graduation
+2026-08-03 11:23:04,209 | INFO | Crawling: https://fremontunified.org/about/instructional-services/secondary-education/middle-school-overview
+2026-08-03 11:23:06,667 | INFO | Crawling: https://fremontunified.org/about/instructional-services/secondary-education/middle-school-overview/middle-school-frequently-asked-questions-faq
+2026-08-03 11:23:08,898 | INFO | Crawling: https://fremontunified.org/about/instructional-services/curriculum-instruction/curriculum-instruction-staff-contacts
+2026-08-03 11:23:11,441 | INFO | Crawling: https://fremontunified.org/about/instructional-services/curriculum-instruction/ci-initiatives-dashboard
+2026-08-03 11:23:13,087 | INFO | Crawling: https://fremontunified.org/about/instructional-services/curriculum-instruction/fair-education-act
+2026-08-03 11:23:14,536 | INFO | Crawling: https://fremontunified.org/about/instructional-services/curriculum-instruction/library-at-district-overview/literature-search
+2026-08-03 11:23:17,070 | INFO | Crawling: https://fremontunified.org/about/instructional-services/curriculum-instruction/library-at-district-overview/pay-for-lost-damaged-textbooks-and-or-library-books
+2026-08-03 11:23:18,708 | INFO | Crawling: https://fremontunified.org/about/instructional-services/curriculum-instruction/textbook-and-literature-lists
+2026-08-03 11:23:20,644 | INFO | Crawling: https://fremontunified.org/about/instructional-services/curriculum-instruction/math-information
+2026-08-03 11:23:22,675 | INFO | Crawling: https://fremontunified.org/about/instructional-services/curriculum-instruction/science-information-ngss
+2026-08-03 11:23:24,748 | INFO | Crawling: https://fremontunified.org/about/instructional-services/curriculum-instruction/curriculum-instruction-health-resources
+2026-08-03 11:23:26,748 | INFO | Crawling: https://fremontunified.org/about/instructional-services/curriculum-instruction/driver-ed
+2026-08-03 11:23:28,387 | INFO | Crawling: https://fremontunified.org/about/instructional-services/federal-state-programs/multilingual-learners/language-assessment-center
+2026-08-03 11:23:30,151 | INFO | Crawling: https://fremontunified.org/about/instructional-services/federal-state-programs/multilingual-learners/english-learner-english-language-development
+2026-08-03 11:23:32,393 | INFO | Crawling: https://fremontunified.org/about/instructional-services/federal-state-programs/multilingual-learners/english-language-proficiency-assessments-for-ca-overview
+2026-08-03 11:23:34,623 | INFO | Crawling: https://fremontunified.org/about/instructional-services/federal-state-programs/multilingual-learners/english-language-proficiency-assessments-for-ca-overview/elpac-frequently-asked-questions
+2026-08-03 11:23:36,688 | INFO | Crawling: https://fremontunified.org/about/instructional-services/federal-state-programs/multilingual-learners/english-language-proficiency-assessments-for-ca-overview/elpac-additional-resources
+2026-08-03 11:23:37,969 | INFO | Crawling: https://fremontunified.org/about/instructional-services/federal-state-programs/multilingual-learners/english-learner-advisory-committee-elac
+2026-08-03 11:23:40,028 | INFO | Crawling: https://fremontunified.org/about/instructional-services/federal-state-programs/multilingual-learners/delac-overview/delac-meeting-archives
+2026-08-03 11:23:41,601 | INFO | Crawling: https://fremontunified.org/about/instructional-services/federal-state-programs/multilingual-learners/schools-15-and-above-translation-required
+2026-08-03 11:23:43,738 | INFO | Crawling: https://fremontunified.org/about/instructional-services/federal-state-programs/elop/elop-summer
+2026-08-03 11:23:45,458 | INFO | Crawling: https://fremontunified.org/about/instructional-services/federal-state-programs/nasp-program-information/nasp-meeting-archive
+2026-08-03 11:23:47,470 | INFO | Crawling: https://fremontunified.org/about/instructional-services/assessment-accountability/california-school-dashboard
+2026-08-03 11:23:48,827 | INFO | Crawling: https://fremontunified.org/about/instructional-services/assessment-accountability/state-seals
+2026-08-03 11:23:50,335 | INFO | Crawling: https://fremontunified.org/about/instructional-services/assessment-accountability/state-seals/golden-state-seal
+2026-08-03 11:23:52,529 | INFO | Crawling: https://fremontunified.org/about/instructional-services/assessment-accountability/state-seals/seal-of-biliteracy
+2026-08-03 11:23:54,619 | INFO | Crawling: https://fremontunified.org/about/instructional-services/assessment-accountability/state-seals/seal-of-civic-engagement
+2026-08-03 11:23:56,516 | INFO | Crawling: https://fremontunified.org/about/instructional-services/assessment-accountability/state-assessments
+2026-08-03 11:23:58,009 | INFO | Crawling: https://fremontunified.org/about/instructional-services/assessment-accountability/state-assessments/caaspp
+2026-08-03 11:23:59,644 | INFO | Crawling: https://fremontunified.org/about/instructional-services/assessment-accountability/state-assessments/caaspp/caaspp-ssr
+2026-08-03 11:24:01,740 | INFO | Crawling: https://fremontunified.org/about/instructional-services/assessment-accountability/state-assessments/caaspp/sbac
+2026-08-03 11:24:04,179 | INFO | Crawling: https://fremontunified.org/about/instructional-services/assessment-accountability/state-assessments/caaspp/cast
+2026-08-03 11:24:05,671 | INFO | Crawling: https://fremontunified.org/about/instructional-services/assessment-accountability/state-assessments/caaspp/caa
+2026-08-03 11:24:08,057 | INFO | Crawling: https://fremontunified.org/about/instructional-services/assessment-accountability/state-assessments/caaspp/csa
+2026-08-03 11:24:10,059 | INFO | Crawling: https://fremontunified.org/about/instructional-services/assessment-accountability/state-assessments/ca-math-placement-exam
+2026-08-03 11:24:11,453 | INFO | Crawling: https://fremontunified.org/about/instructional-services/assessment-accountability/state-assessments/pft
+2026-08-03 11:24:13,079 | INFO | Crawling: https://fremontunified.org/about/instructional-services/assessment-accountability/state-assessments/rdrs
+2026-08-03 11:24:14,639 | INFO | Crawling: https://fremontunified.org/about/instructional-services/assessment-accountability/district-assessments-testing-calendars
+2026-08-03 11:24:16,425 | INFO | Crawling: https://fremontunified.org/about/instructional-services/assessment-accountability/district-assessments-testing-calendars/i-ready
+2026-08-03 11:24:18,982 | INFO | Crawling: https://fremontunified.org/about/instructional-services/assessment-accountability/advanced-placement
+2026-08-03 11:24:20,718 | INFO | Crawling: https://fremontunified.org/about/instructional-services/assessment-accountability/report-cards
+2026-08-03 11:24:23,378 | INFO | Crawling: https://fremontunified.org/about/instructional-services/assessment-accountability/report-cards/elementary-report-cards
+2026-08-03 11:24:25,018 | INFO | Crawling: https://fremontunified.org/about/instructional-services/assessment-accountability/chks
+2026-08-03 11:24:26,773 | INFO | Crawling: https://fremontunified.org/about/instructional-services/paged-4/2
+2026-08-03 11:24:29,851 | INFO | Crawling: https://fremontunified.org/about/instructional-services/paged-4/3
+2026-08-03 11:24:32,575 | INFO | Crawling: https://fremontunified.org/about/instructional-services/paged-4/4
+2026-08-03 11:24:35,370 | INFO | Crawling: https://fremontunified.org/students-community/connections/committees/ciac
+2026-08-03 11:24:37,056 | INFO | Crawling: https://fremontunified.org/about/departments/instructional-services/curriculum-instruction/curriculum-instruction-staff-contacts
+2026-08-03 11:24:38,539 | INFO | Crawling: https://fremontunified.org/about/instructional-services/federal-state-programs/ekelley@fusdk12.net
+2026-08-03 11:24:39,906 | ERROR | Failed request: https://fremontunified.org/about/instructional-services/federal-state-programs/ekelley@fusdk12.net -> Client error '404 Not Found' for url 'https://fremontunified.org/about/instructional-services/federal-state-programs/ekelley@fusdk12.net'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+2026-08-03 11:24:39,907 | INFO | Crawling: https://fremontunified.org/about/instructional-services/federal-state-programs/jmasis@fusdk12.net
+2026-08-03 11:24:41,407 | ERROR | Failed request: https://fremontunified.org/about/instructional-services/federal-state-programs/jmasis@fusdk12.net -> Client error '404 Not Found' for url 'https://fremontunified.org/about/instructional-services/federal-state-programs/jmasis@fusdk12.net'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+2026-08-03 11:24:41,407 | INFO | Crawling: https://fremontunified.org/about/superintendent/first-day-2025
+2026-08-03 11:24:43,669 | INFO | Crawling: https://fremontunified.org/about/superintendent/balanced-budget
+2026-08-03 11:24:45,444 | INFO | Crawling: https://fremontunified.org/about/superintendent/balanced-budget/balanced-budget-faq
+2026-08-03 11:24:47,025 | INFO | Crawling: https://fremontunified.org/about/superintendent/notice-of-public-hearings
+2026-08-03 11:24:48,584 | INFO | Crawling: https://fremontunified.org/about/superintendent/public-information/public-records-requests
+2026-08-03 11:24:50,081 | INFO | Crawling: https://fremontunified.org/about/superintendent/public-information/channels-content
+2026-08-03 11:24:51,753 | INFO | Crawling: https://fremontunified.org/about/superintendent/public-information/channels-content/website-info
+2026-08-03 11:24:53,292 | INFO | Crawling: https://fremontunified.org/about/superintendent/public-information/channels-content/parentsquare
+2026-08-03 11:24:55,178 | INFO | Crawling: https://fremontunified.org/about/superintendent/senior-exemption-waiver-measure-i
+2026-08-03 11:24:56,656 | INFO | Crawling: https://fremontunified.org/about/departments/instructional-services-overview
+2026-08-03 11:24:58,114 | ERROR | Failed request: https://fremontunified.org/about/departments/instructional-services-overview -> Client error '404 Not Found' for url 'https://fremontunified.org/about/departments/instructional-services-overview'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+2026-08-03 11:24:58,116 | INFO | Crawling: https://fremontunified.org/about/departments/business-services-overview
+2026-08-03 11:24:59,532 | ERROR | Failed request: https://fremontunified.org/about/departments/business-services-overview -> Client error '404 Not Found' for url 'https://fremontunified.org/about/departments/business-services-overview'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+2026-08-03 11:24:59,532 | INFO | Crawling: https://fremontunified.org/about/departments/human-resources-overview
+2026-08-03 11:25:00,966 | ERROR | Failed request: https://fremontunified.org/about/departments/human-resources-overview -> Client error '404 Not Found' for url 'https://fremontunified.org/about/departments/human-resources-overview'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+2026-08-03 11:25:00,967 | INFO | Crawling: https://fremontunified.org/about/superintendent/paged-4/2
+2026-08-03 11:25:03,532 | INFO | Crawling: https://fremontunified.org/about/superintendent/paged-4/3
+2026-08-03 11:25:06,151 | INFO | Crawling: https://fremontunified.org/about/superintendent/public-information/previous-superintendent
+2026-08-03 11:25:07,567 | ERROR | Failed request: https://fremontunified.org/about/superintendent/public-information/previous-superintendent -> Client error '404 Not Found' for url 'https://fremontunified.org/about/superintendent/public-information/previous-superintendent'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+2026-08-03 11:25:07,567 | INFO | Crawling: https://fremontunified.org/about/sped-student-support/special-education/special-education-staff-contacts
+2026-08-03 11:25:09,224 | INFO | Crawling: https://fremontunified.org/about/sped-student-support/special-education/special-education-process-referrals
+2026-08-03 11:25:11,311 | INFO | Crawling: https://fremontunified.org/about/sped-student-support/special-education/frequently-asked-questions-faqs
+2026-08-03 11:25:12,952 | INFO | Crawling: https://fremontunified.org/about/sped-student-support/special-education/special-education-events
+2026-08-03 11:25:15,009 | INFO | Crawling: https://fremontunified.org/about/sped-student-support/student-support-services/community-liaisons/community-resource-links
+2026-08-03 11:25:17,103 | INFO | Crawling: https://fremontunified.org/about/sped-student-support/student-support-services/community-liaisons/community-events
+2026-08-03 11:25:19,019 | INFO | Crawling: https://fremontunified.org/about/sped-student-support/student-support-services/community-liaisons/community-flyers_slides
+2026-08-03 11:25:20,526 | INFO | Crawling: https://fremontunified.org/about/sped-student-support/student-support-services/health-services-overview/health-forms-medication
+2026-08-03 11:25:22,490 | INFO | Crawling: https://fremontunified.org/about/sped-student-support/student-support-services/health-services-overview/cybhi
+2026-08-03 11:25:24,540 | INFO | Crawling: https://fremontunified.org/about/sped-student-support/student-support-services/health-services-overview/nurse-contacts-by-site
+2026-08-03 11:25:26,342 | INFO | Crawling: https://fremontunified.org/about/sped-student-support/student-support-services/health-services-overview/general-health-faq
+2026-08-03 11:25:27,951 | INFO | Crawling: https://fremontunified.org/about/sped-student-support/student-support-services/health-services-overview/vision-and-hearing-screenings
+2026-08-03 11:25:29,589 | INFO | Crawling: https://fremontunified.org/about/sped-student-support/student-support-services/health-services-overview/health-community-resources
+2026-08-03 11:25:31,415 | INFO | Crawling: https://fremontunified.org/about/sped-student-support/student-support-services/health-services-overview/food-allergy-awareness
+2026-08-03 11:25:33,566 | INFO | Crawling: https://fremontunified.org/about/business-services/accounting-services/accounting-statements
+2026-08-03 11:25:35,241 | INFO | Crawling: https://fremontunified.org/about/business-services/accounting-services/general-ledger
+2026-08-03 11:25:36,987 | INFO | Crawling: https://fremontunified.org/about/business-services/accounting-services/developer-fees-faq
+2026-08-03 11:25:38,726 | INFO | Crawling: https://fremontunified.org/about/business-services/budget/all-budget-files-and-previous-years
+2026-08-03 11:25:39,992 | INFO | Crawling: https://fremontunified.org/about/business-services/budget/budget-resources
+2026-08-03 11:25:41,368 | INFO | Crawling: https://fremontunified.org/about/business-services/purchasing/fusd-current-bid-opportunities
+2026-08-03 11:25:43,188 | INFO | Crawling: https://fremontunified.org/about/business-services/facilities-construction/long-range-facilities-plan-overview
+2026-08-03 11:25:45,098 | INFO | Crawling: https://fremontunified.org/students-community/connections/jointheconversation/faq
+2026-08-03 11:25:46,668 | INFO | Crawling: https://fremontunified.org/about/business-services/paged-4/2
+2026-08-03 11:25:48,736 | INFO | Crawling: https://fremontunified.org/about/operations/maintenance-operations-grounds/lead-testing-of-drinking-water-info
+2026-08-03 11:25:50,059 | INFO | Crawling: https://fremontunified.org/about/operations/facilities-construction
+2026-08-03 11:25:52,218 | INFO | Crawling: https://fremontunified.org/about/operations/facilities-construction/fusds-bonds
+2026-08-03 11:25:53,753 | INFO | Crawling: https://fremontunified.org/about/operations/facilities-construction/fusds-bonds/measure-m
+2026-08-03 11:25:55,181 | INFO | Crawling: https://fremontunified.org/about/operations/facilities-construction/fusds-bonds/measure-e
+2026-08-03 11:25:56,835 | INFO | Crawling: https://fremontunified.org/about/operations/facilities-construction/fusds-bonds/measure-e/summer-2025-construction-before-after
+2026-08-03 11:25:58,579 | INFO | Crawling: https://fremontunified.org/about/operations/facilities-construction/fusds-bonds/faq
+2026-08-03 11:26:00,012 | INFO | Crawling: https://fremontunified.org/about/operations/facilities-construction/working-with-fusd
+2026-08-03 11:26:02,018 | INFO | Crawling: https://fremontunified.org/about/operations/facilities-construction/long-range-facilities-plan-overview
+2026-08-03 11:26:04,001 | INFO | Crawling: https://fremontunified.org/about/operations/transportation/transportation-staff-contacts
+2026-08-03 11:26:05,834 | INFO | Crawling: https://fremontunified.org/about/operations/transportation/job-opportunities-with-the-transportation-dept
+2026-08-03 11:26:07,310 | INFO | Crawling: https://fremontunified.org/about/operations/transportation/bus-riding-conduct-rules-for-students-parents
+2026-08-03 11:26:09,108 | INFO | Crawling: https://fremontunified.org/about/operations/transportation/v2g
+2026-08-03 11:26:10,540 | INFO | Crawling: https://fremontunified.org/about/operations/transportation/transportation-lost-found
+2026-08-03 11:26:12,280 | INFO | Crawling: https://fremontunified.org/about/operations/transportation/special-education-transportation
+2026-08-03 11:26:14,295 | INFO | Crawling: https://fremontunified.org/about/operations/transportation/special-education-transportation/transportation-extended-school-year-summer-school-information
+2026-08-03 11:26:16,008 | INFO | Crawling: https://fremontunified.org/about/operations/transportation/elimination-of-home-to-school-transportation-services
+2026-08-03 11:26:17,631 | INFO | Crawling: https://fremontunified.org/about/operations/technology/technology-staff-contacts
+2026-08-03 11:26:19,347 | INFO | Crawling: https://fremontunified.org/about/operations/facilities-construction/measure-e-bond-overview
+2026-08-03 11:26:20,738 | ERROR | Failed request: https://fremontunified.org/about/operations/facilities-construction/measure-e-bond-overview -> Client error '404 Not Found' for url 'https://fremontunified.org/about/operations/facilities-construction/measure-e-bond-overview'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+2026-08-03 11:26:20,739 | INFO | Crawling: https://fremontunified.org/about/operations/facilities-construction/faq
+2026-08-03 11:26:22,305 | INFO | Crawling: https://fremontunified.org/about/human-resources/risk-management/on-line-training-for-contractors-and-volunteers
+2026-08-03 11:26:23,938 | INFO | Crawling: https://fremontunified.org/about/human-resources/risk-management/insurance-information-student-accident
+2026-08-03 11:26:25,937 | INFO | Crawling: https://fremontunified.org/about/human-resources/risk-management/how-to-file-a-claim-and-form-liability
+2026-08-03 11:26:27,772 | INFO | Crawling: https://fremontunified.org/about/human-resources/paged-4/2
+2026-08-03 11:26:29,906 | INFO | Crawling: https://fremontunified.org/about/human-resources/paged-4/3
+2026-08-03 11:26:32,552 | INFO | Crawling: https://fremontunified.org/washington/category/news/paged-3/2
+2026-08-03 11:26:34,835 | INFO | Crawling: https://fremontunified.org/washington/category/news/paged-3/3
+2026-08-03 11:26:36,494 | INFO | Crawling: https://fremontunified.org/washington/category/news/paged-3/13
+2026-08-03 11:26:38,634 | INFO | Crawling: https://fremontunified.org/students-community/connections/committees/aapac
+2026-08-03 11:26:40,358 | INFO | Crawling: https://fremontunified.org/students-community/connections/committees/smh
+2026-08-03 11:26:42,025 | INFO | Crawling: https://fremontunified.org/students-community/connections/committees/tic
+2026-08-03 11:26:43,521 | INFO | Crawling: https://fremontunified.org/about/instructional-services/special-education/special-education-mission-valley-local-plan-area-selpa/selpa-community-advisory-committee-overview
+2026-08-03 11:26:45,007 | ERROR | Failed request: https://fremontunified.org/about/instructional-services/special-education/special-education-mission-valley-local-plan-area-selpa/selpa-community-advisory-committee-overview -> Client error '404 Not Found' for url 'https://fremontunified.org/about/instructional-services/special-education/special-education-mission-valley-local-plan-area-selpa/selpa-community-advisory-committee-overview'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+2026-08-03 11:26:45,008 | INFO | Crawling: https://fremontunified.org/students-community/connections/committees/other-previous-committees/7-11-committee-overview
+2026-08-03 11:26:46,514 | INFO | Crawling: https://fremontunified.org/students-community/connections/committees/other-previous-committees/mip-sdi-task-force
+2026-08-03 11:26:48,616 | INFO | Crawling: https://fremontunified.org/students-community/connections/committees/other-previous-committees/renaming-valhalla-theater
+2026-08-03 11:26:50,429 | INFO | Crawling: https://fremontunified.org/about/board/surfboarde-overview/fusd-committees
+2026-08-03 11:26:51,971 | ERROR | Failed request: https://fremontunified.org/about/board/surfboarde-overview/fusd-committees -> Client error '404 Not Found' for url 'https://fremontunified.org/about/board/surfboarde-overview/fusd-committees'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+2026-08-03 11:26:51,972 | INFO | Crawling: https://fremontunified.org/students-community/connections/fusdweb@fusdk12.net
+2026-08-03 11:26:53,403 | ERROR | Failed request: https://fremontunified.org/students-community/connections/fusdweb@fusdk12.net -> Client error '404 Not Found' for url 'https://fremontunified.org/students-community/connections/fusdweb@fusdk12.net'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+2026-08-03 11:26:53,403 | INFO | Crawling: https://fremontunified.org/about/instructional-services/student-support-services/student-support-services-staff-contacts
+2026-08-03 11:26:55,395 | INFO | Crawling: https://fremontunified.org/about/instructional-services/student-support-services/families-in-need/homeless-and-foster-youth-support-mckinney-vento-act
+2026-08-03 11:26:56,978 | INFO | Crawling: https://fremontunified.org/about/sped-student-support/student-support-services/families-in-need/wstallworth@fusdk12.net
+2026-08-03 11:26:58,427 | ERROR | Failed request: https://fremontunified.org/about/sped-student-support/student-support-services/families-in-need/wstallworth@fusdk12.net -> Client error '404 Not Found' for url 'https://fremontunified.org/about/sped-student-support/student-support-services/families-in-need/wstallworth@fusdk12.net'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+2026-08-03 11:26:58,427 | INFO | Crawling: https://fremontunified.org/about/instructional-services/student-support-services/enrollment-registration/immunization-requirements
+2026-08-03 11:27:00,017 | INFO | Crawling: https://fremontunified.org/washington/news/avid-day
+2026-08-03 11:27:01,732 | INFO | Crawling: https://fremontunified.org/washington/news/sat-psat-registration
+2026-08-03 11:27:03,250 | INFO | Crawling: https://fremontunified.org/washington/schedule-news/news/paged-3/6
+2026-08-03 11:27:05,559 | INFO | Crawling: https://fremontunified.org/washington/news/8-15-25-1030-am-intermittent-phone-service-at-multiple-sites
+2026-08-03 11:27:07,008 | INFO | Crawling: https://fremontunified.org/washington/news/fall-athletic-information
+2026-08-03 11:27:08,253 | INFO | Crawling: https://fremontunified.org/washington/news/2025-2026-maze-days
+2026-08-03 11:27:09,666 | INFO | Crawling: https://fremontunified.org/washington/news/25-26-maze-day-schedule
+2026-08-03 11:27:11,620 | INFO | Crawling: https://fremontunified.org/washington/schedule-news/news/paged-3/7
+2026-08-03 11:27:13,801 | INFO | Crawling: https://fremontunified.org/washington/category/uncategorized
+2026-08-03 11:27:15,133 | INFO | Crawling: https://fremontunified.org/?p=190519
+2026-08-03 11:27:16,546 | ERROR | Failed request: https://fremontunified.org/?p=190519 -> Client error '404 Not Found' for url 'https://fremontunified.org/?p=190519'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+2026-08-03 11:27:16,546 | INFO | Crawling: https://fremontunified.org/washington/news/washington-high-school-maze-day-2023
+2026-08-03 11:27:18,454 | INFO | Crawling: https://fremontunified.org/washington/news/whs-maze-days-2023-24
+2026-08-03 11:27:19,749 | INFO | Crawling: https://fremontunified.org/washington/news/2023-graduation-ceremony
+2026-08-03 11:27:21,150 | INFO | Crawling: https://fremontunified.org/washington/uncategorized/students-in-grades-9-11-2023-24-surfboarde-applications-close-april-3
+2026-08-03 11:27:22,494 | INFO | Crawling: https://fremontunified.org/washington/schedule-news/news/paged-3/15
+2026-08-03 11:27:24,954 | INFO | Crawling: https://fremontunified.org/washington/news/parent-teacher-conferences-october-25th-26th
+2026-08-03 11:27:26,829 | INFO | Crawling: https://fremontunified.org/about/instructional-services/secondary-education/college-info-night
+2026-08-03 11:27:28,523 | ERROR | Failed request: https://fremontunified.org/about/instructional-services/secondary-education/college-info-night -> Client error '404 Not Found' for url 'https://fremontunified.org/about/instructional-services/secondary-education/college-info-night'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+2026-08-03 11:27:28,524 | INFO | Crawling: https://fremontunified.org/washington/news/no-school-tomorrow-friday-october-13-2023
+2026-08-03 11:27:30,195 | INFO | Crawling: https://fremontunified.org/washington/news/homecoming-dance-information
+2026-08-03 11:27:32,061 | INFO | Crawling: https://fremontunified.org/washington/news/back-to-school-night-9-7-23
+2026-08-03 11:27:34,214 | INFO | Crawling: https://fremontunified.org/washington/schedule-news/news/paged-3/14
+2026-08-03 11:27:36,302 | INFO | Crawling: https://fremontunified.org/?p=65343
+2026-08-03 11:27:38,009 | INFO | Crawling: https://fremontunified.org/washington/events-archive/fentanyl-presentation-mar-20-2025-at-7pm
+2026-08-03 11:27:39,454 | INFO | Crawling: https://fremontunified.org/washington/schedule-news/events/past-events/paged-3/4
+2026-08-03 11:27:41,816 | INFO | Crawling: https://fremontunified.org/about/welcome/paged-4/4
+2026-08-03 11:27:44,395 | INFO | Crawling: https://fremontunified.org/about/board/paged-4/4
+2026-08-03 11:27:46,600 | INFO | Crawling: https://fremontunified.org/about/board/paged-4/5
+2026-08-03 11:27:49,135 | INFO | Crawling: https://fremontunified.org/about/board/paged-4/19
+2026-08-03 11:27:51,141 | INFO | Crawling: https://fremontunified.org/about/board/paged-4/18
+2026-08-03 11:27:53,325 | INFO | Crawling: https://fremontunified.org/about/instructional-services/assessment-accountability/klasjdfkl342
+2026-08-03 11:27:55,578 | INFO | Crawling: https://fremontunified.org/about/business-services/accounting-services/accounting-statements/all-budget-files-and-previous-years
+2026-08-03 11:27:57,226 | INFO | Crawling: https://fremontunified.org/about/operations/facilities-construction/bond-programs/fusds-bonds
+2026-08-03 11:27:59,030 | INFO | Crawling: https://fremontunified.org/about/operations/facilities-construction/new/working-with-fusd
+2026-08-03 11:28:00,927 | INFO | Crawling: https://fremontunified.org/about/departments/office-of-the-superintendent-overview/public-information-dept/channels-content
+2026-08-03 11:28:02,386 | INFO | Crawling: https://fremontunified.org/about/human-resources/risk-management/on-line-training-for- contractors-and-volunteers
+2026-08-03 11:28:04,353 | INFO | Crawling: https://fremontunified.org/about/human-resources/risk-management/insurance- information-student-accident
+2026-08-03 11:28:06,411 | INFO | Crawling: https://fremontunified.org/about/human-resources/risk-management/how-to-file- a-claim-and-form-liability
+2026-08-03 11:28:08,009 | INFO | Crawling: https://fremontunified.org/about/instructional-services/special-education/frequently-asked-questions-faqs
+2026-08-03 11:28:09,626 | INFO | Crawling: https://fremontunified.org/about/instructional-services/spedrecordsrequest@fusdk12.net
+2026-08-03 11:28:11,228 | ERROR | Failed request: https://fremontunified.org/about/instructional-services/spedrecordsrequest@fusdk12.net -> Client error '404 Not Found' for url 'https://fremontunified.org/about/instructional-services/spedrecordsrequest@fusdk12.net'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+2026-08-03 11:28:11,228 | INFO | Crawling: https://fremontunified.org/about/instructional-services/special-education/special-education-staff-contacts
+2026-08-03 11:28:12,694 | INFO | Crawling: https://fremontunified.org/about/business-services/technology/technology-staff-contacts
+2026-08-03 11:28:14,792 | INFO | Crawling: https://fremontunified.org/about/business-services/transportation/transportation-staff-contacts
+2026-08-03 11:28:16,788 | INFO | Crawling: https://fremontunified.org/about/business-services/transportation/elimination-of-home-to-school-transportation-services
+2026-08-03 11:28:19,428 | INFO | Crawling: https://fremontunified.org/about/sped-student-support/spedrecordsrequest@fusdk12.net
+2026-08-03 11:28:20,957 | ERROR | Failed request: https://fremontunified.org/about/sped-student-support/spedrecordsrequest@fusdk12.net -> Client error '404 Not Found' for url 'https://fremontunified.org/about/sped-student-support/spedrecordsrequest@fusdk12.net'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+2026-08-03 11:28:20,957 | INFO | Crawling: https://fremontunified.org/about/instructional-services/student-support-services/enrollment-registration/intra-district-transfers
+2026-08-03 11:28:22,855 | INFO | Crawling: https://fremontunified.org/about/instructional-services/student-support-services/community-liaisons/community-resource-links
+2026-08-03 11:28:24,352 | INFO | Crawling: https://fremontunified.org/about/instructional-services/student-support-services/community-liaisons/community-events
+2026-08-03 11:28:26,462 | INFO | Crawling: https://fremontunified.org/about/instructional-services/student-support-services/community-liaisons/community-flyers_slides
+2026-08-03 11:28:28,134 | INFO | Crawling: https://fremontunified.org/about/departments/instructional-services-overview/student-support-services-dept/families-in-need/wstallworth@fusdk12.net
+2026-08-03 11:28:29,553 | ERROR | Failed request: https://fremontunified.org/about/departments/instructional-services-overview/student-support-services-dept/families-in-need/wstallworth@fusdk12.net -> Client error '404 Not Found' for url 'https://fremontunified.org/about/departments/instructional-services-overview/student-support-services-dept/families-in-need/wstallworth@fusdk12.net'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+2026-08-03 11:28:29,553 | INFO | Crawling: https://fremontunified.org/students-community/support/infinite-campus-faqs
+2026-08-03 11:28:30,887 | ERROR | Failed request: https://fremontunified.org/students-community/support/infinite-campus-faqs -> Client error '404 Not Found' for url 'https://fremontunified.org/students-community/support/infinite-campus-faqs'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+2026-08-03 11:28:30,888 | INFO | Crawling: https://fremontunified.org/about/instructional-services/student-support-services/enrollment-registration/supplemental-documents
+2026-08-03 11:28:32,281 | INFO | Crawling: https://fremontunified.org/about/instructional-services/student-support-services/change-of-residency
+2026-08-03 11:28:34,289 | INFO | Crawling: https://fremontunified.org/about/instructional-services/student-support-services/enrollment-registration/inter-district-transfers
+2026-08-03 11:28:36,116 | INFO | Crawling: https://fremontunified.org/about/departments/instructional-services-overview/student-support-services-dept/enrollment-registration
+2026-08-03 11:28:37,762 | INFO | Crawling: https://fremontunified.org/?page_id=192345
+2026-08-03 11:28:39,280 | ERROR | Failed request: https://fremontunified.org/?page_id=192345 -> Client error '404 Not Found' for url 'https://fremontunified.org/?page_id=192345'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+2026-08-03 11:28:39,280 | INFO | Crawling: https://fremontunified.org/about/instructional-services/assessment-accountability/state-assessments/caaspp-ssr
+2026-08-03 11:28:40,887 | INFO | Crawling: https://fremontunified.org/?p=197451
+2026-08-03 11:28:42,732 | INFO | Crawling: https://fremontunified.org/about/superintendent/notice-of-public-hearings/paged-4/2
+2026-08-03 11:28:44,993 | INFO | Crawling: https://fremontunified.org/about/superintendent/notice-of-public-hearings/paged-4/3
+2026-08-03 11:28:47,944 | INFO | Crawling: https://fremontunified.org/about/superintendent/notice-of-public-hearings/paged-4/12
+2026-08-03 11:28:50,156 | INFO | Crawling: https://fremontunified.org/about/departments/instructional-services-overview
+2026-08-03 11:28:51,546 | ERROR | Failed request: https://fremontunified.org/about/departments/instructional-services-overview -> Client error '404 Not Found' for url 'https://fremontunified.org/about/departments/instructional-services-overview'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+2026-08-03 11:28:51,547 | INFO | Crawling: https://fremontunified.org/about/departments/business-services-overview
+2026-08-03 11:28:52,856 | ERROR | Failed request: https://fremontunified.org/about/departments/business-services-overview -> Client error '404 Not Found' for url 'https://fremontunified.org/about/departments/business-services-overview'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+2026-08-03 11:28:52,856 | INFO | Crawling: https://fremontunified.org/about/departments/human-resources-overview
+2026-08-03 11:28:54,251 | ERROR | Failed request: https://fremontunified.org/about/departments/human-resources-overview -> Client error '404 Not Found' for url 'https://fremontunified.org/about/departments/human-resources-overview'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+2026-08-03 11:28:54,252 | INFO | Crawling: https://fremontunified.org/about/instructional-services/student-support-services/health-services-overview/nurse-contacts-by-site
+2026-08-03 11:28:56,162 | INFO | Crawling: https://fremontunified.org/about/instructional-services/student-support-services/section-504-plan
+2026-08-03 11:28:57,658 | INFO | Crawling: https://fremontunified.org/about/business-services/facilities-construction/measure-e-bond-overview
+2026-08-03 11:28:59,046 | ERROR | Failed request: https://fremontunified.org/about/business-services/facilities-construction/measure-e-bond-overview -> Client error '404 Not Found' for url 'https://fremontunified.org/about/business-services/facilities-construction/measure-e-bond-overview'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+2026-08-03 11:28:59,047 | INFO | Crawling: https://fremontunified.org/about/operations/facilities-construction/new/fusds-bonds/measure-m
+2026-08-03 11:29:00,732 | INFO | Crawling: https://fremontunified.org/about/operations/facilities-construction/new/fusds-bonds/measure-e
+2026-08-03 11:29:02,274 | INFO | Crawling: https://fremontunified.org/about/operations/facilities-construction/summer-2025-construction-before-after
+2026-08-03 11:29:03,864 | INFO | Crawling: https://fremontunified.org/board
+2026-08-03 11:29:06,179 | INFO | Crawling: https://fremontunified.org/washington/category/news/paged-3/4
+2026-08-03 11:29:08,343 | INFO | Crawling: https://fremontunified.org/washington/category/news/paged-3/5
+2026-08-03 11:29:10,274 | INFO | Crawling: https://fremontunified.org/washington/category/news/paged-3/12
+2026-08-03 11:29:12,111 | INFO | Crawling: https://fremontunified.org/washington/category/news/paged-3/11
+2026-08-03 11:29:14,152 | INFO | Crawling: https://fremontunified.org/washington/news/whs-irvington-and-msjhs-success-deca-international-conference-2025
+2026-08-03 11:29:15,748 | INFO | Crawling: https://fremontunified.org/washington/schedule-news/news/paged-3/8
+2026-08-03 11:29:17,812 | INFO | Crawling: https://fremontunified.org/washington/schedule-news/news/paged-3/9
+2026-08-03 11:29:19,475 | INFO | Crawling: https://fremontunified.org/washington/news/no-school-thanksgiving-break
+2026-08-03 11:29:21,219 | INFO | Crawling: https://fremontunified.org/washington/news/11-15-23-shelter-in-place-at-washington-high-school
+2026-08-03 11:29:23,032 | INFO | Crawling: https://fremontunified.org/?p=193316
+2026-08-03 11:29:24,544 | ERROR | Failed request: https://fremontunified.org/?p=193316 -> Client error '404 Not Found' for url 'https://fremontunified.org/?p=193316'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+2026-08-03 11:29:24,545 | INFO | Crawling: https://fremontunified.org/washington/news/no-school-friday-november-10-2023
+2026-08-03 11:29:26,115 | INFO | Crawling: https://fremontunified.org/washington/news/register-now-addressing-the-impact-of-opioids-and-other-drugs-on-youth-our-community
+2026-08-03 11:29:27,770 | INFO | Crawling: https://fremontunified.org/washington/news/superintendents-newsletter-october-27-2023
+2026-08-03 11:29:29,731 | INFO | Crawling: https://fremontunified.org/washington/schedule-news/news/paged-3/13
+2026-08-03 11:29:31,780 | INFO | Crawling: https://fremontunified.org/washington/news/no-school-monday-january-15-2024
+2026-08-03 11:29:33,142 | INFO | Crawling: https://fremontunified.org/washington/news/crab-feed-fundraiser-tickets-on-sale-now
+2026-08-03 11:29:34,715 | INFO | Crawling: https://fremontunified.org/washington/news/finals-schedule-for-12-20-12-22
+2026-08-03 11:29:36,218 | INFO | Crawling: https://fremontunified.org/washington/news/superintendents-newsletter-december-1-2023
+2026-08-03 11:29:37,496 | INFO | Crawling: https://fremontunified.org/washington/news/superintendents-newsletter-november-17-2023
+2026-08-03 11:29:38,815 | INFO | Crawling: https://fremontunified.org/?p=193340
+2026-08-03 11:29:40,160 | ERROR | Failed request: https://fremontunified.org/?p=193340 -> Client error '404 Not Found' for url 'https://fremontunified.org/?p=193340'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+2026-08-03 11:29:40,160 | INFO | Crawling: https://fremontunified.org/washington/schedule-news/news/paged-3/12
+2026-08-03 11:29:41,789 | INFO | Crawling: https://fremontunified.org/washington/category/events-archive
+2026-08-03 11:29:43,434 | INFO | Crawling: https://fremontunified.org/about/board/paged-4/6
+2026-08-03 11:29:46,025 | INFO | Crawling: https://fremontunified.org/about/board/paged-4/7
+2026-08-03 11:29:48,512 | INFO | Crawling: https://fremontunified.org/about/board/paged-4/17
+2026-08-03 11:29:50,852 | INFO | Crawling: https://fremontunified.org/about/board/paged-4/16
+2026-08-03 11:29:53,040 | INFO | Crawling: https://fremontunified.org/about/superintendent/public-information/previous-superintendent
+2026-08-03 11:29:54,689 | ERROR | Failed request: https://fremontunified.org/about/superintendent/public-information/previous-superintendent -> Client error '404 Not Found' for url 'https://fremontunified.org/about/superintendent/public-information/previous-superintendent'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+2026-08-03 11:29:54,689 | INFO | Crawling: https://fremontunified.org/students-community/support/infinite-campus-faqs
+2026-08-03 11:29:56,185 | ERROR | Failed request: https://fremontunified.org/students-community/support/infinite-campus-faqs -> Client error '404 Not Found' for url 'https://fremontunified.org/students-community/support/infinite-campus-faqs'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+2026-08-03 11:29:56,186 | INFO | Crawling: https://fremontunified.org/about/superintendent/notice-of-public-hearings/paged-4/4
+2026-08-03 11:29:58,442 | INFO | Crawling: https://fremontunified.org/about/superintendent/notice-of-public-hearings/paged-4/5
+2026-08-03 11:30:00,633 | INFO | Crawling: https://fremontunified.org/about/superintendent/notice-of-public-hearings/paged-4/11
+2026-08-03 11:30:02,952 | INFO | Crawling: https://fremontunified.org/about/superintendent/notice-of-public-hearings/paged-4/10
+2026-08-03 11:30:05,155 | INFO | Crawling: https://fremontunified.org/washington/category/news/paged-3/6
+2026-08-03 11:30:07,288 | INFO | Crawling: https://fremontunified.org/washington/category/news/paged-3/7
+2026-08-03 11:30:09,588 | INFO | Crawling: https://fremontunified.org/?p=190519
+2026-08-03 11:30:10,948 | ERROR | Failed request: https://fremontunified.org/?p=190519 -> Client error '404 Not Found' for url 'https://fremontunified.org/?p=190519'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+2026-08-03 11:30:10,949 | INFO | Crawling: https://fremontunified.org/washington/category/news/paged-3/10
+2026-08-03 11:30:13,198 | INFO | Crawling: https://fremontunified.org/about/instructional-services/secondary-education/college-info-night
+2026-08-03 11:30:14,619 | ERROR | Failed request: https://fremontunified.org/about/instructional-services/secondary-education/college-info-night -> Client error '404 Not Found' for url 'https://fremontunified.org/about/instructional-services/secondary-education/college-info-night'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+2026-08-03 11:30:14,619 | INFO | Crawling: https://fremontunified.org/washington/category/news/paged-3/9
+2026-08-03 11:30:16,293 | INFO | Crawling: https://fremontunified.org/washington/news/freshman-orientation-slideshow
+2026-08-03 11:30:17,936 | INFO | Crawling: https://fremontunified.org/washington/news/whs-huskies-athletics-boosters-crab-feed
+2026-08-03 11:30:19,719 | INFO | Crawling: https://fremontunified.org/washington/news/winter-break-december-23-january-3
+2026-08-03 11:30:20,988 | INFO | Crawling: https://fremontunified.org/washington/news/finals-week-schedule
+2026-08-03 11:30:22,459 | INFO | Crawling: https://fremontunified.org/washington/news/important-psat-information
+2026-08-03 11:30:23,846 | INFO | Crawling: https://fremontunified.org/washington/news/parent-teacher-conferences
+2026-08-03 11:30:25,564 | INFO | Crawling: https://fremontunified.org/washington/schedule-news/news/paged-3/10
+2026-08-03 11:30:27,383 | INFO | Crawling: https://fremontunified.org/washington/news/yearbooks-are-on-sale-now
+2026-08-03 11:30:29,293 | INFO | Crawling: https://fremontunified.org/washington/news/make-up-picture-day
+2026-08-03 11:30:30,800 | INFO | Crawling: https://fremontunified.org/washington/news/parent-volunteers-needed-for-sat-testing
+2026-08-03 11:30:32,765 | INFO | Crawling: https://fremontunified.org/washington/news/sat-update
+2026-08-03 11:30:34,132 | INFO | Crawling: https://fremontunified.org/washington/schedule-news/news/paged-3/11
+2026-08-03 11:30:36,735 | INFO | Crawling: https://fremontunified.org/?p=194044
+2026-08-03 11:30:38,148 | ERROR | Failed request: https://fremontunified.org/?p=194044 -> Client error '404 Not Found' for url 'https://fremontunified.org/?p=194044'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+2026-08-03 11:30:38,148 | INFO | Crawling: https://fremontunified.org/washington/news/2024-2025-school-year-class-registration
+2026-08-03 11:30:39,653 | INFO | Crawling: https://fremontunified.org/washington/news/superintendents-newsletter-january-19-2024
+2026-08-03 11:30:41,505 | INFO | Crawling: https://fremontunified.org/washington/wp-content/uploads/sites/8/2024/01/Crab-Feed-Flier.pdf
+2026-08-03 11:30:42,608 | INFO | Crawling: https://fremontunified.org/?p=195660
+2026-08-03 11:30:44,067 | ERROR | Failed request: https://fremontunified.org/?p=195660 -> Client error '404 Not Found' for url 'https://fremontunified.org/?p=195660'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+2026-08-03 11:30:44,067 | INFO | Crawling: https://fremontunified.org/washington/category/events-archive/paged-3/2
+2026-08-03 11:30:46,371 | INFO | Crawling: https://fremontunified.org/washington/category/events-archive/paged-3/3
+2026-08-03 11:30:48,436 | INFO | Crawling: https://fremontunified.org/washington/category/events-archive/paged-3/5
+2026-08-03 11:30:50,269 | INFO | Crawling: https://fremontunified.org/about/board/paged-4/8
+2026-08-03 11:30:52,316 | INFO | Crawling: https://fremontunified.org/about/board/paged-4/9
+2026-08-03 11:30:55,097 | INFO | Crawling: https://fremontunified.org/about/board/paged-4/15
+2026-08-03 11:30:57,233 | INFO | Crawling: https://fremontunified.org/about/board/paged-4/14
+2026-08-03 11:30:59,567 | INFO | Crawling: https://fremontunified.org/students-community/support/infinite-campus-faqs
+2026-08-03 11:31:01,107 | ERROR | Failed request: https://fremontunified.org/students-community/support/infinite-campus-faqs -> Client error '404 Not Found' for url 'https://fremontunified.org/students-community/support/infinite-campus-faqs'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+2026-08-03 11:31:01,107 | INFO | Crawling: https://fremontunified.org/about/superintendent/notice-of-public-hearings/paged-4/6
+2026-08-03 11:31:03,432 | INFO | Crawling: https://fremontunified.org/about/superintendent/notice-of-public-hearings/paged-4/7
+2026-08-03 11:31:05,859 | INFO | Crawling: https://fremontunified.org/about/superintendent/notice-of-public-hearings/paged-4/9
+2026-08-03 11:31:08,583 | INFO | Crawling: https://fremontunified.org/about/superintendent/notice-of-public-hearings/paged-4/8
+2026-08-03 11:31:10,607 | INFO | Crawling: https://fremontunified.org/washington/category/news/paged-3/8
+2026-08-03 11:31:12,194 | INFO | Crawling: https://fremontunified.org/washington/news/back-to-school-night-august-29th-600pm-800pm
+2026-08-03 11:31:13,585 | INFO | Crawling: https://fremontunified.org/?p=193340
+2026-08-03 11:31:14,931 | ERROR | Failed request: https://fremontunified.org/?p=193340 -> Client error '404 Not Found' for url 'https://fremontunified.org/?p=193340'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+2026-08-03 11:31:14,931 | INFO | Crawling: https://fremontunified.org/washington/news/order-your-childs-school-pictures-now
+2026-08-03 11:31:16,904 | INFO | Crawling: https://fremontunified.org/washington/news/mandatory-classlink-password-reset
+2026-08-03 11:31:18,493 | INFO | Crawling: https://fremontunified.org/washington/news/heaven-a-modern-melodrama
+2026-08-03 11:31:20,377 | INFO | Crawling: https://fremontunified.org/washington/news/191566
+2026-08-03 11:31:21,891 | INFO | Crawling: https://fremontunified.org/washington/news/whs-maze-days-2024-25
+2026-08-03 11:31:23,726 | INFO | Crawling: https://fremontunified.org/washington/category/events-archive/paged-3/4
+2026-08-03 11:31:25,739 | INFO | Crawling: https://fremontunified.org/about/instructional-services/secondary-education/college-info-night
+2026-08-03 11:31:27,262 | ERROR | Failed request: https://fremontunified.org/about/instructional-services/secondary-education/college-info-night -> Client error '404 Not Found' for url 'https://fremontunified.org/about/instructional-services/secondary-education/college-info-night'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+2026-08-03 11:31:27,263 | INFO | Crawling: https://fremontunified.org/about/board/paged-4/10
+2026-08-03 11:31:29,749 | INFO | Crawling: https://fremontunified.org/about/board/paged-4/11
+2026-08-03 11:31:31,991 | INFO | Crawling: https://fremontunified.org/about/board/paged-4/13
+2026-08-03 11:31:35,008 | INFO | Crawling: https://fremontunified.org/about/board/paged-4/12
+2026-08-03 11:31:37,664 | INFO | Crawling: https://fremontunified.org/students-community/support/infinite-campus-faqs
+2026-08-03 11:31:39,071 | ERROR | Failed request: https://fremontunified.org/students-community/support/infinite-campus-faqs -> Client error '404 Not Found' for url 'https://fremontunified.org/students-community/support/infinite-campus-faqs'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+2026-08-03 11:31:39,071 | INFO | Crawling: https://fremontunified.org/washington/wp-content/uploads/sites/8/2024/06/Senior-Portrait-Appointments-2025.pdf
+2026-08-03 11:31:40,036 | INFO | Skipping already stored page
+2026-08-03 11:31:40,039 | INFO | Skipping already stored page
+2026-08-03 11:31:40,040 | INFO | Skipping already stored page
+2026-08-03 11:31:40,042 | INFO | Skipping already stored page
+2026-08-03 11:31:40,043 | INFO | Skipping already stored page
+2026-08-03 11:31:40,043 | INFO | Skipping already stored page
+2026-08-03 11:31:40,044 | INFO | Skipping already stored page
+2026-08-03 11:31:40,045 | INFO | Skipping already stored page
+2026-08-03 11:31:40,046 | INFO | Skipping already stored page
+2026-08-03 11:31:40,047 | INFO | Skipping already stored page
+2026-08-03 11:31:40,048 | INFO | Skipping already stored page
+2026-08-03 11:31:40,048 | INFO | Skipping already stored page
+2026-08-03 11:31:40,049 | INFO | Skipping already stored page
+2026-08-03 11:31:40,049 | INFO | Parsing page: https://fremontunified.org/about/welcome/award-winning-schools-directory
+2026-08-03 11:31:41,163 | INFO | Cleaning text
+2026-08-03 11:31:41,164 | INFO | Cleaning complete
+2026-08-03 11:31:41,167 | INFO | Saved html: https://fremontunified.org/about/welcome/award-winning-schools-directory
+2026-08-03 11:31:41,168 | INFO | Skipping already stored page
+2026-08-03 11:31:41,168 | INFO | Skipping already stored page
+2026-08-03 11:31:41,169 | INFO | Skipping already stored page
+2026-08-03 11:31:41,169 | INFO | Skipping already stored page
+2026-08-03 11:31:41,170 | INFO | Skipping already stored page
+2026-08-03 11:31:41,170 | INFO | Skipping already stored page
+2026-08-03 11:31:41,170 | INFO | Skipping already stored page
+2026-08-03 11:31:41,171 | INFO | Skipping already stored page
+2026-08-03 11:31:41,171 | INFO | Skipping already stored page
+2026-08-03 11:31:41,171 | INFO | Skipping already stored page
+2026-08-03 11:31:41,171 | INFO | Skipping already stored page
+2026-08-03 11:31:41,172 | INFO | Skipping already stored page
+2026-08-03 11:31:41,172 | INFO | Skipping already stored page
+2026-08-03 11:31:41,172 | INFO | Skipping already stored page
+2026-08-03 11:31:41,172 | INFO | Skipping already stored page
+2026-08-03 11:31:41,173 | INFO | Skipping already stored page
+2026-08-03 11:31:41,173 | INFO | Skipping already stored page
+2026-08-03 11:31:41,173 | INFO | Skipping already stored page
+2026-08-03 11:31:41,173 | INFO | Skipping already stored page
+2026-08-03 11:31:41,174 | INFO | Skipping already stored page
+2026-08-03 11:31:41,174 | INFO | Skipping already stored page
+2026-08-03 11:31:41,174 | INFO | Skipping already stored page
+2026-08-03 11:31:41,174 | INFO | Skipping already stored page
+2026-08-03 11:31:41,175 | INFO | Skipping already stored page
+2026-08-03 11:31:41,175 | INFO | Skipping already stored page
+2026-08-03 11:31:41,175 | INFO | Skipping already stored page
+2026-08-03 11:31:41,175 | INFO | Skipping already stored page
+2026-08-03 11:31:41,176 | INFO | Skipping already stored page
+2026-08-03 11:31:41,176 | INFO | Skipping already stored page
+2026-08-03 11:31:41,177 | INFO | Skipping already stored page
+2026-08-03 11:31:41,177 | INFO | Skipping already stored page
+2026-08-03 11:31:41,178 | INFO | Skipping already stored page
+2026-08-03 11:31:41,178 | INFO | Skipping already stored page
+2026-08-03 11:31:41,178 | INFO | Skipping already stored page
+2026-08-03 11:31:41,178 | INFO | Skipping already stored page
+2026-08-03 11:31:41,178 | INFO | Skipping already stored page
+2026-08-03 11:31:41,179 | INFO | Skipping already stored page
+2026-08-03 11:31:41,179 | INFO | Skipping already stored page
+2026-08-03 11:31:41,179 | INFO | Skipping already stored page
+2026-08-03 11:31:41,179 | INFO | Skipping already stored page
+2026-08-03 11:31:41,179 | INFO | Skipping already stored page
+2026-08-03 11:31:41,180 | INFO | Skipping already stored page
+2026-08-03 11:31:41,180 | INFO | Skipping already stored page
+2026-08-03 11:31:41,180 | INFO | Skipping already stored page
+2026-08-03 11:31:41,181 | INFO | Skipping already stored page
+2026-08-03 11:31:41,181 | INFO | Skipping already stored page
+2026-08-03 11:31:41,181 | INFO | Skipping already stored page
+2026-08-03 11:31:41,181 | INFO | Skipping already stored page
+2026-08-03 11:31:41,181 | INFO | Skipping already stored page
+2026-08-03 11:31:41,182 | INFO | Skipping already stored page
+2026-08-03 11:31:41,182 | INFO | Skipping already stored page
+2026-08-03 11:31:41,182 | INFO | Skipping already stored page
+2026-08-03 11:31:41,182 | INFO | Skipping already stored page
+2026-08-03 11:31:41,183 | INFO | Skipping already stored page
+2026-08-03 11:31:41,183 | INFO | Skipping already stored page
+2026-08-03 11:31:41,183 | INFO | Skipping already stored page
+2026-08-03 11:31:41,183 | INFO | Skipping already stored page
+2026-08-03 11:31:41,183 | INFO | Skipping already stored page
+2026-08-03 11:31:41,184 | INFO | Skipping already stored page
+2026-08-03 11:31:41,184 | INFO | Skipping already stored page
+2026-08-03 11:31:41,184 | INFO | Parsing page: https://fremontunified.org/about/sped-student-support/student-support-services/community-resources/immigration
+2026-08-03 11:31:42,142 | INFO | Cleaning text
+2026-08-03 11:31:42,142 | INFO | Cleaning complete
+2026-08-03 11:31:42,144 | INFO | Saved html: https://fremontunified.org/about/sped-student-support/student-support-services/community-resources/immigration
+2026-08-03 11:31:42,145 | INFO | Skipping already stored page
+2026-08-03 11:31:42,145 | INFO | Skipping already stored page
+2026-08-03 11:31:42,145 | INFO | Skipping already stored page
+2026-08-03 11:31:42,146 | INFO | Skipping already stored page
+2026-08-03 11:31:42,146 | INFO | Skipping already stored page
+2026-08-03 11:31:42,147 | INFO | Skipping already stored page
+2026-08-03 11:31:42,147 | INFO | Skipping already stored page
+2026-08-03 11:31:42,147 | INFO | Skipping already stored page
+2026-08-03 11:31:42,148 | INFO | Skipping already stored page
+2026-08-03 11:31:42,148 | INFO | Skipping already stored page
+2026-08-03 11:31:42,148 | INFO | Skipping already stored page
+2026-08-03 11:31:42,148 | INFO | Parsing page: https://fremontunified.org/washington/category/in-the-news
+2026-08-03 11:31:43,089 | INFO | Cleaning text
+2026-08-03 11:31:43,090 | INFO | Cleaning complete
+2026-08-03 11:31:43,091 | INFO | Saved html: https://fremontunified.org/washington/category/in-the-news
+2026-08-03 11:31:43,092 | INFO | Downloading PDF: https://fremontunified.org/washington/wp-content/uploads/sites/8/2024/06/Senior-Portrait-Appointments-2025.pdf
+2026-08-03 11:31:43,364 | WARNING | PDF contained no text (might be an image)
+2026-08-03 11:31:43,367 | INFO | Skipping already stored page
+2026-08-03 11:31:43,368 | INFO | Skipping already stored page
+2026-08-03 11:31:43,369 | INFO | Skipping already stored page
+2026-08-03 11:31:43,371 | INFO | Skipping already stored page
+2026-08-03 11:31:43,373 | INFO | Skipping already stored page
+2026-08-03 11:31:43,375 | INFO | Skipping already stored page
+2026-08-03 11:31:43,377 | INFO | Skipping already stored page
+2026-08-03 11:31:43,379 | INFO | Skipping already stored page
+2026-08-03 11:31:43,381 | INFO | Skipping already stored page
+2026-08-03 11:31:43,382 | INFO | Skipping already stored page
+2026-08-03 11:31:43,382 | INFO | Skipping already stored page
+2026-08-03 11:31:43,383 | INFO | Skipping already stored page
+2026-08-03 11:31:43,383 | INFO | Skipping already stored page
+2026-08-03 11:31:43,384 | INFO | Skipping already stored page
+2026-08-03 11:31:43,384 | INFO | Skipping already stored page
+2026-08-03 11:31:43,385 | INFO | Skipping already stored page
+2026-08-03 11:31:43,385 | INFO | Skipping already stored page
+2026-08-03 11:31:43,386 | INFO | Skipping already stored page
+2026-08-03 11:31:43,387 | INFO | Skipping already stored page
+2026-08-03 11:31:43,387 | INFO | Skipping already stored page
+2026-08-03 11:31:43,387 | INFO | Skipping already stored page
+2026-08-03 11:31:43,388 | INFO | Skipping already stored page
+2026-08-03 11:31:43,388 | INFO | Skipping already stored page
+2026-08-03 11:31:43,389 | INFO | Skipping already stored page
+2026-08-03 11:31:43,389 | INFO | Skipping already stored page
+2026-08-03 11:31:43,389 | INFO | Skipping already stored page
+2026-08-03 11:31:43,390 | INFO | Skipping already stored page
+2026-08-03 11:31:43,390 | INFO | Skipping already stored page
+2026-08-03 11:31:43,390 | INFO | Skipping already stored page
+2026-08-03 11:31:43,391 | INFO | Skipping already stored page
+2026-08-03 11:31:43,391 | INFO | Skipping already stored page
+2026-08-03 11:31:43,392 | INFO | Skipping already stored page
+2026-08-03 11:31:43,392 | INFO | Skipping already stored page
+2026-08-03 11:31:43,392 | INFO | Skipping already stored page
+2026-08-03 11:31:43,393 | INFO | Skipping already stored page
+2026-08-03 11:31:43,393 | INFO | Skipping already stored page
+2026-08-03 11:31:43,394 | INFO | Skipping already stored page
+2026-08-03 11:31:43,394 | INFO | Skipping already stored page
+2026-08-03 11:31:43,395 | INFO | Skipping already stored page
+2026-08-03 11:31:43,395 | INFO | Skipping already stored page
+2026-08-03 11:31:43,396 | INFO | Skipping already stored page
+2026-08-03 11:31:43,396 | INFO | Skipping already stored page
+2026-08-03 11:31:43,396 | INFO | Parsing page: https://fremontunified.org/washington/news/prom-last-day-to-buy-tickets-is-april-24
+2026-08-03 11:31:44,193 | INFO | Cleaning text
+2026-08-03 11:31:44,193 | INFO | Cleaning complete
+2026-08-03 11:31:44,195 | INFO | Saved html: https://fremontunified.org/washington/news/prom-last-day-to-buy-tickets-is-april-24
+2026-08-03 11:31:44,195 | INFO | Skipping already stored page
+2026-08-03 11:31:44,195 | INFO | Skipping already stored page
+2026-08-03 11:31:44,196 | INFO | Skipping already stored page
+2026-08-03 11:31:44,196 | INFO | Skipping already stored page
+2026-08-03 11:31:44,197 | INFO | Skipping already stored page
+2026-08-03 11:31:44,197 | INFO | Skipping already stored page
+2026-08-03 11:31:44,198 | INFO | Skipping already stored page
+2026-08-03 11:31:44,198 | INFO | Skipping already stored page
+2026-08-03 11:31:44,198 | INFO | Skipping already stored page
+2026-08-03 11:31:44,199 | INFO | Skipping already stored page
+2026-08-03 11:31:44,199 | INFO | Skipping already stored page
+2026-08-03 11:31:44,200 | INFO | Skipping already stored page
+2026-08-03 11:31:44,200 | INFO | Skipping already stored page
+2026-08-03 11:31:44,200 | INFO | Skipping already stored page
+2026-08-03 11:31:44,200 | INFO | Skipping already stored page
+2026-08-03 11:31:44,200 | INFO | Skipping already stored page
+2026-08-03 11:31:44,200 | INFO | Skipping already stored page
+2026-08-03 11:31:44,201 | INFO | Skipping already stored page
+2026-08-03 11:31:44,201 | INFO | Skipping already stored page
+2026-08-03 11:31:44,201 | INFO | Skipping already stored page
+2026-08-03 11:31:44,201 | INFO | Skipping already stored page
+2026-08-03 11:31:44,201 | INFO | Skipping already stored page
+2026-08-03 11:31:44,202 | INFO | Skipping already stored page
+2026-08-03 11:31:44,202 | INFO | Skipping already stored page
+2026-08-03 11:31:44,202 | INFO | Skipping already stored page
+2026-08-03 11:31:44,202 | INFO | Skipping already stored page
+2026-08-03 11:31:44,203 | INFO | Skipping already stored page
+2026-08-03 11:31:44,203 | INFO | Skipping already stored page
+2026-08-03 11:31:44,203 | INFO | Skipping already stored page
+2026-08-03 11:31:44,203 | INFO | Skipping already stored page
+2026-08-03 11:31:44,203 | INFO | Skipping already stored page
+2026-08-03 11:31:44,204 | INFO | Skipping already stored page
+2026-08-03 11:31:44,204 | INFO | Skipping already stored page
+2026-08-03 11:31:44,207 | INFO | Skipping already stored page
+2026-08-03 11:31:44,207 | INFO | Skipping already stored page
+2026-08-03 11:31:44,207 | INFO | Skipping already stored page
+2026-08-03 11:31:44,207 | INFO | Skipping already stored page
+2026-08-03 11:31:44,208 | INFO | Skipping already stored page
+2026-08-03 11:31:44,208 | INFO | Skipping already stored page
+2026-08-03 11:31:44,208 | INFO | Skipping already stored page
+2026-08-03 11:31:44,209 | INFO | Skipping already stored page
+2026-08-03 11:31:44,209 | INFO | Skipping already stored page
+2026-08-03 11:31:44,209 | INFO | Skipping already stored page
+2026-08-03 11:31:44,209 | INFO | Skipping already stored page
+2026-08-03 11:31:44,209 | INFO | Skipping already stored page
+2026-08-03 11:31:44,210 | INFO | Skipping already stored page
+2026-08-03 11:31:44,210 | INFO | Skipping already stored page
+2026-08-03 11:31:44,210 | INFO | Skipping already stored page
+2026-08-03 11:31:44,210 | INFO | Skipping already stored page
+2026-08-03 11:31:44,211 | INFO | Skipping already stored page
+2026-08-03 11:31:44,211 | INFO | Skipping already stored page
+2026-08-03 11:31:44,211 | INFO | Skipping already stored page
+2026-08-03 11:31:44,211 | INFO | Skipping already stored page
+2026-08-03 11:31:44,211 | INFO | Skipping already stored page
+2026-08-03 11:31:44,212 | INFO | Skipping already stored page
+2026-08-03 11:31:44,212 | INFO | Skipping already stored page
+2026-08-03 11:31:44,212 | INFO | Skipping already stored page
+2026-08-03 11:31:44,212 | INFO | Skipping already stored page
+2026-08-03 11:31:44,213 | INFO | Skipping already stored page
+2026-08-03 11:31:44,213 | INFO | Skipping already stored page
+2026-08-03 11:31:44,213 | INFO | Skipping already stored page
+2026-08-03 11:31:44,213 | INFO | Skipping already stored page
+2026-08-03 11:31:44,214 | INFO | Skipping already stored page
+2026-08-03 11:31:44,214 | INFO | Skipping already stored page
+2026-08-03 11:31:44,214 | INFO | Skipping already stored page
+2026-08-03 11:31:44,214 | INFO | Skipping already stored page
+2026-08-03 11:31:44,215 | INFO | Skipping already stored page
+2026-08-03 11:31:44,215 | INFO | Skipping already stored page
+2026-08-03 11:31:44,215 | INFO | Skipping already stored page
+2026-08-03 11:31:44,215 | INFO | Skipping already stored page
+2026-08-03 11:31:44,215 | INFO | Skipping already stored page
+2026-08-03 11:31:44,215 | INFO | Skipping already stored page
+2026-08-03 11:31:44,216 | INFO | Parsing page: https://fremontunified.org/about/superintendent/notice-of-public-hearings/paged-4/11
+2026-08-03 11:31:45,742 | INFO | Cleaning text
+2026-08-03 11:31:45,743 | INFO | Cleaning complete
+2026-08-03 11:31:45,744 | INFO | Saved html: https://fremontunified.org/about/superintendent/notice-of-public-hearings/paged-4/11
+2026-08-03 11:31:45,745 | INFO | Skipping already stored page
+2026-08-03 11:31:45,745 | INFO | Skipping already stored page
+2026-08-03 11:31:45,745 | INFO | Skipping already stored page
+2026-08-03 11:31:45,746 | INFO | Skipping already stored page
+2026-08-03 11:31:45,746 | INFO | Skipping already stored page
+2026-08-03 11:31:45,746 | INFO | Skipping already stored page
+2026-08-03 11:31:45,747 | INFO | Skipping already stored page
+2026-08-03 11:31:45,747 | INFO | Skipping already stored page
+2026-08-03 11:31:45,747 | INFO | Skipping already stored page
+2026-08-03 11:31:45,747 | INFO | Skipping already stored page
+2026-08-03 11:31:45,747 | INFO | Skipping already stored page
+2026-08-03 11:31:45,748 | INFO | Skipping already stored page
+2026-08-03 11:31:45,748 | INFO | Skipping already stored page
+2026-08-03 11:31:45,748 | INFO | Skipping already stored page
+2026-08-03 11:31:45,748 | INFO | Skipping already stored page
+2026-08-03 11:31:45,749 | INFO | Skipping already stored page
+2026-08-03 11:31:45,749 | INFO | Skipping already stored page
+2026-08-03 11:31:45,749 | INFO | Skipping already stored page
+2026-08-03 11:31:45,749 | INFO | Skipping already stored page
+2026-08-03 11:31:45,749 | INFO | Skipping already stored page
+2026-08-03 11:31:45,749 | INFO | Skipping already stored page
+2026-08-03 11:31:45,750 | INFO | Skipping already stored page
+2026-08-03 11:31:45,750 | INFO | Skipping already stored page
+2026-08-03 11:31:45,751 | INFO | Skipping already stored page
+2026-08-03 11:31:45,751 | INFO | Skipping already stored page
+2026-08-03 11:31:45,751 | INFO | Parsing page: https://fremontunified.org/about/superintendent/notice-of-public-hearings/paged-4/12
+2026-08-03 11:31:47,251 | INFO | Cleaning text
+2026-08-03 11:31:47,251 | INFO | Cleaning complete
+2026-08-03 11:31:47,253 | INFO | Saved html: https://fremontunified.org/about/superintendent/notice-of-public-hearings/paged-4/12
+2026-08-03 11:31:47,253 | INFO | Skipping already stored page
+2026-08-03 11:31:47,254 | INFO | Skipping already stored page
+2026-08-03 11:31:47,254 | INFO | Skipping already stored page
+2026-08-03 11:31:47,254 | INFO | Skipping already stored page
+2026-08-03 11:31:47,255 | INFO | Skipping already stored page
+2026-08-03 11:31:47,255 | INFO | Skipping already stored page
+2026-08-03 11:31:47,255 | INFO | Skipping already stored page
+2026-08-03 11:31:47,255 | INFO | Skipping already stored page
+2026-08-03 11:31:47,256 | INFO | Skipping already stored page
+2026-08-03 11:31:47,256 | INFO | Skipping already stored page
+2026-08-03 11:31:47,256 | INFO | Skipping already stored page
+2026-08-03 11:31:47,257 | INFO | Skipping already stored page
+2026-08-03 11:31:47,257 | INFO | Skipping already stored page
+2026-08-03 11:31:47,257 | INFO | Skipping already stored page
+2026-08-03 11:31:47,257 | INFO | Skipping already stored page
+2026-08-03 11:31:47,258 | INFO | Skipping already stored page
+2026-08-03 11:31:47,258 | INFO | Skipping already stored page
+2026-08-03 11:31:47,258 | INFO | Skipping already stored page
+2026-08-03 11:31:47,259 | INFO | Skipping already stored page
+2026-08-03 11:31:47,259 | INFO | Skipping already stored page
+2026-08-03 11:31:47,259 | INFO | Skipping already stored page
+2026-08-03 11:31:47,259 | INFO | Skipping already stored page
+2026-08-03 11:31:47,260 | INFO | Skipping already stored page
+2026-08-03 11:31:47,260 | INFO | Skipping already stored page
+2026-08-03 11:31:47,260 | INFO | Skipping already stored page
+2026-08-03 11:31:47,260 | INFO | Skipping already stored page
+2026-08-03 11:31:47,261 | INFO | Skipping already stored page
+2026-08-03 11:31:47,261 | INFO | Skipping already stored page
+2026-08-03 11:31:47,261 | INFO | Skipping already stored page
+2026-08-03 11:31:47,261 | INFO | Skipping already stored page
+2026-08-03 11:31:47,261 | INFO | Skipping already stored page
+2026-08-03 11:31:47,261 | INFO | Skipping already stored page
+2026-08-03 11:31:47,262 | INFO | Skipping already stored page
+2026-08-03 11:31:47,262 | INFO | Skipping already stored page
+2026-08-03 11:31:47,262 | INFO | Skipping already stored page
+2026-08-03 11:31:47,263 | INFO | Skipping already stored page
+2026-08-03 11:31:47,263 | INFO | Skipping already stored page
+2026-08-03 11:31:47,263 | INFO | Skipping already stored page
+2026-08-03 11:31:47,263 | INFO | Skipping already stored page
+2026-08-03 11:31:47,264 | INFO | Skipping already stored page
+2026-08-03 11:31:47,264 | INFO | Skipping already stored page
+2026-08-03 11:31:47,264 | INFO | Skipping already stored page
+2026-08-03 11:31:47,265 | INFO | Skipping already stored page
+2026-08-03 11:31:47,265 | INFO | Skipping already stored page
+2026-08-03 11:31:47,265 | INFO | Skipping already stored page
+2026-08-03 11:31:47,265 | INFO | Skipping already stored page
+2026-08-03 11:31:47,265 | INFO | Skipping already stored page
+2026-08-03 11:31:47,266 | INFO | Skipping already stored page
+2026-08-03 11:31:47,266 | INFO | Skipping already stored page
+2026-08-03 11:31:47,266 | INFO | Skipping already stored page
+2026-08-03 11:31:47,266 | INFO | Skipping already stored page
+2026-08-03 11:31:47,267 | INFO | Skipping already stored page
+2026-08-03 11:31:47,267 | INFO | Skipping already stored page
+2026-08-03 11:31:47,268 | INFO | Skipping already stored page
+2026-08-03 11:31:47,268 | INFO | Skipping already stored page
+2026-08-03 11:31:47,268 | INFO | Skipping already stored page
+2026-08-03 11:31:47,268 | INFO | Skipping already stored page
+2026-08-03 11:31:47,269 | INFO | Skipping already stored page
+2026-08-03 11:31:47,269 | INFO | Skipping already stored page
+2026-08-03 11:31:47,269 | INFO | Skipping already stored page
+2026-08-03 11:31:47,269 | INFO | Skipping already stored page
+2026-08-03 11:31:47,269 | INFO | Skipping already stored page
+2026-08-03 11:31:47,270 | INFO | Skipping already stored page
+2026-08-03 11:31:47,270 | INFO | Skipping already stored page
+2026-08-03 11:31:47,270 | INFO | Skipping already stored page
+2026-08-03 11:31:47,270 | INFO | Skipping already stored page
+2026-08-03 11:31:47,270 | INFO | Skipping already stored page
+2026-08-03 11:31:47,271 | INFO | Skipping already stored page
+2026-08-03 11:31:47,271 | INFO | Skipping already stored page
+2026-08-03 11:31:47,271 | INFO | Skipping already stored page
+2026-08-03 11:31:47,271 | INFO | Skipping already stored page
+2026-08-03 11:31:47,271 | INFO | Skipping already stored page
+2026-08-03 11:31:47,272 | INFO | Skipping already stored page
+2026-08-03 11:31:47,272 | INFO | Skipping already stored page
+2026-08-03 11:31:47,272 | INFO | Skipping already stored page
+2026-08-03 11:31:47,272 | INFO | Skipping already stored page
+2026-08-03 11:31:47,273 | INFO | Skipping already stored page
+2026-08-03 11:31:47,273 | INFO | Skipping already stored page
+2026-08-03 11:31:47,273 | INFO | Skipping already stored page
+2026-08-03 11:31:47,273 | INFO | Skipping already stored page
+2026-08-03 11:31:47,274 | INFO | Skipping already stored page
+2026-08-03 11:31:47,274 | INFO | Skipping already stored page
+2026-08-03 11:31:47,274 | INFO | Skipping already stored page
+2026-08-03 11:31:47,274 | INFO | Skipping already stored page
+2026-08-03 11:31:47,274 | INFO | Skipping already stored page
+2026-08-03 11:31:47,275 | INFO | Skipping already stored page
+2026-08-03 11:31:47,275 | INFO | Skipping already stored page
+2026-08-03 11:31:47,275 | INFO | Skipping already stored page
+2026-08-03 11:31:47,275 | INFO | Skipping already stored page
+2026-08-03 11:31:47,275 | INFO | Skipping already stored page
+2026-08-03 11:31:47,275 | INFO | Skipping already stored page
+2026-08-03 11:31:47,275 | INFO | Skipping already stored page
+2026-08-03 11:31:47,276 | INFO | Skipping already stored page
+2026-08-03 11:31:47,276 | INFO | Skipping already stored page
+2026-08-03 11:31:47,276 | INFO | Skipping already stored page
+2026-08-03 11:31:47,276 | INFO | Skipping already stored page
+2026-08-03 11:31:47,276 | INFO | Skipping already stored page
+2026-08-03 11:31:47,276 | INFO | Skipping already stored page
+2026-08-03 11:31:47,276 | INFO | Skipping already stored page
+2026-08-03 11:31:47,277 | INFO | Skipping already stored page
+2026-08-03 11:31:47,277 | INFO | Skipping already stored page
+2026-08-03 11:31:47,277 | INFO | Skipping already stored page
+2026-08-03 11:31:47,278 | INFO | Skipping already stored page
+2026-08-03 11:31:47,278 | INFO | Skipping already stored page
+2026-08-03 11:31:47,278 | INFO | Skipping already stored page
+2026-08-03 11:31:47,278 | INFO | Skipping already stored page
+2026-08-03 11:31:47,278 | INFO | Skipping already stored page
+2026-08-03 11:31:47,278 | INFO | Skipping already stored page
+2026-08-03 11:31:47,278 | INFO | Skipping already stored page
+2026-08-03 11:31:47,279 | INFO | Skipping already stored page
+2026-08-03 11:31:47,279 | INFO | Skipping already stored page
+2026-08-03 11:31:47,279 | INFO | Skipping already stored page
+2026-08-03 11:31:47,279 | INFO | Skipping already stored page
+2026-08-03 11:31:47,280 | INFO | Skipping already stored page
+2026-08-03 11:31:47,280 | INFO | Skipping already stored page
+2026-08-03 11:31:47,280 | INFO | Skipping already stored page
+2026-08-03 11:31:47,280 | INFO | Skipping already stored page
+2026-08-03 11:31:47,280 | INFO | Skipping already stored page
+2026-08-03 11:31:47,280 | INFO | Skipping already stored page
+2026-08-03 11:31:47,280 | INFO | Parsing page: https://fremontunified.org/safety/immigrant-families
+2026-08-03 11:31:48,303 | INFO | Cleaning text
+2026-08-03 11:31:48,304 | INFO | Cleaning complete
+2026-08-03 11:31:48,305 | INFO | Saved html: https://fremontunified.org/safety/immigrant-families
+2026-08-03 11:31:48,305 | INFO | Skipping already stored page
+2026-08-03 11:31:48,306 | INFO | Skipping already stored page
+2026-08-03 11:31:48,306 | INFO | Skipping already stored page
+2026-08-03 11:31:48,306 | INFO | Skipping already stored page
+2026-08-03 11:31:48,306 | INFO | Skipping already stored page
+2026-08-03 11:31:48,306 | INFO | Skipping already stored page
+2026-08-03 11:31:48,307 | INFO | Skipping already stored page
+2026-08-03 11:31:48,307 | INFO | Skipping already stored page
+2026-08-03 11:31:48,307 | INFO | Skipping already stored page
+2026-08-03 11:31:48,307 | INFO | Skipping already stored page
+2026-08-03 11:31:48,307 | INFO | Skipping already stored page
+2026-08-03 11:31:48,308 | INFO | Skipping already stored page
+2026-08-03 11:31:48,308 | INFO | Skipping already stored page
+2026-08-03 11:31:48,308 | INFO | Skipping already stored page
+2026-08-03 11:31:48,308 | INFO | Skipping already stored page
+2026-08-03 11:31:48,308 | INFO | Skipping already stored page
+2026-08-03 11:31:48,309 | INFO | Skipping already stored page
+2026-08-03 11:31:48,309 | INFO | Skipping already stored page
+2026-08-03 11:31:48,309 | INFO | Skipping already stored page
+2026-08-03 11:31:48,309 | INFO | Skipping already stored page
+2026-08-03 11:31:48,310 | INFO | Skipping already stored page
+2026-08-03 11:31:48,310 | INFO | Skipping already stored page
+2026-08-03 11:31:48,310 | INFO | Skipping already stored page
+2026-08-03 11:31:48,310 | INFO | Skipping already stored page
+2026-08-03 11:31:48,310 | INFO | Skipping already stored page
+2026-08-03 11:31:48,310 | INFO | Skipping already stored page
+2026-08-03 11:31:48,311 | INFO | Skipping already stored page
+2026-08-03 11:31:48,311 | INFO | Skipping already stored page
+2026-08-03 11:31:48,311 | INFO | Skipping already stored page
+2026-08-03 11:31:48,311 | INFO | Skipping already stored page
+2026-08-03 11:31:48,312 | INFO | Skipping already stored page
+2026-08-03 11:31:48,312 | INFO | Skipping already stored page
+2026-08-03 11:31:48,312 | INFO | Skipping already stored page
+2026-08-03 11:31:48,312 | INFO | Skipping already stored page
+2026-08-03 11:31:48,312 | INFO | Skipping already stored page
+2026-08-03 11:31:48,313 | INFO | Skipping already stored page
+2026-08-03 11:31:48,313 | INFO | Skipping already stored page
+2026-08-03 11:31:48,313 | INFO | Downloading PDF: https://fremontunified.org/washington/wp-content/uploads/sites/8/2023/09/WHS-Map.pdf
+2026-08-03 11:31:48,528 | WARNING | PDF contained no text (might be an image)
+2026-08-03 11:31:48,532 | INFO | Skipping already stored page
+2026-08-03 11:31:48,534 | INFO | Skipping already stored page
+2026-08-03 11:31:48,534 | INFO | Skipping already stored page
+2026-08-03 11:31:48,536 | INFO | Skipping already stored page
+2026-08-03 11:31:48,538 | INFO | Skipping already stored page
+2026-08-03 11:31:48,540 | INFO | Skipping already stored page
+2026-08-03 11:31:48,542 | INFO | Skipping already stored page
+2026-08-03 11:31:48,542 | INFO | Skipping already stored page
+2026-08-03 11:31:48,543 | INFO | Skipping already stored page
+2026-08-03 11:31:48,543 | INFO | Skipping already stored page
+2026-08-03 11:31:48,544 | INFO | Skipping already stored page
+2026-08-03 11:31:48,544 | INFO | Skipping already stored page
+2026-08-03 11:31:48,545 | INFO | Skipping already stored page
+2026-08-03 11:31:48,545 | INFO | Skipping already stored page
+2026-08-03 11:31:48,546 | INFO | Skipping already stored page
+2026-08-03 11:31:48,546 | INFO | Skipping already stored page
+2026-08-03 11:31:48,547 | INFO | Skipping already stored page
+2026-08-03 11:31:48,547 | INFO | Skipping already stored page
+2026-08-03 11:31:48,548 | INFO | Skipping already stored page
+2026-08-03 11:31:48,548 | INFO | Skipping already stored page
+2026-08-03 11:31:48,549 | INFO | Skipping already stored page
+2026-08-03 11:31:48,549 | INFO | Skipping already stored page
+2026-08-03 11:31:48,549 | INFO | Skipping already stored page
+2026-08-03 11:31:48,550 | INFO | Skipping already stored page
+2026-08-03 11:31:48,550 | INFO | Skipping already stored page
+2026-08-03 11:31:48,551 | INFO | Skipping already stored page
+2026-08-03 11:31:48,551 | INFO | Skipping already stored page
+2026-08-03 11:31:48,551 | INFO | Skipping already stored page
+2026-08-03 11:31:48,552 | INFO | Skipping already stored page
+2026-08-03 11:31:48,552 | INFO | Skipping already stored page
+2026-08-03 11:31:48,552 | INFO | Skipping already stored page
+2026-08-03 11:31:48,553 | INFO | Skipping already stored page
+2026-08-03 11:31:48,553 | INFO | Skipping already stored page
+2026-08-03 11:31:48,553 | INFO | Parsing page: https://fremontunified.org/safety/uscis-resources
+2026-08-03 11:31:49,503 | INFO | Cleaning text
+2026-08-03 11:31:49,503 | INFO | Cleaning complete
+2026-08-03 11:31:49,505 | INFO | Saved html: https://fremontunified.org/safety/uscis-resources
+2026-08-03 11:31:49,505 | INFO | Skipping already stored page
+2026-08-03 11:31:49,505 | INFO | Skipping already stored page
+2026-08-03 11:31:49,506 | INFO | Skipping already stored page
+2026-08-03 11:31:49,506 | INFO | Skipping already stored page
+2026-08-03 11:31:49,506 | INFO | Skipping already stored page
+2026-08-03 11:31:49,507 | INFO | Skipping already stored page
+2026-08-03 11:31:49,507 | INFO | Skipping already stored page
+2026-08-03 11:31:49,507 | INFO | Skipping already stored page
+2026-08-03 11:31:49,507 | INFO | Skipping already stored page
+2026-08-03 11:31:49,507 | INFO | Skipping already stored page
+2026-08-03 11:31:49,507 | INFO | Skipping already stored page
+2026-08-03 11:31:49,508 | INFO | Skipping already stored page
+2026-08-03 11:31:49,508 | INFO | Skipping already stored page
+2026-08-03 11:31:49,508 | INFO | Skipping already stored page
+2026-08-03 11:31:49,508 | INFO | Skipping already stored page
+2026-08-03 11:31:49,509 | INFO | Skipping already stored page
+2026-08-03 11:31:49,509 | INFO | Skipping already stored page
+2026-08-03 11:31:49,509 | INFO | Skipping already stored page
+2026-08-03 11:31:49,510 | INFO | Skipping already stored page
+2026-08-03 11:31:49,510 | INFO | Skipping already stored page
+2026-08-03 11:31:49,510 | INFO | Skipping already stored page
+2026-08-03 11:31:49,510 | INFO | Skipping already stored page
+2026-08-03 11:31:49,511 | INFO | Skipping already stored page
+2026-08-03 11:31:49,511 | INFO | Skipping already stored page
+2026-08-03 11:31:49,511 | INFO | Skipping already stored page
+2026-08-03 11:31:49,511 | INFO | Skipping already stored page
+2026-08-03 11:31:49,511 | INFO | Skipping already stored page
+2026-08-03 11:31:49,511 | INFO | Skipping already stored page
+2026-08-03 11:31:49,512 | INFO | Skipping already stored page
+2026-08-03 11:31:49,512 | INFO | Skipping already stored page
+2026-08-03 11:31:49,512 | INFO | Skipping already stored page
+2026-08-03 11:31:49,512 | INFO | Skipping already stored page
+2026-08-03 11:31:49,512 | INFO | Skipping already stored page
+2026-08-03 11:31:49,512 | INFO | Skipping already stored page
+2026-08-03 11:31:49,513 | INFO | Skipping already stored page
+2026-08-03 11:31:49,513 | INFO | Skipping already stored page
+2026-08-03 11:31:49,513 | INFO | Skipping already stored page
+2026-08-03 11:31:49,513 | INFO | Skipping already stored page
+2026-08-03 11:31:49,513 | INFO | Skipping already stored page
+2026-08-03 11:31:49,513 | INFO | Skipping already stored page
+2026-08-03 11:31:49,514 | INFO | Skipping already stored page
+2026-08-03 11:31:49,514 | INFO | Skipping already stored page
+2026-08-03 11:31:49,514 | INFO | Skipping already stored page
+2026-08-03 11:31:49,514 | INFO | Skipping already stored page
+2026-08-03 11:31:49,515 | INFO | Skipping already stored page
+2026-08-03 11:31:49,515 | INFO | Skipping already stored page
+2026-08-03 11:31:49,515 | INFO | Skipping already stored page
+2026-08-03 11:31:49,515 | INFO | Skipping already stored page
+2026-08-03 11:31:49,515 | INFO | Skipping already stored page
+2026-08-03 11:31:49,515 | INFO | Skipping already stored page
+2026-08-03 11:31:49,515 | INFO | Skipping already stored page
+2026-08-03 11:31:49,516 | INFO | Skipping already stored page
+2026-08-03 11:31:49,516 | INFO | Skipping already stored page
+2026-08-03 11:31:49,516 | INFO | Skipping already stored page
+2026-08-03 11:31:49,516 | INFO | Skipping already stored page
+2026-08-03 11:31:49,516 | INFO | Skipping already stored page
+2026-08-03 11:31:49,517 | INFO | Skipping already stored page
+2026-08-03 11:31:49,517 | INFO | Skipping already stored page
+2026-08-03 11:31:49,517 | INFO | Skipping already stored page
+2026-08-03 11:31:49,517 | INFO | Skipping already stored page
+2026-08-03 11:31:49,517 | INFO | Skipping already stored page
+2026-08-03 11:31:49,517 | INFO | Skipping already stored page
+2026-08-03 11:31:49,518 | INFO | Skipping already stored page
+2026-08-03 11:31:49,518 | INFO | Skipping already stored page
+2026-08-03 11:31:49,518 | INFO | Skipping already stored page
+2026-08-03 11:31:49,518 | INFO | Skipping already stored page
+2026-08-03 11:31:49,518 | INFO | Skipping already stored page
+2026-08-03 11:31:49,518 | INFO | Skipping already stored page
+2026-08-03 11:31:49,518 | INFO | Skipping already stored page
+2026-08-03 11:31:49,519 | INFO | Skipping already stored page
+2026-08-03 11:31:49,519 | INFO | Skipping already stored page
+2026-08-03 11:31:49,519 | INFO | Skipping already stored page
+2026-08-03 11:31:49,519 | INFO | Skipping already stored page
+2026-08-03 11:31:49,519 | INFO | Skipping already stored page
+2026-08-03 11:31:49,519 | INFO | Parsing page: https://fremontunified.org/washington/news/whs-maze-day-packet-2026-2027
+2026-08-03 11:31:50,376 | INFO | Cleaning text
+2026-08-03 11:31:50,376 | INFO | Cleaning complete
+2026-08-03 11:31:50,378 | INFO | Saved html: https://fremontunified.org/washington/news/whs-maze-day-packet-2026-2027
+2026-08-03 11:31:50,378 | INFO | Skipping already stored page
+2026-08-03 11:31:50,378 | INFO | Skipping already stored page
+2026-08-03 11:31:50,379 | INFO | Skipping already stored page
+2026-08-03 11:31:50,379 | INFO | Skipping already stored page
+2026-08-03 11:31:50,379 | INFO | Skipping already stored page
+2026-08-03 11:31:50,379 | INFO | Skipping already stored page
+2026-08-03 11:31:50,379 | INFO | Skipping already stored page
+2026-08-03 11:31:50,380 | INFO | Skipping already stored page
+2026-08-03 11:31:50,380 | INFO | Skipping already stored page
+2026-08-03 11:31:50,380 | INFO | Parsing page: https://fremontunified.org/washington/news/mission-san-jose-wins-national-science-bowl-championship
+2026-08-03 11:31:51,254 | INFO | Cleaning text
+2026-08-03 11:31:51,255 | INFO | Cleaning complete
+2026-08-03 11:31:51,256 | INFO | Saved html: https://fremontunified.org/washington/news/mission-san-jose-wins-national-science-bowl-championship
+2026-08-03 11:31:51,257 | INFO | Skipping already stored page
+2026-08-03 11:31:51,257 | INFO | Skipping already stored page
+2026-08-03 11:31:51,258 | INFO | Skipping already stored page
+2026-08-03 11:31:51,258 | INFO | Skipping already stored page
+2026-08-03 11:31:51,258 | INFO | Skipping already stored page
+2026-08-03 11:31:51,258 | INFO | Skipping already stored page
+2026-08-03 11:31:51,259 | INFO | Skipping already stored page
+2026-08-03 11:31:51,259 | INFO | Skipping already stored page
+2026-08-03 11:31:51,259 | INFO | Skipping already stored page
+2026-08-03 11:31:51,259 | INFO | Skipping already stored page
+2026-08-03 11:31:51,259 | INFO | Skipping already stored page
+2026-08-03 11:31:51,259 | INFO | Skipping already stored page
+2026-08-03 11:31:51,260 | INFO | Skipping already stored page
+2026-08-03 11:31:51,260 | INFO | Skipping already stored page
+2026-08-03 11:31:51,260 | INFO | Skipping already stored page
+2026-08-03 11:31:51,260 | INFO | Skipping already stored page
+2026-08-03 11:31:51,261 | INFO | Skipping already stored page
+2026-08-03 11:31:51,261 | INFO | Skipping already stored page
+2026-08-03 11:31:51,261 | INFO | Skipping already stored page
+2026-08-03 11:31:51,261 | INFO | Skipping already stored page
+2026-08-03 11:31:51,261 | INFO | Skipping already stored page
+2026-08-03 11:31:51,262 | INFO | Parsing page: https://fremontunified.org/washington/category/news/paged-3/13
+2026-08-03 11:31:52,469 | INFO | Cleaning text
+2026-08-03 11:31:52,470 | INFO | Cleaning complete
+2026-08-03 11:31:52,471 | INFO | Saved html: https://fremontunified.org/washington/category/news/paged-3/13
+2026-08-03 11:31:52,472 | INFO | Skipping already stored page
+2026-08-03 11:31:52,472 | INFO | Skipping already stored page
+2026-08-03 11:31:52,472 | INFO | Skipping already stored page
+2026-08-03 11:31:52,473 | INFO | Skipping already stored page
+2026-08-03 11:31:52,473 | INFO | Skipping already stored page
+2026-08-03 11:31:52,473 | INFO | Skipping already stored page
+2026-08-03 11:31:52,474 | INFO | Skipping already stored page
+2026-08-03 11:31:52,474 | INFO | Skipping already stored page
+2026-08-03 11:31:52,474 | INFO | Skipping already stored page
+2026-08-03 11:31:52,474 | INFO | Skipping already stored page
+2026-08-03 11:31:52,475 | INFO | Skipping already stored page
+2026-08-03 11:31:52,475 | INFO | Skipping already stored page
+2026-08-03 11:31:52,475 | INFO | Skipping already stored page
+2026-08-03 11:31:52,475 | INFO | Skipping already stored page
+2026-08-03 11:31:52,475 | INFO | Skipping already stored page
+2026-08-03 11:31:52,475 | INFO | Skipping already stored page
+2026-08-03 11:31:52,476 | INFO | Skipping already stored page
+2026-08-03 11:31:52,476 | INFO | Skipping already stored page
+2026-08-03 11:31:52,476 | INFO | Skipping already stored page
+2026-08-03 11:31:52,476 | INFO | Skipping already stored page
+2026-08-03 11:31:52,477 | INFO | Skipping already stored page
+2026-08-03 11:31:52,477 | INFO | Skipping already stored page
+2026-08-03 11:31:52,477 | INFO | Skipping already stored page
+2026-08-03 11:31:52,477 | INFO | Skipping already stored page
+2026-08-03 11:31:52,478 | INFO | Skipping already stored page
+2026-08-03 11:31:52,478 | INFO | Skipping already stored page
+2026-08-03 11:31:52,478 | INFO | Skipping already stored page
+2026-08-03 11:31:52,478 | INFO | Skipping already stored page
+2026-08-03 11:31:52,478 | INFO | Skipping already stored page
+2026-08-03 11:31:52,478 | INFO | Skipping already stored page
+2026-08-03 11:31:52,479 | INFO | Skipping already stored page
+2026-08-03 11:31:52,479 | INFO | Skipping already stored page
+2026-08-03 11:31:52,479 | INFO | Skipping already stored page
+2026-08-03 11:31:52,479 | INFO | Skipping already stored page
+2026-08-03 11:31:52,479 | INFO | Skipping already stored page
+2026-08-03 11:31:52,480 | INFO | Skipping already stored page
+2026-08-03 11:31:52,480 | INFO | Skipping already stored page
+2026-08-03 11:31:52,480 | INFO | Skipping already stored page
+2026-08-03 11:31:52,480 | INFO | Skipping already stored page
+2026-08-03 11:31:52,480 | INFO | Skipping already stored page
+2026-08-03 11:31:52,480 | INFO | Skipping already stored page
+2026-08-03 11:31:52,480 | INFO | Skipping already stored page
+2026-08-03 11:31:52,481 | INFO | Skipping already stored page
+2026-08-03 11:31:52,481 | INFO | Skipping already stored page
+2026-08-03 11:31:52,481 | INFO | Skipping already stored page
+2026-08-03 11:31:52,481 | INFO | Skipping already stored page
+2026-08-03 11:31:52,481 | INFO | Skipping already stored page
+2026-08-03 11:31:52,482 | INFO | Skipping already stored page
+2026-08-03 11:31:52,482 | INFO | Skipping already stored page
+2026-08-03 11:31:52,482 | INFO | Skipping already stored page
+2026-08-03 11:31:52,483 | INFO | Skipping already stored page
+2026-08-03 11:31:52,483 | INFO | Skipping already stored page
+2026-08-03 11:31:52,483 | INFO | Skipping already stored page
+2026-08-03 11:31:52,483 | INFO | Skipping already stored page
+2026-08-03 11:31:52,483 | INFO | Skipping already stored page
+2026-08-03 11:31:52,483 | INFO | Downloading PDF: https://fremontunified.org/washington/wp-content/uploads/sites/8/2024/01/Crab-Feed-Flier.pdf
+2026-08-03 11:31:52,782 | WARNING | PDF contained no text (might be an image)
+2026-08-03 11:31:52,785 | INFO | Skipping already stored page
+2026-08-03 11:31:52,786 | INFO | Skipping already stored page
+2026-08-03 11:31:52,788 | INFO | Skipping already stored page
+2026-08-03 11:31:52,789 | INFO | Skipping already stored page
+2026-08-03 11:31:52,790 | INFO | Skipping already stored page
+2026-08-03 11:31:52,791 | INFO | Skipping already stored page
+2026-08-03 11:31:52,792 | INFO | Skipping already stored page
+2026-08-03 11:31:52,792 | INFO | Skipping already stored page
+2026-08-03 11:31:52,794 | INFO | Skipping already stored page
+2026-08-03 11:31:52,795 | INFO | Skipping already stored page
+2026-08-03 11:31:52,796 | INFO | Skipping already stored page
+2026-08-03 11:31:52,797 | INFO | Skipping already stored page
+2026-08-03 11:31:52,798 | INFO | Skipping already stored page
+2026-08-03 11:31:52,798 | INFO | Skipping already stored page
+2026-08-03 11:31:52,799 | INFO | Skipping already stored page
+2026-08-03 11:31:52,799 | INFO | Skipping already stored page
+2026-08-03 11:31:52,800 | INFO | Skipping already stored page
+2026-08-03 11:31:52,800 | INFO | Skipping already stored page
+2026-08-03 11:31:52,800 | INFO | Skipping already stored page
+2026-08-03 11:31:52,801 | INFO | Skipping already stored page
+2026-08-03 11:31:52,801 | INFO | Skipping already stored page
+2026-08-03 11:31:52,802 | INFO | Skipping already stored page
+2026-08-03 11:31:52,802 | INFO | Skipping already stored page
+2026-08-03 11:31:52,802 | INFO | Skipping already stored page
+2026-08-03 11:31:52,803 | INFO | Skipping already stored page
+2026-08-03 11:31:52,803 | INFO | Skipping already stored page
+2026-08-03 11:31:52,803 | INFO | Skipping already stored page
+2026-08-03 11:31:52,804 | INFO | Skipping already stored page
+2026-08-03 11:31:52,804 | INFO | Skipping already stored page
+2026-08-03 11:31:52,805 | INFO | Skipping already stored page
+2026-08-03 11:31:52,805 | INFO | Skipping already stored page
+2026-08-03 11:31:52,805 | INFO | Skipping already stored page
+2026-08-03 11:31:52,806 | INFO | Skipping already stored page
+2026-08-03 11:31:52,806 | INFO | Skipping already stored page
+2026-08-03 11:31:52,807 | INFO | Skipping already stored page
+2026-08-03 11:31:52,807 | INFO | Skipping already stored page
+2026-08-03 11:31:52,807 | INFO | Skipping already stored page
+2026-08-03 11:31:52,808 | INFO | Skipping already stored page
+2026-08-03 11:31:52,808 | INFO | Skipping already stored page
+2026-08-03 11:31:52,809 | INFO | Skipping already stored page
+2026-08-03 11:31:52,809 | INFO | Skipping already stored page
+2026-08-03 11:31:52,810 | INFO | Skipping already stored page
+2026-08-03 11:31:52,810 | INFO | Skipping already stored page
+2026-08-03 11:31:52,811 | INFO | Skipping already stored page
+2026-08-03 11:31:52,811 | INFO | Skipping already stored page
+2026-08-03 11:31:52,811 | INFO | Skipping already stored page
+2026-08-03 11:31:52,812 | INFO | Skipping already stored page
+2026-08-03 11:31:52,812 | INFO | Skipping already stored page

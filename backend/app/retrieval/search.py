@@ -27,7 +27,7 @@ else:
 
 def search(query: str, k: int = 5):
     """
-    Performs semantic search with caching.
+    Performs semantic search with caching and recency prioritization.
     """
 
     # 1️⃣ Check cache first
@@ -46,6 +46,18 @@ def search(query: str, k: int = 5):
 
     # 4️⃣ Perform FAISS search
     results = _store.search(query_vector, k)
+
+    # TASK 3: RECENCY FILTERING - Sort by timestamp (newest first)
+    if results:
+        # Filter out results without timestamps
+        results_with_dates = [r for r in results if "timestamp" in r]
+        results_without_dates = [r for r in results if "timestamp" not in r]
+        
+        # Sort by timestamp (newest first)
+        results_with_dates.sort(key=lambda x: x["timestamp"], reverse=True)
+        
+        # Combine: dated results first (newest), then undated results
+        results = results_with_dates + results_without_dates
 
     # 5️⃣ Store in cache
     _cache.set(query, results)

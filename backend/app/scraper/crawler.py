@@ -4,20 +4,49 @@ from urllib.parse import urljoin, urlparse, urldefrag
 import time
 import random
 from backend.app.logs.logger import logger
+from datetime import datetime
 
 # The starting point for the scout.
 BASE_URL = "https://fremontunified.org/washington/"
 # Extracts 'fremontunified.org' so we know what our "home" domain is.
 DOMAIN = urlparse(BASE_URL).netloc
 
-# A list of allowed sections within the Fremont Unified site that relate to school info.
+# TASK 3: STRICT DOMAIN ISOLATION - Only allow Washington High School and general district pages
+ALLOWED_PATHS = ["washington"]
 DISTRICT_SECTIONS = ["about", "students-community", "departments", "services", "calendar", "board", "policies", "transportation", "meals", "safety"]
+
+# TASK 3: EXCLUDED PATHS - Strictly exclude other school paths
+EXCLUDED_SCHOOL_PATHS = ["kennedy", "irvington", "msjhs", "american", "horizon", "mission", "centerville", "parkmont", "thornton", "warmsprings", "brookvale", "cabello", "durham", "forestpark", "gleason", "grimmer", "harveygreen", "hirsch", "leitch", "maloney", "mattos", "millard", "niles", "oliveira", "vallejo", "weibel"]
 
 def normalize_url(url):
     # Remove the "#section" part of a URL so 'page.html#info' becomes just 'page.html'.
     url, _ = urldefrag(url)
     # Remove the trailing slash at the end so 'site.com/' and 'site.com' are treated as the same.
     return url.rstrip("/")
+
+def is_allowed_path(path_parts):
+    """
+    TASK 3: Strict domain isolation logic
+    """
+    if not path_parts or len(path_parts) == 0:
+        return True  # Allow root path
+    
+    first_section = path_parts[0].lower()
+    
+    # Allow Washington High School pages
+    if first_section == "washington":
+        return True
+    
+    # Allow general district pages
+    if first_section in DISTRICT_SECTIONS:
+        return True
+    
+    # Explicitly exclude other school paths
+    if first_section in EXCLUDED_SCHOOL_PATHS:
+        return False
+    
+    # Allow root district pages (like homepage, contact, etc.)
+    return first_section in ["", "home", "index"]
 
 def crawl():
     # A set of URLs we have already finished looking at.
@@ -68,13 +97,10 @@ def crawl():
                 # Split the URL path into parts (e.g., /washington/students -> ['washington', 'students']).
                 path_parts = parsed.path.strip("/").split("/")
 
-                if len(path_parts) > 0 and path_parts[0]:
-                    first_section = path_parts[0].lower()
-                    # Only keep links if they start with 'washington' or an allowed district section.
-                    if first_section == "washington" or first_section in DISTRICT_SECTIONS:
-                        pass
-                    else:
-                        continue
+                # TASK 3: Apply strict domain isolation
+                if not is_allowed_path(path_parts):
+                    logger.debug(f"Skipping excluded path: {full_url}")
+                    continue
 
                 # Skip non-text files that we can't read anyway.
                 if full_url.lower().endswith((".jpg", ".png", ".zip", ".mov", ".mp4")):
