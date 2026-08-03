@@ -5,11 +5,6 @@ from dotenv import load_dotenv
 # Load environment variables
 load_dotenv()
 
-# Initialize Groq Client
-client = Groq(
-    api_key=os.getenv("GROQ_API_KEY")
-)
-
 MODEL = "llama-3.1-8b-instant" 
 
 # 🛠️ THE FIX: We kept 'model_type=None' to ensure compatibility with search_service.
@@ -23,6 +18,10 @@ def generate_answer(query: str, context: str, history: list = None, model_type=N
 
     if not context.strip():
         return "Information regarding this query is currently unavailable in the Washington High School database."
+
+    # Dynamically grab fresh key from environment on every request
+    api_key = os.getenv("GROQ_API_KEY")
+    client = Groq(api_key=api_key)
 
     # 1. THE REFINED SYSTEM PROMPT: Professional, Dignified, and Filtered.
     system_msg = (
