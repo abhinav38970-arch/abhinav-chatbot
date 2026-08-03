@@ -7,13 +7,22 @@ Now runs entirely locally without FastAPI server dependency
 
 import sys
 from pathlib import Path
+import streamlit as st
+import os
+
+# Automatically map Streamlit Secrets to environment variables for Groq
+# Must happen before importing backend components
+try:
+    if "GROQ_API_KEY" in st.secrets:
+        os.environ["GROQ_API_KEY"] = st.secrets["GROQ_API_KEY"]
+except Exception:
+    pass
 
 # Add backend to Python path to import directly
 backend_path = str(Path(__file__).parent / "backend")
 if backend_path not in sys.path:
     sys.path.insert(0, backend_path)
 
-import streamlit as st
 from datetime import datetime
 
 # Import backend components directly
