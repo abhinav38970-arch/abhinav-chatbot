@@ -2,7 +2,7 @@ from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 
-DATABASE_URL = "sqlite:///backend/app/database/school_data.db"
+DATABASE_URL = "sqlite:///database/school_data.db"
 
 engine = create_engine(
     DATABASE_URL,
@@ -13,7 +13,7 @@ SessionLocal = sessionmaker(bind=engine)
 
 Base = declarative_base()
 # ✅ ensure all models are registered before table creation
-from backend.app.database import models  # DO NOT REMOVE
+from . import models  # DO NOT REMOVE
 
 def init_db():
     """

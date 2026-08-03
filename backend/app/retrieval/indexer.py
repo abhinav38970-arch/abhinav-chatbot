@@ -38,7 +38,11 @@ def build_index():
         # ### Step 1: Break the page into smart chunks using our new chunker.
         chunks = chunk_text(page.content)
 
-        for chunk in chunks:
+        for chunk_data in chunks:
+            # Extract chunk content and metadata
+            chunk = chunk_data["content"] if isinstance(chunk_data, dict) else chunk_data
+            metadata = chunk_data.get("metadata", {}) if isinstance(chunk_data, dict) else {}
+            
             # ### REMOVED: The < 50 character limit. 
             # ### We now keep small chunks so we don't lose room numbers or times.
             if not chunk.strip():
@@ -49,11 +53,17 @@ def build_index():
             vectors.append(vector)
 
             # ### Step 3: Save the "Metadata" so the AI knows which URL this chunk came from.
-            metadatas.append({
+            # Merge semantic metadata with page metadata
+            combined_metadata = {
                 "url": page.url,
                 "type": page.type,
-                "content": chunk
-            })
+                "content": chunk,
+                "school_year": page.school_year,
+                "recency_score": page.recency_score,
+                "is_current_year": bool(page.is_current_year),
+                **metadata  # Add semantic metadata from smart chunking
+            }
+            metadatas.append(combined_metadata)
 
     # ### Step 4: Convert the list of vectors into a high-performance Numpy array.
     vectors = np.array(vectors)

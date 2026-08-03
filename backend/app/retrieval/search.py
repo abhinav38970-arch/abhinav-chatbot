@@ -47,17 +47,34 @@ def search(query: str, k: int = 5):
     # 4️⃣ Perform FAISS search
     results = _store.search(query_vector, k)
 
-    # TASK 3: RECENCY FILTERING - Sort by timestamp (newest first)
+    # TASK 3: RECENCY & RELEVANCE FILTERING - Sort by recency score and current year
     if results:
-        # Filter out results without timestamps
-        results_with_dates = [r for r in results if "timestamp" in r]
-        results_without_dates = [r for r in results if "timestamp" not in r]
+        # Enhanced sorting: prioritize current year content with high recency scores
+        def sort_key(result):
+            # Prioritize: current year > recency score > has metadata
+            current_year_score = 2.0 if result.get("is_current_year") else 1.0
+            recency_score = float(result.get("recency_score", 0.5))
+            has_metadata = 1.0 if result.get("metadata") else 0.5
+            
+            # Combine scores: current_year * recency * metadata_quality
+            return (-current_year_score * recency_score * has_metadata, 
+                   -recency_score,  # Secondary sort by recency
+                   result.get("timestamp", 0))  # Tertiary sort by timestamp
         
-        # Sort by timestamp (newest first)
-        results_with_dates.sort(key=lambda x: x["timestamp"], reverse=True)
+        results.sort(key=sort_key)
         
-        # Combine: dated results first (newest), then undated results
-        results = results_with_dates + results_without_dates
+        # Filter out very low-quality results (recency < 0.3 unless current year)
+        filtered_results = []
+        for result in results:
+            is_current = result.get("is_current_year", False)
+            recency = float(result.get("recency_score", 0.5))
+            
+            # Keep current year content regardless of recency score
+            # Keep older content only if recency > 0.3
+            if is_current or recency >= 0.3:
+                filtered_results.append(result)
+        
+        results = filtered_results
 
     # 5️⃣ Store in cache
     _cache.set(query, results)

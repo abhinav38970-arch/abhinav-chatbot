@@ -3,6 +3,8 @@ from ..retrieval.search import search, all_documents
 from .llm_service import generate_answer
 from rank_bm25 import BM25Okapi
 from flashrank import Ranker, RerankRequest
+from backend.app.retrieval.chunker import smart_chunk_text
+from backend.app.database.models import Page
 
 # Initialize the Re-ranker once
 ranker = Ranker()
@@ -84,15 +86,45 @@ def run_search(query: str, history: list = None):
         Always check the school's digital calendar for today's specific alerts.
         """
 
-    # 2️⃣ STEP 2: HYBRID SEARCH (Vector + Keyword)
+    # 2️⃣ STEP 2: HYBRID SEARCH (Vector + Keyword) with Smart Chunking
     vector_results = search(query, k=10)
     
+    # Apply smart chunking to results for better context
+    enhanced_results = []
+    for result in vector_results:
+        content_type = "text"
+        if "type" in result and result["type"] == "html":
+            content_type = "html"
+        elif "type" in result and result["type"] == "pdf":
+            content_type = "text"  # PDFs are already processed
+        
+        # Use smart chunking for better context preservation
+        smart_chunks = smart_chunk_text(result["content"], content_type=content_type)
+        
+        for chunk_data in smart_chunks:
+            enhanced_result = result.copy()
+            enhanced_result["content"] = chunk_data["content"]
+            # Merge metadata
+            if "metadata" in enhanced_result:
+                enhanced_result["metadata"].update(chunk_data.get("metadata", {}))
+            else:
+                enhanced_result["metadata"] = chunk_data.get("metadata", {})
+            enhanced_results.append(enhanced_result)
+    
+    # Update vector_results with enhanced results
+    vector_results = enhanced_results
+
     tokenized_corpus = [doc["content"].split() for doc in all_documents]
     bm25 = BM25Okapi(tokenized_corpus)
     keyword_results_raw = bm25.get_top_n(query.split(), all_documents, n=5)
 
-    # 3️⃣ STEP 3: BLEND & RE-RANK
-    combined_dict = {res["content"]: res for res in (vector_results + keyword_results_raw)}
+    # 3️⃣ STEP 3: BLEND & RE-RANK with Semantic Awareness
+    combined_dict = {}
+    for res in (vector_results + keyword_results_raw):
+        # Create unique key based on content + url to avoid duplicates
+        key = (res["content"][:100], res.get("url", ""))
+        combined_dict[key] = res
+    
     combined_list = list(combined_dict.values())
     
     passages = [{"id": i, "text": res["content"], "meta": res} for i, res in enumerate(combined_list)]
@@ -102,18 +134,57 @@ def run_search(query: str, history: list = None):
 
     top_results = [r["meta"] for r in reranked[:3]]
 
-    # 4️⃣ STEP 4: PREPARE CONTEXT & SOURCES
+    # 4️⃣ STEP 4: PREPARE CONTEXT & SOURCES with Semantic Filtering
     if not top_results and not schedule_context:
         context = "No specific school data found."
         sources = []
     else:
-        web_context = "\n\n".join([r["content"] for r in top_results])
+        # Filter and prioritize results based on semantic metadata
+        filtered_results = []
+        for result in top_results:
+            metadata = result.get("metadata", {})
+            semantic_role = metadata.get("semantic_role", "unknown")
+            
+            # Prioritize schedule info for schedule-related queries
+            if ("schedule" in user_query or "time" in user_query) and semantic_role == "schedule_info":
+                filtered_results.insert(0, result)  # Add to front
+            # Prioritize policy info for policy-related queries
+            elif ("policy" in user_query or "rule" in user_query) and semantic_role == "policy_info":
+                filtered_results.insert(0, result)  # Add to front
+            # Prioritize event info for event-related queries
+            elif ("event" in user_query or "activity" in user_query) and semantic_role == "event_info":
+                filtered_results.insert(0, result)  # Add to front
+            else:
+                filtered_results.append(result)
+        
+        web_context = "\n\n".join([r["content"] for r in filtered_results])
         context = f"{schedule_context}\n\n{web_context}".strip()
-        sources = list(set([str(r.get("url")) for r in top_results if r.get("url")]))
+        sources = list(set([str(r.get("url")) for r in filtered_results if r.get("url")]))
 
-    # 5️⃣ STEP 5: GENERATE ANSWER
-    answer = generate_answer(query, context, history)
+    # 5️⃣ STEP 5: GENERATE ANSWER with Enhanced Context and Confidence
+    # Use the context enhancer to create optimal LLM context
+    try:
+        from llm.context_enhancer import LLMContextEnhancer
+        enhancer = LLMContextEnhancer()
+        temporal_context = enhancer.get_temporal_context()
+        
+        # Create enhanced context with temporal awareness
+        enhanced_context = f"""
+TEMPORAL CONTEXT:
+- Current School Year: {temporal_context['current_school_year']}
+- Current Date: {temporal_context['current_date']}
+- Academic Period: {temporal_context['academic_period']}
 
+RELEVANT INFORMATION:
+{context}
+        """
+        
+        answer = generate_answer(query, enhanced_context, history)
+        
+    except Exception:
+        # Fallback to original context if enhancer fails
+        answer = generate_answer(query, context, history)
+    
     return {
         "answer": answer,
         "sources": sources
