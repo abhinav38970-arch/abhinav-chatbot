@@ -1,4 +1,5 @@
 # backend/app/services/search_service.py
+import re
 from ..retrieval.search import search, all_documents
 from .llm_service import generate_answer
 from rank_bm25 import BM25Okapi
@@ -15,10 +16,23 @@ def run_search(query: str, history: list = None):
 
     user_query = query.lower()
     
-    # 👋 TASK 1: GREETING & INTENT ROUTER
-    # Detect casual greetings and bypass vector database
-    greeting_keywords = ["hi", "hello", "hey", "how are you", "good morning", "good afternoon", "greetings"]
-    if any(greeting in user_query for greeting in greeting_keywords):
+    # 👋 TASK 1: GREETING & INTENT ROUTER - FIXED BUG
+    # Detect casual greetings using word boundaries to avoid false positives
+    # Bug fix: Changed from naive substring matching to proper word boundary matching
+    greeting_patterns = [
+        r'\bhi\b',           # "hi" but not "highest", "history", etc.
+        r'\bhello\b',        # "hello" but not "helloworld"
+        r'\bhey\b',          # "hey" but not "heywood"
+        r'\bhow are you\b',  # "how are you" as complete phrase
+        r'\bgood morning\b', # "good morning" as complete phrase
+        r'\bgood afternoon\b', # "good afternoon" as complete phrase
+        r'\bgreetings\b'      # "greetings" but not "greetingcard"
+    ]
+    
+    # Check if any greeting pattern matches using word boundaries
+    is_greeting = any(re.search(pattern, user_query) for pattern in greeting_patterns)
+    
+    if is_greeting:
         return {
             "answer": """
             🐾 Welcome to Husky AI! I'm your Washington High School Assistant, ready to help with schedules, events, resources, and school information. 
