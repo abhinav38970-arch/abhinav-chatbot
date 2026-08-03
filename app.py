@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """
-Husky AI Streamlit Frontend
+Husky AI Streamlit Frontend - Standalone Version
 Modern chat interface for Washington High School AI Assistant
+Now runs entirely locally without FastAPI server dependency
 """
 
 import sys
@@ -13,13 +14,17 @@ if backend_path not in sys.path:
     sys.path.insert(0, backend_path)
 
 import streamlit as st
-import requests
 from datetime import datetime
 
-# Import backend components directly for potential future use
+# Import backend components directly
 try:
-    from app.main import app as fastapi_app
-    from app.routers.search_router import router as search_router
+    from app.services.search_service import run_search
+    from app.services.llm_service import generate_answer
+    from app.retrieval.search import search as vector_search
+    from app.retrieval.vector_store import VectorStore
+    from app.retrieval.embedder import embed_text
+    import numpy as np
+    print("✅ Backend components imported successfully")
 except ImportError as e:
     st.error(f"Backend import failed: {e}")
     st.stop()
@@ -102,19 +107,25 @@ def display_chat_messages():
             with st.chat_message("user"):
                 st.markdown(f'<div class="user-message">{message["content"]}</div>', unsafe_allow_html=True)
 
-# Call backend API
-def call_backend_api(query: str):
-    """Call the FastAPI backend /ask endpoint"""
+# Direct local function call to backend logic
+def call_local_backend(query: str):
+    """
+    Call backend logic directly without HTTP requests
+    Replaces the previous requests.post() call to FastAPI
+    """
     try:
-        response = requests.post(
-            "http://localhost:8000/ask",
-            json={"query": query, "history": st.session_state.chat_history},
-            timeout=30
-        )
-        response.raise_for_status()
-        return response.json()
-    except requests.exceptions.RequestException as e:
-        return {"answer": f"Error connecting to backend: {str(e)}", "sources": []}
+        # Call the same search_service.run_search function that FastAPI uses
+        result = run_search(query, st.session_state.chat_history)
+        
+        return {
+            "answer": result.get("answer", "Sorry, I couldn't find that information."),
+            "sources": result.get("sources", [])
+        }
+    except Exception as e:
+        return {
+            "answer": f"An error occurred: {str(e)}",
+            "sources": []
+        }
 
 # Main app
 def main():
@@ -132,6 +143,7 @@ def main():
         - 🧠 FlashRank Reranking
         - 📚 School Database Access
         - 💬 Conversation History
+        - ⚡ Local Execution (No Server Needed)
         """)
         
         st.markdown("---")
@@ -148,11 +160,17 @@ def main():
         st.markdown(f"""
         ---
         **Status:** Online 🟢
+        **Mode:** Local Execution
         **Time:** {current_time}
         """)
     
     # Main chat area
     st.title("🐾 Husky AI - Washington High School Assistant")
+    st.markdown("""
+    <div style="color: #ff6600; margin-bottom: 20px;">
+    🚀 Now running entirely locally - no server required!
+    </div>
+    """, unsafe_allow_html=True)
     
     # Display chat messages
     display_chat_messages()
@@ -167,9 +185,9 @@ def main():
         with st.chat_message("user"):
             st.markdown(f'<div class="user-message">{prompt}</div>', unsafe_allow_html=True)
         
-        # Get response from backend
+        # Get response from local backend function
         with st.spinner("🤖 Thinking..."):
-            response = call_backend_api(prompt)
+            response = call_local_backend(prompt)
         
         # Add assistant response
         assistant_response = {
@@ -184,7 +202,7 @@ def main():
             "content": assistant_response["content"]
         })
         
-        # Limit chat history to last 10 messages
+        # Limit chat history to last 20 messages
         if len(st.session_state.chat_history) > 20:
             st.session_state.chat_history = st.session_state.chat_history[-20:]
         
