@@ -10,12 +10,23 @@ from pathlib import Path
 import streamlit as st
 import os
 
-# Automatically map Streamlit Secrets to environment variables for Groq
+# Page configuration (must be first Streamlit command)
+st.set_page_config(
+    page_title="Husky AI - Washington High School",
+    page_icon="🐾",
+    layout="wide",
+    initial_sidebar_state="expanded"
+)
+
+# Automatically map Streamlit Secrets to environment variables for Groq with visual feedback
 try:
     if "GROQ_API_KEY" in st.secrets:
         os.environ["GROQ_API_KEY"] = st.secrets["GROQ_API_KEY"]
-except Exception:
-    pass
+        api_key_status = "Loaded Successfully 🟢"
+    else:
+        api_key_status = "Not Found in Secrets 🔴"
+except Exception as e:
+    api_key_status = f"Error reading secrets: {e}"
 
 # Add project root directory to Python path so 'backend.app' imports work correctly
 root_path = str(Path(__file__).parent)
@@ -36,14 +47,6 @@ try:
 except ImportError as e:
     st.error(f"Backend import failed: {e}")
     st.stop()
-
-# Page configuration
-st.set_page_config(
-    page_title="Husky AI - Washington High School",
-    page_icon="🐾",
-    layout="wide",
-    initial_sidebar_state="expanded"
-)
 
 # Custom CSS
 st.markdown("""
@@ -119,7 +122,6 @@ def display_chat_messages():
 def call_local_backend(query: str):
     """
     Call backend logic directly without HTTP requests
-    Replaces the previous requests.post() call to FastAPI
     """
     try:
         result = run_search(query, st.session_state.chat_history)
@@ -141,6 +143,11 @@ def main():
     with st.sidebar:
         st.title("🐾 Husky AI")
         st.markdown("### Washington High School")
+        st.markdown("---")
+        
+        st.markdown(f"""
+        **API Status:** {api_key_status}
+        """)
         st.markdown("---")
         
         st.markdown("""
