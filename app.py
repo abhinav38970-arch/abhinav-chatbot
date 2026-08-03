@@ -11,27 +11,26 @@ import streamlit as st
 import os
 
 # Automatically map Streamlit Secrets to environment variables for Groq
-# Must happen before importing backend components
 try:
     if "GROQ_API_KEY" in st.secrets:
         os.environ["GROQ_API_KEY"] = st.secrets["GROQ_API_KEY"]
 except Exception:
     pass
 
-# Add backend to Python path to import directly
-backend_path = str(Path(__file__).parent / "backend")
-if backend_path not in sys.path:
-    sys.path.insert(0, backend_path)
+# Add project root directory to Python path so 'backend.app' imports work correctly
+root_path = str(Path(__file__).parent)
+if root_path not in sys.path:
+    sys.path.insert(0, root_path)
 
 from datetime import datetime
 
-# Import backend components directly
+# Import backend components using absolute package paths
 try:
-    from app.services.search_service import run_search
-    from app.services.llm_service import generate_answer
-    from app.retrieval.search import search as vector_search
-    from app.retrieval.vector_store import VectorStore
-    from app.retrieval.embedder import embed_text
+    from backend.app.services.search_service import run_search
+    from backend.app.services.llm_service import generate_answer
+    from backend.app.retrieval.search import search as vector_search
+    from backend.app.retrieval.vector_store import VectorStore
+    from backend.app.retrieval.embedder import embed_text
     import numpy as np
     print("✅ Backend components imported successfully")
 except ImportError as e:
@@ -123,9 +122,7 @@ def call_local_backend(query: str):
     Replaces the previous requests.post() call to FastAPI
     """
     try:
-        # Call the same search_service.run_search function that FastAPI uses
         result = run_search(query, st.session_state.chat_history)
-        
         return {
             "answer": result.get("answer", "Sorry, I couldn't find that information."),
             "sources": result.get("sources", [])
@@ -164,7 +161,6 @@ def main():
         - Who do I contact about...?
         """)
         
-        # Current time
         current_time = datetime.now().strftime("%I:%M %p")
         st.markdown(f"""
         ---
@@ -181,24 +177,19 @@ def main():
     </div>
     """, unsafe_allow_html=True)
     
-    # Display chat messages
     display_chat_messages()
     
     # Chat input
     if prompt := st.chat_input("Ask anything about Washington High School..."):
-        # Add user message to chat history
         st.session_state.messages.append({"role": "user", "content": prompt})
         st.session_state.chat_history.append({"role": "user", "content": prompt})
         
-        # Display user message immediately
         with st.chat_message("user"):
             st.markdown(f'<div class="user-message">{prompt}</div>', unsafe_allow_html=True)
         
-        # Get response from local backend function
         with st.spinner("🤖 Thinking..."):
             response = call_local_backend(prompt)
         
-        # Add assistant response
         assistant_response = {
             "role": "assistant",
             "content": response.get("answer", "Sorry, I couldn't find that information."),
@@ -211,11 +202,9 @@ def main():
             "content": assistant_response["content"]
         })
         
-        # Limit chat history to last 20 messages
         if len(st.session_state.chat_history) > 20:
             st.session_state.chat_history = st.session_state.chat_history[-20:]
         
-        # Re-display messages to show the new one
         display_chat_messages()
 
 if __name__ == "__main__":
