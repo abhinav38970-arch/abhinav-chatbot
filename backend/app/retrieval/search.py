@@ -63,15 +63,18 @@ def search(query: str, k: int = 5):
         
         results.sort(key=sort_key)
         
-        # Filter out very low-quality results (recency < 0.3 unless current year)
+        # 🔧 TASK 1: FIXED - Relaxed filtering threshold to allow more valid results
+        # Previous threshold (recency >= 0.3) was too strict and filtered out valid school data
+        # New logic: Keep current year content regardless of recency, and be more lenient with older content
         filtered_results = []
         for result in results:
             is_current = result.get("is_current_year", False)
             recency = float(result.get("recency_score", 0.5))
             
-            # Keep current year content regardless of recency score
-            # Keep older content only if recency > 0.3
-            if is_current or recency >= 0.3:
+            # Keep current year content regardless of recency score (most important)
+            # For older content, use a lower threshold (0.15 instead of 0.3) to allow more valid results
+            # Also ensure we don't filter out results that have no recency score (default to 0.5)
+            if is_current or recency >= 0.15 or recency == 0.5:
                 filtered_results.append(result)
         
         results = filtered_results

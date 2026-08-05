@@ -6,9 +6,52 @@ from rank_bm25 import BM25Okapi
 from flashrank import Ranker, RerankRequest
 from backend.app.retrieval.chunker import smart_chunk_text
 from backend.app.database.models import Page
+from backend.app.database.db import SessionLocal
+import re
 
 # Initialize the Re-ranker once
 ranker = Ranker()
+
+def find_similar_queries(query: str) -> str:
+    """Find similar queries using semantic search"""
+    try:
+        # Use BM25 to find similar documents
+        tokenized_corpus = [doc["content"].split() for doc in all_documents]
+        bm25 = BM25Okapi(tokenized_corpus)
+        
+        # Get top similar documents
+        similar_docs = bm25.get_top_n(query.split(), all_documents, n=3)
+        
+        # Extract key phrases from similar docs
+        similar_queries = []
+        for doc in similar_docs:
+            content = doc["content"]
+            # Extract first sentence or key phrase
+            first_sentence = content.split('.')[0] if '.' in content else content[:100]
+            similar_queries.append(f"- {first_sentence.strip()}...")
+        
+        return "\n".join(similar_queries[:3]) if similar_queries else "No similar topics found."
+    except Exception:
+        return "No similar topics found."
+
+def get_related_links_from_db() -> str:
+    """Get related links from database"""
+    try:
+        db = SessionLocal()
+        # Get recent pages that might be relevant
+        pages = db.query(Page).order_by(Page.recency_score.desc()).limit(3).all()
+        db.close()
+        
+        links = []
+        for page in pages:
+            if page.url and "fremontunified.org" in page.url:
+                # Extract clean URL
+                clean_url = page.url.replace("https://", "").replace("http://", "")
+                links.append(f"- {clean_url}")
+        
+        return "\n".join(links) if links else "No related links available."
+    except Exception:
+        return "No related links available."
 
 def run_search(query: str, history: list = None):
     if history is None:
@@ -150,26 +193,47 @@ def run_search(query: str, history: list = None):
 
     # 4️⃣ STEP 4: PREPARE CONTEXT & SOURCES with Semantic Filtering
     if not top_results and not schedule_context:
-        context = "No specific school data found."
-        sources = []
+        # ENHANCED: Provide helpful suggestions when no results found
+        similar_queries = find_similar_queries(query)
+        related_links = get_related_links_from_db()
+        
+        context = f"""
+No specific information found for your query. Here are some suggestions:
+
+SIMILAR TOPICS YOU MIGHT FIND HELPFUL:
+{similar_queries}
+
+RELATED LINKS:
+{related_links}
+
+For the most accurate information, please check the official Washington High School website or contact the school office.
+"""
+        sources = ["https://fremontunified.org/washington"]
     else:
-        # Filter and prioritize results based on semantic metadata
-        filtered_results = []
-        for result in top_results:
+        # 🔧 TASK 1: FIXED - Modified filtering to be less restrictive
+        # Keep all results that passed the search.py filtering, don't apply additional strict filtering here
+        filtered_results = top_results[:]  # Start with all top results
+        
+        # Apply semantic prioritization but don't filter out results
+        prioritized_results = []
+        regular_results = []
+        
+        for result in filtered_results:
             metadata = result.get("metadata", {})
             semantic_role = metadata.get("semantic_role", "unknown")
             
-            # Prioritize schedule info for schedule-related queries
+            # Prioritize by query intent but keep all results
             if ("schedule" in user_query or "time" in user_query) and semantic_role == "schedule_info":
-                filtered_results.insert(0, result)  # Add to front
-            # Prioritize policy info for policy-related queries
+                prioritized_results.insert(0, result)  # Add to front
             elif ("policy" in user_query or "rule" in user_query) and semantic_role == "policy_info":
-                filtered_results.insert(0, result)  # Add to front
-            # Prioritize event info for event-related queries
+                prioritized_results.insert(0, result)  # Add to front
             elif ("event" in user_query or "activity" in user_query) and semantic_role == "event_info":
-                filtered_results.insert(0, result)  # Add to front
+                prioritized_results.insert(0, result)  # Add to front
             else:
-                filtered_results.append(result)
+                regular_results.append(result)
+        
+        # Combine prioritized and regular results
+        filtered_results = prioritized_results + regular_results
         
         web_context = "\n\n".join([r["content"] for r in filtered_results])
         context = f"{schedule_context}\n\n{web_context}".strip()
