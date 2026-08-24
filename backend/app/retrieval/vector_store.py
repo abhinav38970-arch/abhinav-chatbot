@@ -5,8 +5,9 @@ import pickle
 import hashlib # 🆕 Added for deduplication
 from datetime import datetime # 🆕 Added for recency tracking
 
-INDEX_PATH = "backend/app/retrieval/faiss.index"
-META_PATH = "backend/app/retrieval/meta.pkl"
+_RETRIEVAL_DIR = os.path.dirname(os.path.abspath(__file__))
+INDEX_PATH = os.path.join(_RETRIEVAL_DIR, "faiss.index")
+META_PATH = os.path.join(_RETRIEVAL_DIR, "meta.pkl")
 
 class VectorStore:
     def __init__(self, dimension: int):
@@ -49,9 +50,12 @@ class VectorStore:
         distances, indices = self.index.search(query_vector, k)
 
         results = []
-        for i in indices[0]:
+        for score, i in zip(distances[0], indices[0]):
             if i != -1 and i < len(self.metadata):
-                results.append(self.metadata[i])
+                meta = dict(self.metadata[i])
+                # Attach similarity so downstream fusion can weigh by relevance
+                meta["_dense_score"] = float(score)
+                results.append(meta)
 
         return results
 

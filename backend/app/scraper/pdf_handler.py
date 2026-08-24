@@ -10,21 +10,26 @@ HEADERS = {
     "Accept": "application/pdf"
 }
 
-def extract_pdf_text(pdf_url):
-    logger.info(f"Downloading PDF: {pdf_url}")
-
-    try:
-        # Use httpx to download the PDF file as raw 'binary' data.
-        with httpx.Client(headers=HEADERS, timeout=30, follow_redirects=True) as client:
-            response = client.get(pdf_url)
-            response.raise_for_status()
-    except Exception as e:
-        logger.error(f"PDF download failed: {e}")
-        return None
+def extract_pdf_text(pdf_url, raw_bytes: bytes = None):
+    """
+    Extract text + tables from a PDF.
+    Pass `raw_bytes` (from the crawler's single fetch) to avoid re-downloading.
+    """
+    if raw_bytes is None:
+        logger.info(f"Downloading PDF: {pdf_url}")
+        try:
+            # Use httpx to download the PDF file as raw 'binary' data.
+            with httpx.Client(headers=HEADERS, timeout=30, follow_redirects=True) as client:
+                response = client.get(pdf_url)
+                response.raise_for_status()
+                raw_bytes = response.content
+        except Exception as e:
+            logger.error(f"PDF download failed: {e}")
+            return None
 
     try:
         # Turn the raw download into a file-like object in memory.
-        pdf_file = BytesIO(response.content)
+        pdf_file = BytesIO(raw_bytes)
         
         # TASK 2: Use pdfplumber for better text and table extraction
         text_parts = []

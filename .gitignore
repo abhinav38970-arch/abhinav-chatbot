@@ -4,3 +4,19 @@ pycache/
 .env
 *.db
 pdfs/
+# Generated RAG artifacts (rebuild with: python3 reset_and_rebuild.py)
+backend/app/retrieval/faiss.index
+backend/app/retrieval/meta.pkl
+backend/app/retrieval/bm25_index.pkl
+backend/app/retrieval/search_cache.pkl
+*.db-wal
+*.db-shm
+
+# Run logs
+full_crawl_run.log
+topup_run.log
+auto_finish.log
+overnight_checks.log
+pipeline.log
+backend/app/logs/*.log
+.DS_Store

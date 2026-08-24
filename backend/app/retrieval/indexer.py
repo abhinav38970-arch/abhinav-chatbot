@@ -1,79 +1,98 @@
 # backend/app/retrieval/indexer.py
 
 from backend.app.database.db import SessionLocal
-from backend.app.database.models import Page
+from backend.app.database.models import Page, Chunk, School
 from backend.app.retrieval.embedder import embed_text
 from backend.app.retrieval.vector_store import VectorStore
-from backend.app.retrieval.chunker import chunk_text
 import numpy as np
 
-def build_index():
+
+def build_embedding_text(chunk: Chunk, page: Page, school: School) -> str:
     """
-    ### Purpose: The "Bridge" between your Database and the AI Search.
-    ### It reads the clean text, chunks it, converts it to math (vectors), 
-    ### and saves it into the FAISS index files.
+    Compose the text that gets embedded. Prepending school + title context makes
+    vectors far more accurate ("bell schedule" from Washington vs Kennedy are
+    distinguishable), and keeps retrieval grounded so the LLM is never confused.
+    """
+    parts = []
+    if school and school.school_name:
+        parts.append(school.school_name)
+    elif page.school_id == "district":
+        parts.append("Fremont Unified School District")
+    else:
+        parts.append(page.school_id)
+    if page.title:
+        parts.append(page.title)
+    header = " | ".join(parts)
+    return f"[{header}]\n{chunk.content}"
+
+
+def build_index(batch_size: int = 64):
+    """
+    Bridge between the database and AI search.
+    Reads chunks directly (already smart-chunked at scrape time — no double chunking),
+    embeds them with school/title context, and saves into the FAISS index.
     """
     db = SessionLocal()
+    try:
+        query = (
+            db.query(Chunk, Page, School)
+            .join(Page, Chunk.page_id == Page.id)
+            .outerjoin(School, Page.school_id == School.school_id)
+            .order_by(Page.id, Chunk.chunk_index)
+        )
 
-    # ### Pull every page we just scraped from the SQLite database.
-    pages = db.query(Page).all()
+        total_chunks = query.count()
+        if total_chunks == 0:
+            print("No chunks found in database. Run the scraper first!")
+            return
 
-    if not pages:
-        print("No pages found in database. Run the scraper first!")
-        return
+        sample_vector = embed_text("test")
+        dimension = len(sample_vector)
+        store = VectorStore(dimension)
 
-    print(f"Found {len(pages)} pages. Creating embeddings...")
+        vectors, metadatas = [], []
+        processed = 0
+        pages_seen = set()
 
-    # ### We create a "test" embedding to see how big the math vectors need to be.
-    sample_vector = embed_text("test")
-    dimension = len(sample_vector)
-
-    # ### Initialize our VectorStore (FAISS) with the correct dimensions.
-    store = VectorStore(dimension)
-
-    vectors = []
-    metadatas = []
-
-    for page in pages:
-        # ### Step 1: Break the page into smart chunks using our new chunker.
-        chunks = chunk_text(page.content)
-
-        for chunk_data in chunks:
-            # Extract chunk content and metadata
-            chunk = chunk_data["content"] if isinstance(chunk_data, dict) else chunk_data
-            metadata = chunk_data.get("metadata", {}) if isinstance(chunk_data, dict) else {}
-            
-            # ### REMOVED: The < 50 character limit. 
-            # ### We now keep small chunks so we don't lose room numbers or times.
-            if not chunk.strip():
-                continue
-
-            # ### Step 2: Turn the text chunk into a list of numbers (Embedding).
-            vector = embed_text(chunk)
+        # Stream rows instead of loading all chunks in memory
+        for chunk, page, school in query.yield_per(batch_size):
+            embedding_text = build_embedding_text(chunk, page, school)
+            vector = embed_text(embedding_text)
             vectors.append(vector)
-
-            # ### Step 3: Save the "Metadata" so the AI knows which URL this chunk came from.
-            # Merge semantic metadata with page metadata
-            combined_metadata = {
+            metadatas.append({
+                "chunk_id": chunk.id,
+                "page_id": page.id,
                 "url": page.url,
-                "type": page.type,
-                "content": chunk,
+                "title": page.title,
+                "school_id": page.school_id,
+                "school_name": school.school_name if school else page.school_id,
+                "school_level": school.school_level if school else None,
+                "page_type": page.page_type,
+                "content": chunk.content,
+                "semantic_role": chunk.semantic_role,
+                "content_type": chunk.content_type,
                 "school_year": page.school_year,
                 "recency_score": page.recency_score,
                 "is_current_year": bool(page.is_current_year),
-                **metadata  # Add semantic metadata from smart chunking
-            }
-            metadatas.append(combined_metadata)
+            })
+            pages_seen.add(page.id)
 
-    # ### Step 4: Convert the list of vectors into a high-performance Numpy array.
-    vectors = np.array(vectors)
+            processed += 1
+            if processed % batch_size == 0:
+                store.add(np.array(vectors).astype("float32"), metadatas)
+                vectors, metadatas = [], []
+                print(f"Embedded {processed}/{total_chunks} chunks "
+                      f"({len(pages_seen)} pages)...")
 
-    # ### Step 5: Add everything to FAISS and save the files to disk.
-    store.add(vectors, metadatas)
-    store.save()
+        if vectors:
+            store.add(np.array(vectors).astype("float32"), metadatas)
 
-    print(f"Index built successfully with {len(metadatas)} unique chunks.")
-    db.close()
+        store.save()
+        print(f"✅ Index built successfully: {processed} unique chunks from "
+              f"{len(pages_seen)} pages.")
+    finally:
+        db.close()
+
 
 if __name__ == "__main__":
     build_index()

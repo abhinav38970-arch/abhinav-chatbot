@@ -1,0 +1,792 @@
+{
+  "schools": [
+    {
+      "school_id": "american",
+      "school_name": "American High School",
+      "school_level": "high",
+      "base_urls": [
+        "https://fremontunified.org/american/"
+      ],
+      "query_patterns": [
+        "american",
+        "ahs"
+      ],
+      "location_hints": [
+        "36300 fremont blvd"
+      ],
+      "metadata": {
+        "principal": "Sandhya Sharma",
+        "phone": "(510) 796-1776",
+        "address": "36300 Fremont Blvd, Fremont, CA",
+        "grades": "9-12"
+      }
+    },
+    {
+      "school_id": "thornton",
+      "school_name": "Thornton Middle School",
+      "school_level": "middle",
+      "base_urls": [
+        "https://fremontunified.org/thornton/"
+      ],
+      "query_patterns": [
+        "thornton",
+        "thornton middle"
+      ],
+      "metadata": {
+        "principal": "Sherry Strausbaugh",
+        "phone": "(510) 793-9090",
+        "address": "4357 Thornton Avenue, Fremont, CA"
+      }
+    },
+    {
+      "school_id": "ardenwood",
+      "school_name": "Ardenwood Elementary",
+      "school_level": "elementary",
+      "base_urls": [
+        "https://fremontunified.org/ardenwood/"
+      ],
+      "query_patterns": [
+        "ardenwood"
+      ],
+      "metadata": {
+        "principal": "Glynis Mason",
+        "phone": "(510) 794-0392",
+        "address": "33955 Emilia Lane, Fremont, CA"
+      }
+    },
+    {
+      "school_id": "brookvale",
+      "school_name": "Brookvale Elementary",
+      "school_level": "elementary",
+      "base_urls": [
+        "https://fremontunified.org/brookvale/"
+      ],
+      "query_patterns": [
+        "brookvale"
+      ],
+      "metadata": {
+        "principal": "Malinda Elliott",
+        "phone": "(510) 797-5940",
+        "address": "3400 Nicolet Avenue, Fremont, CA"
+      }
+    },
+    {
+      "school_id": "forestpark",
+      "school_name": "Forest Park Elementary",
+      "school_level": "elementary",
+      "base_urls": [
+        "https://fremontunified.org/forestpark/"
+      ],
+      "query_patterns": [
+        "forest park",
+        "forestpark"
+      ],
+      "metadata": {
+        "principal": "Denise Mapelli",
+        "phone": "(510) 713-0141",
+        "address": "34400 Maybird Circle, Fremont, CA"
+      }
+    },
+    {
+      "school_id": "oliveira",
+      "school_name": "Oliveira Elementary",
+      "school_level": "elementary",
+      "base_urls": [
+        "https://fremontunified.org/oliveira/"
+      ],
+      "query_patterns": [
+        "oliveira"
+      ],
+      "metadata": {
+        "principal": "Harry Pabley",
+        "phone": "(510) 797-1135",
+        "address": "4180 Alder Avenue, Fremont, CA"
+      }
+    },
+    {
+      "school_id": "patterson",
+      "school_name": "Patterson Elementary",
+      "school_level": "elementary",
+      "base_urls": [
+        "https://fremontunified.org/patterson/"
+      ],
+      "query_patterns": [
+        "patterson"
+      ],
+      "metadata": {
+        "principal": "Kristin Dil",
+        "phone": "(510) 793-0420",
+        "address": "35521 Cabrillo Drive, Fremont, CA"
+      }
+    },
+    {
+      "school_id": "warwick",
+      "school_name": "Warwick Elementary",
+      "school_level": "elementary",
+      "base_urls": [
+        "https://fremontunified.org/warwick/"
+      ],
+      "query_patterns": [
+        "warwick"
+      ],
+      "metadata": {
+        "principal": "Barbara Ochoa",
+        "phone": "(510) 793-8660",
+        "address": "375 Warwick Road, Fremont, CA"
+      }
+    },
+    {
+      "school_id": "irvington",
+      "school_name": "Irvington High School",
+      "school_level": "high",
+      "base_urls": [
+        "https://fremontunified.org/irvington/"
+      ],
+      "query_patterns": [
+        "irvington",
+        "ihs"
+      ],
+      "location_hints": [
+        "41800 blacow road"
+      ],
+      "metadata": {
+        "principal": "David Martinez",
+        "phone": "(510) 656-5711",
+        "address": "41800 Blacow Road, Fremont, CA",
+        "grades": "9-12"
+      }
+    },
+    {
+      "school_id": "horner",
+      "school_name": "Horner Middle School",
+      "school_level": "middle",
+      "base_urls": [
+        "https://fremontunified.org/horner/"
+      ],
+      "query_patterns": [
+        "horner"
+      ],
+      "metadata": {
+        "principal": "Cindy Hicks-Rodriguez",
+        "phone": "(510) 656-4000",
+        "address": "4350 Irvington Ave, Fremont, CA"
+      }
+    },
+    {
+      "school_id": "grimmer",
+      "school_name": "Grimmer Elementary",
+      "school_level": "elementary",
+      "base_urls": [
+        "https://fremontunified.org/grimmer/"
+      ],
+      "query_patterns": [
+        "grimmer"
+      ],
+      "metadata": {
+        "principal": "Matt Kaufman",
+        "phone": "(510) 656-1250",
+        "address": "43030 Newport Drive, Fremont, CA"
+      }
+    },
+    {
+      "school_id": "green",
+      "school_name": "Harvey Green Elementary",
+      "school_level": "elementary",
+      "base_urls": [
+        "https://fremontunified.org/green/"
+      ],
+      "query_patterns": [
+        "harvey green",
+        "harveygreen",
+        "green"
+      ],
+      "metadata": {
+        "principal": "Trisha Johnson",
+        "phone": "(510) 656-6438",
+        "address": "42875 Gatewood Street, Fremont, CA"
+      }
+    },
+    {
+      "school_id": "hirsch",
+      "school_name": "Hirsch Elementary",
+      "school_level": "elementary",
+      "base_urls": [
+        "https://fremontunified.org/hirsch/"
+      ],
+      "query_patterns": [
+        "hirsch"
+      ],
+      "metadata": {
+        "principal": "Christina Arroyo",
+        "phone": "(510) 657-3537",
+        "address": "41399 Chapel Way, Fremont, CA"
+      }
+    },
+    {
+      "school_id": "leitch",
+      "school_name": "Leitch Elementary",
+      "school_level": "elementary",
+      "base_urls": [
+        "https://fremontunified.org/leitch/"
+      ],
+      "query_patterns": [
+        "leitch"
+      ],
+      "metadata": {
+        "principal": "Lizaday Rancap-Perez",
+        "phone": "(510) 657-6100",
+        "address": "47100 Fernald Street, Fremont, CA"
+      }
+    },
+    {
+      "school_id": "warmsprings",
+      "school_name": "Warm Springs Elementary",
+      "school_level": "elementary",
+      "base_urls": [
+        "https://fremontunified.org/warmsprings/"
+      ],
+      "query_patterns": [
+        "warm springs",
+        "warmsprings"
+      ],
+      "metadata": {
+        "principal": "Scott Iwata",
+        "phone": "(510) 656-1611",
+        "address": "47370 Warm Springs Blvd., Fremont, CA"
+      }
+    },
+    {
+      "school_id": "weibel",
+      "school_name": "Weibel Elementary",
+      "school_level": "elementary",
+      "base_urls": [
+        "https://fremontunified.org/weibel/"
+      ],
+      "query_patterns": [
+        "weibel"
+      ],
+      "metadata": {
+        "principal": "Annie Lee",
+        "phone": "(510) 651-6958",
+        "address": "45135 S. Grimmer Blvd., Fremont, CA"
+      }
+    },
+    {
+      "school_id": "kennedy",
+      "school_name": "John F. Kennedy High School",
+      "school_level": "high",
+      "base_urls": [
+        "https://fremontunified.org/kennedy/"
+      ],
+      "query_patterns": [
+        "kennedy",
+        "jfk"
+      ],
+      "location_hints": [
+        "39999 blacow road"
+      ],
+      "metadata": {
+        "principal": "Brannin Dorsey",
+        "phone": "(510) 657-4070",
+        "address": "39999 Blacow Road, Fremont, CA",
+        "grades": "9-12"
+      }
+    },
+    {
+      "school_id": "walters",
+      "school_name": "Walters Middle School",
+      "school_level": "middle",
+      "base_urls": [
+        "https://fremontunified.org/walters/"
+      ],
+      "query_patterns": [
+        "walters"
+      ],
+      "metadata": {
+        "principal": "Dana Graham",
+        "phone": "(510) 656-7211",
+        "address": "39600 Logan Drive, Fremont, CA"
+      }
+    },
+    {
+      "school_id": "azevada",
+      "school_name": "Azevada Elementary",
+      "school_level": "elementary",
+      "base_urls": [
+        "https://fremontunified.org/azevada/"
+      ],
+      "query_patterns": [
+        "azevada"
+      ],
+      "metadata": {
+        "principal": "Merrill Grimmer",
+        "phone": "(510) 657-3900",
+        "address": "39450 Royal Palm Drive, Fremont, CA"
+      }
+    },
+    {
+      "school_id": "blacow",
+      "school_name": "Blacow Elementary",
+      "school_level": "elementary",
+      "base_urls": [
+        "https://fremontunified.org/blacow/"
+      ],
+      "query_patterns": [
+        "blacow"
+      ],
+      "metadata": {
+        "principal": "Laura Codicetti",
+        "phone": "(510) 656-5121",
+        "address": "40404 Sundale Drive, Fremont, CA"
+      }
+    },
+    {
+      "school_id": "brier",
+      "school_name": "Brier Elementary",
+      "school_level": "elementary",
+      "base_urls": [
+        "https://fremontunified.org/brier/"
+      ],
+      "query_patterns": [
+        "brier"
+      ],
+      "metadata": {
+        "principal": "Tammy Pachote",
+        "phone": "(510) 657-5020",
+        "address": "39201 Sundale Drive, Fremont, CA"
+      }
+    },
+    {
+      "school_id": "bringhurst",
+      "school_name": "Bringhurst Elementary",
+      "school_level": "elementary",
+      "base_urls": [
+        "https://fremontunified.org/bringhurst/"
+      ],
+      "query_patterns": [
+        "bringhurst"
+      ],
+      "metadata": {
+        "principal": "Angela Hsu",
+        "phone": "(510) 490-1205",
+        "address": "45051 Wisdom Way, Fremont, CA"
+      }
+    },
+    {
+      "school_id": "durham",
+      "school_name": "Durham Elementary",
+      "school_level": "elementary",
+      "base_urls": [
+        "https://fremontunified.org/durham/"
+      ],
+      "query_patterns": [
+        "durham"
+      ],
+      "metadata": {
+        "principal": "Michelle Tibbs",
+        "phone": "(510) 657-7080",
+        "address": "40292 Leslie Street, Fremont, CA"
+      }
+    },
+    {
+      "school_id": "mattos",
+      "school_name": "Mattos Elementary",
+      "school_level": "elementary",
+      "base_urls": [
+        "https://fremontunified.org/mattos/"
+      ],
+      "query_patterns": [
+        "mattos"
+      ],
+      "metadata": {
+        "principal": "Sherea Westra",
+        "phone": "(510) 793-1359",
+        "address": "37944 Farwell Drive, Fremont, CA"
+      }
+    },
+    {
+      "school_id": "millard",
+      "school_name": "Millard Elementary",
+      "school_level": "elementary",
+      "base_urls": [
+        "https://fremontunified.org/millard/"
+      ],
+      "query_patterns": [
+        "millard"
+      ],
+      "metadata": {
+        "principal": "Jorge Gonzalez",
+        "phone": "(510) 657-0344",
+        "address": "5200 Valpey Park Drive, Fremont, CA"
+      }
+    },
+    {
+      "school_id": "msjhs",
+      "school_name": "Mission San Jose High School",
+      "school_level": "high",
+      "base_urls": [
+        "https://fremontunified.org/msjhs/"
+      ],
+      "query_patterns": [
+        "mission san jose",
+        "missionsanjose",
+        "msjhs"
+      ],
+      "location_hints": [
+        "41717 palm avenue"
+      ],
+      "metadata": {
+        "principal": "Amy Perez",
+        "phone": "(510) 657-3600",
+        "address": "41717 Palm Avenue, Fremont, CA",
+        "grades": "9-12"
+      }
+    },
+    {
+      "school_id": "hopkins",
+      "school_name": "Hopkins Middle School",
+      "school_level": "middle",
+      "base_urls": [
+        "https://fremontunified.org/hopkins/"
+      ],
+      "query_patterns": [
+        "hopkins"
+      ],
+      "metadata": {
+        "principal": "Nancy Kuei",
+        "phone": "(510) 656-3500",
+        "address": "600 Driscoll Road, Fremont, CA"
+      }
+    },
+    {
+      "school_id": "chadbourne",
+      "school_name": "Chadbourne Elementary",
+      "school_level": "elementary",
+      "base_urls": [
+        "https://fremontunified.org/chadbourne/"
+      ],
+      "query_patterns": [
+        "chadbourne"
+      ],
+      "metadata": {
+        "principal": "Christopher Wood",
+        "phone": "(510) 656-5242",
+        "address": "801 Plymouth Avenue, Fremont, CA"
+      }
+    },
+    {
+      "school_id": "gomes",
+      "school_name": "Gomes Elementary",
+      "school_level": "elementary",
+      "base_urls": [
+        "https://fremontunified.org/gomes/"
+      ],
+      "query_patterns": [
+        "gomes"
+      ],
+      "metadata": {
+        "principal": "Pamela Hughes",
+        "phone": "(510) 656-3414",
+        "address": "555 Lemos Lane, Fremont, CA"
+      }
+    },
+    {
+      "school_id": "msje",
+      "school_name": "Mission San Jose Elementary",
+      "school_level": "elementary",
+      "base_urls": [
+        "https://fremontunified.org/msje/"
+      ],
+      "query_patterns": [
+        "mission san jose elementary"
+      ],
+      "metadata": {
+        "principal": "Katy Carter",
+        "phone": "(510) 656-1200",
+        "address": "43545 Bryant Street, Fremont, CA"
+      }
+    },
+    {
+      "school_id": "missionvalley",
+      "school_name": "Mission Valley Elementary",
+      "school_level": "elementary",
+      "base_urls": [
+        "https://fremontunified.org/missionvalley/"
+      ],
+      "query_patterns": [
+        "mission valley",
+        "missionvalley"
+      ],
+      "metadata": {
+        "principal": "Jacyln McClintock",
+        "phone": "(510) 656-2000",
+        "address": "41700 Denise Street, Fremont, CA"
+      }
+    },
+    {
+      "school_id": "washington",
+      "school_name": "Washington High School",
+      "school_level": "high",
+      "base_urls": [
+        "https://fremontunified.org/washington/"
+      ],
+      "query_patterns": [
+        "washington",
+        "whs"
+      ],
+      "location_hints": [
+        "38442 fremont blvd"
+      ],
+      "metadata": {
+        "principal": "Bob Moran",
+        "phone": "(510) 505-7300",
+        "address": "38442 Fremont Blvd., Fremont, CA",
+        "grades": "9-12"
+      }
+    },
+    {
+      "school_id": "centerville",
+      "school_name": "Centerville Middle School",
+      "school_level": "middle",
+      "base_urls": [
+        "https://fremontunified.org/centerville/"
+      ],
+      "query_patterns": [
+        "centerville"
+      ],
+      "metadata": {
+        "principal": "Susan Lemke",
+        "phone": "(510) 797-2072",
+        "address": "37720 Fremont Blvd., Fremont, CA"
+      }
+    },
+    {
+      "school_id": "cabrillo",
+      "school_name": "Cabrillo Elementary",
+      "school_level": "elementary",
+      "base_urls": [
+        "https://fremontunified.org/cabrillo/"
+      ],
+      "query_patterns": [
+        "cabrillo"
+      ],
+      "metadata": {
+        "principal": "Jin Kim",
+        "phone": "(510) 792-3232",
+        "address": "36700 San Pedro Drive, Fremont, CA"
+      }
+    },
+    {
+      "school_id": "glenmoor",
+      "school_name": "Glenmoor Elementary",
+      "school_level": "elementary",
+      "base_urls": [
+        "https://fremontunified.org/glenmoor/"
+      ],
+      "query_patterns": [
+        "glenmoor"
+      ],
+      "metadata": {
+        "principal": "Brian Benevides",
+        "phone": "(510) 797-0740",
+        "address": "4620 Mattos Drive, Fremont, CA"
+      }
+    },
+    {
+      "school_id": "maloney",
+      "school_name": "Maloney Elementary",
+      "school_level": "elementary",
+      "base_urls": [
+        "https://fremontunified.org/maloney/"
+      ],
+      "query_patterns": [
+        "maloney"
+      ],
+      "metadata": {
+        "principal": "Zahra Pelayo",
+        "phone": "(510) 797-4426",
+        "address": "38700 Logan Drive, Fremont, CA"
+      }
+    },
+    {
+      "school_id": "niles",
+      "school_name": "Niles Elementary",
+      "school_level": "elementary",
+      "base_urls": [
+        "https://fremontunified.org/niles/"
+      ],
+      "query_patterns": [
+        "niles"
+      ],
+      "metadata": {
+        "principal": "Spenser Peterson",
+        "phone": "(510) 793-1141",
+        "address": "37141 Second Street, Fremont, CA"
+      }
+    },
+    {
+      "school_id": "parkmont",
+      "school_name": "Parkmont Elementary",
+      "school_level": "elementary",
+      "base_urls": [
+        "https://fremontunified.org/parkmont/"
+      ],
+      "query_patterns": [
+        "parkmont"
+      ],
+      "metadata": {
+        "principal": "Walter Lewis",
+        "phone": "(510) 793-7492",
+        "address": "2601 Parkside Drive, Fremont, CA"
+      }
+    },
+    {
+      "school_id": "vallejomill",
+      "school_name": "Vallejo Mill Elementary",
+      "school_level": "elementary",
+      "base_urls": [
+        "https://fremontunified.org/vallejomill/"
+      ],
+      "query_patterns": [
+        "vallejo mill",
+        "vallejomill"
+      ],
+      "metadata": {
+        "principal": "Carrie Irwin",
+        "phone": "(510) 793-1441",
+        "address": "38569 Canyon Heights Dr., Fremont, CA"
+      }
+    },
+    {
+      "school_id": "glankler",
+      "school_name": "Glankler Early Learning Center",
+      "school_level": "preschool",
+      "base_urls": [
+        "https://fremontunified.org/glankler/"
+      ],
+      "query_patterns": [
+        "glankler"
+      ],
+      "metadata": {
+        "principal": "Charlene Sim",
+        "phone": "(510) 651-1190",
+        "address": "39207 Sundale Dr, Fremont, CA"
+      }
+    },
+    {
+      "school_id": "rix-glankler",
+      "school_name": "Rix-Glankler Early Learning Center",
+      "school_level": "preschool",
+      "base_urls": [
+        "https://fremontunified.org/glankler/"
+      ],
+      "query_patterns": [
+        "rix glankler",
+        "rix-glankler"
+      ],
+      "metadata": {
+        "principal": "Charlene Sim",
+        "phone": "(510) 490-8802",
+        "address": "43100 Isle Royal St, Fremont, CA"
+      }
+    },
+    {
+      "school_id": "preschool",
+      "school_name": "Fremont Preschool Programs",
+      "school_level": "preschool",
+      "base_urls": [
+        "https://fremontunified.org/about/instructional-services/preschool/"
+      ],
+      "query_patterns": [
+        "preschool programs"
+      ],
+      "metadata": {
+        "principal": "Director Fed & State",
+        "phone": "(510) 659-2579",
+        "address": "4210 Technology Drive Room 207, Fremont, CA"
+      }
+    },
+    {
+      "school_id": "adult-ed",
+      "school_name": "Fremont Adult and Continuing Education",
+      "school_level": "adult",
+      "base_urls": [
+        "https://fremontunified.org/adult-ed/"
+      ],
+      "query_patterns": [
+        "adult education",
+        "continuing education"
+      ],
+      "metadata": {
+        "principal": "Jacklynn Sprague",
+        "phone": "(510) 793-6465",
+        "address": "4700 Calaveras Avenue, Fremont, CA"
+      }
+    },
+    {
+      "school_id": "circle",
+      "school_name": "Circle of Independent Learning",
+      "school_level": "alternative",
+      "base_urls": [
+        "https://fremontunified.org/circle/"
+      ],
+      "query_patterns": [
+        "circle",
+        "independent learning"
+      ],
+      "metadata": {
+        "principal": "Teresa Copenhaver",
+        "phone": "(510) 797-0100",
+        "address": "4700 Calaveras Avenue, Fremont, CA"
+      }
+    },
+    {
+      "school_id": "robertson",
+      "school_name": "Robertson High School",
+      "school_level": "alternative",
+      "base_urls": [
+        "https://fremontunified.org/robertson/"
+      ],
+      "query_patterns": [
+        "robertson"
+      ],
+      "metadata": {
+        "principal": "Sheila Jemo",
+        "phone": "(510) 657-9155",
+        "address": "4455 Seneca Park Avenue, Fremont, CA"
+      }
+    },
+    {
+      "school_id": "vista",
+      "school_name": "Vista Alternative School",
+      "school_level": "alternative",
+      "base_urls": [
+        "https://fremontunified.org/robertson/"
+      ],
+      "query_patterns": [
+        "vista"
+      ],
+      "metadata": {
+        "principal": "Sheila Jemo",
+        "phone": "(510) 657-7028",
+        "address": "4455 Seneca Park Avenue, Fremont, CA"
+      }
+    }
+  ],
+  "district": {
+    "name": "Fremont Unified School District",
+    "admin_urls": [
+      "https://fremontunified.org/about/",
+      "https://fremontunified.org/policies/"
+    ],
+    "contact": {
+      "address": "4210 Technology Drive, Fremont, CA 94538",
+      "phone": "(510) 657-2350"
+    },
+    "global_excludes": [
+      "staff-directory",
+      "internal",
+      "admin-portal"
+    ]
+  }
+}

@@ -1,4 +1,5 @@
 import re
+
 from backend.app.logs.logger import logger
 
 def clean_text(raw_text):

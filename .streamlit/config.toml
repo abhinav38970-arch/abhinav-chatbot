@@ -1,0 +1,23 @@
+[theme]
+# FUSD Theme Configuration
+primaryColor = "#0066cc"
+backgroundColor = "#f8f9fa"
+secondaryBackgroundColor = "#ffffff"
+textColor = "#262730"
+font = "sans serif"
+
+[server]
+headless = true
+port = 8501
+enableCORS = false
+enableXsrfProtection = true
+
+[client]
+showSidebarNavigation = true
+
+[browser]
+gatherUsageStats = false
+
+[logger]
+level = "info"
+messageFormat = "%(asctime)s %(levelname)s %(message)s"

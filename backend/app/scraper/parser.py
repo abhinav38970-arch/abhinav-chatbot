@@ -58,33 +58,53 @@ def extract_image_alt_text(soup):
             alt_texts.append(f"IMAGE: {alt_text}")
     return '\n'.join(alt_texts) if alt_texts else None
 
-def parse_page(url):
-    logger.info(f"Parsing page: {url}")
-    
-    try:
-        # Download the specific page.
-        response = client.get(url)
-        response.raise_for_status()
-    except Exception as e:
-        logger.error(f"Parse failed: {url} -> {e}")
-        return None
+def parse_page(url: str, html: str = None):
+    """
+    Parse a page into structured text.
+    Pass `html` (from the crawler's single fetch) to avoid re-downloading.
+    Only downloads when html is None (standalone/debug use).
+    """
+    if html is None:
+        logger.info(f"Parsing page: {url}")
+        try:
+            # Download the specific page.
+            response = client.get(url)
+            response.raise_for_status()
+            html = response.text
+        except Exception as e:
+            logger.error(f"Parse failed: {url} -> {e}")
+            return None
 
     # Load HTML into BeautifulSoup.
-    soup = BeautifulSoup(response.text, "lxml")
+    soup = BeautifulSoup(html, "lxml")
 
     # DELETE repetitive sections: This removes the Top Menu, Bottom Footer, and Sidebars.
     # This prevents the 68,000 lines of junk from entering your database.
-    for junk in soup.find_all(["nav", "footer", "header", "aside", "form"]):
+    for junk in soup.find_all(["nav", "footer", "aside", "form"]):
         junk.decompose()
-    
-    # Target specific CSS classes often used for menus on the FUSD site.
-    for menu_junk in soup.find_all(class_=re.compile("menu|sidebar|nav|sub-menu|widget")):
-        menu_junk.decompose()
 
-    # Find the "Meat" of the page. Most school sites put real info in <main> or a content div.
-    # This ensures we get text inside tables and the (+) accordion boxes.
-    main_area = soup.find("main") or soup.find(id="content") or soup.find(class_="entry-content")
-    
+    # Target specific CSS classes often used for menus on the FUSD site.
+    # Only strip when the class strongly indicates chrome (not page content).
+    menu_junk = soup.find_all(
+        class_=re.compile(r"^(menu|nav|sub-menu|sidebar|widget|footer-menu|main-navigation)"
+                          r"|(-menu$|^menu-|navigation)",
+                          re.IGNORECASE)
+    )
+    for el in menu_junk:
+        el.decompose()
+
+    # Find the "Meat" of the page. School sites use several different themes:
+    # district pages use <main>/#content/.entry-content; school sites built with
+    # Beaver Builder use <article> or [role=main] with fl-* wrapper classes.
+    main_area = (
+        soup.find("main")
+        or soup.find(attrs={"role": "main"})
+        or soup.find(id="content")
+        or soup.find(id="main-content")
+        or soup.find(class_="entry-content")
+        or soup.find("article")
+    )
+
     # TASK 2: Extract HTML tables and convert to Markdown
     table_markdowns = []
     if main_area:
@@ -93,8 +113,8 @@ def parse_page(url):
             markdown_table = convert_html_table_to_markdown(table)
             if markdown_table:
                 table_markdowns.append(markdown_table)
-    
-    # TASK 2: Extract image alt texts
+
+    # TASK 2: Extract image alt texts (from whole soup so hero images aren't lost)
     image_context = extract_image_alt_text(soup)
     
     if main_area:

@@ -15,24 +15,30 @@ import numpy as np
 def clear_old_database():
     """Clear the old FAISS vector database and metadata"""
     print("🧹 Clearing old vector database...")
-    
+
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+
     # Remove FAISS index file
-    index_path = "backend/app/retrieval/faiss.index"
+    index_path = os.path.join(base_dir, "backend/app/retrieval/faiss.index")
     if os.path.exists(index_path):
         os.remove(index_path)
         print(f"✅ Removed {index_path}")
-    
+
     # Remove metadata file
-    meta_path = "backend/app/retrieval/meta.pkl"
+    meta_path = os.path.join(base_dir, "backend/app/retrieval/meta.pkl")
     if os.path.exists(meta_path):
         os.remove(meta_path)
         print(f"✅ Removed {meta_path}")
-    
-    # Clear SQLite database
-    db_path = "backend/app/database/pages.db"
+
+    # Clear SQLite database (single source of truth)
+    db_path = os.path.join(base_dir, "backend/app/school_data.db")
     if os.path.exists(db_path):
-        os.remove(db_path)
-        print(f"✅ Removed {db_path}")
+        # WAL sidecar files must go too or SQLite complains
+        for suffix in ("", "-wal", "-shm"):
+            p = db_path + suffix
+            if os.path.exists(p):
+                os.remove(p)
+                print(f"✅ Removed {p}")
 
 def run_fresh_crawl():
     """Run the scraper with new advanced parsing capabilities"""

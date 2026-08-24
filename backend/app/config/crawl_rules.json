@@ -1,0 +1,60 @@
+{
+  "global_settings": {
+    "allowed_domain": "fremontunified.org",
+    "base_url": "https://fremontunified.org",
+    "max_depth": 4,
+    "rate_limit": 1.5,
+    "user_agent": "HuskyAI-EducationalBot/1.0 (+https://fremontunified.org/washington/)",
+    "respect_robots_txt": true,
+    "max_pages_per_school": 1000,
+    "max_concurrent_requests": 5,
+    "timeout": 30,
+    "retry_attempts": 2,
+    "retry_delay": 5
+  },
+  "domain_isolation": {
+    "strict_domain_match": true,
+    "allowed_subdomains": [],
+    "blocked_domains": ["*"],
+    "allowed_paths": {
+      "schools": [
+        "american", "thornton", "ardenwood", "brookvale", "forestpark",
+        "oliveira", "patterson", "warwick", "irvington", "horner",
+        "grimmer", "green", "hirsch", "leitch", "warmsprings",
+        "weibel", "kennedy", "walters", "azevada", "blacow",
+        "brier", "bringhurst", "durham", "mattos", "millard",
+        "msjhs", "hopkins", "chadbourne", "gomes",
+        "msje", "missionvalley", "washington", "centerville",
+        "cabrillo", "glenmoor", "maloney", "niles", "parkmont",
+        "vallejomill", "glankler", "rix-glankler", "preschool",
+        "adult-ed", "circle", "robertson", "vista"
+      ],
+      "district": [
+        "about", "students-community", "departments", "services",
+        "calendar", "board", "policies", "transportation", "meals", "safety"
+      ],
+      "admin": [
+        "superintendent", "business", "hr", "technology", "facilities"
+      ]
+    },
+    "blocked_paths": [
+      "staff-directory", "internal-admin", "private-portal",
+      "login", "portal", "email-directory", "forms-submission", "surveys-results"
+    ],
+    "file_extensions": {
+      "allow": [".html", ".htm", ".pdf", ".doc", ".docx"],
+      "block": [".jpg", ".png", ".gif", ".mp3", ".mp4", ".zip", ".exe"]
+    }
+  },
+  "crawling_behavior": {
+    "politeness_delay": {
+      "min": 0.5,
+      "max": 1.5
+    },
+    "max_pages_per_school": 1000,
+    "max_concurrent_requests": 5,
+    "timeout": 30,
+    "retry_attempts": 2,
+    "retry_delay": 5
+  }
+}

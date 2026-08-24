@@ -1,269 +1,150 @@
 # backend/app/services/search_service.py
 import re
-from ..retrieval.search import search, all_documents
 from .llm_service import generate_answer
-from rank_bm25 import BM25Okapi
 from flashrank import Ranker, RerankRequest
-from backend.app.retrieval.chunker import smart_chunk_text
-from backend.app.database.models import Page
-from backend.app.database.db import SessionLocal
-import re
+from backend.app.retrieval.hybrid_retriever import HybridRetriever
+from rank_bm25 import BM25Okapi
+from backend.app.safety.guardrails import guard_input, guard_output
+from backend.app.safety.pii_filter import scrub_outbound
+from backend.app.logs.logger import logger
 
 # Initialize the Re-ranker once
 ranker = Ranker()
+retriever = HybridRetriever.instance()
+
+GREETING_PATTERNS = [
+    r'\bhi\b', r'\bhello\b', r'\bhey\b', r'\bhow are you\b',
+    r'\bgood morning\b', r'\bgood afternoon\b', r'\bgreetings\b'
+]
+
+
+def _is_greeting(user_query: str) -> bool:
+    return any(re.search(p, user_query) for p in GREETING_PATTERNS)
+
 
 def find_similar_queries(query: str) -> str:
-    """Find similar queries using semantic search"""
+    """Suggest related topics from the corpus when nothing relevant is found."""
     try:
-        # Use BM25 to find similar documents
-        tokenized_corpus = [doc["content"].split() for doc in all_documents]
-        bm25 = BM25Okapi(tokenized_corpus)
-        
-        # Get top similar documents
-        similar_docs = bm25.get_top_n(query.split(), all_documents, n=3)
-        
-        # Extract key phrases from similar docs
-        similar_queries = []
-        for doc in similar_docs:
-            content = doc["content"]
-            # Extract first sentence or key phrase
-            first_sentence = content.split('.')[0] if '.' in content else content[:100]
-            similar_queries.append(f"- {first_sentence.strip()}...")
-        
-        return "\n".join(similar_queries[:3]) if similar_queries else "No similar topics found."
+        docs = retriever._bm25_docs or []
+        if not docs:
+            return "No similar topics found."
+        bm25 = BM25Okapi([d["content"].split() for d in docs[:5000]])
+        similar = bm25.get_top_n(query.split(), docs[:5000], n=3)
+        lines = []
+        for doc in similar:
+            first = doc["content"].split('.')[0][:100]
+            school = doc.get("school_id", "")
+            lines.append(f"- [{school}] {first.strip()}...")
+        return "\n".join(lines) if lines else "No similar topics found."
     except Exception:
         return "No similar topics found."
 
-def get_related_links_from_db() -> str:
-    """Get related links from database"""
-    try:
-        db = SessionLocal()
-        # Get recent pages that might be relevant
-        pages = db.query(Page).order_by(Page.recency_score.desc()).limit(3).all()
-        db.close()
-        
-        links = []
-        for page in pages:
-            if page.url and "fremontunified.org" in page.url:
-                # Extract clean URL
-                clean_url = page.url.replace("https://", "").replace("http://", "")
-                links.append(f"- {clean_url}")
-        
-        return "\n".join(links) if links else "No related links available."
-    except Exception:
-        return "No related links available."
 
-def run_search(query: str, history: list = None):
+def run_search(query: str, history: list = None, school_hint: str = None):
     if history is None:
         history = []
 
-    user_query = query.lower()
-    
-    # 👋 TASK 1: GREETING & INTENT ROUTER - FIXED BUG
-    # Detect casual greetings using word boundaries to avoid false positives
-    # Bug fix: Changed from naive substring matching to proper word boundary matching
-    greeting_patterns = [
-        r'\bhi\b',           # "hi" but not "highest", "history", etc.
-        r'\bhello\b',        # "hello" but not "helloworld"
-        r'\bhey\b',          # "hey" but not "heywood"
-        r'\bhow are you\b',  # "how are you" as complete phrase
-        r'\bgood morning\b', # "good morning" as complete phrase
-        r'\bgood afternoon\b', # "good afternoon" as complete phrase
-        r'\bgreetings\b'      # "greetings" but not "greetingcard"
-    ]
-    
-    # Check if any greeting pattern matches using word boundaries
-    is_greeting = any(re.search(pattern, user_query) for pattern in greeting_patterns)
-    
-    if is_greeting:
+    user_query = query.lower().strip()
+
+    # 🛡️ SAFETY LAYER 1: input guardrails (injection, jailbreaks, harmful asks)
+    decision = guard_input(query)
+    if not decision.allowed:
+        logger.info(f"🛡️ Blocked input ({decision.category})")
+        return {"answer": decision.user_message, "sources": []}
+
+    # 👋 Greeting & intent router (district-wide persona)
+    if _is_greeting(user_query) and len(user_query.split()) <= 4:
         return {
-            "answer": """
-            🐾 Welcome to Husky AI! I'm your Washington High School Assistant, ready to help with schedules, events, resources, and school information. 
-            
-            How can I assist you today? You can ask about:
-            - 🕒 Bell schedules and class times
-            - 📅 Upcoming events and activities
-            - 📚 Academic resources and programs
-            - 🏫 School policies and procedures
-            - 👥 Staff and department contacts
-            """,
+            "answer": (
+                "🐾 Welcome to Husky AI! I'm your Fremont Unified School District assistant, "
+                "covering every FUSD school and district office.\n\n"
+                "I can help with:\n"
+                "- 🕒 Bell schedules and class times\n"
+                "- 📅 Events, calendars, and activities\n"
+                "- 📚 Academic programs and resources\n"
+                "- 🏫 Policies and procedures\n"
+                "- 👥 Staff and department contacts\n\n"
+                "Just mention any school by name — Washington, Kennedy, Irvington, "
+                "Mission San Jose, Horner, Weibel, and more."
+            ),
             "sources": []
         }
-    
-    schedule_context = ""
 
-    # 🕒 1. HARDCODED MASTER SCHEDULE (2025-2026)
-    if any(word in user_query for word in ["schedule", "times", "period", "dismissal", "lunch", "break"]):
-        schedule_context = """
-        WASHINGTON HIGH SCHOOL MASTER BELL SCHEDULE (2025-2026):
+    # 1️⃣ HYBRID RETRIEVAL: dense (FAISS) + keyword (persistent BM25),
+    #    fused with RRF, routed to the detected school (or UI profile hint)
+    results, detected_school = retriever.retrieve(query, k=12, school_hint=school_hint)
 
-        REGULAR SCHEDULE (Mon, Thu, Fri):
-        - 0 Period: 7:30 - 8:20
-        - Period 1: 8:30 - 9:22
-        - Period 2: 9:28 - 10:20
-        - Break: 10:20 - 10:26
-        - Husky/Flex: 10:32 - 11:04
-        - Period 3: 11:10 - 12:02
-        - Period 4: 12:08 - 1:00
-        - Lunch: 1:00 - 1:30
-        - Period 5: 1:36 - 2:28
-        - Period 6: 2:34 - 3:26
+    if not results:
+        similar = find_similar_queries(query)
+        return {
+            "answer": (
+                "I couldn't find information about that in the FUSD database.\n\n"
+                f"Topics you might find helpful:\n{similar}\n\n"
+                "For the most accurate details, please check the official "
+                "Fremont Unified School District website or contact the school office."
+            ),
+            "sources": ["https://fremontunified.org"]
+        }
 
-        BLOCK SCHEDULE (Tue, Wed):
-        - 0 Period: 7:30 - 8:20
-        - Period 1/2: 8:30 - 10:03
-        - Break: 10:03 - 10:15
-        - Husky/Flex: 11:04 - 12:37
-        - Period 3/4: 12:37 - 1:07
-        - Lunch: 1:07 - 1:37
-        - Period 5/6: 1:37 - 2:50
-
-        MINIMUM DAY (Regular Schedule):
-        - 0 Period: 7:30 - 8:20
-        - Period 1: 8:30 - 9:09
-        - Period 2: 9:15 - 9:54
-        - Period 3: 10:00 - 10:39
-        - Break: 10:39 - 10:48
-        - Period 4: 10:54 - 11:33
-        - Period 5: 11:39 - 12:18
-        - Period 6: 12:24 - 1:03
-        - Lunch: 1:03 - 1:33
-
-        ULTRA MINIMUM DAY:
-        - Periods are shorter (approx 30 mins). Dismissal is typically around 12:10 PM.
-
-        FINALS SCHEDULE:
-        - 0 Period: 7:30 - 8:20
-        - First Final (1/3/5): 8:30 - 10:34
-        - Break: 10:34 - 10:50
-        - Second Final (2/4/6): 10:50 - 12:54
-        - Lunch: 12:54 - 1:24
-
-        NOTE: Special schedules (Assembly, Testing, or Parent Teacher Conferences) vary by date. 
-        Always check the school's digital calendar for today's specific alerts.
-        """
-
-    # 2️⃣ STEP 2: HYBRID SEARCH (Vector + Keyword) with Smart Chunking
-    vector_results = search(query, k=10)
-    
-    # Apply smart chunking to results for better context
-    enhanced_results = []
-    for result in vector_results:
-        content_type = "text"
-        if "type" in result and result["type"] == "html":
-            content_type = "html"
-        elif "type" in result and result["type"] == "pdf":
-            content_type = "text"  # PDFs are already processed
-        
-        # Use smart chunking for better context preservation
-        smart_chunks = smart_chunk_text(result["content"], content_type=content_type)
-        
-        for chunk_data in smart_chunks:
-            enhanced_result = result.copy()
-            enhanced_result["content"] = chunk_data["content"]
-            # Merge metadata
-            if "metadata" in enhanced_result:
-                enhanced_result["metadata"].update(chunk_data.get("metadata", {}))
-            else:
-                enhanced_result["metadata"] = chunk_data.get("metadata", {})
-            enhanced_results.append(enhanced_result)
-    
-    # Update vector_results with enhanced results
-    vector_results = enhanced_results
-
-    tokenized_corpus = [doc["content"].split() for doc in all_documents]
-    bm25 = BM25Okapi(tokenized_corpus)
-    keyword_results_raw = bm25.get_top_n(query.split(), all_documents, n=5)
-
-    # 3️⃣ STEP 3: BLEND & RE-RANK with Semantic Awareness
-    combined_dict = {}
-    for res in (vector_results + keyword_results_raw):
-        # Create unique key based on content + url to avoid duplicates
-        key = (res["content"][:100], res.get("url", ""))
-        combined_dict[key] = res
-    
-    combined_list = list(combined_dict.values())
-    
-    passages = [{"id": i, "text": res["content"], "meta": res} for i, res in enumerate(combined_list)]
-    
-    rerank_request = RerankRequest(query=query, passages=passages)
-    reranked = ranker.rerank(rerank_request)
-
-    top_results = [r["meta"] for r in reranked[:3]]
-
-    # 4️⃣ STEP 4: PREPARE CONTEXT & SOURCES with Semantic Filtering
-    if not top_results and not schedule_context:
-        # ENHANCED: Provide helpful suggestions when no results found
-        similar_queries = find_similar_queries(query)
-        related_links = get_related_links_from_db()
-        
-        context = f"""
-No specific information found for your query. Here are some suggestions:
-
-SIMILAR TOPICS YOU MIGHT FIND HELPFUL:
-{similar_queries}
-
-RELATED LINKS:
-{related_links}
-
-For the most accurate information, please check the official Washington High School website or contact the school office.
-"""
-        sources = ["https://fremontunified.org/washington"]
-    else:
-        # 🔧 TASK 1: FIXED - Modified filtering to be less restrictive
-        # Keep all results that passed the search.py filtering, don't apply additional strict filtering here
-        filtered_results = top_results[:]  # Start with all top results
-        
-        # Apply semantic prioritization but don't filter out results
-        prioritized_results = []
-        regular_results = []
-        
-        for result in filtered_results:
-            metadata = result.get("metadata", {})
-            semantic_role = metadata.get("semantic_role", "unknown")
-            
-            # Prioritize by query intent but keep all results
-            if ("schedule" in user_query or "time" in user_query) and semantic_role == "schedule_info":
-                prioritized_results.insert(0, result)  # Add to front
-            elif ("policy" in user_query or "rule" in user_query) and semantic_role == "policy_info":
-                prioritized_results.insert(0, result)  # Add to front
-            elif ("event" in user_query or "activity" in user_query) and semantic_role == "event_info":
-                prioritized_results.insert(0, result)  # Add to front
-            else:
-                regular_results.append(result)
-        
-        # Combine prioritized and regular results
-        filtered_results = prioritized_results + regular_results
-        
-        web_context = "\n\n".join([r["content"] for r in filtered_results])
-        context = f"{schedule_context}\n\n{web_context}".strip()
-        sources = list(set([str(r.get("url")) for r in filtered_results if r.get("url")]))
-
-    # 5️⃣ STEP 5: GENERATE ANSWER with Enhanced Context and Confidence
-    # Use the context enhancer to create optimal LLM context
+    # 2️⃣ CROSS-ENCODER RE-RANK the fused candidates for final precision
+    passages = [{"id": i, "text": r["content"], "meta": r} for i, r in enumerate(results)]
     try:
-        from llm.context_enhancer import LLMContextEnhancer
-        enhancer = LLMContextEnhancer()
-        temporal_context = enhancer.get_temporal_context()
-        
-        # Create enhanced context with temporal awareness
-        enhanced_context = f"""
-TEMPORAL CONTEXT:
-- Current School Year: {temporal_context['current_school_year']}
-- Current Date: {temporal_context['current_date']}
-- Academic Period: {temporal_context['academic_period']}
-
-RELEVANT INFORMATION:
-{context}
-        """
-        
-        answer = generate_answer(query, enhanced_context, history)
-        
+        reranked = ranker.rerank(RerankRequest(query=query, passages=passages))
+        top_results = [r["meta"] for r in reranked[:6]]
     except Exception:
-        # Fallback to original context if enhancer fails
-        answer = generate_answer(query, context, history)
-    
+        logger.exception("Reranker failed - using fused ranking")
+        top_results = results[:6]
+
+    # 3️⃣ BUILD LABELED CONTEXT so the LLM always knows which school each fact belongs to
+    context_blocks = []
+    seen_urls = set()
+    for i, res in enumerate(top_results, 1):
+        school_name = res.get("school_name") or res.get("school_id") or "FUSD"
+        title = (res.get("title") or "").strip() or "Untitled Page"
+        url = res.get("url", "")
+        role = res.get("semantic_role", "unknown")
+        context_blocks.append(
+            f"### SOURCE {i} — {school_name}\n"
+            f"Page: {title} | Type: {res.get('page_type', 'html')} | Topic: {role}\n"
+            f"URL: {url}\n"
+            f"{res['content']}"
+        )
+        if url:
+            seen_urls.add(url)
+
+    context = "\n\n".join(context_blocks)
+
+    routing_note = ""
+    if detected_school:
+        routing_note = f"The user's question appears to be about school ID '{detected_school}'. Prioritize sources from that school."
+
+    enhanced_context = f"""
+SCHOOL ROUTING: {routing_note or 'No specific school detected - this may be a district-wide question. If the user named a school in a previous message, prefer that school\'s sources.'}
+
+RETRIEVED SOURCES (each labeled with its school):
+{context}
+"""
+
+    # 🛡️ SAFETY LAYER 2: PII redaction — personal info the user typed must
+    # NEVER leave to the external LLM. Retrieval already ran on the original
+    # query; only the outbound text is scrubbed.
+    safe_query, q_report = scrub_outbound(query)
+    if q_report.contains_pii:
+        logger.info(f"🔒 Redacted PII before LLM call: {q_report.findings}")
+    safe_history = []
+    for msg in (history or []):
+        safe_msg = dict(msg)
+        safe_msg["content"], _ = scrub_outbound(str(msg.get("content", "")))
+        safe_history.append(safe_msg)
+    safe_context, _ = scrub_outbound(enhanced_context)
+
+    # 4️⃣ GENERATE ANSWER
+    answer = generate_answer(safe_query, safe_context, safe_history)
+
+    # 🛡️ SAFETY LAYER 3: output guard (leak check)
+    answer = guard_output(answer)
+
     return {
         "answer": answer,
-        "sources": sources
+        "sources": list(seen_urls)[:6],
     }
