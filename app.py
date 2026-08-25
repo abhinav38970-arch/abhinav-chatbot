@@ -15,8 +15,8 @@ import sys
 import time
 from datetime import datetime
 
-# Add repo root to path so `backend.app.*` imports resolve
-sys.path.insert(0, '/Users/abhinav/Desktop/abhinav-chatbot')
+# Add repo root to path so `backend.app.*` imports resolve (works locally AND on cloud)
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 # Set page configuration
 st.set_page_config(

@@ -4,7 +4,8 @@ import pickle
 import os
 import hashlib
 
-CACHE_PATH = "backend/app/retrieval/search_cache.pkl"
+_CACHE_DIR = os.path.dirname(os.path.abspath(__file__))
+CACHE_PATH = os.path.join(_CACHE_DIR, "search_cache.pkl")
 
 
 class SearchCache:

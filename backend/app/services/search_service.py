@@ -118,8 +118,11 @@ def run_search(query: str, history: list = None, school_hint: str = None):
     if detected_school:
         routing_note = f"The user's question appears to be about school ID '{detected_school}'. Prioritize sources from that school."
 
+    no_school_note = ("No specific school detected - this may be a district-wide "
+                      "question. If the user named a school in a previous message, "
+                      "prefer that school's sources.")
     enhanced_context = f"""
-SCHOOL ROUTING: {routing_note or 'No specific school detected - this may be a district-wide question. If the user named a school in a previous message, prefer that school\'s sources.'}
+SCHOOL ROUTING: {routing_note or no_school_note}
 
 RETRIEVED SOURCES (each labeled with its school):
 {context}
